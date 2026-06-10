@@ -113,31 +113,51 @@ def _make_id(stage, group, seq):
 def fetch_fixtures():
     """
     Fetch all 104 WC 2026 fixtures from football-data.org and write
-    data/fixtures.json.  Venue fields are left null here — venues.main()
-    fills them in the next step.
+    data/fixtures.json.  Venue fields are preserved from any existing
+    fixtures.json so a partial Wikipedia run is never lost.
 
-    Returns True on success, False on failure.
+    Returns True on success, False on any failure (caller continues
+    with the existing cached fixtures.json rather than aborting).
     """
+    fixtures_path = DATA / "fixtures.json"
+
     if not FOOTBALL_DATA_KEY:
-        print("  ERROR: FOOTBALL_DATA_API_KEY not set — cannot fetch fixtures")
+        print("  WARNING: FOOTBALL_DATA_API_KEY not set — using cached fixtures.json")
         return False
 
-    print("  Fetching from football-data.org…")
+    print("  Fetching from football-data.org (competition 2000, season 2026)…")
     try:
         resp = requests.get(
             f"{FD_BASE}/competitions/{FOOTBALL_DATA_WC_ID}/matches",
             headers={"X-Auth-Token": FOOTBALL_DATA_KEY},
+            params={"season": 2026},
             timeout=20,
         )
         resp.raise_for_status()
     except requests.RequestException as exc:
-        print(f"  ERROR: fixtures fetch failed — {exc}")
+        print(f"  WARNING: fixtures fetch failed ({exc}) — using cached fixtures.json")
         return False
 
     raw_matches = resp.json().get("matches", [])
     if not raw_matches:
-        print("  ERROR: API returned 0 matches")
+        print("  WARNING: API returned 0 matches — using cached fixtures.json")
         return False
+
+    # Preserve venue/city data already confirmed in the current fixtures.json
+    # so a successful API refresh never silently clears Wikipedia-sourced venues.
+    existing_venues: dict = {}
+    if fixtures_path.exists():
+        try:
+            with open(fixtures_path) as f:
+                _existing = json.load(f)
+            for _m in _existing.get("matches", []):
+                if _m.get("api_id"):
+                    existing_venues[_m["api_id"]] = {
+                        "venue": _m.get("venue"),
+                        "city":  _m.get("city"),
+                    }
+        except Exception:
+            pass  # malformed cache — start fresh
 
     # Sort so IDs are assigned in chronological order within each bucket
     raw_matches.sort(key=lambda m: (m["stage"], m.get("group") or "", m["utcDate"]))
@@ -170,6 +190,7 @@ def fetch_fixtures():
         if score_ft.get("home") is not None and score_ft.get("away") is not None:
             result = {"home": score_ft["home"], "away": score_ft["away"]}
 
+        cached_v = existing_venues.get(m["id"], {})
         matches.append({
             "id":          _make_id(stage, group, seq),
             "api_id":      m["id"],
@@ -180,8 +201,8 @@ def fetch_fixtures():
             "away":        away,
             "date":        date_str,
             "kickoff_utc": kickoff_str,
-            "venue":       None,
-            "city":        None,
+            "venue":       cached_v.get("venue"),   # preserve confirmed venue
+            "city":        cached_v.get("city"),
             "result":      result,
             "status":      status,
         })
@@ -598,8 +619,12 @@ def main():
     print("=== Step 1: Fixtures (football-data.org) ===")
     ok = fetch_fixtures()
     if not ok:
-        print("ABORT: Could not fetch fixtures.")
-        sys.exit(1)
+        fixtures_path = DATA / "fixtures.json"
+        if not fixtures_path.exists():
+            print("  ABORT: no cached fixtures.json and API fetch failed — cannot continue.")
+            sys.exit(1)
+        print(f"  ℹ  Using cached fixtures.json ({fixtures_path.stat().st_size // 1024} KB) "
+              f"— API fetch skipped")
 
     print("\n=== Step 2: Venues (Wikipedia) ===")
     fetch_venues()
