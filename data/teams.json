@@ -1,0 +1,198 @@
+{
+  "_note": "Elo ratings from eloratings.net (June 2026). Attack/defence are multipliers vs league average (1.0 = average). In xG formula: lambda = attack_team × defence_opponent × 1.35. Lower defence = stronger (opponents score less).",
+  "league_average_goals": 1.35,
+  "teams": {
+    "Mexico": {
+      "elo": 1848, "attack": 1.12, "defence": 0.96,
+      "fifa_rank": 17, "confederation": "CONCACAF", "host": true
+    },
+    "South Korea": {
+      "elo": 1787, "attack": 1.08, "defence": 0.98,
+      "fifa_rank": 22, "confederation": "AFC", "host": false
+    },
+    "South Africa": {
+      "elo": 1584, "attack": 0.88, "defence": 1.14,
+      "fifa_rank": 58, "confederation": "CAF", "host": false
+    },
+    "Czechia": {
+      "elo": 1752, "attack": 1.05, "defence": 1.02,
+      "fifa_rank": 36, "confederation": "UEFA", "host": false
+    },
+    "Canada": {
+      "elo": 1782, "attack": 1.05, "defence": 1.02,
+      "fifa_rank": 20, "confederation": "CONCACAF", "host": true
+    },
+    "Qatar": {
+      "elo": 1642, "attack": 0.92, "defence": 1.10,
+      "fifa_rank": 37, "confederation": "AFC", "host": false
+    },
+    "Switzerland": {
+      "elo": 1887, "attack": 1.22, "defence": 0.86,
+      "fifa_rank": 18, "confederation": "UEFA", "host": false
+    },
+    "Bosnia-Herzegovina": {
+      "elo": 1650, "attack": 0.95, "defence": 1.08,
+      "fifa_rank": 62, "confederation": "UEFA", "host": false
+    },
+    "Brazil": {
+      "elo": 1970, "attack": 1.52, "defence": 0.77,
+      "fifa_rank": 4, "confederation": "CONMEBOL", "host": false
+    },
+    "Morocco": {
+      "elo": 1810, "attack": 1.10, "defence": 0.90,
+      "fifa_rank": 13, "confederation": "CAF", "host": false
+    },
+    "Scotland": {
+      "elo": 1744, "attack": 1.02, "defence": 1.02,
+      "fifa_rank": 38, "confederation": "UEFA", "host": false
+    },
+    "Haiti": {
+      "elo": 1445, "attack": 0.72, "defence": 1.30,
+      "fifa_rank": 110, "confederation": "CONCACAF", "host": false
+    },
+    "USA": {
+      "elo": 1857, "attack": 1.15, "defence": 0.94,
+      "fifa_rank": 15, "confederation": "CONCACAF", "host": true
+    },
+    "Paraguay": {
+      "elo": 1668, "attack": 0.95, "defence": 1.08,
+      "fifa_rank": 46, "confederation": "CONMEBOL", "host": false
+    },
+    "Australia": {
+      "elo": 1735, "attack": 1.02, "defence": 1.04,
+      "fifa_rank": 24, "confederation": "AFC", "host": false
+    },
+    "Turkey": {
+      "elo": 1800, "attack": 1.12, "defence": 0.96,
+      "fifa_rank": 31, "confederation": "UEFA", "host": false
+    },
+    "Germany": {
+      "elo": 1942, "attack": 1.44, "defence": 0.81,
+      "fifa_rank": 9, "confederation": "UEFA", "host": false
+    },
+    "Ivory Coast": {
+      "elo": 1700, "attack": 1.05, "defence": 1.02,
+      "fifa_rank": 50, "confederation": "CAF", "host": false
+    },
+    "Ecuador": {
+      "elo": 1748, "attack": 1.02, "defence": 1.02,
+      "fifa_rank": 35, "confederation": "CONMEBOL", "host": false
+    },
+    "Curacao": {
+      "elo": 1450, "attack": 0.72, "defence": 1.28,
+      "fifa_rank": 95, "confederation": "CONCACAF", "host": false
+    },
+    "Netherlands": {
+      "elo": 1940, "attack": 1.42, "defence": 0.80,
+      "fifa_rank": 8, "confederation": "UEFA", "host": false
+    },
+    "Japan": {
+      "elo": 1878, "attack": 1.20, "defence": 0.88,
+      "fifa_rank": 12, "confederation": "AFC", "host": false
+    },
+    "Sweden": {
+      "elo": 1855, "attack": 1.22, "defence": 0.87,
+      "fifa_rank": 25, "confederation": "UEFA", "host": false
+    },
+    "Tunisia": {
+      "elo": 1668, "attack": 0.96, "defence": 1.07,
+      "fifa_rank": 26, "confederation": "CAF", "host": false
+    },
+    "Belgium": {
+      "elo": 1901, "attack": 1.38, "defence": 0.85,
+      "fifa_rank": 5, "confederation": "UEFA", "host": false
+    },
+    "Egypt": {
+      "elo": 1710, "attack": 1.05, "defence": 1.00,
+      "fifa_rank": 33, "confederation": "CAF", "host": false
+    },
+    "Iran": {
+      "elo": 1741, "attack": 1.00, "defence": 1.00,
+      "fifa_rank": 23, "confederation": "AFC", "host": false
+    },
+    "New Zealand": {
+      "elo": 1608, "attack": 0.88, "defence": 1.15,
+      "fifa_rank": 90, "confederation": "OFC", "host": false
+    },
+    "Spain": {
+      "elo": 1966, "attack": 1.50, "defence": 0.76,
+      "fifa_rank": 7, "confederation": "UEFA", "host": false
+    },
+    "Saudi Arabia": {
+      "elo": 1676, "attack": 0.98, "defence": 1.05,
+      "fifa_rank": 56, "confederation": "AFC", "host": false
+    },
+    "Uruguay": {
+      "elo": 1893, "attack": 1.25, "defence": 0.88,
+      "fifa_rank": 14, "confederation": "CONMEBOL", "host": false
+    },
+    "Cape Verde": {
+      "elo": 1598, "attack": 0.88, "defence": 1.12,
+      "fifa_rank": 79, "confederation": "CAF", "host": false
+    },
+    "France": {
+      "elo": 1984, "attack": 1.58, "defence": 0.75,
+      "fifa_rank": 2, "confederation": "UEFA", "host": false
+    },
+    "Senegal": {
+      "elo": 1782, "attack": 1.08, "defence": 0.99,
+      "fifa_rank": 19, "confederation": "CAF", "host": false
+    },
+    "Norway": {
+      "elo": 1790, "attack": 1.18, "defence": 0.92,
+      "fifa_rank": 28, "confederation": "UEFA", "host": false
+    },
+    "Iraq": {
+      "elo": 1580, "attack": 0.90, "defence": 1.12,
+      "fifa_rank": 68, "confederation": "AFC", "host": false
+    },
+    "Argentina": {
+      "elo": 2016, "attack": 1.62, "defence": 0.72,
+      "fifa_rank": 1, "confederation": "CONMEBOL", "host": false
+    },
+    "Algeria": {
+      "elo": 1710, "attack": 1.05, "defence": 1.00,
+      "fifa_rank": 47, "confederation": "CAF", "host": false
+    },
+    "Austria": {
+      "elo": 1812, "attack": 1.15, "defence": 0.93,
+      "fifa_rank": 27, "confederation": "UEFA", "host": false
+    },
+    "Jordan": {
+      "elo": 1570, "attack": 0.88, "defence": 1.14,
+      "fifa_rank": 74, "confederation": "AFC", "host": false
+    },
+    "Portugal": {
+      "elo": 1938, "attack": 1.48, "defence": 0.82,
+      "fifa_rank": 6, "confederation": "UEFA", "host": false
+    },
+    "Colombia": {
+      "elo": 1871, "attack": 1.22, "defence": 0.91,
+      "fifa_rank": 16, "confederation": "CONMEBOL", "host": false
+    },
+    "Uzbekistan": {
+      "elo": 1680, "attack": 0.98, "defence": 1.04,
+      "fifa_rank": 65, "confederation": "AFC", "host": false
+    },
+    "DR Congo": {
+      "elo": 1598, "attack": 0.92, "defence": 1.12,
+      "fifa_rank": 62, "confederation": "CAF", "host": false
+    },
+    "England": {
+      "elo": 1954, "attack": 1.45, "defence": 0.78,
+      "fifa_rank": 3, "confederation": "UEFA", "host": false
+    },
+    "Croatia": {
+      "elo": 1897, "attack": 1.28, "defence": 0.87,
+      "fifa_rank": 11, "confederation": "UEFA", "host": false
+    },
+    "Ghana": {
+      "elo": 1636, "attack": 0.95, "defence": 1.10,
+      "fifa_rank": 60, "confederation": "CAF", "host": false
+    },
+    "Panama": {
+      "elo": 1612, "attack": 0.88, "defence": 1.14,
+      "fifa_rank": 63, "confederation": "CONCACAF", "host": false
+    }
+  }
+}

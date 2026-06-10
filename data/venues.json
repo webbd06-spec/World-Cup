@@ -1,0 +1,194 @@
+{
+  "venues": {
+    "MetLife Stadium": {
+      "city": "East Rutherford, NJ",
+      "country": "USA",
+      "capacity": 82500,
+      "altitude_m": 3,
+      "climate": "temperate",
+      "surface": "grass",
+      "altitude_factor": 1.0,
+      "heat_factor": 1.0
+    },
+    "AT&T Stadium": {
+      "city": "Arlington, TX",
+      "country": "USA",
+      "capacity": 80000,
+      "altitude_m": 186,
+      "climate": "hot",
+      "surface": "artificial",
+      "altitude_factor": 1.0,
+      "heat_factor": 0.97
+    },
+    "SoFi Stadium": {
+      "city": "Inglewood, CA",
+      "country": "USA",
+      "capacity": 70240,
+      "altitude_m": 30,
+      "climate": "warm",
+      "surface": "artificial",
+      "altitude_factor": 1.0,
+      "heat_factor": 0.98
+    },
+    "Levi's Stadium": {
+      "city": "Santa Clara, CA",
+      "country": "USA",
+      "capacity": 68500,
+      "altitude_m": 15,
+      "climate": "mild",
+      "surface": "grass",
+      "altitude_factor": 1.0,
+      "heat_factor": 1.0
+    },
+    "Rose Bowl": {
+      "city": "Pasadena, CA",
+      "country": "USA",
+      "capacity": 90888,
+      "altitude_m": 237,
+      "climate": "warm",
+      "surface": "grass",
+      "altitude_factor": 1.0,
+      "heat_factor": 0.98
+    },
+    "Arrowhead Stadium": {
+      "city": "Kansas City, MO",
+      "country": "USA",
+      "capacity": 76416,
+      "altitude_m": 323,
+      "climate": "continental",
+      "surface": "grass",
+      "altitude_factor": 1.0,
+      "heat_factor": 0.98
+    },
+    "Empower Field": {
+      "city": "Denver, CO",
+      "country": "USA",
+      "capacity": 76125,
+      "altitude_m": 1609,
+      "climate": "continental",
+      "surface": "grass",
+      "altitude_factor": 0.94,
+      "heat_factor": 1.0
+    },
+    "Gillette Stadium": {
+      "city": "Foxborough, MA",
+      "country": "USA",
+      "capacity": 65878,
+      "altitude_m": 7,
+      "climate": "temperate",
+      "surface": "artificial",
+      "altitude_factor": 1.0,
+      "heat_factor": 1.0
+    },
+    "Lincoln Financial Field": {
+      "city": "Philadelphia, PA",
+      "country": "USA",
+      "capacity": 69176,
+      "altitude_m": 12,
+      "climate": "temperate",
+      "surface": "grass",
+      "altitude_factor": 1.0,
+      "heat_factor": 1.0
+    },
+    "NRG Stadium": {
+      "city": "Houston, TX",
+      "country": "USA",
+      "capacity": 72220,
+      "altitude_m": 12,
+      "climate": "hot_humid",
+      "surface": "grass",
+      "altitude_factor": 1.0,
+      "heat_factor": 0.95
+    },
+    "Hard Rock Stadium": {
+      "city": "Miami Gardens, FL",
+      "country": "USA",
+      "capacity": 65326,
+      "altitude_m": 1,
+      "climate": "tropical",
+      "surface": "grass",
+      "altitude_factor": 1.0,
+      "heat_factor": 0.95
+    },
+    "Estadio Azteca": {
+      "city": "Mexico City",
+      "country": "Mexico",
+      "capacity": 87523,
+      "altitude_m": 2240,
+      "climate": "subtropical_highland",
+      "surface": "grass",
+      "altitude_factor": 0.88,
+      "heat_factor": 0.99
+    },
+    "Estadio Akron": {
+      "city": "Guadalajara",
+      "country": "Mexico",
+      "capacity": 49850,
+      "altitude_m": 1650,
+      "climate": "subtropical_highland",
+      "surface": "grass",
+      "altitude_factor": 0.93,
+      "heat_factor": 0.99
+    },
+    "Estadio BBVA": {
+      "city": "Monterrey",
+      "country": "Mexico",
+      "capacity": 53500,
+      "altitude_m": 538,
+      "climate": "hot",
+      "surface": "grass",
+      "altitude_factor": 1.0,
+      "heat_factor": 0.96
+    },
+    "BMO Field": {
+      "city": "Toronto",
+      "country": "Canada",
+      "capacity": 30000,
+      "altitude_m": 76,
+      "climate": "continental",
+      "surface": "artificial",
+      "altitude_factor": 1.0,
+      "heat_factor": 1.0
+    },
+    "BC Place": {
+      "city": "Vancouver",
+      "country": "Canada",
+      "capacity": 54500,
+      "altitude_m": 5,
+      "climate": "oceanic",
+      "surface": "artificial",
+      "altitude_factor": 1.0,
+      "heat_factor": 1.0
+    },
+    "Mercedes-Benz Stadium": {
+      "city": "Atlanta, GA",
+      "country": "USA",
+      "capacity": 71000,
+      "altitude_m": 294,
+      "climate": "humid_subtropical",
+      "surface": "artificial",
+      "altitude_factor": 1.0,
+      "heat_factor": 0.96
+    },
+    "Lumen Field": {
+      "city": "Seattle, WA",
+      "country": "USA",
+      "capacity": 69000,
+      "altitude_m": 5,
+      "climate": "oceanic",
+      "surface": "artificial",
+      "altitude_factor": 1.0,
+      "heat_factor": 1.0
+    },
+    "Toronto Stadium": {
+      "city": "Toronto, ON",
+      "country": "Canada",
+      "capacity": 45000,
+      "altitude_m": 76,
+      "climate": "continental",
+      "surface": "artificial",
+      "altitude_factor": 1.0,
+      "heat_factor": 1.0
+    }
+  }
+}

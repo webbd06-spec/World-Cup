@@ -1,0 +1,23 @@
+# Secrets
+.env
+.env.local
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+env/
+
+# Live odds are regenerated on every run — don't commit stale market data
+outputs/live_odds.json
+outputs/live_odds_uk.json
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
