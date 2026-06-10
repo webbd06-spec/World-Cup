@@ -324,7 +324,9 @@ ODDS_API_BASE  = "https://api.the-odds-api.com/v4"
 SPORT          = "soccer_fifa_world_cup"
 REGIONS        = "us"
 MARKETS        = "h2h"
-UK_MARKETS     = "h2h,totals,asian_handicap"
+UK_MARKETS     = "h2h,totals"
+# Note: asian_handicap is not offered for soccer_fifa_world_cup via the-odds-api.com.
+# AH probabilities are model-only (computed in predict.py from the Poisson matrix).
 # Display names for known UK bookmakers (key → label)
 UK_BM_NAMES = {
     "paddypower":   "Paddy Power",
@@ -432,8 +434,11 @@ def _find_fixture_id(api_home, api_away, fix_lookup):
 
 def fetch_uk_bookmaker_odds():
     """
-    Fetch per-bookmaker odds (h2h, over/under 2.5, BTTS) for UK bookmakers
-    and save to outputs/live_odds_uk.json for the dashboard.
+    Fetch per-bookmaker h2h and totals odds for UK bookmakers and save to
+    outputs/live_odds_uk.json for the dashboard.
+
+    Note: asian_handicap is not offered for soccer_fifa_world_cup via
+    the-odds-api.com. AH probabilities in the dashboard are model-only.
     """
     if not ODDS_API_KEY:
         print("  WARNING: ODDS_API_KEY not set — skipping UK bookmaker odds")
@@ -458,7 +463,6 @@ def fetch_uk_bookmaker_odds():
         print(f"  WARNING: could not fetch UK odds — {exc}")
         return
 
-    # Build (home_lower, away_lower) → fixture_id lookup
     fixtures_path = DATA / "fixtures.json"
     with open(fixtures_path) as f:
         fixtures = json.load(f)
@@ -482,54 +486,25 @@ def fetch_uk_bookmaker_odds():
 
         for bm in event.get("bookmakers", []):
             bm_key = bm.get("key", "")
-            # Only include bookmakers we have display names for
             if bm_key not in UK_BM_NAMES:
                 continue
             for mkt in bm.get("markets", []):
                 mkt_key  = mkt.get("key", "")
                 outcomes = mkt.get("outcomes", [])
-
                 if mkt_key == "h2h":
                     oc = {o["name"]: o["price"] for o in outcomes}
-                    hw, dr, aw = oc.get(api_home), oc.get("Draw"), oc.get(api_away)
+                    hw = oc.get(api_home)
+                    dr = oc.get("Draw")
+                    aw = oc.get(api_away)
                     if hw and dr and aw:
                         match_odds["h2h"][bm_key] = {
                             "home_win": hw, "draw": dr, "away_win": aw,
                         }
-
                 elif mkt_key == "totals":
                     for o in outcomes:
                         if abs(o.get("point", 0) - 2.5) < 0.01:
                             k = "over_2_5" if o["name"] == "Over" else "under_2_5"
                             match_odds["totals"].setdefault(bm_key, {})[k] = o["price"]
-
-                elif mkt_key == "asian_handicap":
-                    # Group outcomes by line (keyed by home team's handicap point)
-                    home_oc = {o["name"]: o for o in outcomes if o["name"] == api_home}
-                    away_oc = {o["name"]: o for o in outcomes if o["name"] == api_away}
-                    # Pair outcomes that share the same absolute point
-                    for ho in home_oc.values():
-                        h_point = ho.get("point")
-                        if h_point is None:
-                            continue
-                        # Find the matching away outcome (point = -h_point)
-                        ao = next(
-                            (o for o in outcomes
-                             if o["name"] == api_away
-                             and abs(o.get("point", 999) + h_point) < 0.01),
-                            None,
-                        )
-                        if ao is None:
-                            continue
-                        # Canonical string key matching predict.py's _ah_key()
-                        if h_point == int(h_point):
-                            line_key = str(int(h_point))
-                        else:
-                            line_key = f"{h_point:.2f}".rstrip('0')
-                        match_odds["ah"].setdefault(line_key, {})[bm_key] = {
-                            "home": ho["price"],
-                            "away": ao["price"],
-                        }
 
         if any(match_odds[k] for k in match_odds):
             out["matches"][fid] = match_odds
