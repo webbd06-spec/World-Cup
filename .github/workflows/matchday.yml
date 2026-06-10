@@ -79,9 +79,11 @@ jobs:
       - name: "Step 4 — Apply news adjustments to predictions.json"
         run: python src/news.py --apply
 
-      # Step 5 — copy into dashboard/ so GitHub Pages can serve the file
-      - name: "Step 5 — Copy predictions.json → dashboard/"
-        run: cp outputs/predictions.json dashboard/predictions.json
+      # Step 5 — copy into docs/ so GitHub Pages can serve the files
+      - name: "Step 5 — Copy predictions.json and odds → docs/"
+        run: |
+          cp outputs/predictions.json docs/predictions.json
+          cp outputs/live_odds_uk.json docs/live_odds_uk.json 2>/dev/null || true
 
       # Step 6 — optional Telegram ping (failures don't abort the workflow)
       - name: "Step 6 — Telegram notification"
@@ -97,7 +99,8 @@ jobs:
           git config user.name  "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add outputs/predictions.json \
-                  dashboard/predictions.json \
+                  docs/predictions.json \
+                  docs/live_odds_uk.json \
                   data/fixtures.json \
                   data/teams.json \
                   data/news/
@@ -175,12 +178,12 @@ jobs:
           python src/lineup.py --update
           ${{ steps.kickoff-check.outputs.match_ids }}
 
-      # Step 3 — copy updated file to dashboard/
-      - name: "Step 3 — Copy updated predictions.json → dashboard/"
+      # Step 3 — copy updated file to docs/
+      - name: "Step 3 — Copy updated predictions.json → docs/"
         if: >-
           steps.date-gate.outputs.in_window == 'true' &&
           steps.kickoff-check.outputs.has_match == 'true'
-        run: cp outputs/predictions.json dashboard/predictions.json
+        run: cp outputs/predictions.json docs/predictions.json
 
       # Step 4 — commit only if there was actually something to update
       - name: "Step 4 — Commit and push"
@@ -191,7 +194,7 @@ jobs:
           git config user.name  "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add outputs/predictions.json \
-                  dashboard/predictions.json \
+                  docs/predictions.json \
                   data/news/
           git diff --staged --quiet && { echo "Nothing to commit."; exit 0; }
           MATCH_IDS="${{ steps.kickoff-check.outputs.match_ids }}"

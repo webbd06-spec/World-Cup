@@ -511,7 +511,7 @@ const S = { preds: null, oddsUK: null, group: 'all', date: null, view: 'fixtures
 
 (async () => {
   try {
-    const r = await fetch('../outputs/predictions.json');
+    const r = await fetch('./predictions.json');
     if (!r.ok) throw new Error('HTTP ' + r.status);
     S.preds = await r.json();
   } catch (e) {
@@ -519,14 +519,14 @@ const S = { preds: null, oddsUK: null, group: 'all', date: null, view: 'fixtures
       <h2>Could not load predictions.json</h2>
       <p>Serve the project via a local HTTP server:<br>
       <code>python3 -m http.server 8080</code><br>
-      then open <code>http://localhost:8080/dashboard/</code></p>
+      then open <code>http://localhost:8080/docs/</code></p>
       <p style="margin-top:10px;font-size:.75rem">${e.message}</p>
     </div>`);
     return;
   }
 
   try {
-    const r = await fetch('../outputs/live_odds_uk.json');
+    const r = await fetch('./live_odds_uk.json');
     if (r.ok) S.oddsUK = await r.json();
   } catch (_) { /* odds unavailable */ }
 
