@@ -354,6 +354,26 @@ main {
   border: 1px solid var(--border); border-radius: 5px;
 }
 
+/* ── Asian Handicap panel ────────────────────────────────── */
+.ah-list { display: grid; gap: 3px; margin-bottom: 8px; }
+.ah-sep {
+  font-size: .62rem; font-weight: 700; text-transform: uppercase;
+  letter-spacing: .06em; color: var(--muted);
+  padding: 5px 2px 1px; margin-top: 2px;
+}
+.ah-row {
+  display: flex; align-items: center; gap: 6px;
+  background: var(--s1); border-radius: 5px;
+  padding: 5px 8px; font-size: .73rem;
+}
+.ah-row.value-row { border-left: 3px solid var(--green); }
+.ah-lbl  { width: 80px; flex-shrink: 0; font-size: .7rem; color: var(--muted); }
+.ah-prob { font-weight: 700; width: 36px; flex-shrink: 0; }
+.ah-fair { color: var(--muted); font-size: .68rem; width: 58px; flex-shrink: 0; }
+.ah-mkt  { color: var(--muted); font-size: .68rem; flex: 1; }
+.ah-edge { margin-left: auto; font-weight: 700; font-size: .68rem;
+  padding: 2px 6px; border-radius: 4px; white-space: nowrap; flex-shrink: 0; }
+
 /* ── Standings view ──────────────────────────────────────── */
 .stands-intro {
   font-size: .78rem; color: var(--muted); margin-bottom: 14px;
@@ -829,10 +849,12 @@ function card(p) {
     <button class="tab-btn" onclick="tab(this,'${id}-sl')">Scorelines</button>
     <button class="tab-btn" onclick="tab(this,'${id}-odds')">Bookmaker odds</button>
     <button class="tab-btn" onclick="tab(this,'${id}-val')">Value bets</button>
+    <button class="tab-btn" onclick="tab(this,'${id}-ah')">Asian H.</button>
   </div>
   <div id="${id}-sl"   class="tab-panel">${panelScorelines(p)}</div>
   <div id="${id}-odds" class="tab-panel">${panelOdds(p, mOdds)}</div>
   <div id="${id}-val"  class="tab-panel">${panelValue(p, mOdds)}</div>
+  <div id="${id}-ah"   class="tab-panel">${panelAH(p, mOdds)}</div>
 </div>`;
 }
 
@@ -988,11 +1010,153 @@ function panelValue(p, mOdds) {
     </div>`;
   }).filter(Boolean).join('');
 
-  return `<div class="vb-list">${rows || '<p class="no-odds">No h2h data.</p>'}</div>
+  // Best AH value bet (model-only edge vs market, threshold 5%)
+  const ahMkt = mOdds?.ah || {};
+  let bestAH = null;
+  for (const ln of (p.ah_lines || [])) {
+    const lineKey = _ahKey(ln.h);
+    for (const side of ['home', 'away']) {
+      const prob = side === 'home' ? ln.p_home : ln.p_away;
+      const mkt  = _bestAhOdds(ahMkt, lineKey, side);
+      if (!mkt || !prob) continue;
+      const edge = prob - (1 / mkt.price);
+      if (edge >= 0.05 && (!bestAH || edge > bestAH.edge)) {
+        bestAH = { edge, ln, side, mkt, lineKey };
+      }
+    }
+  }
+
+  let ahRow = '';
+  if (bestAH) {
+    const { edge, ln, side, mkt } = bestAH;
+    const label = side === 'home' ? _ahLineLabel(ln.h) : _ahLineLabelOpp(ln.h);
+    const prob  = side === 'home' ? ln.p_home : ln.p_away;
+    const ep    = (edge * 100).toFixed(1);
+    const cls   = edge >= 0.08 ? 'e-strong' : 'e-slight';
+    const badge = `+${ep}% ${edge >= 0.08 ? 'Strong' : 'Slight'} value (AH)`;
+    ahRow = `<div class="vb-row" style="border-left:3px solid var(--green)">
+      <span class="vb-lbl">${label}</span>
+      <span class="vb-mprob">${pct(prob)}</span>
+      <span class="vb-bkod">${mkt.bm} ${mkt.price.toFixed(2)}</span>
+      <span class="vb-edge ${cls}">${badge}</span>
+    </div>`;
+  }
+
+  return `<div class="vb-list">${rows + ahRow || '<p class="no-odds">No h2h data.</p>'}</div>
     <div class="vb-disclaimer">
       ⚠️ Model edge ≠ guaranteed profit. Poisson models carry significant uncertainty.
       Not financial advice. Gamble responsibly.
     </div>`;
+}
+
+// ── Panel: Asian Handicaps ────────────────────────────────────────────────────
+
+function _ahLineLabel(h) {
+  if (h === 0) return 'AH 0';
+  const abs = Math.abs(h).toFixed(2).replace(/\.?0+$/, '');
+  return h < 0 ? `Home −${abs}` : `Away −${abs}`;
+}
+function _ahLineLabelOpp(h) {
+  if (h === 0) return 'AH 0 (away)';
+  const abs = Math.abs(h).toFixed(2).replace(/\.?0+$/, '');
+  return h < 0 ? `Away +${abs}` : `Home +${abs}`;
+}
+function _ahKey(h) {
+  if (h === Math.trunc(h)) return String(Math.trunc(h));
+  return h.toFixed(2).replace(/\.?0+$/, '');
+}
+
+function _bestAhOdds(ahMkt, lineKey, side) {
+  // side: 'home' or 'away'
+  const bms = ahMkt?.[lineKey] || {};
+  let best = 0, bestBm = '';
+  for (const [bm, odds] of Object.entries(bms)) {
+    if (odds[side] > best) { best = odds[side]; bestBm = bm; }
+  }
+  return best > 0 ? { price: best, bm: BM_NAME[bestBm] || bestBm } : null;
+}
+
+function panelAH(p, mOdds) {
+  const lines = p.ah_lines;
+  if (!lines || !lines.length) return '<p class="no-odds">Asian handicap data not available.</p>';
+
+  const ahMkt = mOdds?.ah || {};
+  const hasMkt = Object.keys(ahMkt).length > 0;
+
+  let html = '<div class="ah-list">';
+
+  // Group by absolute handicap (each "line pair")
+  const done = new Set();
+  for (const ln of lines) {
+    const h = ln.h;
+    if (done.has(h)) continue;
+    done.add(h);
+
+    // Find the mirror line (e.g., for h=-0.5 find h=+0.5)
+    const opp = lines.find(x => Math.abs(x.h + h) < 0.001 && x.h !== h);
+    const lineKey = _ahKey(h);
+
+    // Separator label
+    const absStr = Math.abs(h).toFixed(2).replace(/\.?0+$/, '');
+    const sepLabel = h === 0 ? 'AH Level (0)' : `AH ±${absStr}`;
+    html += `<div class="ah-sep">${sepLabel}</div>`;
+
+    // Row builder
+    function ahRow(ln, side, label) {
+      const prob  = side === 'home' ? ln.p_home : ln.p_away;
+      const fair  = side === 'home' ? ln.fair_home : ln.fair_away;
+      if (!prob || !fair) return '';
+
+      const mkt = hasMkt ? _bestAhOdds(ahMkt, lineKey, side) : null;
+      let edgeHtml = '';
+      let rowCls = 'ah-row';
+
+      if (mkt) {
+        const edge = prob - (1 / mkt.price);
+        const ep   = (edge * 100).toFixed(1);
+        let cls, txt;
+        if      (edge >= 0.08) { cls = 'e-strong'; txt = `+${ep}% ↑`; }
+        else if (edge >= 0.05) { cls = 'e-slight';  txt = `+${ep}% ↑`; }
+        else if (edge >= 0)    { cls = 'e-fair';    txt = `+${ep}%`;   }
+        else                   { cls = 'e-avoid';   txt = `${ep}%`;    }
+        if (edge >= 0.05) rowCls += ' value-row';
+        edgeHtml = `<span class="ah-edge ${cls}">${txt}</span>`;
+      }
+
+      const mktStr = mkt
+        ? `<span class="ah-mkt">${mkt.bm} ${mkt.price.toFixed(2)}</span>`
+        : `<span class="ah-mkt" style="color:var(--muted)">—</span>`;
+      const fairStr = fair ? `fair ${fair.toFixed(2)}` : '';
+
+      return `<div class="${rowCls}">
+        <span class="ah-lbl">${label}</span>
+        <span class="ah-prob">${(prob*100).toFixed(0)}%</span>
+        <span class="ah-fair">${fairStr}</span>
+        ${mktStr}
+        ${edgeHtml}
+      </div>`;
+    }
+
+    // Home side of this line
+    html += ahRow(ln, 'home', _ahLineLabel(h));
+
+    // Away side: use the mirror line if h≠0, else same line's p_away
+    if (opp) {
+      html += ahRow(opp, 'home', _ahLineLabelOpp(h));
+    } else if (h === 0) {
+      html += ahRow(ln, 'away', _ahLineLabelOpp(h));
+    }
+  }
+
+  html += '</div>';
+
+  const disclaimer = hasMkt
+    ? `<div class="vb-disclaimer">Edge = model probability − implied probability from best available odds.
+       AH probabilities are Poisson-model only (not market-blended).</div>`
+    : `<div class="vb-disclaimer">No live AH odds loaded — showing model fair odds only.
+       Set <code>ODDS_API_KEY</code> and run <code>update.py</code> to see edges.</div>`;
+
+  return html + disclaimer;
 }
 
 // ── Standings view ────────────────────────────────────────────────────────────

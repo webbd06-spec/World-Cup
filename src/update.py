@@ -324,7 +324,7 @@ ODDS_API_BASE  = "https://api.the-odds-api.com/v4"
 SPORT          = "soccer_fifa_world_cup"
 REGIONS        = "us"
 MARKETS        = "h2h"
-UK_MARKETS     = "h2h,totals"   # btts not available for soccer_fifa_world_cup
+UK_MARKETS     = "h2h,totals,asian_handicap"
 # Display names for known UK bookmakers (key → label)
 UK_BM_NAMES = {
     "paddypower":   "Paddy Power",
@@ -478,7 +478,7 @@ def fetch_uk_bookmaker_odds():
         if not fid:
             continue
 
-        match_odds = {"h2h": {}, "totals": {}}
+        match_odds = {"h2h": {}, "totals": {}, "ah": {}}
 
         for bm in event.get("bookmakers", []):
             bm_key = bm.get("key", "")
@@ -502,6 +502,34 @@ def fetch_uk_bookmaker_odds():
                         if abs(o.get("point", 0) - 2.5) < 0.01:
                             k = "over_2_5" if o["name"] == "Over" else "under_2_5"
                             match_odds["totals"].setdefault(bm_key, {})[k] = o["price"]
+
+                elif mkt_key == "asian_handicap":
+                    # Group outcomes by line (keyed by home team's handicap point)
+                    home_oc = {o["name"]: o for o in outcomes if o["name"] == api_home}
+                    away_oc = {o["name"]: o for o in outcomes if o["name"] == api_away}
+                    # Pair outcomes that share the same absolute point
+                    for ho in home_oc.values():
+                        h_point = ho.get("point")
+                        if h_point is None:
+                            continue
+                        # Find the matching away outcome (point = -h_point)
+                        ao = next(
+                            (o for o in outcomes
+                             if o["name"] == api_away
+                             and abs(o.get("point", 999) + h_point) < 0.01),
+                            None,
+                        )
+                        if ao is None:
+                            continue
+                        # Canonical string key matching predict.py's _ah_key()
+                        if h_point == int(h_point):
+                            line_key = str(int(h_point))
+                        else:
+                            line_key = f"{h_point:.2f}".rstrip('0')
+                        match_odds["ah"].setdefault(line_key, {})[bm_key] = {
+                            "home": ho["price"],
+                            "away": ao["price"],
+                        }
 
         if any(match_odds[k] for k in match_odds):
             out["matches"][fid] = match_odds

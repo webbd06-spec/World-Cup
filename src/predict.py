@@ -159,6 +159,85 @@ def top_scorelines(matrix, n=6):
 
 
 # ---------------------------------------------------------------------------
+# Asian Handicap calculations
+# ---------------------------------------------------------------------------
+
+AH_LINES = [0, -0.25, -0.5, -0.75, -1.5, -2.5, -3.5,
+            +0.25, +0.5, +0.75, +1.5, +2.5, +3.5]
+
+
+def _margin_probs(matrix):
+    """Collapse score matrix into P(home_goals - away_goals = m)."""
+    N = len(matrix)
+    p = {}
+    for i in range(N):
+        for j in range(N):
+            m = i - j
+            p[m] = p.get(m, 0.0) + matrix[i][j]
+    return p
+
+
+def _ah_key(h):
+    """Canonical string key for an AH line, e.g. -1.5 → '-1.5', 0 → '0'."""
+    if h == int(h):
+        return str(int(h))
+    return f"{h:.2f}".rstrip('0')
+
+
+def _fair_odds_home(p_margin, h):
+    """
+    Fair decimal odds for backing home at AH line h (added to home goals).
+    h < 0 → home is favourite.  h > 0 → home is underdog.
+    Quarter handicaps (-0.25, -0.75 …) are split 50/50 across adjacent legs.
+
+    Expected-return equation per unit staked at odds X:
+      X * coeff_X  +  const  =  1
+    where coeff_X accumulates win weight and const accumulates push weight.
+    """
+    is_quarter = abs(round(h * 4) % 2) == 1
+    legs = [(0.5, h - 0.25), (0.5, h + 0.25)] if is_quarter else [(1.0, h)]
+
+    coeff_X = 0.0
+    const   = 0.0
+    for weight, hh in legs:
+        h_neg = -hh  # margin threshold: home AH-wins if margin > h_neg
+        for m, pm in p_margin.items():
+            if m > h_neg + 1e-9:   # home wins this leg
+                coeff_X += pm * weight
+            elif abs(m - h_neg) < 1e-9:  # push (integer legs only)
+                const   += pm * weight
+
+    if coeff_X < 1e-9:
+        return None
+    return (1.0 - const) / coeff_X
+
+
+def compute_ah_lines(matrix):
+    """
+    Return a list of AH line dicts for the requested handicaps.
+    Each dict: h, key, p_home, p_away, fair_home, fair_away.
+    """
+    p_margin = _margin_probs(matrix)
+    results = []
+    for h in AH_LINES:
+        x_h = _fair_odds_home(p_margin, h)
+        if x_h is None or x_h <= 1.001:
+            continue
+        p_h = 1.0 / x_h
+        p_a = 1.0 - p_h
+        x_a = 1.0 / p_a if p_a > 1e-9 else None
+        results.append({
+            "h":          h,
+            "key":        _ah_key(h),
+            "p_home":     round(p_h, 4),
+            "p_away":     round(p_a, 4),
+            "fair_home":  round(x_h, 3),
+            "fair_away":  round(x_a, 3) if x_a else None,
+        })
+    return results
+
+
+# ---------------------------------------------------------------------------
 # Market odds blending
 # ---------------------------------------------------------------------------
 
@@ -304,6 +383,7 @@ def predict_match(match, teams_data, venues_data, odds_data):
 
         "top_scorelines": top_scorelines(matrix),
         "score_matrix": [[round(p, 5) for p in row] for row in matrix],
+        "ah_lines": compute_ah_lines(matrix),
 
         "source": "blend" if market_wdl else "model_only",
         "blend_weights": {"market": MARKET_WEIGHT, "model": MODEL_WEIGHT} if market_wdl else None,
