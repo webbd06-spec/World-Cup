@@ -185,8 +185,22 @@ jobs:
           steps.kickoff-check.outputs.has_match == 'true'
         run: cp outputs/predictions.json docs/predictions.json
 
-      # Step 4 — commit only if there was actually something to update
-      - name: "Step 4 — Commit and push"
+      # Step 4 — Telegram notification for each confirmed lineup
+      - name: "Step 4 — Telegram lineup notification"
+        if: >-
+          steps.date-gate.outputs.in_window == 'true' &&
+          steps.kickoff-check.outputs.has_match == 'true'
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+        run: |
+          for id in ${{ steps.kickoff-check.outputs.match_ids }}; do
+            python src/notify.py --lineup "$id"
+          done
+        continue-on-error: true
+
+      # Step 5 — commit only if there was actually something to update
+      - name: "Step 5 — Commit and push"
         if: >-
           steps.date-gate.outputs.in_window == 'true' &&
           steps.kickoff-check.outputs.has_match == 'true'
