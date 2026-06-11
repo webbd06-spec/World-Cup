@@ -374,6 +374,66 @@ main {
 .ah-edge { margin-left: auto; font-weight: 700; font-size: .68rem;
   padding: 2px 6px; border-radius: 4px; white-space: nowrap; flex-shrink: 0; }
 
+/* ── Model methodology view ─────────────────────────────── */
+.model-view { display: grid; gap: 12px; }
+.model-section {
+  background: var(--s1); border: 1px solid var(--border);
+  border-radius: var(--r); overflow: hidden;
+}
+.model-section-hdr {
+  padding: 10px 14px 8px;
+  border-bottom: 1px solid var(--border);
+  display: flex; align-items: baseline; gap: 10px;
+}
+.model-section-hdr h3 {
+  font-size: .88rem; font-weight: 700; margin: 0;
+}
+.model-section-hdr .model-tag {
+  font-size: .67rem; font-weight: 700; letter-spacing: .05em;
+  text-transform: uppercase; padding: 2px 7px; border-radius: 4px;
+  background: var(--s3); color: var(--muted);
+}
+.model-section-body { padding: 10px 14px 12px; font-size: .8rem; line-height: 1.65; }
+.model-section-body p { color: var(--muted); margin-bottom: 8px; }
+.model-formula {
+  font-family: ui-monospace, 'SF Mono', Consolas, monospace;
+  background: var(--s2); border: 1px solid var(--border);
+  border-radius: 6px; padding: 8px 12px;
+  font-size: .8rem; margin: 8px 0;
+  line-height: 1.7;
+}
+.model-formula b { color: var(--accent); }
+.model-tbl {
+  width: 100%; border-collapse: collapse;
+  font-size: .76rem; margin-top: 8px;
+}
+.model-tbl th {
+  text-align: left; padding: 4px 8px;
+  color: var(--muted); font-size: .66rem; font-weight: 700;
+  border-bottom: 1px solid var(--border); white-space: nowrap;
+}
+.model-tbl td {
+  padding: 5px 8px; border-bottom: 1px solid rgba(0,0,0,.05);
+  vertical-align: middle;
+}
+.model-tbl tbody tr:last-child td { border-bottom: none; }
+.model-tbl td:first-child { font-weight: 600; }
+.model-pill {
+  display: inline-block; font-size: .68rem; font-weight: 700;
+  padding: 1px 7px; border-radius: 10px;
+  background: var(--s2); color: var(--text);
+}
+.model-pill.boost  { background: rgba(34,197,94,.15);  color: var(--green); }
+.model-pill.reduce { background: rgba(239,68,68,.12);  color: var(--red);   }
+.model-pill.neutral{ background: rgba(82,82,110,.12);  color: var(--muted); }
+.model-two-col {
+  display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-top: 8px;
+}
+@media (max-width: 500px) { .model-two-col { grid-template-columns: 1fr; } }
+.model-mini-tbl { width: 100%; border-collapse: collapse; font-size: .75rem; }
+.model-mini-tbl td { padding: 4px 6px; border-bottom: 1px solid rgba(0,0,0,.05); }
+.model-mini-tbl tbody tr:last-child td { border-bottom: none; }
+
 /* ── Standings view ──────────────────────────────────────── */
 .stands-intro {
   font-size: .78rem; color: var(--muted); margin-bottom: 14px;
@@ -466,6 +526,7 @@ main {
     <button class="vnav-btn active" onclick="setView('fixtures')">Fixtures</button>
     <button class="vnav-btn" onclick="setView('standings')">Standings</button>
     <button class="vnav-btn" onclick="setView('accuracy')">Accuracy</button>
+    <button class="vnav-btn" onclick="setView('model')">Model</button>
   </div>
   <div id="ffilters">
     <div class="frow" id="gf"></div>
@@ -572,6 +633,7 @@ function setView(v) {
   if      (v === 'fixtures')  renderMatches();
   else if (v === 'standings') renderStandings();
   else if (v === 'accuracy')  renderAccuracy();
+  else if (v === 'model')     renderModel();
 }
 
 // ── Filters ───────────────────────────────────────────────────────────────────
@@ -1391,6 +1453,274 @@ function renderAccuracy() {
       P&amp;L tracks £10 stakes on value bets where model edge ≥ 5%. Odds from live_odds_uk.json at time of last update.
       Not financial advice.
     </p>`);
+}
+
+// ── Model methodology view ─────────────────────────────────────────────────
+
+function pill(txt, type) {
+  return `<span class="model-pill ${type}">${txt}</span>`;
+}
+
+function renderModel() {
+  const sections = [
+
+    // ── 1. xG base ───────────────────────────────────────────────────────────
+    `<div class="model-section">
+      <div class="model-section-hdr">
+        <h3>Expected Goals (xG) — base formula</h3>
+        <span class="model-tag">Core</span>
+      </div>
+      <div class="model-section-body">
+        <p>Every prediction starts with an expected goals estimate for each team, derived from team-specific attack and defence multipliers applied against a league-average baseline.</p>
+        <div class="model-formula">
+          <b>xG</b> = attack × opp_defence × <b>1.35</b> (league average goals/match)
+        </div>
+        <table class="model-tbl">
+          <thead><tr><th>Rating</th><th>Value range</th><th>Meaning</th><th>Examples</th></tr></thead>
+          <tbody>
+            <tr>
+              <td>Attack</td>
+              <td>0.72 – 1.62</td>
+              <td>Multiplier on goals scored vs average opponent. &gt;1.0 = above-average scorer.</td>
+              <td>Argentina 1.62 · France 1.58 · England 1.45 · Haiti 0.72</td>
+            </tr>
+            <tr>
+              <td>Defence</td>
+              <td>0.72 – 1.30</td>
+              <td>Applied to the <em>opponent's</em> attack. &lt;1.0 = strong defence (opponents score less). Never inverted.</td>
+              <td>Argentina 0.72 · France 0.75 · England 0.78 · Haiti 1.30</td>
+            </tr>
+          </tbody>
+        </table>
+        <p style="margin-top:10px">The Poisson distribution then converts each team's xG into a full 9×9 scoreline probability matrix (0–8 goals each side).</p>
+      </div>
+    </div>`,
+
+    // ── 2. Altitude ──────────────────────────────────────────────────────────
+    `<div class="model-section">
+      <div class="model-section-hdr">
+        <h3>Altitude adjustment</h3>
+        <span class="model-tag">Venue</span>
+      </div>
+      <div class="model-section-body">
+        <p>Matches at high-altitude venues reduce expected goals for both teams. Thinner air increases fatigue and affects the ball flight, compressing the game.</p>
+        <table class="model-tbl">
+          <thead><tr><th>Venue</th><th>City</th><th>Altitude</th><th>xG multiplier</th></tr></thead>
+          <tbody>
+            <tr><td>Estadio Azteca</td><td>Mexico City</td><td>2,240 m</td><td>${pill('×0.88','reduce')}</td></tr>
+            <tr><td>Estadio Akron</td><td>Guadalajara</td><td>1,650 m</td><td>${pill('×0.93','reduce')}</td></tr>
+            <tr><td>Empower Field</td><td>Denver</td><td>1,609 m</td><td>${pill('×0.94','reduce')}</td></tr>
+            <tr><td>All other venues</td><td>—</td><td>&lt;600 m</td><td>${pill('×1.00','neutral')}</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>`,
+
+    // ── 3. Heat / climate ────────────────────────────────────────────────────
+    `<div class="model-section">
+      <div class="model-section-hdr">
+        <h3>Heat &amp; climate adjustment</h3>
+        <span class="model-tag">Venue</span>
+      </div>
+      <div class="model-section-body">
+        <p>Heat and humidity reduce goal output by increasing fatigue and slowing play. Each venue carries a climate-derived multiplier applied to both teams' xG.</p>
+        <table class="model-tbl">
+          <thead><tr><th>Venue</th><th>Climate</th><th>xG multiplier</th></tr></thead>
+          <tbody>
+            <tr><td>NRG Stadium (Houston)</td><td>Hot/humid</td><td>${pill('×0.95','reduce')}</td></tr>
+            <tr><td>Hard Rock Stadium (Miami)</td><td>Tropical</td><td>${pill('×0.95','reduce')}</td></tr>
+            <tr><td>Mercedes-Benz Stadium (Atlanta)</td><td>Humid subtropical</td><td>${pill('×0.96','reduce')}</td></tr>
+            <tr><td>Estadio BBVA (Monterrey)</td><td>Hot</td><td>${pill('×0.96','reduce')}</td></tr>
+            <tr><td>AT&amp;T Stadium (Dallas)</td><td>Hot</td><td>${pill('×0.97','reduce')}</td></tr>
+            <tr><td>SoFi Stadium / Rose Bowl (LA)</td><td>Warm</td><td>${pill('×0.98','reduce')}</td></tr>
+            <tr><td>Arrowhead Stadium (Kansas City)</td><td>Continental</td><td>${pill('×0.98','reduce')}</td></tr>
+            <tr><td>Estadio Azteca / Akron (Mexico)</td><td>Subtropical highland</td><td>${pill('×0.99','reduce')}</td></tr>
+            <tr><td>Canadian &amp; remaining US venues</td><td>Mild / temperate / oceanic</td><td>${pill('×1.00','neutral')}</td></tr>
+          </tbody>
+        </table>
+        <p style="margin-top:6px">Altitude and heat multipliers are independent and both applied (e.g. Azteca: ×0.88 altitude × ×0.99 heat).</p>
+      </div>
+    </div>`,
+
+    // ── 4. Rest factor ───────────────────────────────────────────────────────
+    `<div class="model-section">
+      <div class="model-section-hdr">
+        <h3>Rest factor</h3>
+        <span class="model-tag">Situational</span>
+      </div>
+      <div class="model-section-body">
+        <p>Days since a team's previous match affects their expected output. Each team's rest factor is applied independently to their own xG.</p>
+        <div class="model-two-col">
+          <table class="model-mini-tbl">
+            <thead><tr><th>Days rest</th><th>xG multiplier</th></tr></thead>
+            <tbody>
+              <tr><td>≤ 2 days</td><td>${pill('×0.93','reduce')}</td></tr>
+              <tr><td>3 days</td><td>${pill('×0.97','reduce')}</td></tr>
+              <tr><td>4 days</td><td>${pill('×1.00','neutral')} baseline</td></tr>
+              <tr><td>≥ 5 days</td><td>${pill('×1.02','boost')}</td></tr>
+              <tr><td>Unknown</td><td>${pill('×1.00','neutral')}</td></tr>
+            </tbody>
+          </table>
+          <div style="font-size:.76rem;color:var(--muted);padding-top:4px">
+            In the group stage, teams play every 3–4 days so most matches use the ×0.97 or ×1.00 rate.
+            Rest asymmetry can become significant in the knockout rounds when fixture scheduling diverges.
+          </div>
+        </div>
+      </div>
+    </div>`,
+
+    // ── 5. Stage multiplier ──────────────────────────────────────────────────
+    `<div class="model-section">
+      <div class="model-section-hdr">
+        <h3>Stage multiplier</h3>
+        <span class="model-tag">Situational</span>
+      </div>
+      <div class="model-section-body">
+        <p>Teams elevate their performance as the stakes increase. The multiplier applies equally to both teams, so it compresses draw probability and raises the overall goal total.</p>
+        <div class="model-two-col">
+          <table class="model-mini-tbl">
+            <thead><tr><th>Stage</th><th>xG multiplier</th></tr></thead>
+            <tbody>
+              <tr><td>Group stage</td><td>${pill('×1.00','neutral')}</td></tr>
+              <tr><td>Round of 32</td><td>${pill('×1.02','boost')}</td></tr>
+              <tr><td>Round of 16</td><td>${pill('×1.04','boost')}</td></tr>
+              <tr><td>Quarter-final</td><td>${pill('×1.06','boost')}</td></tr>
+              <tr><td>Semi-final</td><td>${pill('×1.08','boost')}</td></tr>
+              <tr><td>Third-place play-off</td><td>${pill('×1.03','boost')}</td></tr>
+              <tr><td>Final</td><td>${pill('×1.10','boost')}</td></tr>
+            </tbody>
+          </table>
+          <div style="font-size:.76rem;color:var(--muted);padding-top:4px">
+            Applied symmetrically to both teams. A Final with two evenly-matched
+            sides would have ~14% more expected goals than the same teams in the group stage.
+          </div>
+        </div>
+      </div>
+    </div>`,
+
+    // ── 6. Crowd / host factor ───────────────────────────────────────────────
+    `<div class="model-section">
+      <div class="model-section-hdr">
+        <h3>Host &amp; crowd advantage</h3>
+        <span class="model-tag">Situational</span>
+      </div>
+      <div class="model-section-body">
+        <p>All WC 2026 matches are played on neutral ground, so there is no standard home-field advantage. However, the three host nations receive a crowd boost, and a smaller regional boost applies when a team plays in their own country's venues.</p>
+        <table class="model-tbl">
+          <thead><tr><th>Condition</th><th>xG multiplier</th><th>Applies to</th></tr></thead>
+          <tbody>
+            <tr><td>Host nation playing at any venue</td><td>${pill('×1.05','boost')}</td><td>USA, Mexico, Canada</td></tr>
+            <tr><td>Team playing in own country</td><td>${pill('×1.03','boost')}</td><td>USA venues → US, Mexico venues → Mexico etc.</td></tr>
+            <tr><td>All other cases</td><td>${pill('×1.00','neutral')}</td><td>Neutral ground default</td></tr>
+          </tbody>
+        </table>
+        <p style="margin-top:6px">The host boost applies to the team's own xG only, not their opponent's. A host nation meeting a third country uses ×1.05 for the host and ×1.00 for the opponent.</p>
+      </div>
+    </div>`,
+
+    // ── 7. Market blend ──────────────────────────────────────────────────────
+    `<div class="model-section">
+      <div class="model-section-hdr">
+        <h3>Market blend</h3>
+        <span class="model-tag">Probability</span>
+      </div>
+      <div class="model-section-body">
+        <p>Raw Poisson model probabilities are blended with bookmaker-implied probabilities to produce the final W/D/L figures shown on each card.</p>
+        <div class="model-formula">
+          Final prob = <b>60%</b> × bookmaker implied prob  +  <b>40%</b> × Poisson model prob
+        </div>
+        <table class="model-tbl">
+          <thead><tr><th>Component</th><th>Weight</th><th>Source</th></tr></thead>
+          <tbody>
+            <tr><td>Market (bookmakers)</td><td>${pill('60%','boost')}</td><td>Best-odds blend across UK bookmakers via the-odds-api.com</td></tr>
+            <tr><td>Poisson model</td><td>${pill('40%','neutral')}</td><td>xG-derived score matrix with all adjustments applied</td></tr>
+          </tbody>
+        </table>
+        <p style="margin-top:6px">Bookmaker odds are converted to implied probabilities (removing overround/vig by normalising to 100%), then blended. When no live odds are available, the card shows model-only probabilities (source: <em>model_only</em>).</p>
+      </div>
+    </div>`,
+
+    // ── 8. News & lineup layer ───────────────────────────────────────────────
+    `<div class="model-section">
+      <div class="model-section-hdr">
+        <h3>News &amp; lineup layer</h3>
+        <span class="model-tag">Daily override</span>
+      </div>
+      <div class="model-section-body">
+        <p>Each morning, a web search fetches squad news for that day's fixtures. If significant injuries or absences are found, xG multipliers are written and re-applied before the final blend.</p>
+        <div class="model-formula">
+          Adjusted xG_home = xG_home × <b>home_multiplier</b><br>
+          Adjusted xG_away = xG_away × <b>away_multiplier</b>
+        </div>
+        <table class="model-tbl">
+          <thead><tr><th>Scenario</th><th>Multiplier range</th></tr></thead>
+          <tbody>
+            <tr><td>Key player(s) confirmed injured / missing</td><td>${pill('0.75 – 0.94','reduce')}</td></tr>
+            <tr><td>No significant news (default)</td><td>${pill('1.00','neutral')}</td></tr>
+            <tr><td>Full-strength confirmed</td><td>${pill('1.01 – 1.05','boost')}</td></tr>
+          </tbody>
+        </table>
+        <p style="margin-top:6px">Pre-kickoff (within 90 min of kick-off), confirmed lineup data from football-data.org is used to calculate a missing-starter penalty of <strong>×0.06 per absent starter</strong> (up to 11). This overwrites the morning news multiplier for that match.</p>
+      </div>
+    </div>`,
+
+    // ── 9. Asian Handicap probabilities ─────────────────────────────────────
+    `<div class="model-section">
+      <div class="model-section-hdr">
+        <h3>Asian Handicap (AH) probabilities</h3>
+        <span class="model-tag">Derived</span>
+      </div>
+      <div class="model-section-body">
+        <p>AH probabilities are derived purely from the Poisson score matrix (not the blended W/D/L). Fair odds are computed via an expected-return equation that correctly handles pushes and quarter-ball half-wins.</p>
+        <div class="model-formula">
+          <b>Half lines</b> (±0.5, ±1.5 …)  X = 1 / P(home wins adjusted margin)<br>
+          <b>Integer lines</b> (0, ±1 …)     X = (1 − P(push)) / P(win)  · push returns full stake<br>
+          <b>Quarter lines</b> (±0.25, ±0.75) Split 50/50 across adjacent legs; stake-weighted push treatment
+        </div>
+        <table class="model-tbl">
+          <thead><tr><th>Lines computed</th><th>Direction</th></tr></thead>
+          <tbody>
+            <tr><td>0, ±0.25, ±0.5, ±0.75, ±1.5, ±2.5, ±3.5</td><td>Both home-favourite and away-favourite versions (13 lines total)</td></tr>
+          </tbody>
+        </table>
+        <p style="margin-top:6px">Live market AH odds are not available for this competition via the-odds-api.com. The Asian H. tab shows model fair odds only — compare these against your own bookmaker to identify value manually.</p>
+      </div>
+    </div>`,
+
+    // ── 10. Confidence dots ──────────────────────────────────────────────────
+    `<div class="model-section">
+      <div class="model-section-hdr">
+        <h3>Confidence rating</h3>
+        <span class="model-tag">Display</span>
+      </div>
+      <div class="model-section-body">
+        <p>The three dots on each match card reflect how decisive the model's most likely outcome is. It does <em>not</em> reflect data quality — it shows the probability spread.</p>
+        <table class="model-tbl">
+          <thead><tr><th>Dots</th><th>Level</th><th>Condition</th><th>Meaning</th></tr></thead>
+          <tbody>
+            <tr>
+              <td>●●●</td><td>High</td>
+              <td>Max(W, D, L) &gt; 60%</td>
+              <td>One outcome is clearly dominant — model has a strong lean.</td>
+            </tr>
+            <tr>
+              <td>●●○</td><td>Medium</td>
+              <td>Max(W, D, L) 47–60%</td>
+              <td>One outcome leads but the result is genuinely open.</td>
+            </tr>
+            <tr>
+              <td>●○○</td><td>Low</td>
+              <td>Max(W, D, L) ≤ 47%</td>
+              <td>No outcome is significantly more likely — a coin-flip match.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>`,
+
+  ];
+
+  render(`<div class="model-view">${sections.join('')}</div>`);
 }
 </script>
 </body>
