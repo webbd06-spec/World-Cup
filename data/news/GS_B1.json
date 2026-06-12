@@ -4,7 +4,9 @@
   "away": "Bosnia-Herzegovina",
   "home_multiplier": 0.82,
   "away_multiplier": 0.97,
-  "notes": "Canada missing confirmed tournament absentees Marcelo Flores (ACL) and Moise Bombito (tibia), while star left-back and captain Alphonso Davies is a major doubt/late fitness test with a hamstring strain — three significant players absent or uncertain, severely denting attacking width and quality. Bos",
+  "notes": "Canada missing confirmed tournament absentees Marcelo Flores (ACL) and Moise Bombito (tibia), while star left-back and captain Alphonso Davies is a major doubt/late fitness test with a hamstring strain — three significant players absent or uncertain, severely denting attacking width and quality. Bos…",
   "source": "anthropic_web_search",
-  "fetched_at": "2026-06-12T20:38:57.785301+00:00"
+  "fetched_at": "2026-06-12T20:38:57.785301+00:00",
+  "home_scorers": [],
+  "away_scorers": []
 }

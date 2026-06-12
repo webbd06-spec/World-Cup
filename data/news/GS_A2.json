@@ -4,7 +4,9 @@
   "away": "Czechia",
   "home_multiplier": 0.97,
   "away_multiplier": 0.96,
-  "notes": "South Korea (home): Defender Cho Yu-min ruled out with a plantar foot injury, replaced by uncapped Jo Wi-je — a defensive loss with negligible attacking impact. Attack remains fully intact with Son Heung-min, Lee Kang-in, and Hwang Hee-chan all fit and expected to start; warm-up wins over Trinidad &",
+  "notes": "South Korea (home): Defender Cho Yu-min ruled out with a plantar foot injury, replaced by uncapped Jo Wi-je — a defensive loss with negligible attacking impact. Attack remains fully intact with Son Heung-min, Lee Kang-in, and Hwang Hee-chan all fit and expected to start; warm-up wins over Trinidad &…",
   "source": "anthropic_web_search",
-  "fetched_at": "2026-06-12T20:38:47.363464+00:00"
+  "fetched_at": "2026-06-12T20:38:47.363464+00:00",
+  "home_scorers": [],
+  "away_scorers": []
 }

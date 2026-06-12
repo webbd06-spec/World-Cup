@@ -5,6 +5,8 @@
   "home_multiplier": 1.0,
   "away_multiplier": 1.0,
   "notes": "",
+  "home_scorers": [],
+  "away_scorers": [],
   "source": "api_error",
   "fetched_at": "2026-06-11T20:01:26.543524+00:00"
 }

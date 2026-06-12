@@ -50,6 +50,13 @@ MULT_MIN, MULT_MAX = 0.75, 1.05
 
 # ── Anthropic web search ──────────────────────────────────────────────────────
 
+def _trunc(text: str, limit: int) -> str:
+    """Truncate at a word boundary with ellipsis rather than mid-word."""
+    if len(text) <= limit:
+        return text
+    return text[:limit].rsplit(' ', 1)[0].rstrip('.,;') + '…'
+
+
 def _fetch_news_for_match(client, match: dict) -> dict:
     """
     Ask Claude (with web search) for squad news affecting today's match.
@@ -120,7 +127,7 @@ def _fetch_news_for_match(client, match: dict) -> dict:
         "away":             away,
         "home_multiplier":  round(max(MULT_MIN, min(MULT_MAX, hm)), 3),
         "away_multiplier":  round(max(MULT_MIN, min(MULT_MAX, am)), 3),
-        "notes":            str(data.get("notes", ""))[:500],
+        "notes":            _trunc(str(data.get("notes", "")), 500),
         "home_scorers":     clean_scorers(data.get("home_scorers", [])),
         "away_scorers":     clean_scorers(data.get("away_scorers", [])),
         "source":           "anthropic_web_search",
@@ -202,7 +209,7 @@ def cmd_apply():
 
     for p in preds_data["predictions"]:
         news_file = NEWS_DIR / f"{p['id']}.json"
-        if not news_file.exists():
+        if not news_file.exists() or news_file.stat().st_size == 0:
             continue
 
         with open(news_file, encoding="utf-8") as f:
