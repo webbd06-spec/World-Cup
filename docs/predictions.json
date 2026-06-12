@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-12T10:51:46.698349Z",
+  "generated_at": "2026-06-12T11:24:54.271919Z",
   "date": "2026-06-12",
   "model_version": "1.0.0",
   "blend_weights": {
@@ -309,14 +309,14 @@
         "home": 2,
         "away": 1
       },
-      "xg_home": 1.301,
-      "xg_away": 1.177,
-      "win_prob": 0.3942,
-      "draw_prob": 0.2709,
-      "loss_prob": 0.335,
-      "model_win": 0.3942,
-      "model_draw": 0.2709,
-      "model_loss": 0.335,
+      "xg_home": 1.369,
+      "xg_away": 1.241,
+      "win_prob": 0.3986,
+      "draw_prob": 0.2627,
+      "loss_prob": 0.3386,
+      "model_win": 0.3986,
+      "model_draw": 0.2627,
+      "model_loss": 0.3386,
       "market_win": null,
       "market_draw": null,
       "market_loss": null,
@@ -324,117 +324,117 @@
         {
           "home": 1,
           "away": 1,
-          "prob": 0.1285
+          "prob": 0.1249
         },
         {
           "home": 1,
           "away": 0,
-          "prob": 0.1092
+          "prob": 0.1007
         },
         {
           "home": 0,
           "away": 1,
-          "prob": 0.0988
-        },
-        {
-          "home": 0,
-          "away": 0,
-          "prob": 0.084
+          "prob": 0.0913
         },
         {
           "home": 2,
           "away": 1,
-          "prob": 0.0836
+          "prob": 0.0855
         },
         {
           "home": 1,
           "away": 2,
-          "prob": 0.0756
+          "prob": 0.0775
+        },
+        {
+          "home": 0,
+          "away": 0,
+          "prob": 0.0736
         }
       ],
       "score_matrix": [
         [
-          0.08398,
-          0.09881,
-          0.05814,
-          0.0228,
-          0.00671,
-          0.00158,
-          0.00031,
-          5e-05,
-          1e-05
-        ],
-        [
-          0.10921,
-          0.12851,
-          0.07561,
-          0.02966,
-          0.00872,
-          0.00205,
-          0.0004,
-          7e-05,
-          1e-05
-        ],
-        [
-          0.07102,
-          0.08357,
-          0.04917,
-          0.01928,
-          0.00567,
-          0.00134,
-          0.00026,
-          4e-05,
-          1e-05
-        ],
-        [
-          0.03079,
-          0.03623,
-          0.02131,
-          0.00836,
-          0.00246,
-          0.00058,
-          0.00011,
-          2e-05,
-          0.0
-        ],
-        [
-          0.01001,
-          0.01178,
-          0.00693,
-          0.00272,
-          0.0008,
-          0.00019,
-          4e-05,
-          1e-05,
-          0.0
-        ],
-        [
-          0.0026,
-          0.00306,
+          0.07356,
+          0.09126,
+          0.05661,
+          0.02341,
+          0.00726,
           0.0018,
-          0.00071,
-          0.00021,
-          5e-05,
-          1e-05,
-          0.0,
-          0.0
-        ],
-        [
-          0.00056,
-          0.00066,
-          0.00039,
-          0.00015,
-          5e-05,
-          1e-05,
-          0.0,
-          0.0,
-          0.0
-        ],
-        [
-          0.0001,
-          0.00012,
+          0.00037,
           7e-05,
+          1e-05
+        ],
+        [
+          0.10071,
+          0.12494,
+          0.0775,
+          0.03205,
+          0.00994,
+          0.00247,
+          0.00051,
+          9e-05,
+          1e-05
+        ],
+        [
+          0.06893,
+          0.08552,
+          0.05305,
+          0.02194,
+          0.0068,
+          0.00169,
+          0.00035,
+          6e-05,
+          1e-05
+        ],
+        [
+          0.03146,
+          0.03903,
+          0.02421,
+          0.01001,
+          0.00311,
+          0.00077,
+          0.00016,
           3e-05,
+          0.0
+        ],
+        [
+          0.01077,
+          0.01336,
+          0.00829,
+          0.00343,
+          0.00106,
+          0.00026,
+          5e-05,
+          1e-05,
+          0.0
+        ],
+        [
+          0.00295,
+          0.00366,
+          0.00227,
+          0.00094,
+          0.00029,
+          7e-05,
+          1e-05,
+          0.0,
+          0.0
+        ],
+        [
+          0.00067,
+          0.00083,
+          0.00052,
+          0.00021,
+          7e-05,
+          2e-05,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.00013,
+          0.00016,
+          0.0001,
+          4e-05,
           1e-05,
           0.0,
           0.0,
@@ -443,9 +443,9 @@
         ],
         [
           2e-05,
+          3e-05,
           2e-05,
           1e-05,
-          0.0,
           0.0,
           0.0,
           0.0,
@@ -562,9 +562,9 @@
       "source": "model_only",
       "blend_weights": null,
       "news_adjustment": {
-        "home": 0.95,
-        "away": 0.92,
-        "notes": "South Korea: defender Cho Yu-min ruled out with foot injury (replaced by uncapped Cho Wi-je), winger Bae Jun-ho is a major doubt with ankle injury, and Lee Kang-in had limited club minutes in 2025/26 due to injury; midfield depth also hit by a spate of injuries forcing a tactical shift to a back thr"
+        "home": 1.0,
+        "away": 0.97,
+        "notes": "No confirmed injuries or suspensions for South Korea ahead of kickoff; full squad available including Son Heung-min and Hwang In-beom. Czechia had no suspensions but Hlozek entered the tournament in doubt after missing most of the Bundesliga season with calf and foot injuries, though he recovered en"
       }
     },
     {
@@ -1650,14 +1650,14 @@
       "city": "Toronto",
       "status": "scheduled",
       "result": null,
-      "xg_home": 1.318,
-      "xg_away": 1.151,
+      "xg_home": 1.414,
+      "xg_away": 1.269,
       "win_prob": 0.4044,
-      "draw_prob": 0.2709,
-      "loss_prob": 0.3247,
+      "draw_prob": 0.2583,
+      "loss_prob": 0.3373,
       "model_win": 0.4044,
-      "model_draw": 0.2709,
-      "model_loss": 0.3247,
+      "model_draw": 0.2583,
+      "model_loss": 0.3373,
       "market_win": null,
       "market_draw": null,
       "market_loss": null,
@@ -1665,128 +1665,128 @@
         {
           "home": 1,
           "away": 1,
-          "prob": 0.1285
+          "prob": 0.1227
         },
         {
           "home": 1,
           "away": 0,
-          "prob": 0.1116
+          "prob": 0.0967
         },
         {
           "home": 0,
           "away": 1,
-          "prob": 0.0975
-        },
-        {
-          "home": 0,
-          "away": 0,
-          "prob": 0.0847
+          "prob": 0.0867
         },
         {
           "home": 2,
           "away": 1,
-          "prob": 0.0846
+          "prob": 0.0867
         },
         {
           "home": 1,
           "away": 2,
-          "prob": 0.0739
+          "prob": 0.0778
+        },
+        {
+          "home": 0,
+          "away": 0,
+          "prob": 0.0684
         }
       ],
       "score_matrix": [
         [
-          0.08469,
-          0.09748,
-          0.0561,
-          0.02152,
-          0.00619,
-          0.00143,
-          0.00027,
-          4e-05,
+          0.06836,
+          0.08674,
+          0.05502,
+          0.02327,
+          0.00738,
+          0.00187,
+          0.0004,
+          7e-05,
           1e-05
         ],
         [
-          0.1116,
-          0.12845,
-          0.07393,
-          0.02836,
-          0.00816,
-          0.00188,
-          0.00036,
-          6e-05,
-          1e-05
-        ],
-        [
-          0.07353,
-          0.08463,
-          0.04871,
-          0.01869,
-          0.00538,
-          0.00124,
-          0.00024,
-          4e-05,
-          1e-05
-        ],
-        [
-          0.0323,
-          0.03717,
-          0.02139,
-          0.00821,
-          0.00236,
-          0.00054,
+          0.09668,
+          0.12266,
+          0.07781,
+          0.03291,
+          0.01044,
+          0.00265,
+          0.00056,
           0.0001,
-          2e-05,
-          0.0
+          2e-05
         ],
         [
-          0.01064,
-          0.01225,
-          0.00705,
-          0.0027,
-          0.00078,
-          0.00018,
+          0.06836,
+          0.08673,
+          0.05502,
+          0.02327,
+          0.00738,
+          0.00187,
+          0.0004,
+          7e-05,
+          1e-05
+        ],
+        [
+          0.03222,
+          0.04088,
+          0.02594,
+          0.01097,
+          0.00348,
+          0.00088,
+          0.00019,
           3e-05,
+          1e-05
+        ],
+        [
+          0.01139,
+          0.01445,
+          0.00917,
+          0.00388,
+          0.00123,
+          0.00031,
+          7e-05,
           1e-05,
           0.0
         ],
         [
-          0.0028,
-          0.00323,
-          0.00186,
-          0.00071,
-          0.00021,
-          5e-05,
-          1e-05,
+          0.00322,
+          0.00409,
+          0.00259,
+          0.0011,
+          0.00035,
+          9e-05,
+          2e-05,
           0.0,
           0.0
         ],
         [
-          0.00062,
-          0.00071,
-          0.00041,
-          0.00016,
-          5e-05,
-          1e-05,
-          0.0,
-          0.0,
-          0.0
-        ],
-        [
-          0.00012,
-          0.00013,
+          0.00076,
+          0.00096,
+          0.00061,
+          0.00026,
           8e-05,
-          3e-05,
-          1e-05,
+          2e-05,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.00015,
+          0.00019,
+          0.00012,
+          5e-05,
+          2e-05,
           0.0,
           0.0,
           0.0,
           0.0
         ],
         [
-          2e-05,
+          3e-05,
+          3e-05,
           2e-05,
           1e-05,
-          0.0,
           0.0,
           0.0,
           0.0,
@@ -1903,9 +1903,9 @@
       "source": "model_only",
       "blend_weights": null,
       "news_adjustment": {
-        "home": 0.82,
-        "away": 0.88,
-        "notes": "Canada missing captain Alphonso Davies (hamstring, ruled out vs Bosnia), Marcelo Flores (ACL, tournament-out), and Moise Bombito (fractured tibia, tournament doubt). Davies is Canada's primary creative and attacking threat from left back. Bosnia missing backup striker Haris Tabakovic (fractured meta"
+        "home": 0.88,
+        "away": 0.97,
+        "notes": "Canada confirmed without Alphonso Davies (hamstring, ruled out for opener per Bleacher Report), Marcelo Flores (ACL, tournament out), Moise Bombito (tibia/undisclosed), Ali Ahmed (hamstring), and Jacob Shaffelburg (leg) — Davies being the most critical attacking loss as Canada's star left-back and t"
       }
     },
     {
