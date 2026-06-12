@@ -58,7 +58,7 @@ def _fd_get(path: str) -> dict:
 # ── fixture loader ────────────────────────────────────────────────────────────
 
 def _load_fixtures() -> list:
-    with open(DATA / "fixtures.json") as f:
+    with open(DATA / "fixtures.json", encoding="utf-8") as f:
         return json.load(f)["matches"]
 
 
@@ -179,7 +179,7 @@ def _write_news(fid, home, away, hm, am, home_missing, away_missing):
     existing = {}
     if news_file.exists():
         try:
-            with open(news_file) as f:
+            with open(news_file, encoding="utf-8") as f:
                 existing = json.load(f)
         except Exception:
             pass
@@ -196,13 +196,13 @@ def _write_news(fid, home, away, hm, am, home_missing, away_missing):
         "fetched_at":             datetime.now(timezone.utc).isoformat(),
     })
 
-    with open(news_file, "w") as f:
-        json.dump(existing, f, indent=2)
+    with open(news_file, "w", encoding="utf-8") as f:
+        json.dump(existing, f, indent=2, ensure_ascii=False)
 
 
 def _write_neutral(fid, home, away, source):
     news_file = NEWS_DIR / f"{fid}.json"
-    with open(news_file, "w") as f:
+    with open(news_file, "w", encoding="utf-8") as f:
         json.dump({
             "fixture_id":      fid,
             "home":            home,
@@ -212,7 +212,7 @@ def _write_neutral(fid, home, away, source):
             "notes":           "",
             "source":          source,
             "fetched_at":      datetime.now(timezone.utc).isoformat(),
-        }, f, indent=2)
+        }, f, indent=2, ensure_ascii=False)
 
 
 # ── GitHub Actions output helper ──────────────────────────────────────────────
@@ -221,7 +221,7 @@ def _set_output(name: str, value: str):
     """Write a step output for GitHub Actions; print locally."""
     gh_output = os.environ.get("GITHUB_OUTPUT")
     if gh_output:
-        with open(gh_output, "a") as f:
+        with open(gh_output, "a", encoding="utf-8") as f:
             f.write(f"{name}={value}\n")
     else:
         print(f"OUTPUT {name}={value}")
