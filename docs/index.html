@@ -383,6 +383,47 @@ main {
   padding: 4px 0;
 }
 
+/* ── Team news panel ─────────────────────────────────────── */
+.tn-summary {
+  font-size: .76rem; color: var(--muted); line-height: 1.65;
+  background: rgba(0,0,0,.03); border: 1px solid var(--border);
+  border-radius: 6px; padding: 8px 10px; margin-bottom: 10px;
+}
+.tn-prediction {
+  display: flex; align-items: baseline; gap: 6px;
+  font-size: .8rem; font-weight: 600;
+  margin-bottom: 10px;
+}
+.tn-prediction .tn-score {
+  font-size: 1rem; font-weight: 800; color: var(--accent);
+}
+.tn-prediction .tn-prob {
+  font-size: .7rem; color: var(--muted); font-weight: 400;
+}
+.tn-scorers {
+  display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin-bottom: 8px;
+}
+.tn-side { background: var(--s1); border-radius: 6px; padding: 7px 9px; }
+.tn-side-hdr {
+  font-size: .67rem; font-weight: 700; text-transform: uppercase;
+  letter-spacing: .05em; color: var(--muted); margin-bottom: 5px;
+  display: flex; align-items: center; gap: 4px;
+}
+.tn-scorer {
+  display: flex; align-items: flex-start; gap: 5px;
+  font-size: .73rem; padding: 3px 0;
+  border-bottom: 1px solid rgba(0,0,0,.05);
+}
+.tn-scorer:last-child { border-bottom: none; }
+.tn-scorer-num {
+  font-size: .65rem; font-weight: 700; color: var(--muted);
+  background: var(--s3); border-radius: 3px; padding: 0 4px;
+  flex-shrink: 0; margin-top: 1px;
+}
+.tn-scorer-name { font-weight: 600; }
+.tn-scorer-note { color: var(--muted); font-size: .69rem; }
+.tn-empty { color: var(--muted); font-size: .73rem; font-style: italic; }
+
 /* ── Value panel ─────────────────────────────────────────── */
 .vb-list { display: grid; gap: 4px; margin-bottom: 8px; }
 .vb-row {
@@ -1041,11 +1082,13 @@ function card(p) {
     <button class="tab-btn" onclick="tab(this,'${id}-odds')">Bookmaker odds</button>
     <button class="tab-btn" onclick="tab(this,'${id}-val')">Value bets</button>
     <button class="tab-btn" onclick="tab(this,'${id}-ah')">Asian H.</button>
+    <button class="tab-btn" onclick="tab(this,'${id}-news')">Team news</button>
   </div>
   <div id="${id}-sl"   class="tab-panel">${panelScorelines(p)}</div>
   <div id="${id}-odds" class="tab-panel">${panelOdds(p, mOdds)}</div>
   <div id="${id}-val"  class="tab-panel">${panelValue(p, mOdds)}</div>
   <div id="${id}-ah"   class="tab-panel">${panelAH(p, mOdds)}</div>
+  <div id="${id}-news" class="tab-panel">${panelTeamNews(p)}</div>
 </div>`;
   }
 
@@ -1134,11 +1177,13 @@ function card(p) {
     <button class="tab-btn" onclick="tab(this,'${id}-odds')">Bookmaker odds</button>
     <button class="tab-btn" onclick="tab(this,'${id}-val')">Value bets</button>
     <button class="tab-btn" onclick="tab(this,'${id}-ah')">Asian H.</button>
+    <button class="tab-btn" onclick="tab(this,'${id}-news')">Team news</button>
   </div>
   <div id="${id}-sl"   class="tab-panel">${panelScorelines(p)}</div>
   <div id="${id}-odds" class="tab-panel">${panelOdds(p, mOdds)}</div>
   <div id="${id}-val"  class="tab-panel">${panelValue(p, mOdds)}</div>
   <div id="${id}-ah"   class="tab-panel">${panelAH(p, mOdds)}</div>
+  <div id="${id}-news" class="tab-panel">${panelTeamNews(p)}</div>
 </div>`;
 }
 
@@ -1447,6 +1492,82 @@ function panelAH(p, mOdds) {
        Set <code>ODDS_API_KEY</code> and run <code>update.py</code> to see edges.</div>`;
 
   return html + disclaimer;
+}
+
+// ── Panel: Team news ──────────────────────────────────────────────────────────
+
+function panelTeamNews(p) {
+  const tn = p.team_news || p.news_adjustment || null;
+
+  // Prediction headline from top scoreline + xG
+  const topSl = (p.top_scorelines || [])[0];
+  let predHtml = '';
+  if (topSl && p.home && p.away) {
+    const xgH = (p.xg_home || 0).toFixed(2);
+    const xgA = (p.xg_away || 0).toFixed(2);
+    predHtml = `<div class="tn-prediction">
+      <span>${flag(p.home)} ${p.home}</span>
+      <span class="tn-score">${topSl.home}–${topSl.away}</span>
+      <span>${flag(p.away)} ${p.away}</span>
+      <span class="tn-prob">(${(topSl.prob*100).toFixed(1)}% · xG ${xgH}–${xgA})</span>
+    </div>`;
+  }
+
+  // Notes / injury summary
+  const notes = tn?.notes || '';
+  const notesHtml = notes
+    ? `<div class="tn-summary">${notes}</div>`
+    : '';
+
+  // Scorer lists
+  function scorerList(team, list) {
+    if (!list || !list.length) {
+      return `<div class="tn-side">
+        <div class="tn-side-hdr">${flag(team)} ${team}</div>
+        <div class="tn-empty">No scorer data yet</div>
+      </div>`;
+    }
+    const items = list.map((s, i) => {
+      const bracket = s.match(/\(([^)]+)\)$/);
+      const name    = bracket ? s.slice(0, bracket.index).trim() : s;
+      const note    = bracket ? bracket[1] : '';
+      return `<div class="tn-scorer">
+        <span class="tn-scorer-num">${i+1}</span>
+        <span><span class="tn-scorer-name">${name}</span>
+        ${note ? `<br><span class="tn-scorer-note">${note}</span>` : ''}</span>
+      </div>`;
+    }).join('');
+    return `<div class="tn-side">
+      <div class="tn-side-hdr">${flag(team)} ${team}</div>
+      ${items}
+    </div>`;
+  }
+
+  const homeScorers = tn?.home_scorers || [];
+  const awayScorers = tn?.away_scorers || [];
+  const hasScorers  = homeScorers.length || awayScorers.length;
+
+  const scorersHtml = hasScorers
+    ? `<div class="tn-scorers">
+        ${scorerList(p.home, homeScorers)}
+        ${scorerList(p.away, awayScorers)}
+      </div>`
+    : `<div class="tn-scorers">
+        ${scorerList(p.home, [])}
+        ${scorerList(p.away, [])}
+      </div>`;
+
+  if (!predHtml && !notesHtml && !hasScorers) {
+    return `<p class="no-odds">Team news not yet fetched for this match.<br>
+      Runs automatically each morning via <code>news.py --fetch</code>.</p>`;
+  }
+
+  const fetchedAt = tn?.fetched_at
+    ? `<div style="font-size:.63rem;color:var(--muted);margin-top:8px">
+        Updated ${relTime(tn.fetched_at)}
+      </div>` : '';
+
+  return predHtml + notesHtml + scorersHtml + fetchedAt;
 }
 
 // ── Group context helpers ─────────────────────────────────────────────────────

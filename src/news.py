@@ -60,22 +60,28 @@ def _fetch_news_for_match(client, match: dict) -> dict:
 
     prompt = (
         f"Search for the latest FIFA World Cup 2026 pre-match news about "
-        f"{home} and {away} today. Focus on:\n"
+        f"{home} and {away}. Focus on:\n"
         f"- Confirmed injury or suspension absences\n"
         f"- Key player doubts or late fitness tests\n"
-        f"- Rotation hints from the manager\n"
-        f"- Travel or fatigue factors\n\n"
-        f"Then estimate the impact on each team's attacking strength as a "
-        f"multiplier between {MULT_MIN:.2f} (severe absentees) and "
-        f"{MULT_MAX:.2f} (full-strength boost). Use 1.00 if nothing significant.\n\n"
-        f"Respond with ONLY a JSON object — no prose, no markdown:\n"
-        f'{{"home_multiplier": 1.0, "away_multiplier": 1.0, "notes": "brief summary"}}'
+        f"- Rotation hints from the manager\n\n"
+        f"Respond with ONLY a JSON object — no prose, no markdown fences:\n"
+        f'{{\n'
+        f'  "home_multiplier": 1.0,\n'
+        f'  "away_multiplier": 1.0,\n'
+        f'  "notes": "1-2 sentence injury/squad summary for both teams",\n'
+        f'  "home_scorers": ["Player Name (role/reason)", "Player Name (role/reason)", "Player Name (role/reason)"],\n'
+        f'  "away_scorers": ["Player Name (role/reason)", "Player Name (role/reason)", "Player Name (role/reason)"]\n'
+        f'}}\n\n'
+        f"home_multiplier / away_multiplier: between {MULT_MIN:.2f} and {MULT_MAX:.2f} "
+        f"based on absences ({MULT_MAX:.2f} if full strength, {MULT_MIN:.2f} if key striker/playmaker missing). "
+        f"home_scorers / away_scorers: top 3 most likely goalscorers for each team, "
+        f"with a brief parenthetical (e.g. 'leading striker', 'set-piece threat', 'on penalties')."
     )
 
     try:
         resp = client.messages.create(
             model="claude-sonnet-4-6",
-            max_tokens=512,
+            max_tokens=900,
             tools=[{"type": "web_search_20250305", "name": "web_search"}],
             messages=[{"role": "user", "content": prompt}],
         )
@@ -88,18 +94,25 @@ def _fetch_news_for_match(client, match: dict) -> dict:
         block.text for block in resp.content if hasattr(block, "text")
     )
 
-    m = re.search(r'\{[^{}]*\}', text, re.DOTALL)
-    if not m:
+    # Extract outermost JSON object (handles nested arrays)
+    start = text.find('{')
+    end   = text.rfind('}')
+    if start < 0 or end <= start:
         print(f"    No JSON found in response for {home} vs {away}")
         return _neutral(fid, home, away, "no_json")
 
     try:
-        data = json.loads(m.group())
+        data = json.loads(text[start:end + 1])
     except json.JSONDecodeError:
         return _neutral(fid, home, away, "bad_json")
 
     hm = float(data.get("home_multiplier", 1.0))
     am = float(data.get("away_multiplier", 1.0))
+
+    def clean_scorers(raw):
+        if isinstance(raw, list):
+            return [str(s)[:80] for s in raw[:3]]
+        return []
 
     return {
         "fixture_id":       fid,
@@ -107,7 +120,9 @@ def _fetch_news_for_match(client, match: dict) -> dict:
         "away":             away,
         "home_multiplier":  round(max(MULT_MIN, min(MULT_MAX, hm)), 3),
         "away_multiplier":  round(max(MULT_MIN, min(MULT_MAX, am)), 3),
-        "notes":            str(data.get("notes", ""))[:300],
+        "notes":            str(data.get("notes", ""))[:500],
+        "home_scorers":     clean_scorers(data.get("home_scorers", [])),
+        "away_scorers":     clean_scorers(data.get("away_scorers", [])),
         "source":           "anthropic_web_search",
         "fetched_at":       datetime.now(timezone.utc).isoformat(),
     }
@@ -121,6 +136,8 @@ def _neutral(fid, home, away, source):
         "home_multiplier":  1.0,
         "away_multiplier":  1.0,
         "notes":            "",
+        "home_scorers":     [],
+        "away_scorers":     [],
         "source":           source,
         "fetched_at":       datetime.now(timezone.utc).isoformat(),
     }
@@ -194,7 +211,15 @@ def cmd_apply():
         hm = float(adj.get("home_multiplier", 1.0))
         am = float(adj.get("away_multiplier", 1.0))
 
-        # Skip if no meaningful adjustment
+        # Always copy scorer/notes data so the dashboard tab can display it
+        p["team_news"] = {
+            "notes":        adj.get("notes", ""),
+            "home_scorers": adj.get("home_scorers", []),
+            "away_scorers": adj.get("away_scorers", []),
+            "fetched_at":   adj.get("fetched_at", ""),
+        }
+
+        # Only re-run Poisson when multipliers meaningfully differ from 1.0
         if abs(hm - 1.0) < 0.001 and abs(am - 1.0) < 0.001:
             continue
 
@@ -205,7 +230,7 @@ def cmd_apply():
         xg_h = p["xg_home"] * hm
         xg_a = p["xg_away"] * am
 
-        mat      = score_matrix(xg_h, xg_a)
+        mat       = score_matrix(xg_h, xg_a)
         model_wdl = wdl_from_matrix(mat)
 
         # Re-blend with market odds if we have them (same 60/40 as predict.py)
