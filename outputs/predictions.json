@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-12T20:15:54.127336Z",
+  "generated_at": "2026-06-12T20:38:57.908152Z",
   "date": "2026-06-12",
   "model_version": "1.0.0",
   "blend_weights": {
@@ -310,13 +310,13 @@
         "away": 1
       },
       "xg_home": 1.328,
-      "xg_away": 1.189,
-      "win_prob": 0.3988,
-      "draw_prob": 0.2682,
-      "loss_prob": 0.333,
-      "model_win": 0.3988,
-      "model_draw": 0.2682,
-      "model_loss": 0.333,
+      "xg_away": 1.228,
+      "win_prob": 0.3905,
+      "draw_prob": 0.2662,
+      "loss_prob": 0.3433,
+      "model_win": 0.3905,
+      "model_draw": 0.2662,
+      "model_loss": 0.3433,
       "market_win": null,
       "market_draw": null,
       "market_loss": null,
@@ -324,114 +324,114 @@
         {
           "home": 1,
           "away": 1,
-          "prob": 0.1274
+          "prob": 0.1266
         },
         {
           "home": 1,
           "away": 0,
-          "prob": 0.1071
+          "prob": 0.1031
         },
         {
           "home": 0,
           "away": 1,
-          "prob": 0.096
+          "prob": 0.0953
         },
         {
           "home": 2,
           "away": 1,
-          "prob": 0.0846
-        },
-        {
-          "home": 0,
-          "away": 0,
-          "prob": 0.0807
+          "prob": 0.084
         },
         {
           "home": 1,
           "away": 2,
-          "prob": 0.0758
+          "prob": 0.0777
+        },
+        {
+          "home": 0,
+          "away": 0,
+          "prob": 0.0776
         }
       ],
       "score_matrix": [
         [
-          0.08067,
-          0.09595,
-          0.05707,
-          0.02263,
-          0.00673,
-          0.0016,
-          0.00032,
-          5e-05,
+          0.07763,
+          0.09532,
+          0.05852,
+          0.02395,
+          0.00735,
+          0.00181,
+          0.00037,
+          6e-05,
           1e-05
         ],
         [
-          0.10712,
-          0.12742,
-          0.07578,
-          0.03005,
-          0.00893,
-          0.00213,
-          0.00042,
-          7e-05,
+          0.10309,
+          0.12658,
+          0.07771,
+          0.0318,
+          0.00976,
+          0.0024,
+          0.00049,
+          9e-05,
           1e-05
         ],
         [
-          0.07113,
-          0.0846,
-          0.05032,
-          0.01995,
-          0.00593,
-          0.00141,
-          0.00028,
-          5e-05,
+          0.06845,
+          0.08404,
+          0.0516,
+          0.02112,
+          0.00648,
+          0.00159,
+          0.00033,
+          6e-05,
           1e-05
         ],
         [
-          0.03148,
-          0.03745,
-          0.02227,
-          0.00883,
-          0.00263,
-          0.00062,
-          0.00012,
-          2e-05,
+          0.0303,
+          0.0372,
+          0.02284,
+          0.00935,
+          0.00287,
+          0.0007,
+          0.00014,
+          3e-05,
           0.0
         ],
         [
-          0.01045,
-          0.01243,
-          0.00739,
-          0.00293,
-          0.00087,
-          0.00021,
-          4e-05,
+          0.01006,
+          0.01235,
+          0.00758,
+          0.0031,
+          0.00095,
+          0.00023,
+          5e-05,
           1e-05,
           0.0
         ],
         [
-          0.00278,
-          0.0033,
-          0.00196,
-          0.00078,
-          0.00023,
+          0.00267,
+          0.00328,
+          0.00201,
+          0.00082,
+          0.00025,
           6e-05,
           1e-05,
           0.0,
           0.0
         ],
         [
-          0.00061,
+          0.00059,
           0.00073,
-          0.00043,
-          0.00017,
-          5e-05,
+          0.00045,
+          0.00018,
+          6e-05,
           1e-05,
           0.0,
           0.0,
           0.0
         ],
         [
-          0.00012,
+          0.00011,
           0.00014,
           8e-05,
           3e-05,
@@ -563,8 +563,8 @@
       "blend_weights": null,
       "news_adjustment": {
         "home": 0.97,
-        "away": 0.93,
-        "notes": "South Korea: Defender Cho Yu-min ruled out with a foot injury sustained in Utah pre-tournament friendly; no key attacking absentees confirmed — Son Heung-min, Lee Kang-in, and Hwang Hee-chan all available. Minor defensive reshuffle only, minor downward nudge. Czechia: Vaclav Cerny (key creative wing"
+        "away": 0.96,
+        "notes": "South Korea (home): Defender Cho Yu-min ruled out with a plantar foot injury, replaced by uncapped Jo Wi-je — a defensive loss with negligible attacking impact. Attack remains fully intact with Son Heung-min, Lee Kang-in, and Hwang Hee-chan all fit and expected to start; warm-up wins over Trinidad &"
       }
     },
     {
@@ -1653,14 +1653,14 @@
         "home": 0,
         "away": 1
       },
-      "xg_home": 1.414,
+      "xg_home": 1.318,
       "xg_away": 1.269,
-      "win_prob": 0.4044,
-      "draw_prob": 0.2583,
-      "loss_prob": 0.3373,
-      "model_win": 0.4044,
-      "model_draw": 0.2583,
-      "model_loss": 0.3373,
+      "win_prob": 0.3792,
+      "draw_prob": 0.2646,
+      "loss_prob": 0.3562,
+      "model_win": 0.3792,
+      "model_draw": 0.2646,
+      "model_loss": 0.3562,
       "market_win": null,
       "market_draw": null,
       "market_loss": null,
@@ -1668,127 +1668,127 @@
         {
           "home": 1,
           "away": 1,
-          "prob": 0.1227
+          "prob": 0.1259
         },
         {
           "home": 1,
           "away": 0,
-          "prob": 0.0967
+          "prob": 0.0992
         },
         {
           "home": 0,
           "away": 1,
-          "prob": 0.0867
+          "prob": 0.0955
         },
         {
           "home": 2,
           "away": 1,
-          "prob": 0.0867
+          "prob": 0.0829
         },
         {
           "home": 1,
           "away": 2,
-          "prob": 0.0778
+          "prob": 0.0798
         },
         {
           "home": 0,
           "away": 0,
-          "prob": 0.0684
+          "prob": 0.0753
         }
       ],
       "score_matrix": [
         [
-          0.06836,
-          0.08674,
-          0.05502,
-          0.02327,
-          0.00738,
-          0.00187,
-          0.0004,
-          7e-05,
+          0.07528,
+          0.09552,
+          0.06059,
+          0.02563,
+          0.00813,
+          0.00206,
+          0.00044,
+          8e-05,
           1e-05
         ],
         [
-          0.09668,
-          0.12266,
-          0.07781,
-          0.03291,
-          0.01044,
-          0.00265,
-          0.00056,
+          0.0992,
+          0.12587,
+          0.07985,
+          0.03377,
+          0.01071,
+          0.00272,
+          0.00057,
           0.0001,
           2e-05
         ],
         [
-          0.06836,
-          0.08673,
-          0.05502,
-          0.02327,
-          0.00738,
-          0.00187,
-          0.0004,
+          0.06536,
+          0.08293,
+          0.05261,
+          0.02225,
+          0.00706,
+          0.00179,
+          0.00038,
           7e-05,
           1e-05
         ],
         [
-          0.03222,
-          0.04088,
-          0.02594,
-          0.01097,
-          0.00348,
-          0.00088,
-          0.00019,
+          0.02871,
+          0.03643,
+          0.02311,
+          0.00977,
+          0.0031,
+          0.00079,
+          0.00017,
           3e-05,
-          1e-05
+          0.0
         ],
         [
-          0.01139,
-          0.01445,
-          0.00917,
-          0.00388,
-          0.00123,
-          0.00031,
-          7e-05,
+          0.00946,
+          0.012,
+          0.00761,
+          0.00322,
+          0.00102,
+          0.00026,
+          5e-05,
           1e-05,
           0.0
         ],
         [
-          0.00322,
-          0.00409,
-          0.00259,
-          0.0011,
-          0.00035,
-          9e-05,
-          2e-05,
+          0.00249,
+          0.00316,
+          0.00201,
+          0.00085,
+          0.00027,
+          7e-05,
+          1e-05,
           0.0,
           0.0
         ],
         [
-          0.00076,
-          0.00096,
-          0.00061,
-          0.00026,
-          8e-05,
-          2e-05,
-          0.0,
-          0.0,
-          0.0
-        ],
-        [
-          0.00015,
+          0.00055,
+          0.00069,
+          0.00044,
           0.00019,
-          0.00012,
-          5e-05,
-          2e-05,
+          6e-05,
+          1e-05,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0001,
+          0.00013,
+          8e-05,
+          4e-05,
+          1e-05,
           0.0,
           0.0,
           0.0,
           0.0
         ],
         [
-          3e-05,
-          3e-05,
           2e-05,
+          2e-05,
+          1e-05,
           1e-05,
           0.0,
           0.0,
@@ -1906,9 +1906,9 @@
       "source": "model_only",
       "blend_weights": null,
       "news_adjustment": {
-        "home": 0.88,
+        "home": 0.82,
         "away": 0.97,
-        "notes": "Canada missing captain Alphonso Davies (hamstring, expected out for opener), Marcelo Flores (ACL, tournament-ruled-out), and Moise Bombito (tibia). Davies is Canada's primary left-back and attacking catalyst, his absence is a significant blow to width and ball progression. Bosnia-Herzegovina are lar"
+        "notes": "Canada missing confirmed tournament absentees Marcelo Flores (ACL) and Moise Bombito (tibia), while star left-back and captain Alphonso Davies is a major doubt/late fitness test with a hamstring strain — three significant players absent or uncertain, severely denting attacking width and quality. Bos"
       }
     },
     {
@@ -18858,15 +18858,15 @@
       "result": null,
       "xg_home": 0.927,
       "xg_away": 2.232,
-      "win_prob": 0.1183,
-      "draw_prob": 0.1711,
-      "loss_prob": 0.7106,
+      "win_prob": 0.1296,
+      "draw_prob": 0.1642,
+      "loss_prob": 0.7062,
       "model_win": 0.143,
       "model_draw": 0.1878,
       "model_loss": 0.6691,
-      "market_win": 0.1018,
-      "market_draw": 0.1599,
-      "market_loss": 0.7383,
+      "market_win": 0.1206,
+      "market_draw": 0.1484,
+      "market_loss": 0.731,
       "top_scorelines": [
         {
           "home": 0,
