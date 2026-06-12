@@ -2,9 +2,9 @@
   "fixture_id": "GS_B1",
   "home": "Canada",
   "away": "Bosnia-Herzegovina",
-  "home_multiplier": 1.0,
-  "away_multiplier": 1.0,
-  "notes": "",
-  "source": "api_error",
-  "fetched_at": "2026-06-12T10:24:09.548189+00:00"
+  "home_multiplier": 0.82,
+  "away_multiplier": 0.88,
+  "notes": "Canada missing captain Alphonso Davies (hamstring, ruled out vs Bosnia), Marcelo Flores (ACL, tournament-out), and Moise Bombito (fractured tibia, tournament doubt). Davies is Canada's primary creative and attacking threat from left back. Bosnia missing backup striker Haris Tabakovic (fractured meta",
+  "source": "anthropic_web_search",
+  "fetched_at": "2026-06-12T10:51:46.564736+00:00"
 }

@@ -2,9 +2,9 @@
   "fixture_id": "GS_A2",
   "home": "South Korea",
   "away": "Czechia",
-  "home_multiplier": 1.0,
-  "away_multiplier": 1.0,
-  "notes": "",
-  "source": "api_error",
-  "fetched_at": "2026-06-12T10:24:09.547493+00:00"
+  "home_multiplier": 0.95,
+  "away_multiplier": 0.92,
+  "notes": "South Korea: defender Cho Yu-min ruled out with foot injury (replaced by uncapped Cho Wi-je), winger Bae Jun-ho is a major doubt with ankle injury, and Lee Kang-in had limited club minutes in 2025/26 due to injury; midfield depth also hit by a spate of injuries forcing a tactical shift to a back thr",
+  "source": "anthropic_web_search",
+  "fetched_at": "2026-06-12T10:51:32.499611+00:00"
 }
