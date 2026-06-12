@@ -1,5 +1,5 @@
 {
-  "_fetched": "2026-06-12T10:05:17.713516+00:00",
+  "_fetched": "2026-06-12T10:08:27.034260+00:00",
   "matches": {
     "GS_D1": {
       "h2h": {
@@ -248,7 +248,7 @@
         },
         "betfred_uk": {
           "home_win": 6.0,
-          "draw": 4.0,
+          "draw": 4.2,
           "away_win": 1.53
         },
         "betvictor": {
@@ -1747,7 +1747,7 @@
         },
         "betfair_ex_uk": {
           "home_win": 2.26,
-          "draw": 3.25,
+          "draw": 3.3,
           "away_win": 3.5
         },
         "ladbrokes_uk": {
