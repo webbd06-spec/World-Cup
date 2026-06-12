@@ -987,8 +987,11 @@ function panelOdds(p, mOdds) {
   const liveBMs = BM_ORDER.filter(k => k in h2h || k in totals);
 
   if (!liveBMs.length && !hasMktH2H) {
-    return `<p class="no-odds">No bookmaker odds loaded.<br>
-      Set <code>ODDS_API_KEY</code> in <code>.env</code> and run <code>update.py</code>.</p>`;
+    if (!S.oddsUK) {
+      return `<p class="no-odds">No bookmaker odds loaded.<br>
+        Set <code>ODDS_API_KEY</code> in <code>.env</code> and run <code>update.py</code>.</p>`;
+    }
+    return `<p class="no-odds">No odds available for this match.</p>`;
   }
 
   if (!liveBMs.length && hasMktH2H) {
@@ -1054,8 +1057,11 @@ function panelValue(p, mOdds) {
   ];
 
   if (!hasLiveOdds && !hasMktOdds) {
-    return `<p class="no-odds">No bookmaker odds — cannot calculate edge.<br>
-      Set <code>ODDS_API_KEY</code> in <code>.env</code> and run <code>update.py</code>.</p>`;
+    if (!S.oddsUK) {
+      return `<p class="no-odds">No bookmaker odds — cannot calculate edge.<br>
+        Set <code>ODDS_API_KEY</code> in <code>.env</code> and run <code>update.py</code>.</p>`;
+    }
+    return `<p class="no-odds">No odds available for this match.</p>`;
   }
 
   const rows = outcomes.map(({ lbl, mprob, mktProb, bk_key }) => {
