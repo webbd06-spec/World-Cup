@@ -3,8 +3,8 @@
   "home": "South Korea",
   "away": "Czechia",
   "home_multiplier": 0.95,
-  "away_multiplier": 1.0,
-  "notes": "South Korea (home): Defender Cho Yu-min is confirmed out with a foot injury, and winger Bae Jun-ho is a major doubt with an ankle injury — a notable attacking wide option lost. Lee Tae-seok has returned to training after a calf issue. A spate of midfield injuries prompted a tactical shift to a back ",
+  "away_multiplier": 0.98,
+  "notes": "South Korea: Defender Cho Yu-min confirmed out (foot injury); winger Bae Jun-ho is a major doubt with an ankle injury, reducing attacking width options; midfield disruption noted with a tactical shift to a three-man backline due to injury-driven squad changes. Core attack (Son Heung-min, Lee Kang-in",
   "source": "anthropic_web_search",
-  "fetched_at": "2026-06-12T11:42:26.488290+00:00"
+  "fetched_at": "2026-06-12T12:39:37.153030+00:00"
 }
