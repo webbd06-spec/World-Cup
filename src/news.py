@@ -136,7 +136,7 @@ def cmd_fetch():
     import anthropic
     client = anthropic.Anthropic(api_key=api_key)
 
-    with open(DATA / "fixtures.json") as f:
+    with open(DATA / "fixtures.json", encoding="utf-8") as f:
         fixtures_data = json.load(f)
 
     today = date.today().isoformat()
@@ -158,8 +158,8 @@ def cmd_fetch():
         result = _fetch_news_for_match(client, match)
         out    = NEWS_DIR / f"{match['id']}.json"
 
-        with open(out, "w") as f:
-            json.dump(result, f, indent=2)
+        with open(out, "w", encoding="utf-8") as f:
+            json.dump(result, f, indent=2, ensure_ascii=False)
 
         hm = result["home_multiplier"]
         am = result["away_multiplier"]
@@ -177,7 +177,7 @@ def cmd_apply():
     if not preds_path.exists():
         sys.exit("outputs/predictions.json not found — run predict.py first")
 
-    with open(preds_path) as f:
+    with open(preds_path, encoding="utf-8") as f:
         preds_data = json.load(f)
 
     changed = 0
@@ -187,7 +187,7 @@ def cmd_apply():
         if not news_file.exists():
             continue
 
-        with open(news_file) as f:
+        with open(news_file, encoding="utf-8") as f:
             adj = json.load(f)
 
         hm = float(adj.get("home_multiplier", 1.0))
@@ -238,8 +238,8 @@ def cmd_apply():
         print(f"  Applied news adj to {p.get('home')} vs {p.get('away')}: "
               f"xG ×{hm:.2f}/×{am:.2f}")
 
-    with open(preds_path, "w") as f:
-        json.dump(preds_data, f, indent=2)
+    with open(preds_path, "w", encoding="utf-8") as f:
+        json.dump(preds_data, f, indent=2, ensure_ascii=False)
 
     if changed:
         print(f"✓ News adjustments applied to {changed} match(es)")
