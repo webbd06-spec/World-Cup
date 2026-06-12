@@ -586,7 +586,7 @@ const BM_ORDER = Object.keys(BM_NAME);
 
 // ── State ────────────────────────────────────────────────────────────────────
 
-const S = { preds: null, oddsUK: null, group: 'all', date: null, view: 'fixtures' };
+const S = { preds: null, oddsUK: null, results: {}, group: 'all', date: null, view: 'fixtures' };
 
 // ── Boot ─────────────────────────────────────────────────────────────────────
 
@@ -610,6 +610,16 @@ const S = { preds: null, oddsUK: null, group: 'all', date: null, view: 'fixtures
     const r = await fetch('./live_odds_uk.json');
     if (r.ok) S.oddsUK = await r.json();
   } catch (_) { /* odds unavailable */ }
+
+  try {
+    const r = await fetch('./results.json');
+    if (r.ok) {
+      const d = await r.json();
+      S.results = Object.fromEntries(
+        (d.results || []).map(res => [res.id, res])
+      );
+    }
+  } catch (_) { /* results unavailable */ }
 
   S.date = defaultDate();
 
@@ -1246,8 +1256,10 @@ function groupTable(group) {
   const rows = {};
   teamSet.forEach(t => { rows[t] = {team:t, p:0, w:0, d:0, l:0, gf:0, ga:0, gd:0, pts:0}; });
 
-  matches.filter(m => m.result).forEach(m => {
-    const hr = m.result.home, ar = m.result.away;
+  matches.filter(m => m.result || S.results[m.id]).forEach(m => {
+    const live = S.results[m.id];
+    const hr = m.result ? m.result.home : live.home_score;
+    const ar = m.result ? m.result.away : live.away_score;
     rows[m.home].p++; rows[m.away].p++;
     rows[m.home].gf += hr; rows[m.home].ga += ar;
     rows[m.away].gf += ar; rows[m.away].ga += hr;
@@ -1264,7 +1276,7 @@ function groupTable(group) {
   });
 
   const qualProb = mcQual(matches, rows);
-  const played   = matches.filter(m => m.result).length;
+  const played   = matches.filter(m => m.result || S.results[m.id]).length;
 
   const sorted = Object.values(rows)
     .map(r => ({...r, qual: qualProb[r.team] || 0}))
@@ -1360,7 +1372,7 @@ function poissonSample(lam) {
 
 function renderAccuracy() {
   const all      = S.preds.predictions || [];
-  const finished = all.filter(p => p.result && p.home && p.away && p.win_prob != null);
+  const finished = all.filter(p => (p.result || S.results[p.id]) && p.home && p.away && p.win_prob != null);
 
   if (!finished.length) {
     render(`<div class="empty-state">
@@ -1373,7 +1385,9 @@ function renderAccuracy() {
   let correct = 0, betCount = 0, pnl = 0;
 
   const trs = finished.map(m => {
-    const hr = m.result.home, ar = m.result.away;
+    const live = S.results[m.id];
+    const hr = m.result ? m.result.home : live.home_score;
+    const ar = m.result ? m.result.away : live.away_score;
     const actual = hr > ar ? 'win' : hr === ar ? 'draw' : 'loss';
     const predicted = m.win_prob >= m.draw_prob && m.win_prob >= m.loss_prob ? 'win'
                     : m.draw_prob >= m.loss_prob ? 'draw' : 'loss';

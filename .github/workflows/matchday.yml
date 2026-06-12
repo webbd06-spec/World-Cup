@@ -80,10 +80,11 @@ jobs:
         run: python src/news.py --apply
 
       # Step 5 — copy into docs/ so GitHub Pages can serve the files
-      - name: "Step 5 — Copy predictions.json and odds → docs/"
+      - name: "Step 5 — Copy predictions.json, odds, and results → docs/"
         run: |
           cp outputs/predictions.json docs/predictions.json
           cp outputs/live_odds_uk.json docs/live_odds_uk.json 2>/dev/null || true
+          cp data/results.json docs/results.json 2>/dev/null || true
 
       # Step 6 — optional Telegram ping (failures don't abort the workflow)
       - name: "Step 6 — Telegram notification"
@@ -101,7 +102,9 @@ jobs:
           git add outputs/predictions.json \
                   docs/predictions.json \
                   docs/live_odds_uk.json \
+                  docs/results.json \
                   data/fixtures.json \
+                  data/results.json \
                   data/teams.json \
                   data/news/
           git diff --staged --quiet && { echo "Nothing to commit."; exit 0; }
