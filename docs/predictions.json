@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-12T20:38:57.908152Z",
+  "generated_at": "2026-06-12T21:03:10.541211Z",
   "date": "2026-06-12",
   "model_version": "1.0.0",
   "blend_weights": {
@@ -291,7 +291,13 @@
         }
       ],
       "source": "model_only",
-      "blend_weights": null
+      "blend_weights": null,
+      "team_news": {
+        "notes": "",
+        "home_scorers": [],
+        "away_scorers": [],
+        "fetched_at": "2026-06-11T20:01:26.543524+00:00"
+      }
     },
     {
       "id": "GS_A2",
@@ -309,14 +315,14 @@
         "home": 2,
         "away": 1
       },
-      "xg_home": 1.288,
-      "xg_away": 1.179,
-      "win_prob": 0.3903,
-      "draw_prob": 0.2717,
-      "loss_prob": 0.338,
-      "model_win": 0.3903,
-      "model_draw": 0.2717,
-      "model_loss": 0.338,
+      "xg_home": 1.328,
+      "xg_away": 1.228,
+      "win_prob": 0.3905,
+      "draw_prob": 0.2662,
+      "loss_prob": 0.3433,
+      "model_win": 0.3905,
+      "model_draw": 0.2662,
+      "model_loss": 0.3433,
       "market_win": null,
       "market_draw": null,
       "market_loss": null,
@@ -324,116 +330,116 @@
         {
           "home": 1,
           "away": 1,
-          "prob": 0.1288
+          "prob": 0.1266
         },
         {
           "home": 1,
           "away": 0,
-          "prob": 0.1093
+          "prob": 0.1031
         },
         {
           "home": 0,
           "away": 1,
-          "prob": 0.1
-        },
-        {
-          "home": 0,
-          "away": 0,
-          "prob": 0.0848
+          "prob": 0.0953
         },
         {
           "home": 2,
           "away": 1,
-          "prob": 0.083
+          "prob": 0.084
         },
         {
           "home": 1,
           "away": 2,
-          "prob": 0.0759
+          "prob": 0.0777
+        },
+        {
+          "home": 0,
+          "away": 0,
+          "prob": 0.0776
         }
       ],
       "score_matrix": [
         [
-          0.08484,
-          0.10001,
-          0.05895,
-          0.02317,
-          0.00683,
-          0.00161,
-          0.00032,
-          5e-05,
-          1e-05
-        ],
-        [
-          0.10928,
-          0.12883,
-          0.07594,
-          0.02984,
-          0.00879,
-          0.00207,
-          0.00041,
-          7e-05,
-          1e-05
-        ],
-        [
-          0.07039,
-          0.08298,
-          0.04891,
-          0.01922,
-          0.00566,
-          0.00134,
-          0.00026,
-          4e-05,
-          1e-05
-        ],
-        [
-          0.03022,
-          0.03563,
-          0.021,
-          0.00825,
-          0.00243,
-          0.00057,
-          0.00011,
-          2e-05,
-          0.0
-        ],
-        [
-          0.00973,
-          0.01147,
-          0.00676,
-          0.00266,
-          0.00078,
-          0.00018,
-          4e-05,
-          1e-05,
-          0.0
-        ],
-        [
-          0.00251,
-          0.00296,
-          0.00174,
-          0.00068,
-          0.0002,
-          5e-05,
-          1e-05,
-          0.0,
-          0.0
-        ],
-        [
-          0.00054,
-          0.00063,
+          0.07763,
+          0.09532,
+          0.05852,
+          0.02395,
+          0.00735,
+          0.00181,
           0.00037,
-          0.00015,
-          4e-05,
+          6e-05,
+          1e-05
+        ],
+        [
+          0.10309,
+          0.12658,
+          0.07771,
+          0.0318,
+          0.00976,
+          0.0024,
+          0.00049,
+          9e-05,
+          1e-05
+        ],
+        [
+          0.06845,
+          0.08404,
+          0.0516,
+          0.02112,
+          0.00648,
+          0.00159,
+          0.00033,
+          6e-05,
+          1e-05
+        ],
+        [
+          0.0303,
+          0.0372,
+          0.02284,
+          0.00935,
+          0.00287,
+          0.0007,
+          0.00014,
+          3e-05,
+          0.0
+        ],
+        [
+          0.01006,
+          0.01235,
+          0.00758,
+          0.0031,
+          0.00095,
+          0.00023,
+          5e-05,
+          1e-05,
+          0.0
+        ],
+        [
+          0.00267,
+          0.00328,
+          0.00201,
+          0.00082,
+          0.00025,
+          6e-05,
+          1e-05,
+          0.0,
+          0.0
+        ],
+        [
+          0.00059,
+          0.00073,
+          0.00045,
+          0.00018,
+          6e-05,
           1e-05,
           0.0,
           0.0,
           0.0
         ],
         [
-          0.0001,
-          0.00012,
-          7e-05,
+          0.00011,
+          0.00014,
+          8e-05,
           3e-05,
           1e-05,
           0.0,
@@ -445,7 +451,7 @@
           2e-05,
           2e-05,
           1e-05,
-          0.0,
+          1e-05,
           0.0,
           0.0,
           0.0,
@@ -561,16 +567,16 @@
       ],
       "source": "model_only",
       "blend_weights": null,
-      "news_adjustment": {
-        "home": 0.97,
-        "away": 0.96,
-        "notes": "South Korea (home): Defender Cho Yu-min ruled out with a plantar foot injury, replaced by uncapped Jo Wi-je — a defensive loss with negligible attacking impact. Attack remains fully intact with Son Heung-min, Lee Kang-in, and Hwang Hee-chan all fit and expected to start; warm-up wins over Trinidad &…"
-      },
       "team_news": {
         "notes": "South Korea (home): Defender Cho Yu-min ruled out with a plantar foot injury, replaced by uncapped Jo Wi-je — a defensive loss with negligible attacking impact. Attack remains fully intact with Son Heung-min, Lee Kang-in, and Hwang Hee-chan all fit and expected to start; warm-up wins over Trinidad &…",
         "home_scorers": [],
         "away_scorers": [],
         "fetched_at": "2026-06-12T20:38:47.363464+00:00"
+      },
+      "news_adjustment": {
+        "home": 0.97,
+        "away": 0.96,
+        "notes": "South Korea (home): Defender Cho Yu-min ruled out with a plantar foot injury, replaced by uncapped Jo Wi-je — a defensive loss with negligible attacking impact. Attack remains fully intact with Son Heung-min, Lee Kang-in, and Hwang Hee-chan all fit and expected to start; warm-up wins over Trinidad &…"
       }
     },
     {
@@ -1656,17 +1662,17 @@
       "city": "Toronto",
       "status": "in_play",
       "result": {
-        "home": 0,
+        "home": 1,
         "away": 1
       },
-      "xg_home": 1.081,
-      "xg_away": 1.231,
-      "win_prob": 0.3221,
-      "draw_prob": 0.2818,
-      "loss_prob": 0.3961,
-      "model_win": 0.3221,
-      "model_draw": 0.2818,
-      "model_loss": 0.3961,
+      "xg_home": 1.318,
+      "xg_away": 1.269,
+      "win_prob": 0.3792,
+      "draw_prob": 0.2646,
+      "loss_prob": 0.3562,
+      "model_win": 0.3792,
+      "model_draw": 0.2646,
+      "model_loss": 0.3562,
       "market_win": null,
       "market_draw": null,
       "market_loss": null,
@@ -1674,128 +1680,128 @@
         {
           "home": 1,
           "away": 1,
-          "prob": 0.1318
+          "prob": 0.1259
+        },
+        {
+          "home": 1,
+          "away": 0,
+          "prob": 0.0992
         },
         {
           "home": 0,
           "away": 1,
-          "prob": 0.122
+          "prob": 0.0955
         },
         {
-          "home": 1,
-          "away": 0,
-          "prob": 0.1071
-        },
-        {
-          "home": 0,
-          "away": 0,
-          "prob": 0.0991
+          "home": 2,
+          "away": 1,
+          "prob": 0.0829
         },
         {
           "home": 1,
           "away": 2,
-          "prob": 0.0811
+          "prob": 0.0798
         },
         {
           "home": 0,
-          "away": 2,
-          "prob": 0.0751
+          "away": 0,
+          "prob": 0.0753
         }
       ],
       "score_matrix": [
         [
-          0.09909,
-          0.12198,
-          0.07507,
-          0.0308,
-          0.00948,
-          0.00233,
-          0.00048,
+          0.07528,
+          0.09552,
+          0.06059,
+          0.02563,
+          0.00813,
+          0.00206,
+          0.00044,
           8e-05,
           1e-05
         ],
         [
-          0.1071,
-          0.13183,
-          0.08114,
-          0.03329,
-          0.01024,
-          0.00252,
-          0.00052,
-          9e-05,
-          1e-05
-        ],
-        [
-          0.05787,
-          0.07124,
-          0.04384,
-          0.01799,
-          0.00554,
-          0.00136,
-          0.00028,
-          5e-05,
-          1e-05
-        ],
-        [
-          0.02085,
-          0.02566,
-          0.01579,
-          0.00648,
-          0.00199,
-          0.00049,
+          0.0992,
+          0.12587,
+          0.07985,
+          0.03377,
+          0.01071,
+          0.00272,
+          0.00057,
           0.0001,
-          2e-05,
-          0.0
+          2e-05
         ],
         [
-          0.00563,
-          0.00693,
-          0.00427,
-          0.00175,
-          0.00054,
-          0.00013,
-          3e-05,
-          0.0,
-          0.0
-        ],
-        [
-          0.00122,
-          0.0015,
-          0.00092,
+          0.06536,
+          0.08293,
+          0.05261,
+          0.02225,
+          0.00706,
+          0.00179,
           0.00038,
-          0.00012,
+          7e-05,
+          1e-05
+        ],
+        [
+          0.02871,
+          0.03643,
+          0.02311,
+          0.00977,
+          0.0031,
+          0.00079,
+          0.00017,
           3e-05,
+          0.0
+        ],
+        [
+          0.00946,
+          0.012,
+          0.00761,
+          0.00322,
+          0.00102,
+          0.00026,
+          5e-05,
+          1e-05,
+          0.0
+        ],
+        [
+          0.00249,
+          0.00316,
+          0.00201,
+          0.00085,
+          0.00027,
+          7e-05,
           1e-05,
           0.0,
           0.0
         ],
         [
-          0.00022,
-          0.00027,
-          0.00017,
-          7e-05,
+          0.00055,
+          0.00069,
+          0.00044,
+          0.00019,
+          6e-05,
+          1e-05,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0001,
+          0.00013,
+          8e-05,
+          4e-05,
+          1e-05,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          2e-05,
           2e-05,
           1e-05,
-          0.0,
-          0.0,
-          0.0
-        ],
-        [
-          3e-05,
-          4e-05,
-          3e-05,
           1e-05,
-          0.0,
-          0.0,
-          0.0,
-          0.0,
-          0.0
-        ],
-        [
-          0.0,
-          1e-05,
-          0.0,
-          0.0,
           0.0,
           0.0,
           0.0,
@@ -1911,16 +1917,16 @@
       ],
       "source": "model_only",
       "blend_weights": null,
-      "news_adjustment": {
-        "home": 0.82,
-        "away": 0.97,
-        "notes": "Canada missing confirmed tournament absentees Marcelo Flores (ACL) and Moise Bombito (tibia), while star left-back and captain Alphonso Davies is a major doubt/late fitness test with a hamstring strain — three significant players absent or uncertain, severely denting attacking width and quality. Bos…"
-      },
       "team_news": {
         "notes": "Canada missing confirmed tournament absentees Marcelo Flores (ACL) and Moise Bombito (tibia), while star left-back and captain Alphonso Davies is a major doubt/late fitness test with a hamstring strain — three significant players absent or uncertain, severely denting attacking width and quality. Bos…",
         "home_scorers": [],
         "away_scorers": [],
         "fetched_at": "2026-06-12T20:38:57.785301+00:00"
+      },
+      "news_adjustment": {
+        "home": 0.82,
+        "away": 0.97,
+        "notes": "Canada missing confirmed tournament absentees Marcelo Flores (ACL) and Moise Bombito (tibia), while star left-back and captain Alphonso Davies is a major doubt/late fitness test with a hamstring strain — three significant players absent or uncertain, severely denting attacking width and quality. Bos…"
       }
     },
     {
