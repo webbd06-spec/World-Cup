@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-12T09:38:15.318927Z",
+  "generated_at": "2026-06-12T09:44:28.515768Z",
   "date": "2026-06-12",
   "model_version": "1.0.0",
   "blend_weights": {
@@ -35,8 +35,11 @@
       "kickoff_utc": "19:00",
       "venue": "Estadio Azteca",
       "city": "Mexico City",
-      "status": "scheduled",
-      "result": null,
+      "status": "finished",
+      "result": {
+        "home": 2,
+        "away": 0
+      },
       "xg_home": 1.577,
       "xg_away": 0.994,
       "win_prob": 0.5091,
@@ -301,8 +304,11 @@
       "kickoff_utc": "02:00",
       "venue": "Estadio Akron",
       "city": "Zapopan",
-      "status": "scheduled",
-      "result": null,
+      "status": "finished",
+      "result": {
+        "home": 2,
+        "away": 1
+      },
       "xg_home": 1.369,
       "xg_away": 1.279,
       "win_prob": 0.3906,
