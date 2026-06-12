@@ -30,6 +30,7 @@ permissions:
 
 env:
   PYTHON_VERSION: "3.11"
+  PYTHONUTF8: "1"
 
 # ─────────────────────────────────────────────────────────────────────────────
 # JOB 1 — Morning prediction (daily at 11:00 UTC)

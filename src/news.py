@@ -128,6 +128,7 @@ def _neutral(fid, home, away, source):
 
 def cmd_fetch():
     """--fetch: search web and write data/news/<id>.json for today's matches."""
+    sys.stdout.reconfigure(encoding="utf-8")
     api_key = os.environ.get("ANTHROPIC_API_KEY", "")
     if not api_key:
         print("ANTHROPIC_API_KEY not set — skipping news fetch")
