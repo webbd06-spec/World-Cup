@@ -1,0 +1,10 @@
+{
+  "fixture_id": "GS_B1",
+  "home": "Canada",
+  "away": "Bosnia-Herzegovina",
+  "home_multiplier": 1.0,
+  "away_multiplier": 1.0,
+  "notes": "",
+  "source": "api_error",
+  "fetched_at": "2026-06-12T09:38:15.208893+00:00"
+}
