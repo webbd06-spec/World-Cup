@@ -262,6 +262,61 @@ main {
 .dot.on.med { background: var(--amber); }
 .dot.on.lo  { background: var(--muted); }
 
+/* ── Finished match result display ──────────────────────── */
+.final-badge {
+  background: var(--s3); border-radius: 4px;
+  padding: 1px 6px; font-size: .67rem; font-weight: 700;
+  letter-spacing: .04em; color: var(--muted); white-space: nowrap;
+}
+.result-body { padding: 11px 11px 13px; }
+.result-score-row {
+  display: grid; grid-template-columns: 1fr auto 1fr;
+  align-items: center; gap: 6px; margin-bottom: 9px;
+}
+.result-score-box {
+  background: var(--s2); border: 1px solid var(--border);
+  border-radius: 7px; padding: 5px 13px;
+  font-size: 1.25rem; font-weight: 800;
+  text-align: center; white-space: nowrap; flex-shrink: 0;
+}
+.result-outcome-row {
+  display: flex; align-items: center; flex-wrap: wrap;
+  gap: 6px; margin-bottom: 9px;
+}
+.outcome-badge {
+  display: inline-flex; align-items: center; gap: 3px;
+  border-radius: 5px; padding: 2px 8px;
+  font-size: .72rem; font-weight: 700;
+}
+.outcome-badge.correct {
+  background: rgba(34,197,94,.12); color: var(--green);
+  border: 1px solid rgba(34,197,94,.3);
+}
+.outcome-badge.wrong {
+  background: rgba(239,68,68,.1); color: var(--red);
+  border: 1px solid rgba(239,68,68,.25);
+}
+.exact-badge {
+  display: inline-flex; align-items: center; gap: 3px;
+  border-radius: 5px; padding: 2px 7px;
+  font-size: .67rem; font-weight: 600;
+  color: var(--muted); background: var(--s2);
+  border: 1px solid var(--border);
+}
+.result-pred-row {
+  font-size: .7rem; color: var(--muted);
+  border-top: 1px solid var(--border); padding-top: 8px;
+  text-align: center;
+}
+.result-pred-row .rp-score { color: var(--text); font-weight: 600; }
+.result-pred-row .rp-probs {
+  display: flex; justify-content: center; gap: 10px;
+  margin-top: 3px; font-size: .67rem;
+}
+.result-pred-row .rp-probs .w { color: var(--green); }
+.result-pred-row .rp-probs .d { color: var(--muted); }
+.result-pred-row .rp-probs .l { color: var(--red);   }
+
 /* ── Tabs ────────────────────────────────────────────────── */
 .tabs {
   border-top: 1px solid var(--border);
@@ -838,14 +893,86 @@ function card(p) {
   const id    = p.id;
   const isEng = (p.home === 'England' || p.away === 'England');
   const mOdds = S.oddsUK?.matches?.[id] || null;
+
+  // Resolve result from predictions.json or results.json
+  const live      = S.results[id];
+  const result    = p.result || (live ? {home: live.home_score, away: live.away_score} : null);
+  const isFinished = !!result;
+
+  const wp = p.win_prob||0, dp = p.draw_prob||0, lp = p.loss_prob||0;
+  const topSl = (p.top_scorelines||[])[0];
+
+  // ── Finished card ──────────────────────────────────────────
+  if (isFinished) {
+    const actualOutcome = result.home > result.away ? 'home'
+                        : result.home === result.away ? 'draw' : 'away';
+    const predOutcome   = wp >= dp && wp >= lp ? 'home'
+                        : dp >= lp             ? 'draw' : 'away';
+    const outcomeOk  = actualOutcome === predOutcome;
+    const exactOk    = topSl && topSl.home === result.home && topSl.away === result.away;
+    const predLabel  = predOutcome === 'home' ? p.home
+                     : predOutcome === 'draw' ? 'Draw' : p.away;
+    const predScore  = topSl ? `${topSl.home}–${topSl.away}` : '?–?';
+
+    return `
+<div class="card${isEng?' england':''}" id="c_${id}">
+  <div class="cmeta">
+    <span class="stage-badge">${stageLabel(p)}</span>
+    <span class="final-badge">FINAL</span>
+  </div>
+
+  <div class="result-body">
+    <div class="result-score-row">
+      <div class="team home">
+        <span class="flag">${flag(p.home)}</span>
+        <span class="tname">${p.home}</span>
+      </div>
+      <div class="result-score-box">${result.home} – ${result.away}</div>
+      <div class="team away">
+        <span class="flag">${flag(p.away)}</span>
+        <span class="tname">${p.away}</span>
+      </div>
+    </div>
+
+    <div class="result-outcome-row">
+      <span class="outcome-badge ${outcomeOk ? 'correct' : 'wrong'}">
+        ${outcomeOk ? '✓' : '✗'} ${predLabel} predicted
+      </span>
+      <span class="exact-badge">
+        ${exactOk ? '✓' : '✗'} Exact: ${predScore} predicted
+      </span>
+    </div>
+
+    <div class="result-pred-row">
+      Predicted <span class="rp-score">${p.home} ${predScore} ${p.away}</span>
+      <div class="rp-probs">
+        <span class="w">Win ${pct(wp)}</span>
+        <span class="d">Draw ${pct(dp)}</span>
+        <span class="l">Loss ${pct(lp)}</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="tabs">
+    <button class="tab-btn" onclick="tab(this,'${id}-sl')">Scorelines</button>
+    <button class="tab-btn" onclick="tab(this,'${id}-odds')">Bookmaker odds</button>
+    <button class="tab-btn" onclick="tab(this,'${id}-val')">Value bets</button>
+    <button class="tab-btn" onclick="tab(this,'${id}-ah')">Asian H.</button>
+  </div>
+  <div id="${id}-sl"   class="tab-panel">${panelScorelines(p)}</div>
+  <div id="${id}-odds" class="tab-panel">${panelOdds(p, mOdds)}</div>
+  <div id="${id}-val"  class="tab-panel">${panelValue(p, mOdds)}</div>
+  <div id="${id}-ah"   class="tab-panel">${panelAH(p, mOdds)}</div>
+</div>`;
+  }
+
+  // ── Upcoming card (unchanged) ──────────────────────────────
   const tags  = adjTags(p);
   const conf  = confidence(p);
 
   const xgTot = (p.xg_home||0) + (p.xg_away||0) || 2;
   const xgHw  = ((p.xg_home||0) / xgTot * 100).toFixed(1);
   const xgAw  = ((p.xg_away||0) / xgTot * 100).toFixed(1);
-
-  const wp = p.win_prob||0, dp = p.draw_prob||0, lp = p.loss_prob||0;
 
   const dotsHtml = [1,2,3].map(i => {
     const on = i <= conf.n ? ` on${conf.cls?' '+conf.cls:''}` : '';
