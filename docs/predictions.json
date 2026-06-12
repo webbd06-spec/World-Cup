@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-12T11:24:54.271919Z",
+  "generated_at": "2026-06-12T11:42:39.130706Z",
   "date": "2026-06-12",
   "model_version": "1.0.0",
   "blend_weights": {
@@ -309,14 +309,14 @@
         "home": 2,
         "away": 1
       },
-      "xg_home": 1.369,
-      "xg_away": 1.241,
-      "win_prob": 0.3986,
-      "draw_prob": 0.2627,
-      "loss_prob": 0.3386,
-      "model_win": 0.3986,
-      "model_draw": 0.2627,
-      "model_loss": 0.3386,
+      "xg_home": 1.301,
+      "xg_away": 1.279,
+      "win_prob": 0.3725,
+      "draw_prob": 0.2651,
+      "loss_prob": 0.3624,
+      "model_win": 0.3725,
+      "model_draw": 0.2651,
+      "model_loss": 0.3624,
       "market_win": null,
       "market_draw": null,
       "market_loss": null,
@@ -324,127 +324,127 @@
         {
           "home": 1,
           "away": 1,
-          "prob": 0.1249
+          "prob": 0.1261
         },
         {
           "home": 1,
           "away": 0,
-          "prob": 0.1007
+          "prob": 0.0986
         },
         {
           "home": 0,
           "away": 1,
-          "prob": 0.0913
+          "prob": 0.097
         },
         {
           "home": 2,
           "away": 1,
-          "prob": 0.0855
+          "prob": 0.082
         },
         {
           "home": 1,
           "away": 2,
-          "prob": 0.0775
+          "prob": 0.0806
         },
         {
           "home": 0,
           "away": 0,
-          "prob": 0.0736
+          "prob": 0.0758
         }
       ],
       "score_matrix": [
         [
-          0.07356,
-          0.09126,
-          0.05661,
-          0.02341,
-          0.00726,
-          0.0018,
-          0.00037,
+          0.07581,
+          0.09696,
+          0.06201,
+          0.02643,
+          0.00845,
+          0.00216,
+          0.00046,
+          8e-05,
+          1e-05
+        ],
+        [
+          0.09859,
+          0.1261,
+          0.08064,
+          0.03438,
+          0.01099,
+          0.00281,
+          0.0006,
+          0.00011,
+          2e-05
+        ],
+        [
+          0.06411,
+          0.082,
+          0.05244,
+          0.02236,
+          0.00715,
+          0.00183,
+          0.00039,
           7e-05,
           1e-05
         ],
         [
-          0.10071,
-          0.12494,
-          0.0775,
-          0.03205,
-          0.00994,
-          0.00247,
-          0.00051,
-          9e-05,
-          1e-05
-        ],
-        [
-          0.06893,
-          0.08552,
-          0.05305,
-          0.02194,
-          0.0068,
-          0.00169,
-          0.00035,
-          6e-05,
-          1e-05
-        ],
-        [
-          0.03146,
-          0.03903,
-          0.02421,
-          0.01001,
-          0.00311,
-          0.00077,
-          0.00016,
+          0.02779,
+          0.03555,
+          0.02273,
+          0.00969,
+          0.0031,
+          0.00079,
+          0.00017,
           3e-05,
           0.0
         ],
         [
-          0.01077,
-          0.01336,
-          0.00829,
-          0.00343,
-          0.00106,
+          0.00904,
+          0.01156,
+          0.00739,
+          0.00315,
+          0.00101,
           0.00026,
           5e-05,
           1e-05,
           0.0
         ],
         [
-          0.00295,
-          0.00366,
-          0.00227,
-          0.00094,
-          0.00029,
+          0.00235,
+          0.00301,
+          0.00192,
+          0.00082,
+          0.00026,
           7e-05,
           1e-05,
           0.0,
           0.0
         ],
         [
-          0.00067,
-          0.00083,
-          0.00052,
-          0.00021,
-          7e-05,
-          2e-05,
-          0.0,
-          0.0,
-          0.0
-        ],
-        [
-          0.00013,
-          0.00016,
-          0.0001,
-          4e-05,
+          0.00051,
+          0.00065,
+          0.00042,
+          0.00018,
+          6e-05,
           1e-05,
           0.0,
           0.0,
-          0.0,
           0.0
         ],
         [
-          2e-05,
+          9e-05,
+          0.00012,
+          8e-05,
           3e-05,
+          1e-05,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
           2e-05,
+          2e-05,
+          1e-05,
           1e-05,
           0.0,
           0.0,
@@ -562,9 +562,9 @@
       "source": "model_only",
       "blend_weights": null,
       "news_adjustment": {
-        "home": 1.0,
-        "away": 0.97,
-        "notes": "No confirmed injuries or suspensions for South Korea ahead of kickoff; full squad available including Son Heung-min and Hwang In-beom. Czechia had no suspensions but Hlozek entered the tournament in doubt after missing most of the Bundesliga season with calf and foot injuries, though he recovered en"
+        "home": 0.95,
+        "away": 1.0,
+        "notes": "South Korea (home): Defender Cho Yu-min is confirmed out with a foot injury, and winger Bae Jun-ho is a major doubt with an ankle injury — a notable attacking wide option lost. Lee Tae-seok has returned to training after a calf issue. A spate of midfield injuries prompted a tactical shift to a back "
       }
     },
     {
@@ -1651,13 +1651,13 @@
       "status": "scheduled",
       "result": null,
       "xg_home": 1.414,
-      "xg_away": 1.269,
-      "win_prob": 0.4044,
-      "draw_prob": 0.2583,
-      "loss_prob": 0.3373,
-      "model_win": 0.4044,
-      "model_draw": 0.2583,
-      "model_loss": 0.3373,
+      "xg_away": 1.216,
+      "win_prob": 0.4157,
+      "draw_prob": 0.2606,
+      "loss_prob": 0.3237,
+      "model_win": 0.4157,
+      "model_draw": 0.2606,
+      "model_loss": 0.3237,
       "market_win": null,
       "market_draw": null,
       "market_loss": null,
@@ -1665,118 +1665,118 @@
         {
           "home": 1,
           "away": 1,
-          "prob": 0.1227
+          "prob": 0.1239
         },
         {
           "home": 1,
           "away": 0,
-          "prob": 0.0967
+          "prob": 0.1019
         },
         {
           "home": 0,
           "away": 1,
-          "prob": 0.0867
+          "prob": 0.0876
         },
         {
           "home": 2,
           "away": 1,
-          "prob": 0.0867
+          "prob": 0.0876
         },
         {
           "home": 1,
           "away": 2,
-          "prob": 0.0778
+          "prob": 0.0754
         },
         {
           "home": 0,
           "away": 0,
-          "prob": 0.0684
+          "prob": 0.072
         }
       ],
       "score_matrix": [
         [
-          0.06836,
-          0.08674,
-          0.05502,
-          0.02327,
-          0.00738,
-          0.00187,
-          0.0004,
-          7e-05,
+          0.07204,
+          0.08763,
+          0.0533,
+          0.02161,
+          0.00657,
+          0.0016,
+          0.00032,
+          6e-05,
           1e-05
         ],
         [
-          0.09668,
-          0.12266,
-          0.07781,
-          0.03291,
-          0.01044,
-          0.00265,
-          0.00056,
-          0.0001,
-          2e-05
-        ],
-        [
-          0.06836,
-          0.08673,
-          0.05502,
-          0.02327,
-          0.00738,
-          0.00187,
-          0.0004,
-          7e-05,
+          0.10187,
+          0.12392,
+          0.07537,
+          0.03056,
+          0.00929,
+          0.00226,
+          0.00046,
+          8e-05,
           1e-05
         ],
         [
-          0.03222,
-          0.04088,
-          0.02594,
-          0.01097,
-          0.00348,
-          0.00088,
-          0.00019,
+          0.07203,
+          0.08762,
+          0.05329,
+          0.02161,
+          0.00657,
+          0.0016,
+          0.00032,
+          6e-05,
+          1e-05
+        ],
+        [
+          0.03395,
+          0.0413,
+          0.02512,
+          0.01019,
+          0.0031,
+          0.00075,
+          0.00015,
           3e-05,
-          1e-05
+          0.0
         ],
         [
-          0.01139,
-          0.01445,
-          0.00917,
-          0.00388,
-          0.00123,
-          0.00031,
-          7e-05,
+          0.012,
+          0.0146,
+          0.00888,
+          0.0036,
+          0.0011,
+          0.00027,
+          5e-05,
           1e-05,
           0.0
         ],
         [
-          0.00322,
-          0.00409,
-          0.00259,
-          0.0011,
-          0.00035,
-          9e-05,
-          2e-05,
-          0.0,
-          0.0
-        ],
-        [
-          0.00076,
-          0.00096,
-          0.00061,
-          0.00026,
+          0.0034,
+          0.00413,
+          0.00251,
+          0.00102,
+          0.00031,
           8e-05,
           2e-05,
           0.0,
+          0.0
+        ],
+        [
+          0.0008,
+          0.00097,
+          0.00059,
+          0.00024,
+          7e-05,
+          2e-05,
+          0.0,
           0.0,
           0.0
         ],
         [
-          0.00015,
-          0.00019,
+          0.00016,
+          0.0002,
           0.00012,
           5e-05,
-          2e-05,
+          1e-05,
           0.0,
           0.0,
           0.0,
@@ -1904,8 +1904,8 @@
       "blend_weights": null,
       "news_adjustment": {
         "home": 0.88,
-        "away": 0.97,
-        "notes": "Canada confirmed without Alphonso Davies (hamstring, ruled out for opener per Bleacher Report), Marcelo Flores (ACL, tournament out), Moise Bombito (tibia/undisclosed), Ali Ahmed (hamstring), and Jacob Shaffelburg (leg) — Davies being the most critical attacking loss as Canada's star left-back and t"
+        "away": 0.93,
+        "notes": "Canada (home): Alphonso Davies (hamstring) ruled out for the opener and unlikely to feature even as a sub; Moise Bombito (fractured tibia) also out; Marcelo Flores out for the tournament (ACL); Ali Ahmed (hamstring) and Jacob Shaffelburg (leg) are doubts — significant attacking/creative losses espec"
       }
     },
     {
