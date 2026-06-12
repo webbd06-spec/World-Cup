@@ -1515,7 +1515,7 @@ function renderAccuracy() {
     return;
   }
 
-  let correct = 0, betCount = 0, pnl = 0;
+  let correct = 0, exactCorrect = 0, betCount = 0, pnl = 0;
 
   const trs = finished.map(m => {
     const live = S.results[m.id];
@@ -1526,6 +1526,10 @@ function renderAccuracy() {
                     : m.draw_prob >= m.loss_prob ? 'draw' : 'loss';
     const isOk = actual === predicted;
     if (isOk) correct++;
+
+    const topSl   = (m.top_scorelines || [])[0];
+    const isExact = !!(topSl && topSl.home === hr && topSl.away === ar);
+    if (isExact) exactCorrect++;
 
     // P&L for value bets (≥5% edge)
     const matchOdds = S.oddsUK?.matches?.[m.id];
@@ -1554,22 +1558,27 @@ function renderAccuracy() {
     const pnlCell = matchPnl === null ? '<td style="color:var(--muted)">—</td>'
       : `<td>${betLabels.join(' ')}</td>`;
 
-    const predLbl = predicted === 'win' ? m.home : predicted === 'draw' ? 'Draw' : m.away;
-    const actLbl  = actual === 'win' ? 'Home win' : actual === 'draw' ? 'Draw' : 'Away win';
-    const tick    = isOk ? '<span style="color:var(--green)">✓</span>'
-                         : '<span style="color:var(--red)">✗</span>';
+    const predLbl   = predicted === 'win' ? m.home : predicted === 'draw' ? 'Draw' : m.away;
+    const actLbl    = actual === 'win' ? 'Home win' : actual === 'draw' ? 'Draw' : 'Away win';
+    const predScore = topSl ? `${topSl.home}–${topSl.away}` : '?–?';
+    const tick      = isOk    ? '<span style="color:var(--green)">✓</span>'
+                               : '<span style="color:var(--red)">✗</span>';
+    const exactTick = isExact ? '<span style="color:var(--green)">✓</span>'
+                               : `<span style="color:var(--muted)">${predScore}</span>`;
 
     return `<tr class="${isOk ? 'acc-ok' : 'acc-miss'}">
       <td>${flag(m.home)} ${m.home} <b>${hr}–${ar}</b> ${flag(m.away)} ${m.away}</td>
       <td>${predLbl}</td>
       <td>${actLbl}</td>
       <td style="text-align:center">${tick}</td>
+      <td style="text-align:center">${exactTick}</td>
       ${pnlCell}
     </tr>`;
   }).join('');
 
-  const total  = finished.length;
-  const accPct = (correct / total * 100).toFixed(1);
+  const total     = finished.length;
+  const accPct    = (correct      / total * 100).toFixed(1);
+  const exactPct  = (exactCorrect / total * 100).toFixed(1);
   const pnlCls = pnl >= 0 ? 'green' : 'red';
   const pnlStr = (pnl >= 0 ? '+' : '−') + '£' + Math.abs(pnl).toFixed(2);
 
@@ -1577,7 +1586,11 @@ function renderAccuracy() {
     <div class="acc-summary">
       <div class="acc-stat">
         <div class="acc-stat-val">${accPct}%</div>
-        <div class="acc-stat-lbl">Accuracy (${correct}/${total})</div>
+        <div class="acc-stat-lbl">Result accuracy (${correct}/${total})</div>
+      </div>
+      <div class="acc-stat">
+        <div class="acc-stat-val">${exactPct}%</div>
+        <div class="acc-stat-lbl">Exact score (${exactCorrect}/${total})</div>
       </div>
       <div class="acc-stat">
         <div class="acc-stat-val">${total}</div>
@@ -1591,7 +1604,7 @@ function renderAccuracy() {
     <div class="acc-tbl-wrap">
       <table class="acc-tbl">
         <thead><tr>
-          <th>Match</th><th>Predicted</th><th>Result</th><th></th><th>P&amp;L</th>
+          <th>Match</th><th>Predicted</th><th>Result</th><th>W/D/L</th><th>Exact</th><th>P&amp;L</th>
         </tr></thead>
         <tbody>${trs}</tbody>
       </table>
