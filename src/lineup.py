@@ -75,12 +75,17 @@ def cmd_check():
     """
     fixtures = _load_fixtures()
     now      = datetime.now(timezone.utc)
-    cutoff   = now + timedelta(minutes=90)
+    # Look 120 min ahead (buffer for GitHub cron delays) and 20 min behind
+    # (catch cases where the cron fired slightly after kickoff).
+    window_start = now - timedelta(minutes=20)
+    window_end   = now + timedelta(minutes=120)
 
     upcoming = []
     for m in fixtures:
         if not m.get("home") or not m.get("away"):
             continue  # TBD knockout
+        if m.get("status") == "finished":
+            continue  # already played — no lineup needed
         date_str = m.get("date", "")
         ko_str   = m.get("kickoff_utc", "")
         if not date_str or not ko_str:
@@ -89,7 +94,7 @@ def cmd_check():
             kickoff = datetime.fromisoformat(f"{date_str}T{ko_str}:00+00:00")
         except ValueError:
             continue
-        if now <= kickoff <= cutoff:
+        if window_start <= kickoff <= window_end:
             upcoming.append(m["id"])
 
     _set_output("has_match", "true" if upcoming else "false")

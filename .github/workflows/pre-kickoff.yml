@@ -1,0 +1,115 @@
+name: WC 2026 — Pre-kickoff Lineup Update
+
+on:
+  schedule:
+    - cron: "*/15 0-5,14-23 * * *"   # every 15 min during match hours
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+env:
+  PYTHON_VERSION: "3.11"
+  PYTHONUTF8: "1"
+
+jobs:
+  pre-kickoff-update:
+    name: "Pre-kickoff lineup update"
+    runs-on: ubuntu-latest
+
+    # Prevent two concurrent runs racing over the same commit
+    concurrency:
+      group: pre-kickoff-update
+      cancel-in-progress: false
+
+    steps:
+      # Gate: only proceed inside the tournament window (Jun 11 – Jul 19 2026)
+      - name: "Check tournament window"
+        id: date-gate
+        run: |
+          TODAY=$(date -u +%Y-%m-%d)
+          if [[ "$TODAY" < "2026-06-11" || "$TODAY" > "2026-07-19" ]]; then
+            echo "Outside tournament window ($TODAY) — exiting."
+            echo "in_window=false" >> "$GITHUB_OUTPUT"
+          else
+            echo "Inside tournament window ($TODAY)."
+            echo "in_window=true"  >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Checkout
+        if: steps.date-gate.outputs.in_window == 'true'
+        uses: actions/checkout@v5
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: "Set up Python ${{ env.PYTHON_VERSION }}"
+        if: steps.date-gate.outputs.in_window == 'true'
+        uses: actions/setup-python@v6
+        with:
+          python-version: ${{ env.PYTHON_VERSION }}
+          cache: pip
+
+      - name: Install dependencies
+        if: steps.date-gate.outputs.in_window == 'true'
+        run: pip install -r requirements.txt
+
+      # Step 1 — scan fixtures.json for any match kicking off within the window
+      #   Window: 20 min past kickoff → 120 min before kickoff
+      #   Outputs: has_match=true|false   match_ids="GS_L1 GS_A2"
+      - name: "Step 1 — Check for upcoming kickoffs"
+        if: steps.date-gate.outputs.in_window == 'true'
+        id: kickoff-check
+        env:
+          FOOTBALL_DATA_API_KEY: ${{ secrets.FOOTBALL_DATA_API_KEY }}
+        run: python src/lineup.py --check
+
+      # Step 2 — fetch confirmed lineups, write adjusted data/news/<id>.json,
+      #           then re-apply all adjustments to predictions.json
+      - name: "Step 2 — Fetch lineups and update predictions"
+        if: >-
+          steps.date-gate.outputs.in_window == 'true' &&
+          steps.kickoff-check.outputs.has_match == 'true'
+        env:
+          FOOTBALL_DATA_API_KEY: ${{ secrets.FOOTBALL_DATA_API_KEY }}
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: >-
+          python src/lineup.py --update
+          ${{ steps.kickoff-check.outputs.match_ids }}
+
+      # Step 3 — copy updated file to docs/
+      - name: "Step 3 — Copy updated predictions.json → docs/"
+        if: >-
+          steps.date-gate.outputs.in_window == 'true' &&
+          steps.kickoff-check.outputs.has_match == 'true'
+        run: cp outputs/predictions.json docs/predictions.json
+
+      # Step 4 — Telegram notification for each confirmed lineup
+      - name: "Step 4 — Telegram lineup notification"
+        if: >-
+          steps.date-gate.outputs.in_window == 'true' &&
+          steps.kickoff-check.outputs.has_match == 'true'
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+        run: |
+          for id in ${{ steps.kickoff-check.outputs.match_ids }}; do
+            python src/notify.py --lineup "$id"
+          done
+        continue-on-error: true
+
+      # Step 5 — commit only if there was actually something to update
+      - name: "Step 5 — Commit and push"
+        if: >-
+          steps.date-gate.outputs.in_window == 'true' &&
+          steps.kickoff-check.outputs.has_match == 'true'
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add outputs/predictions.json \
+                  docs/predictions.json \
+                  data/news/
+          git diff --staged --quiet && { echo "Nothing to commit."; exit 0; }
+          MATCH_IDS="${{ steps.kickoff-check.outputs.match_ids }}"
+          git commit -m "chore: pre-kickoff update ${MATCH_IDS} [skip ci]"
+          git pull --rebase origin main
+          git push origin HEAD:main
