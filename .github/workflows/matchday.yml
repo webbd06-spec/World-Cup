@@ -27,6 +27,7 @@ on:
 
 permissions:
   contents: write   # needed to push commits back to main
+  workflows: write  # needed to push changes to .github/workflows/ without a PAT
 
 env:
   PYTHON_VERSION: "3.11"
