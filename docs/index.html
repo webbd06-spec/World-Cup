@@ -906,8 +906,9 @@ function card(p) {
   if (isFinished) {
     const actualOutcome = result.home > result.away ? 'home'
                         : result.home === result.away ? 'draw' : 'away';
-    const predOutcome   = wp >= dp && wp >= lp ? 'home'
-                        : dp >= lp             ? 'draw' : 'away';
+    const predOutcome   = topSl
+                        ? (topSl.home > topSl.away ? 'home' : topSl.home === topSl.away ? 'draw' : 'away')
+                        : (wp >= dp && wp >= lp ? 'home' : dp >= lp ? 'draw' : 'away');
     const outcomeOk  = actualOutcome === predOutcome;
     const exactOk    = topSl && topSl.home === result.home && topSl.away === result.away;
     const predLabel  = predOutcome === 'home' ? p.home
@@ -1521,13 +1522,16 @@ function renderAccuracy() {
     const live = S.results[m.id];
     const hr = m.result ? m.result.home : live.home_score;
     const ar = m.result ? m.result.away : live.away_score;
-    const actual = hr > ar ? 'win' : hr === ar ? 'draw' : 'loss';
-    const predicted = m.win_prob >= m.draw_prob && m.win_prob >= m.loss_prob ? 'win'
-                    : m.draw_prob >= m.loss_prob ? 'draw' : 'loss';
-    const isOk = actual === predicted;
+    const actual  = hr > ar ? 'win' : hr === ar ? 'draw' : 'loss';
+    const topSl   = (m.top_scorelines || [])[0];
+    // Derive predicted W/D/L from the top scoreline — consistent with what the result card displays
+    const predicted = topSl
+      ? (topSl.home > topSl.away ? 'win' : topSl.home === topSl.away ? 'draw' : 'loss')
+      : (m.win_prob >= m.draw_prob && m.win_prob >= m.loss_prob ? 'win'
+         : m.draw_prob >= m.loss_prob ? 'draw' : 'loss');
+    const isOk    = actual === predicted;
     if (isOk) correct++;
 
-    const topSl   = (m.top_scorelines || [])[0];
     const isExact = !!(topSl && topSl.home === hr && topSl.away === ar);
     if (isExact) exactCorrect++;
 
