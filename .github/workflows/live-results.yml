@@ -1,0 +1,96 @@
+name: WC 2026 — Live Results
+
+on:
+  schedule:
+    - cron: "*/10 0-5,13-23 * * *"   # every 10 min during match hours UTC
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+env:
+  PYTHON_VERSION: "3.11"
+  PYTHONUTF8: "1"
+
+jobs:
+  live-results:
+    name: "Live results poll"
+    runs-on: ubuntu-latest
+
+    # Never run two polls simultaneously — queue rather than cancel
+    concurrency:
+      group: live-results
+      cancel-in-progress: false
+
+    steps:
+      # Gate: only proceed inside the tournament window (Jun 11 – Jul 19 2026)
+      - name: "Check tournament window"
+        id: date-gate
+        run: |
+          TODAY=$(date -u +%Y-%m-%d)
+          if [[ "$TODAY" < "2026-06-11" || "$TODAY" > "2026-07-19" ]]; then
+            echo "Outside tournament window ($TODAY) — exiting."
+            echo "in_window=false" >> "$GITHUB_OUTPUT"
+          else
+            echo "in_window=true" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Checkout
+        if: steps.date-gate.outputs.in_window == 'true'
+        uses: actions/checkout@v5
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: "Set up Python ${{ env.PYTHON_VERSION }}"
+        if: steps.date-gate.outputs.in_window == 'true'
+        uses: actions/setup-python@v6
+        with:
+          python-version: ${{ env.PYTHON_VERSION }}
+          cache: pip
+
+      - name: Install dependencies
+        if: steps.date-gate.outputs.in_window == 'true'
+        run: pip install -r requirements.txt
+
+      # Step 1 — fetch latest fixture statuses and results from football-data.org
+      - name: "Step 1 — Fetch live fixture statuses (update.py)"
+        if: steps.date-gate.outputs.in_window == 'true'
+        env:
+          FOOTBALL_DATA_API_KEY: ${{ secrets.FOOTBALL_DATA_API_KEY }}
+          ODDS_API_KEY: ${{ secrets.ODDS_API_KEY }}
+        run: python src/update.py
+
+      # Step 2 — rebuild predictions with updated results in fixtures.json
+      - name: "Step 2 — Rebuild predictions (predict.py)"
+        if: steps.date-gate.outputs.in_window == 'true'
+        run: python src/predict.py
+
+      # Step 3 — re-apply any news/lineup adjustments
+      - name: "Step 3 — Re-apply news adjustments (news.py --apply)"
+        if: steps.date-gate.outputs.in_window == 'true'
+        run: python src/news.py --apply
+
+      # Step 4 — copy updated files to docs/
+      - name: "Step 4 — Copy outputs → docs/"
+        if: steps.date-gate.outputs.in_window == 'true'
+        run: |
+          cp outputs/predictions.json  docs/predictions.json
+          cp data/results.json         docs/results.json 2>/dev/null || true
+          cp outputs/live_odds_uk.json docs/live_odds_uk.json 2>/dev/null || true
+
+      # Step 5 — commit only when something actually changed
+      - name: "Step 5 — Commit and push (if changed)"
+        if: steps.date-gate.outputs.in_window == 'true'
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add docs/predictions.json \
+                  docs/results.json \
+                  docs/live_odds_uk.json \
+                  data/fixtures.json \
+                  data/results.json
+          git diff --staged --quiet && { echo "No result changes — nothing to commit."; exit 0; }
+          TIMESTAMP=$(date -u +"%H:%M UTC")
+          git commit -m "chore: live results update ${TIMESTAMP} [skip ci]"
+          git pull --rebase origin main
+          git push origin HEAD:main
