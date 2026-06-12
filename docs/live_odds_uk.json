@@ -1,5 +1,5 @@
 {
-  "_fetched": "2026-06-12T10:08:27.034260+00:00",
+  "_fetched": "2026-06-12T10:14:13.077782+00:00",
   "matches": {
     "GS_D1": {
       "h2h": {
@@ -10,7 +10,7 @@
         },
         "skybet": {
           "home_win": 2.0,
-          "draw": 3.25,
+          "draw": 3.2,
           "away_win": 3.8
         },
         "betfair_ex_uk": {
@@ -81,7 +81,7 @@
         },
         "betfair_ex_uk": {
           "home_win": 17.0,
-          "draw": 7.4,
+          "draw": 7.2,
           "away_win": 1.23
         },
         "betway": {
@@ -248,7 +248,7 @@
         },
         "betfred_uk": {
           "home_win": 6.0,
-          "draw": 4.2,
+          "draw": 4.0,
           "away_win": 1.53
         },
         "betvictor": {
@@ -303,9 +303,9 @@
           "away_win": 1.67
         },
         "boylesports": {
-          "home_win": 5.0,
-          "draw": 3.75,
-          "away_win": 1.62
+          "home_win": 4.75,
+          "draw": 3.6,
+          "away_win": 1.7
         },
         "williamhill": {
           "home_win": 4.8,
@@ -319,8 +319,8 @@
         },
         "betvictor": {
           "home_win": 5.25,
-          "draw": 3.75,
-          "away_win": 1.65
+          "draw": 3.7,
+          "away_win": 1.67
         }
       },
       "totals": {
@@ -582,9 +582,9 @@
           "away_win": 4.33
         },
         "betvictor": {
-          "home_win": 1.87,
+          "home_win": 1.85,
           "draw": 3.4,
-          "away_win": 4.2
+          "away_win": 4.33
         }
       },
       "totals": {
@@ -714,7 +714,7 @@
           "away_win": 5.5
         },
         "betfair_ex_uk": {
-          "home_win": 1.68,
+          "home_win": 1.66,
           "draw": 4.1,
           "away_win": 6.0
         }
@@ -757,7 +757,7 @@
         "betway": {
           "home_win": 7.0,
           "draw": 4.33,
-          "away_win": 1.44
+          "away_win": 1.4
         },
         "williamhill": {
           "home_win": 7.5,
@@ -1747,7 +1747,7 @@
         },
         "betfair_ex_uk": {
           "home_win": 2.26,
-          "draw": 3.3,
+          "draw": 3.25,
           "away_win": 3.5
         },
         "ladbrokes_uk": {
@@ -2662,7 +2662,7 @@
         },
         "betfair_ex_uk": {
           "home_win": 6.8,
-          "draw": 4.1,
+          "draw": 4.2,
           "away_win": 1.56
         },
         "coral": {
@@ -2724,7 +2724,7 @@
         "betfair_ex_uk": {
           "home_win": 1.5,
           "draw": 4.2,
-          "away_win": 8.0
+          "away_win": 7.8
         },
         "ladbrokes_uk": {
           "home_win": 1.5,
