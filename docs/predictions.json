@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-06-13T17:55:18.553774Z",
-  "date": "2026-06-13",
+  "generated_at": "2026-06-12T20:38:57.908152Z",
+  "date": "2026-06-12",
   "model_version": "1.0.0",
   "blend_weights": {
     "market": 0.6,
@@ -315,14 +315,14 @@
         "home": 2,
         "away": 1
       },
-      "xg_home": 1.328,
-      "xg_away": 1.228,
-      "win_prob": 0.3905,
-      "draw_prob": 0.2662,
-      "loss_prob": 0.3433,
-      "model_win": 0.3905,
-      "model_draw": 0.2662,
-      "model_loss": 0.3433,
+      "xg_home": 1.249,
+      "xg_away": 1.132,
+      "win_prob": 0.3899,
+      "draw_prob": 0.2773,
+      "loss_prob": 0.3328,
+      "model_win": 0.3899,
+      "model_draw": 0.2773,
+      "model_loss": 0.3328,
       "market_win": null,
       "market_draw": null,
       "market_loss": null,
@@ -330,128 +330,128 @@
         {
           "home": 1,
           "away": 1,
-          "prob": 0.1266
+          "prob": 0.1307
         },
         {
           "home": 1,
           "away": 0,
-          "prob": 0.1031
+          "prob": 0.1155
         },
         {
           "home": 0,
           "away": 1,
-          "prob": 0.0953
+          "prob": 0.1046
+        },
+        {
+          "home": 0,
+          "away": 0,
+          "prob": 0.0924
         },
         {
           "home": 2,
           "away": 1,
-          "prob": 0.084
+          "prob": 0.0817
         },
         {
           "home": 1,
           "away": 2,
-          "prob": 0.0777
-        },
-        {
-          "home": 0,
-          "away": 0,
-          "prob": 0.0776
+          "prob": 0.074
         }
       ],
       "score_matrix": [
         [
-          0.07763,
-          0.09532,
-          0.05852,
-          0.02395,
-          0.00735,
-          0.00181,
-          0.00037,
-          6e-05,
+          0.09244,
+          0.10463,
+          0.05921,
+          0.02234,
+          0.00632,
+          0.00143,
+          0.00027,
+          4e-05,
           1e-05
         ],
         [
-          0.10309,
-          0.12658,
-          0.07771,
-          0.0318,
-          0.00976,
-          0.0024,
-          0.00049,
-          9e-05,
-          1e-05
-        ],
-        [
-          0.06845,
-          0.08404,
-          0.0516,
-          0.02112,
-          0.00648,
-          0.00159,
-          0.00033,
-          6e-05,
-          1e-05
-        ],
-        [
-          0.0303,
-          0.0372,
-          0.02284,
-          0.00935,
-          0.00287,
-          0.0007,
-          0.00014,
-          3e-05,
-          0.0
-        ],
-        [
-          0.01006,
-          0.01235,
-          0.00758,
-          0.0031,
-          0.00095,
-          0.00023,
+          0.11549,
+          0.13072,
+          0.07398,
+          0.02791,
+          0.0079,
+          0.00179,
+          0.00034,
           5e-05,
+          1e-05
+        ],
+        [
+          0.07214,
+          0.08166,
+          0.04621,
+          0.01743,
+          0.00493,
+          0.00112,
+          0.00021,
+          3e-05,
+          0.0
+        ],
+        [
+          0.03004,
+          0.03401,
+          0.01924,
+          0.00726,
+          0.00205,
+          0.00047,
+          9e-05,
           1e-05,
           0.0
         ],
         [
-          0.00267,
-          0.00328,
-          0.00201,
-          0.00082,
-          0.00025,
-          6e-05,
+          0.00938,
+          0.01062,
+          0.00601,
+          0.00227,
+          0.00064,
+          0.00015,
+          3e-05,
+          0.0,
+          0.0
+        ],
+        [
+          0.00234,
+          0.00265,
+          0.0015,
+          0.00057,
+          0.00016,
+          4e-05,
           1e-05,
           0.0,
           0.0
         ],
         [
-          0.00059,
-          0.00073,
-          0.00045,
-          0.00018,
-          6e-05,
-          1e-05,
-          0.0,
-          0.0,
-          0.0
-        ],
-        [
-          0.00011,
-          0.00014,
-          8e-05,
+          0.00049,
+          0.00055,
+          0.00031,
+          0.00012,
           3e-05,
           1e-05,
           0.0,
           0.0,
+          0.0
+        ],
+        [
+          9e-05,
+          0.0001,
+          6e-05,
+          2e-05,
+          1e-05,
+          0.0,
+          0.0,
           0.0,
           0.0
         ],
         [
-          2e-05,
+          1e-05,
           2e-05,
           1e-05,
-          1e-05,
+          0.0,
           0.0,
           0.0,
           0.0,
@@ -567,16 +567,16 @@
       ],
       "source": "model_only",
       "blend_weights": null,
+      "news_adjustment": {
+        "home": 0.97,
+        "away": 0.96,
+        "notes": "South Korea (home): Defender Cho Yu-min ruled out with a plantar foot injury, replaced by uncapped Jo Wi-je — a defensive loss with negligible attacking impact. Attack remains fully intact with Son Heung-min, Lee Kang-in, and Hwang Hee-chan all fit and expected to start; warm-up wins over Trinidad &…"
+      },
       "team_news": {
         "notes": "South Korea (home): Defender Cho Yu-min ruled out with a plantar foot injury, replaced by uncapped Jo Wi-je — a defensive loss with negligible attacking impact. Attack remains fully intact with Son Heung-min, Lee Kang-in, and Hwang Hee-chan all fit and expected to start; warm-up wins over Trinidad &…",
         "home_scorers": [],
         "away_scorers": [],
         "fetched_at": "2026-06-12T20:38:47.363464+00:00"
-      },
-      "news_adjustment": {
-        "home": 0.97,
-        "away": 0.96,
-        "notes": "South Korea (home): Defender Cho Yu-min ruled out with a plantar foot injury, replaced by uncapped Jo Wi-je — a defensive loss with negligible attacking impact. Attack remains fully intact with Son Heung-min, Lee Kang-in, and Hwang Hee-chan all fit and expected to start; warm-up wins over Trinidad &…"
       }
     },
     {
@@ -1660,137 +1660,126 @@
       "kickoff_utc": "19:00",
       "venue": "BMO Field",
       "city": "Toronto",
-      "status": "finished",
+      "status": "in_play",
       "result": {
-        "home": 1,
+        "home": 0,
         "away": 1
       },
-      "xg_home": 1.318,
-      "xg_away": 1.269,
-      "win_prob": 0.3792,
-      "draw_prob": 0.2646,
-      "loss_prob": 0.3562,
-      "model_win": 0.3792,
-      "model_draw": 0.2646,
-      "model_loss": 0.3562,
+      "xg_home": 0.886,
+      "xg_away": 1.194,
+      "win_prob": 0.2729,
+      "draw_prob": 0.2964,
+      "loss_prob": 0.4307,
+      "model_win": 0.2729,
+      "model_draw": 0.2964,
+      "model_loss": 0.4307,
       "market_win": null,
       "market_draw": null,
       "market_loss": null,
       "top_scorelines": [
         {
+          "home": 0,
+          "away": 1,
+          "prob": 0.1491
+        },
+        {
           "home": 1,
           "away": 1,
-          "prob": 0.1259
+          "prob": 0.1322
+        },
+        {
+          "home": 0,
+          "away": 0,
+          "prob": 0.1249
         },
         {
           "home": 1,
           "away": 0,
-          "prob": 0.0992
+          "prob": 0.1107
         },
         {
           "home": 0,
-          "away": 1,
-          "prob": 0.0955
-        },
-        {
-          "home": 2,
-          "away": 1,
-          "prob": 0.0829
+          "away": 2,
+          "prob": 0.089
         },
         {
           "home": 1,
           "away": 2,
-          "prob": 0.0798
-        },
-        {
-          "home": 0,
-          "away": 0,
-          "prob": 0.0753
+          "prob": 0.0789
         }
       ],
       "score_matrix": [
         [
-          0.07528,
-          0.09552,
-          0.06059,
-          0.02563,
-          0.00813,
-          0.00206,
-          0.00044,
+          0.12487,
+          0.1491,
+          0.08902,
+          0.03543,
+          0.01058,
+          0.00253,
+          0.0005,
+          9e-05,
+          1e-05
+        ],
+        [
+          0.11069,
+          0.13217,
+          0.07891,
+          0.03141,
+          0.00938,
+          0.00224,
+          0.00045,
           8e-05,
           1e-05
         ],
         [
-          0.0992,
-          0.12587,
-          0.07985,
-          0.03377,
-          0.01071,
-          0.00272,
-          0.00057,
-          0.0001,
-          2e-05
-        ],
-        [
-          0.06536,
-          0.08293,
-          0.05261,
-          0.02225,
-          0.00706,
-          0.00179,
-          0.00038,
-          7e-05,
+          0.04906,
+          0.05858,
+          0.03497,
+          0.01392,
+          0.00416,
+          0.00099,
+          0.0002,
+          3e-05,
           1e-05
         ],
         [
-          0.02871,
-          0.03643,
-          0.02311,
-          0.00977,
-          0.0031,
-          0.00079,
-          0.00017,
-          3e-05,
-          0.0
-        ],
-        [
-          0.00946,
-          0.012,
-          0.00761,
-          0.00322,
-          0.00102,
-          0.00026,
-          5e-05,
+          0.0145,
+          0.01731,
+          0.01033,
+          0.00411,
+          0.00123,
+          0.00029,
+          6e-05,
           1e-05,
           0.0
         ],
         [
-          0.00249,
-          0.00316,
-          0.00201,
-          0.00085,
+          0.00321,
+          0.00384,
+          0.00229,
+          0.00091,
           0.00027,
-          7e-05,
-          1e-05,
-          0.0,
-          0.0
-        ],
-        [
-          0.00055,
-          0.00069,
-          0.00044,
-          0.00019,
           6e-05,
           1e-05,
           0.0,
+          0.0
+        ],
+        [
+          0.00057,
+          0.00068,
+          0.00041,
+          0.00016,
+          5e-05,
+          1e-05,
+          0.0,
           0.0,
           0.0
         ],
         [
-          0.0001,
-          0.00013,
           8e-05,
-          4e-05,
+          0.0001,
+          6e-05,
+          2e-05,
           1e-05,
           0.0,
           0.0,
@@ -1798,10 +1787,21 @@
           0.0
         ],
         [
-          2e-05,
-          2e-05,
           1e-05,
           1e-05,
+          1e-05,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
           0.0,
           0.0,
           0.0,
@@ -1917,16 +1917,16 @@
       ],
       "source": "model_only",
       "blend_weights": null,
+      "news_adjustment": {
+        "home": 0.82,
+        "away": 0.97,
+        "notes": "Canada missing confirmed tournament absentees Marcelo Flores (ACL) and Moise Bombito (tibia), while star left-back and captain Alphonso Davies is a major doubt/late fitness test with a hamstring strain — three significant players absent or uncertain, severely denting attacking width and quality. Bos…"
+      },
       "team_news": {
         "notes": "Canada missing confirmed tournament absentees Marcelo Flores (ACL) and Moise Bombito (tibia), while star left-back and captain Alphonso Davies is a major doubt/late fitness test with a hamstring strain — three significant players absent or uncertain, severely denting attacking width and quality. Bos…",
         "home_scorers": [],
         "away_scorers": [],
         "fetched_at": "2026-06-12T20:38:57.785301+00:00"
-      },
-      "news_adjustment": {
-        "home": 0.82,
-        "away": 0.97,
-        "notes": "Canada missing confirmed tournament absentees Marcelo Flores (ACL) and Moise Bombito (tibia), while star left-back and captain Alphonso Davies is a major doubt/late fitness test with a hamstring strain — three significant players absent or uncertain, severely denting attacking width and quality. Bos…"
       }
     },
     {
@@ -1944,15 +1944,15 @@
       "result": null,
       "xg_home": 1.068,
       "xg_away": 1.812,
-      "win_prob": 0.1268,
-      "draw_prob": 0.175,
-      "loss_prob": 0.6982,
+      "win_prob": 0.131,
+      "draw_prob": 0.1809,
+      "loss_prob": 0.6882,
       "model_win": 0.2221,
       "model_draw": 0.2302,
       "model_loss": 0.5478,
-      "market_win": 0.0633,
-      "market_draw": 0.1382,
-      "market_loss": 0.7985,
+      "market_win": 0.0702,
+      "market_draw": 0.148,
+      "market_loss": 0.7818,
       "top_scorelines": [
         {
           "home": 1,
@@ -2196,6 +2196,12 @@
       "blend_weights": {
         "market": 0.6,
         "model": 0.4
+      },
+      "team_news": {
+        "notes": "",
+        "home_scorers": [],
+        "away_scorers": [],
+        "fetched_at": "2026-06-13T18:03:52.803572+00:00"
       }
     },
     {
@@ -3283,15 +3289,15 @@
       "result": null,
       "xg_home": 1.847,
       "xg_away": 1.143,
-      "win_prob": 0.5612,
-      "draw_prob": 0.2432,
-      "loss_prob": 0.1957,
+      "win_prob": 0.5704,
+      "draw_prob": 0.2394,
+      "loss_prob": 0.1902,
       "model_win": 0.5381,
       "model_draw": 0.2276,
       "model_loss": 0.2343,
-      "market_win": 0.5765,
-      "market_draw": 0.2536,
-      "market_loss": 0.1699,
+      "market_win": 0.5919,
+      "market_draw": 0.2474,
+      "market_loss": 0.1608,
       "top_scorelines": [
         {
           "home": 1,
@@ -3552,15 +3558,15 @@
       "result": null,
       "xg_home": 0.991,
       "xg_away": 1.79,
-      "win_prob": 0.1778,
-      "draw_prob": 0.2237,
-      "loss_prob": 0.5985,
+      "win_prob": 0.179,
+      "draw_prob": 0.2291,
+      "loss_prob": 0.5918,
       "model_win": 0.2073,
       "model_draw": 0.2314,
       "model_loss": 0.5612,
-      "market_win": 0.1581,
-      "market_draw": 0.2185,
-      "market_loss": 0.6234,
+      "market_win": 0.1602,
+      "market_draw": 0.2276,
+      "market_loss": 0.6122,
       "top_scorelines": [
         {
           "home": 0,
@@ -3821,15 +3827,15 @@
       "result": null,
       "xg_home": 1.239,
       "xg_away": 1.515,
-      "win_prob": 0.2531,
-      "draw_prob": 0.266,
-      "loss_prob": 0.4809,
+      "win_prob": 0.2607,
+      "draw_prob": 0.2708,
+      "loss_prob": 0.4685,
       "model_win": 0.3111,
       "model_draw": 0.2525,
       "model_loss": 0.4365,
-      "market_win": 0.2145,
-      "market_draw": 0.2749,
-      "market_loss": 0.5106,
+      "market_win": 0.2271,
+      "market_draw": 0.283,
+      "market_loss": 0.4899,
       "top_scorelines": [
         {
           "home": 1,
@@ -4893,22 +4899,19 @@
       "kickoff_utc": "01:00",
       "venue": "SoFi Stadium",
       "city": "Inglewood",
-      "status": "finished",
-      "result": {
-        "home": 4,
-        "away": 1
-      },
+      "status": "scheduled",
+      "result": null,
       "xg_home": 1.725,
       "xg_away": 1.181,
-      "win_prob": 0.5011,
-      "draw_prob": 0.2375,
-      "loss_prob": 0.2614,
+      "win_prob": 0.4727,
+      "draw_prob": 0.2771,
+      "loss_prob": 0.2502,
       "model_win": 0.5011,
       "model_draw": 0.2375,
       "model_loss": 0.2614,
-      "market_win": null,
-      "market_draw": null,
-      "market_loss": null,
+      "market_win": 0.4538,
+      "market_draw": 0.3035,
+      "market_loss": 0.2428,
       "top_scorelines": [
         {
           "home": 1,
@@ -5148,8 +5151,11 @@
           "fair_away": 118.312
         }
       ],
-      "source": "model_only",
-      "blend_weights": null
+      "source": "blend",
+      "blend_weights": {
+        "market": 0.6,
+        "model": 0.4
+      }
     },
     {
       "id": "GS_D2",
@@ -5166,15 +5172,15 @@
       "result": null,
       "xg_home": 1.322,
       "xg_away": 1.572,
-      "win_prob": 0.2372,
-      "draw_prob": 0.2456,
-      "loss_prob": 0.5172,
+      "win_prob": 0.2387,
+      "draw_prob": 0.2498,
+      "loss_prob": 0.5115,
       "model_win": 0.3212,
       "model_draw": 0.2459,
       "model_loss": 0.4329,
-      "market_win": 0.1812,
-      "market_draw": 0.2454,
-      "market_loss": 0.5735,
+      "market_win": 0.1837,
+      "market_draw": 0.2524,
+      "market_loss": 0.5639,
       "top_scorelines": [
         {
           "home": 1,
@@ -5435,15 +5441,15 @@
       "result": null,
       "xg_home": 1.695,
       "xg_away": 1.294,
-      "win_prob": 0.556,
-      "draw_prob": 0.2225,
-      "loss_prob": 0.2215,
+      "win_prob": 0.5152,
+      "draw_prob": 0.246,
+      "loss_prob": 0.2389,
       "model_win": 0.4686,
       "model_draw": 0.2382,
       "model_loss": 0.2931,
-      "market_win": 0.6143,
-      "market_draw": 0.212,
-      "market_loss": 0.1738,
+      "market_win": 0.5462,
+      "market_draw": 0.2511,
+      "market_loss": 0.2027,
       "top_scorelines": [
         {
           "home": 1,
@@ -5704,15 +5710,15 @@
       "result": null,
       "xg_home": 1.633,
       "xg_away": 1.231,
-      "win_prob": 0.4729,
-      "draw_prob": 0.2708,
-      "loss_prob": 0.2562,
+      "win_prob": 0.4481,
+      "draw_prob": 0.2732,
+      "loss_prob": 0.2786,
       "model_win": 0.4676,
       "model_draw": 0.244,
       "model_loss": 0.2884,
-      "market_win": 0.4765,
-      "market_draw": 0.2887,
-      "market_loss": 0.2348,
+      "market_win": 0.4351,
+      "market_draw": 0.2927,
+      "market_loss": 0.2721,
       "top_scorelines": [
         {
           "home": 1,
@@ -5973,15 +5979,15 @@
       "result": null,
       "xg_home": 1.393,
       "xg_away": 1.534,
-      "win_prob": 0.3535,
-      "draw_prob": 0.2561,
-      "loss_prob": 0.3904,
+      "win_prob": 0.3586,
+      "draw_prob": 0.2579,
+      "loss_prob": 0.3836,
       "model_win": 0.3458,
       "model_draw": 0.2458,
       "model_loss": 0.4084,
-      "market_win": 0.3587,
-      "market_draw": 0.2629,
-      "market_loss": 0.3784,
+      "market_win": 0.367,
+      "market_draw": 0.2659,
+      "market_loss": 0.367,
       "top_scorelines": [
         {
           "home": 1,
@@ -12689,15 +12695,15 @@
       "result": null,
       "xg_home": 1.185,
       "xg_away": 1.408,
-      "win_prob": 0.3713,
-      "draw_prob": 0.2576,
-      "loss_prob": 0.3711,
+      "win_prob": 0.3901,
+      "draw_prob": 0.2575,
+      "loss_prob": 0.3524,
       "model_win": 0.3167,
       "model_draw": 0.2624,
       "model_loss": 0.4209,
-      "market_win": 0.4078,
-      "market_draw": 0.2543,
-      "market_loss": 0.3379,
+      "market_win": 0.4391,
+      "market_draw": 0.2542,
+      "market_loss": 0.3067,
       "top_scorelines": [
         {
           "home": 1,
