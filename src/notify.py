@@ -99,6 +99,12 @@ def send(text: str) -> bool:
         "disable_web_page_preview": True,
     }, timeout=10)
     resp.raise_for_status()
+    result = resp.json()
+    if not result.get("ok"):
+        raise RuntimeError(
+            f"Telegram API error {result.get('error_code')}: "
+            f"{result.get('description')}"
+        )
     return True
 
 

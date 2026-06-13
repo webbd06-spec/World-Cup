@@ -60,13 +60,12 @@ jobs:
           cp outputs/live_odds_uk.json docs/live_odds_uk.json 2>/dev/null || true
           cp data/results.json docs/results.json 2>/dev/null || true
 
-      # Step 6 — optional Telegram ping (failures don't abort the workflow)
+      # Step 6 — Telegram notification (visible failure so errors aren't hidden)
       - name: "Step 6 — Telegram notification"
         env:
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
         run: python src/notify.py
-        continue-on-error: true
 
       # Step 7 — commit everything back to main
       - name: "Step 7 — Commit and push"
