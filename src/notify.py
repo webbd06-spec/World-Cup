@@ -207,17 +207,38 @@ def format_match_block(p: dict, match_odds: Optional[dict]) -> str:
     return "\n".join(lines)
 
 
+def _kickoff_dt(p: dict) -> Optional[datetime]:
+    """Return UTC kickoff datetime for a prediction, or None."""
+    date_str = p.get("date", "")
+    ko_str   = p.get("kickoff_utc", "")
+    if not date_str or not ko_str or ko_str == "00:00":
+        return None
+    try:
+        return datetime.strptime(f"{date_str}T{ko_str}:00+00:00", "%Y-%m-%dT%H:%M:%S%z")
+    except ValueError:
+        return None
+
+
 def morning(predictions: list[dict], all_odds: dict) -> None:
+    now   = datetime.now(timezone.utc)
     today = date.today().isoformat()
+    # Include any match kicking off within the next 20 hours so overnight
+    # games (e.g. 01:00 UTC next day) appear in the morning notification.
+    cutoff = now + timedelta(hours=20)
     matches = [
         p for p in predictions
-        if p.get("date") == today
-        and p.get("home") and p.get("away")
-        and p.get("status") != "tbd"
+        if p.get("home") and p.get("away")
+        and p.get("status") not in ("tbd", "finished")
+        and (
+            p.get("date") == today
+            or (_kickoff_dt(p) or datetime.max.replace(tzinfo=timezone.utc)) <= cutoff
+        )
     ]
+    # Sort by kickoff time
+    matches.sort(key=lambda p: _kickoff_dt(p) or datetime.max.replace(tzinfo=timezone.utc))
 
     if not matches:
-        print("No matches today — nothing to send.")
+        print("No upcoming matches — nothing to send.")
         return
 
     today_fmt = datetime.strptime(today, "%Y-%m-%d").strftime("%-d %b %Y")
@@ -286,6 +307,70 @@ def lineup_update(fixture_ids: list[str], predictions: list[dict], all_odds: dic
         print(f"Pre-kickoff notification sent for {fid}.")
 
 
+# ── Kickoff reminder (60–75 min before kickoff) ───────────────────────────────
+
+def kickoff_reminder(predictions: list[dict], all_odds: dict) -> None:
+    """
+    Send a reminder for any match kicking off in 55–75 minutes.
+    Called every 15 min; the 20-min window ensures exactly one notification
+    fires per match even with GitHub cron jitter.
+    """
+    now          = datetime.now(timezone.utc)
+    window_start = now + timedelta(minutes=55)
+    window_end   = now + timedelta(minutes=75)
+
+    upcoming = [
+        p for p in predictions
+        if p.get("home") and p.get("away")
+        and p.get("status") not in ("finished", "tbd", "in_progress")
+        and window_start <= (_kickoff_dt(p) or datetime.min.replace(tzinfo=timezone.utc)) <= window_end
+    ]
+
+    if not upcoming:
+        print("No kickoffs in the 55–75 min window.")
+        return
+
+    for p in upcoming:
+        hf  = flag(p["home"])
+        af  = flag(p["away"])
+        ko  = _kickoff_dt(p)
+        bst = ko.astimezone(ZoneInfo("Europe/London")).strftime("%H:%M BST") if ko else ""
+        et  = ko.astimezone(ZoneInfo("America/New_York")).strftime("%H:%M ET") if ko else ""
+
+        top = p.get("top_scorelines", [])
+        pred = f"{top[0]['home']}–{top[0]['away']}" if top else "–"
+        w = p.get("win_prob",  0) * 100
+        d = p.get("draw_prob", 0) * 100
+        l = p.get("loss_prob", 0) * 100
+
+        lines = [
+            f"⚽ *{hf} {p['home']} vs {af} {p['away']}* — 1 hour to go!",
+            f"⏰ {bst} · {et}",
+        ]
+        if p.get("venue") and p.get("city"):
+            lines.append(f"📍 {p['venue']}, {p['city']}")
+        lines.append(
+            f"📊 Predicted: *{pred}*  xG {p.get('xg_home',0):.2f}–{p.get('xg_away',0):.2f}"
+        )
+        lines.append(f"Win {w:.0f}%  ·  Draw {d:.0f}%  ·  Loss {l:.0f}%")
+
+        vb = value_bet_lines(p, all_odds.get(p["id"]))
+        if vb:
+            lines.extend(vb)
+
+        news_path = DATA / "news" / f"{p['id']}.json"
+        if news_path.exists() and news_path.stat().st_size > 0:
+            with open(news_path) as f:
+                news = json.load(f)
+            notes = news.get("notes", "").strip()
+            if notes:
+                lines.append(f"\n_{notes}_")
+
+        lines.append(f"\n🔗 {DASHBOARD}")
+        send("\n".join(lines))
+        print(f"Kickoff reminder sent for {p['id']} ({p['home']} vs {p['away']}).")
+
+
 # ── Entry point ───────────────────────────────────────────────────────────────
 
 def main() -> None:
@@ -312,6 +397,8 @@ def main() -> None:
 
     if len(sys.argv) >= 3 and sys.argv[1] == "--lineup":
         lineup_update(sys.argv[2:], predictions, all_odds)
+    elif len(sys.argv) >= 2 and sys.argv[1] == "--remind":
+        kickoff_reminder(predictions, all_odds)
     else:
         morning(predictions, all_odds)
 
