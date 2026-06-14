@@ -10,7 +10,7 @@ Usage:
 import json
 import os
 import sys
-from datetime import datetime, timezone, date
+from datetime import datetime, timezone, date, timedelta
 from pathlib import Path
 from typing import Optional
 from zoneinfo import ZoneInfo
@@ -225,35 +225,93 @@ def _kickoff_dt(p: dict) -> Optional[datetime]:
         return None
 
 
-def morning(predictions: list[dict], all_odds: dict) -> None:
+def _outcome(home: int, away: int) -> str:
+    return "W" if home > away else "D" if home == away else "L"
+
+
+def format_result_block(results: list[dict], pred_map: dict) -> str:
+    """One-line summary per finished match: score + whether prediction was right."""
+    lines = []
+    for r in results:
+        hf   = flag(r["home"])
+        af   = flag(r["away"])
+        hs, aws = r["home_score"], r["away_score"]
+        actual_outcome = _outcome(hs, aws)
+
+        pred = pred_map.get(r["id"])
+        top  = (pred.get("top_scorelines") or []) if pred else []
+        if top:
+            ps, pa = top[0]["home"], top[0]["away"]
+            pred_outcome = _outcome(ps, pa)
+            pred_str  = f"{ps}–{pa}"
+            correct   = "✅" if pred_outcome == actual_outcome else "❌"
+            lines.append(f"{correct} {hf} *{r['home']} {hs}–{aws} {r['away']}* {af}  _(pred {pred_str})_")
+        else:
+            lines.append(f"🏁 {hf} *{r['home']} {hs}–{aws} {r['away']}* {af}")
+
+    return "\n".join(lines)
+
+
+def morning(predictions: list[dict], all_odds: dict, results: list[dict]) -> None:
     now   = datetime.now(timezone.utc)
     today = date.today().isoformat()
-    # Include any match kicking off within the next 20 hours so overnight
-    # games (e.g. 01:00 UTC next day) appear in the morning notification.
-    cutoff = now + timedelta(hours=20)
-    matches = [
+    pred_map = {p["id"]: p for p in predictions}
+
+    # ── Recent results (since yesterday morning) ──────────────────────────────
+    # Show any result from the last 2 UTC days — catches overnight games
+    # (e.g. 01:00 UTC today) that belong to the previous matchday session.
+    yesterday = (date.today() - timedelta(days=1)).isoformat()
+    recent_results = [r for r in results if r["date"] >= yesterday]
+    recent_results.sort(key=lambda r: r["date"])
+
+    # ── Today's upcoming fixtures (+ overnight games within 20 h) ─────────────
+    cutoff      = now + timedelta(hours=20)
+    result_ids  = {r["id"] for r in results}
+    upcoming = [
         p for p in predictions
         if p.get("home") and p.get("away")
-        and p.get("status") not in ("tbd", "finished")
-        and (
-            p.get("date") == today
-            or (_kickoff_dt(p) or datetime.max.replace(tzinfo=timezone.utc)) <= cutoff
-        )
+        and p.get("status") not in ("tbd", "finished", "in_progress")
+        and p["id"] not in result_ids
+        and now <= (_kickoff_dt(p) or datetime.min.replace(tzinfo=timezone.utc)) <= cutoff
     ]
-    # Sort by kickoff time
-    matches.sort(key=lambda p: _kickoff_dt(p) or datetime.max.replace(tzinfo=timezone.utc))
+    upcoming.sort(key=lambda p: _kickoff_dt(p) or datetime.max.replace(tzinfo=timezone.utc))
 
-    if not matches:
-        print("No upcoming matches — nothing to send.")
+    if not recent_results and not upcoming:
+        print("No results or upcoming matches — nothing to send.")
         return
 
     today_fmt = datetime.strptime(today, "%Y-%m-%d").strftime("%-d %b %Y")
-    header = f"⚽ *WC2026 Matchday — {today_fmt}*\n\n"
-    footer = f"\n\n🔗 {DASHBOARD}"
+    parts = []
 
-    blocks = [format_match_block(p, all_odds.get(p["id"])) for p in matches]
-    send_chunked(blocks, header=header, footer=footer)
-    print(f"Morning notification sent — {len(matches)} match(es).")
+    # Results section
+    if recent_results:
+        dates = sorted({r["date"] for r in recent_results})
+        date_label = " & ".join(
+            datetime.strptime(d, "%Y-%m-%d").strftime("%-d %b") for d in dates
+        )
+        parts.append(
+            f"📋 *Results — {date_label}*\n"
+            + format_result_block(recent_results, pred_map)
+        )
+
+    # Predictions section
+    if upcoming:
+        parts.append(
+            f"⚽ *Predictions — {today_fmt}*\n"
+            + "\n\n".join(format_match_block(p, all_odds.get(p["id"])) for p in upcoming)
+        )
+
+    footer = f"\n\n🔗 {DASHBOARD}"
+    full   = "\n\n".join(parts) + footer
+
+    if len(full) <= 4096:
+        send(full)
+    else:
+        for part in parts:
+            send(part)
+        send(f"🔗 {DASHBOARD}")
+
+    print(f"Morning notification sent — {len(recent_results)} result(s), {len(upcoming)} prediction(s).")
 
 
 # ── Pre-kickoff lineup update ─────────────────────────────────────────────────
@@ -401,12 +459,18 @@ def main() -> None:
             raw = json.load(f)
         all_odds = raw.get("matches", raw)
 
+    results = []
+    results_path = DATA / "results.json"
+    if results_path.exists():
+        with open(results_path) as f:
+            results = json.load(f).get("results", [])
+
     if len(sys.argv) >= 3 and sys.argv[1] == "--lineup":
         lineup_update(sys.argv[2:], predictions, all_odds)
     elif len(sys.argv) >= 2 and sys.argv[1] == "--remind":
         kickoff_reminder(predictions, all_odds)
     else:
-        morning(predictions, all_odds)
+        morning(predictions, all_odds, results)
 
 
 if __name__ == "__main__":
