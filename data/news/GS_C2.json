@@ -1,0 +1,20 @@
+{
+  "fixture_id": "GS_C2",
+  "home": "Haiti",
+  "away": "Scotland",
+  "home_multiplier": 0.95,
+  "away_multiplier": 0.92,
+  "notes": "Haiti report a fully fit squad with no injury concerns ahead of their first World Cup match in 52 years. Scotland are without key midfielder Billy Gilmour (knee injury, tournament-ending), while Scott McTominay (illness) and Scott McKenna (knock) were late doubts but both are expected to start; Tommy Conway also misses out with an ankle problem.",
+  "home_scorers": [
+    "Duckens Nazon (leading striker / Haiti's record goalscorer)",
+    "Wilson Isidor (co-striker / Premier League experience, Sunderland)",
+    "Jean-Ricner Bellegarde (attacking midfielder / midfield fulcrum, set-piece threa"
+  ],
+  "away_scorers": [
+    "Scott McTominay (attacking midfielder / 15 international goals, clinical in box)",
+    "Lawrence Shankland (striker / first-choice starter in 4-4-2)",
+    "John McGinn (wide midfielder / set-piece threat, experienced campaigner)"
+  ],
+  "source": "anthropic_web_search",
+  "fetched_at": "2026-06-14T16:14:42.148878+00:00"
+}

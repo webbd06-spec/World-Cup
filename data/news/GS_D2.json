@@ -1,0 +1,20 @@
+{
+  "fixture_id": "GS_D2",
+  "home": "Australia",
+  "away": "Turkey",
+  "home_multiplier": 1.05,
+  "away_multiplier": 0.88,
+  "notes": "Australia head into the match with a fully fit 26-man squad — no injuries or suspensions reported — while Turkey are significantly disrupted: Kenan Yildiz (calf) is confirmed on the bench/rested, Hakan Calhanoglu is managing a calf issue and not expected to complete 90 minutes, and Ferdi Kadioglu only recently returned to full training after an undisclosed injury setback.",
+  "home_scorers": [
+    "Mohamed Toure (leading striker, 10 goals in 12 Championship appearances, expecte",
+    "Mathew Leckie (experienced wide attacker, World Cup pedigree, threat in transiti",
+    "Nestory Irankunda (exciting young wide forward, identified as key attacking spar"
+  ],
+  "away_scorers": [
+    "Arda Guler (chief attacking threat, fully fit after injury, set-piece and creati",
+    "Kerem Akturkoglu (expected starter up top as striker, regular throughout qualify",
+    "Hakan Calhanoglu (captain and midfield regista, confirmed starter despite fitnes"
+  ],
+  "source": "anthropic_web_search",
+  "fetched_at": "2026-06-14T16:15:00.140861+00:00"
+}

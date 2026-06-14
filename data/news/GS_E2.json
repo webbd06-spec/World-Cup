@@ -1,0 +1,20 @@
+{
+  "fixture_id": "GS_E2",
+  "home": "Ivory Coast",
+  "away": "Ecuador",
+  "home_multiplier": 0.92,
+  "away_multiplier": 0.93,
+  "notes": "Ivory Coast are without key defensive pillar Evan Ndicka (fitness concern ruled out of opener), with Odilon Kossounou stepping in, and there is a striker rotation battle between Guessand, Wahi, and Bonny. Ecuador's talismanic captain Enner Valencia — their only player with a double-figure international goal tally — is a minor fitness doubt ahead of kick-off, though he is expected to start; Kendry Paez is also nursing a knock but likely to play.",
+  "home_scorers": [
+    "Amad Diallo (dangerous winger, top creator in recent friendlies incl. vs France)",
+    "Evann Guessand (first-choice striker, leading the line in predicted XIs)",
+    "Yan Diomande (emerging Bundesliga forward, set-piece threat and direct runner)"
+  ],
+  "away_scorers": [
+    "Enner Valencia (all-time Ecuador top scorer, 49 international goals, leads attac",
+    "Gonzalo Plata (second-highest scorer in squad on 8 goals, dangerous wide forward",
+    "Moises Caicedo (engine of midfield, drives into box, key creative force)"
+  ],
+  "source": "anthropic_web_search",
+  "fetched_at": "2026-06-14T16:15:28.481147+00:00"
+}

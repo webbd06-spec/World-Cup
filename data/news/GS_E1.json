@@ -1,0 +1,20 @@
+{
+  "fixture_id": "GS_E1",
+  "home": "Germany",
+  "away": "Curacao",
+  "home_multiplier": 0.93,
+  "away_multiplier": 0.97,
+  "notes": "Germany are without confirmed absentees Serge Gnabry (adductor tear), Lennart Karl (torn muscle, replaced by Ouédraogo), Ridle Baku, and Jonathan Burkardt (all injured), while Manuel Neuer carries a calf concern but is expected to start; Curaçao are close to full strength with only Riechedly Bazoer ruled out through injury.",
+  "home_scorers": [
+    "Kai Havertz (leading striker, expected starter in attack)",
+    "Jamal Musiala (creative playmaker, declared 100% fit)",
+    "Florian Wirtz (attacking midfielder, set-piece and through-ball threat)"
+  ],
+  "away_scorers": [
+    "Tahith Chong (standout attacker, three goals in first six caps)",
+    "Leandro Bacuna (captain, experienced midfielder, set-piece threat)",
+    "Juninho Bacuna (central midfielder, goal threat from midfield)"
+  ],
+  "source": "anthropic_web_search",
+  "fetched_at": "2026-06-14T16:15:10.437424+00:00"
+}
