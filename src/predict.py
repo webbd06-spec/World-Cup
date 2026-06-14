@@ -404,6 +404,25 @@ def main(match_filter=None):
     fixtures, teams, venues, odds = load_data()
 
     today = date.today().isoformat()
+
+    # Load existing predictions so we can carry forward best_odds_* values
+    # for finished matches whose odds are no longer available from the API.
+    out_path = OUTPUTS / "predictions.json"
+    prev_best_odds = {}
+    if out_path.exists():
+        try:
+            with open(out_path) as f:
+                prev = json.load(f)
+            for p in prev.get("predictions", []):
+                if p.get("best_odds_home") or p.get("best_odds_draw") or p.get("best_odds_away"):
+                    prev_best_odds[p["id"]] = {
+                        "best_odds_home": p["best_odds_home"],
+                        "best_odds_draw": p["best_odds_draw"],
+                        "best_odds_away": p["best_odds_away"],
+                    }
+        except Exception:
+            pass
+
     predictions = []
 
     for match in fixtures["matches"]:
@@ -415,6 +434,11 @@ def main(match_filter=None):
                 continue
 
         pred = predict_match(match, teams, venues, odds)
+
+        # Carry forward stored odds if the API no longer has them
+        if not pred.get("best_odds_home") and match["id"] in prev_best_odds:
+            pred.update(prev_best_odds[match["id"]])
+
         predictions.append(pred)
 
     output = {
