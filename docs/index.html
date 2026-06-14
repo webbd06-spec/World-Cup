@@ -1911,8 +1911,16 @@ function renderAccuracy() {
     if (isExact) exactCorrect++;
 
     // P&L for value bets (≥5% edge)
+    // Use live odds if available; fall back to best_odds_* stored at prediction
+    // time so P&L still works after bookmakers close the market post-match.
     const matchOdds = S.oddsUK?.matches?.[m.id];
-    const bestH     = bestOdds(matchOdds?.h2h || {});
+    const liveH     = bestOdds(matchOdds?.h2h || {});
+    const stored    = { home_win: m.best_odds_home, draw: m.best_odds_draw, away_win: m.best_odds_away };
+    const bestH     = {
+      home_win: liveH.home_win || stored.home_win,
+      draw:     liveH.draw     || stored.draw,
+      away_win: liveH.away_win || stored.away_win,
+    };
     const lookup    = { win: 'home_win', draw: 'draw', loss: 'away_win' };
     const mprobs    = { win: m.win_prob, draw: m.draw_prob, loss: m.loss_prob };
     let matchPnl    = null;

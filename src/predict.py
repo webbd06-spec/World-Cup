@@ -381,6 +381,12 @@ def predict_match(match, teams_data, venues_data, odds_data):
         "market_draw": round(market_wdl[1], 4) if market_wdl else None,
         "market_loss": round(market_wdl[2], 4) if market_wdl else None,
 
+        # Best decimal odds at prediction time — persisted so P&L survives
+        # after bookmakers close the market post-match.
+        "best_odds_home": market_raw.get("home_win") if market_raw else None,
+        "best_odds_draw": market_raw.get("draw")     if market_raw else None,
+        "best_odds_away": market_raw.get("away_win") if market_raw else None,
+
         "top_scorelines": top_scorelines(matrix),
         "score_matrix": [[round(p, 5) for p in row] for row in matrix],
         "ah_lines": compute_ah_lines(matrix),

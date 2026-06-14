@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-06-12T20:38:57.908152Z",
-  "date": "2026-06-12",
+  "generated_at": "2026-06-14T10:46:30.131269Z",
+  "date": "2026-06-14",
   "model_version": "1.0.0",
   "blend_weights": {
     "market": 0.6,
@@ -42,15 +42,18 @@
       },
       "xg_home": 1.577,
       "xg_away": 0.994,
-      "win_prob": 0.5091,
-      "draw_prob": 0.2524,
-      "loss_prob": 0.2385,
+      "win_prob": 0.6146,
+      "draw_prob": 0.2256,
+      "loss_prob": 0.1598,
       "model_win": 0.5091,
       "model_draw": 0.2524,
       "model_loss": 0.2385,
-      "market_win": null,
-      "market_draw": null,
-      "market_loss": null,
+      "market_win": 0.685,
+      "market_draw": 0.2077,
+      "market_loss": 0.1073,
+      "best_odds_home": 1.41,
+      "best_odds_draw": 4.65,
+      "best_odds_away": 9.0,
       "top_scorelines": [
         {
           "home": 1,
@@ -290,8 +293,11 @@
           "fair_away": 192.182
         }
       ],
-      "source": "model_only",
-      "blend_weights": null,
+      "source": "blend",
+      "blend_weights": {
+        "market": 0.6,
+        "model": 0.4
+      },
       "team_news": {
         "notes": "",
         "home_scorers": [],
@@ -315,132 +321,135 @@
         "home": 2,
         "away": 1
       },
-      "xg_home": 1.249,
-      "xg_away": 1.132,
-      "win_prob": 0.3899,
-      "draw_prob": 0.2773,
-      "loss_prob": 0.3328,
-      "model_win": 0.3899,
-      "model_draw": 0.2773,
-      "model_loss": 0.3328,
+      "xg_home": 1.328,
+      "xg_away": 1.228,
+      "win_prob": 0.3905,
+      "draw_prob": 0.2662,
+      "loss_prob": 0.3433,
+      "model_win": 0.3905,
+      "model_draw": 0.2662,
+      "model_loss": 0.3433,
       "market_win": null,
       "market_draw": null,
       "market_loss": null,
+      "best_odds_home": null,
+      "best_odds_draw": null,
+      "best_odds_away": null,
       "top_scorelines": [
         {
           "home": 1,
           "away": 1,
-          "prob": 0.1307
+          "prob": 0.1266
         },
         {
           "home": 1,
           "away": 0,
-          "prob": 0.1155
+          "prob": 0.1031
         },
         {
           "home": 0,
           "away": 1,
-          "prob": 0.1046
-        },
-        {
-          "home": 0,
-          "away": 0,
-          "prob": 0.0924
+          "prob": 0.0953
         },
         {
           "home": 2,
           "away": 1,
-          "prob": 0.0817
+          "prob": 0.084
         },
         {
           "home": 1,
           "away": 2,
-          "prob": 0.074
+          "prob": 0.0777
+        },
+        {
+          "home": 0,
+          "away": 0,
+          "prob": 0.0776
         }
       ],
       "score_matrix": [
         [
-          0.09244,
-          0.10463,
-          0.05921,
-          0.02234,
-          0.00632,
-          0.00143,
-          0.00027,
-          4e-05,
-          1e-05
-        ],
-        [
-          0.11549,
-          0.13072,
-          0.07398,
-          0.02791,
-          0.0079,
-          0.00179,
-          0.00034,
-          5e-05,
-          1e-05
-        ],
-        [
-          0.07214,
-          0.08166,
-          0.04621,
-          0.01743,
-          0.00493,
-          0.00112,
-          0.00021,
-          3e-05,
-          0.0
-        ],
-        [
-          0.03004,
-          0.03401,
-          0.01924,
-          0.00726,
-          0.00205,
-          0.00047,
-          9e-05,
-          1e-05,
-          0.0
-        ],
-        [
-          0.00938,
-          0.01062,
-          0.00601,
-          0.00227,
-          0.00064,
-          0.00015,
-          3e-05,
-          0.0,
-          0.0
-        ],
-        [
-          0.00234,
-          0.00265,
-          0.0015,
-          0.00057,
-          0.00016,
-          4e-05,
-          1e-05,
-          0.0,
-          0.0
-        ],
-        [
-          0.00049,
-          0.00055,
-          0.00031,
-          0.00012,
-          3e-05,
-          1e-05,
-          0.0,
-          0.0,
-          0.0
-        ],
-        [
-          9e-05,
-          0.0001,
+          0.07763,
+          0.09532,
+          0.05852,
+          0.02395,
+          0.00735,
+          0.00181,
+          0.00037,
           6e-05,
-          2e-05,
+          1e-05
+        ],
+        [
+          0.10309,
+          0.12658,
+          0.07771,
+          0.0318,
+          0.00976,
+          0.0024,
+          0.00049,
+          9e-05,
+          1e-05
+        ],
+        [
+          0.06845,
+          0.08404,
+          0.0516,
+          0.02112,
+          0.00648,
+          0.00159,
+          0.00033,
+          6e-05,
+          1e-05
+        ],
+        [
+          0.0303,
+          0.0372,
+          0.02284,
+          0.00935,
+          0.00287,
+          0.0007,
+          0.00014,
+          3e-05,
+          0.0
+        ],
+        [
+          0.01006,
+          0.01235,
+          0.00758,
+          0.0031,
+          0.00095,
+          0.00023,
+          5e-05,
+          1e-05,
+          0.0
+        ],
+        [
+          0.00267,
+          0.00328,
+          0.00201,
+          0.00082,
+          0.00025,
+          6e-05,
+          1e-05,
+          0.0,
+          0.0
+        ],
+        [
+          0.00059,
+          0.00073,
+          0.00045,
+          0.00018,
+          6e-05,
+          1e-05,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.00011,
+          0.00014,
+          8e-05,
+          3e-05,
           1e-05,
           0.0,
           0.0,
@@ -448,10 +457,10 @@
           0.0
         ],
         [
-          1e-05,
+          2e-05,
           2e-05,
           1e-05,
-          0.0,
+          1e-05,
           0.0,
           0.0,
           0.0,
@@ -567,16 +576,16 @@
       ],
       "source": "model_only",
       "blend_weights": null,
-      "news_adjustment": {
-        "home": 0.97,
-        "away": 0.96,
-        "notes": "South Korea (home): Defender Cho Yu-min ruled out with a plantar foot injury, replaced by uncapped Jo Wi-je — a defensive loss with negligible attacking impact. Attack remains fully intact with Son Heung-min, Lee Kang-in, and Hwang Hee-chan all fit and expected to start; warm-up wins over Trinidad &…"
-      },
       "team_news": {
         "notes": "South Korea (home): Defender Cho Yu-min ruled out with a plantar foot injury, replaced by uncapped Jo Wi-je — a defensive loss with negligible attacking impact. Attack remains fully intact with Son Heung-min, Lee Kang-in, and Hwang Hee-chan all fit and expected to start; warm-up wins over Trinidad &…",
         "home_scorers": [],
         "away_scorers": [],
         "fetched_at": "2026-06-12T20:38:47.363464+00:00"
+      },
+      "news_adjustment": {
+        "home": 0.97,
+        "away": 0.96,
+        "notes": "South Korea (home): Defender Cho Yu-min ruled out with a plantar foot injury, replaced by uncapped Jo Wi-je — a defensive loss with negligible attacking impact. Attack remains fully intact with Son Heung-min, Lee Kang-in, and Hwang Hee-chan all fit and expected to start; warm-up wins over Trinidad &…"
       }
     },
     {
@@ -603,6 +612,9 @@
       "market_win": null,
       "market_draw": null,
       "market_loss": null,
+      "best_odds_home": null,
+      "best_odds_draw": null,
+      "best_odds_away": null,
       "top_scorelines": [
         {
           "home": 1,
@@ -860,15 +872,18 @@
       "result": null,
       "xg_home": 1.432,
       "xg_away": 1.289,
-      "win_prob": 0.4518,
-      "draw_prob": 0.2756,
-      "loss_prob": 0.2726,
+      "win_prob": 0.4783,
+      "draw_prob": 0.2642,
+      "loss_prob": 0.2574,
       "model_win": 0.4049,
       "model_draw": 0.2563,
       "model_loss": 0.3389,
-      "market_win": 0.4831,
-      "market_draw": 0.2884,
-      "market_loss": 0.2284,
+      "market_win": 0.5273,
+      "market_draw": 0.2695,
+      "market_loss": 0.2032,
+      "best_odds_home": 1.83,
+      "best_odds_draw": 3.58,
+      "best_odds_away": 4.75,
       "top_scorelines": [
         {
           "home": 1,
@@ -1138,6 +1153,9 @@
       "market_win": null,
       "market_draw": null,
       "market_loss": null,
+      "best_odds_home": null,
+      "best_odds_draw": null,
+      "best_odds_away": null,
       "top_scorelines": [
         {
           "home": 1,
@@ -1395,15 +1413,18 @@
       "result": null,
       "xg_home": 1.118,
       "xg_away": 1.596,
-      "win_prob": 0.2056,
-      "draw_prob": 0.2454,
-      "loss_prob": 0.5489,
+      "win_prob": 0.2516,
+      "draw_prob": 0.2691,
+      "loss_prob": 0.4793,
       "model_win": 0.2666,
       "model_draw": 0.249,
       "model_loss": 0.4843,
-      "market_win": 0.1649,
-      "market_draw": 0.2431,
-      "market_loss": 0.592,
+      "market_win": 0.2415,
+      "market_draw": 0.2825,
+      "market_loss": 0.4759,
+      "best_odds_home": 4.0,
+      "best_odds_draw": 3.42,
+      "best_odds_away": 2.03,
       "top_scorelines": [
         {
           "home": 1,
@@ -1660,148 +1681,151 @@
       "kickoff_utc": "19:00",
       "venue": "BMO Field",
       "city": "Toronto",
-      "status": "in_play",
+      "status": "finished",
       "result": {
-        "home": 0,
+        "home": 1,
         "away": 1
       },
-      "xg_home": 0.886,
-      "xg_away": 1.194,
-      "win_prob": 0.2729,
-      "draw_prob": 0.2964,
-      "loss_prob": 0.4307,
-      "model_win": 0.2729,
-      "model_draw": 0.2964,
-      "model_loss": 0.4307,
+      "xg_home": 1.318,
+      "xg_away": 1.269,
+      "win_prob": 0.3792,
+      "draw_prob": 0.2646,
+      "loss_prob": 0.3562,
+      "model_win": 0.3792,
+      "model_draw": 0.2646,
+      "model_loss": 0.3562,
       "market_win": null,
       "market_draw": null,
       "market_loss": null,
+      "best_odds_home": null,
+      "best_odds_draw": null,
+      "best_odds_away": null,
       "top_scorelines": [
         {
-          "home": 0,
-          "away": 1,
-          "prob": 0.1491
-        },
-        {
           "home": 1,
           "away": 1,
-          "prob": 0.1322
-        },
-        {
-          "home": 0,
-          "away": 0,
-          "prob": 0.1249
+          "prob": 0.1259
         },
         {
           "home": 1,
           "away": 0,
-          "prob": 0.1107
+          "prob": 0.0992
         },
         {
           "home": 0,
-          "away": 2,
-          "prob": 0.089
+          "away": 1,
+          "prob": 0.0955
+        },
+        {
+          "home": 2,
+          "away": 1,
+          "prob": 0.0829
         },
         {
           "home": 1,
           "away": 2,
-          "prob": 0.0789
+          "prob": 0.0798
+        },
+        {
+          "home": 0,
+          "away": 0,
+          "prob": 0.0753
         }
       ],
       "score_matrix": [
         [
-          0.12487,
-          0.1491,
-          0.08902,
-          0.03543,
-          0.01058,
-          0.00253,
-          0.0005,
-          9e-05,
-          1e-05
-        ],
-        [
-          0.11069,
-          0.13217,
-          0.07891,
-          0.03141,
-          0.00938,
-          0.00224,
-          0.00045,
+          0.07528,
+          0.09552,
+          0.06059,
+          0.02563,
+          0.00813,
+          0.00206,
+          0.00044,
           8e-05,
           1e-05
         ],
         [
-          0.04906,
-          0.05858,
-          0.03497,
-          0.01392,
-          0.00416,
-          0.00099,
-          0.0002,
-          3e-05,
+          0.0992,
+          0.12587,
+          0.07985,
+          0.03377,
+          0.01071,
+          0.00272,
+          0.00057,
+          0.0001,
+          2e-05
+        ],
+        [
+          0.06536,
+          0.08293,
+          0.05261,
+          0.02225,
+          0.00706,
+          0.00179,
+          0.00038,
+          7e-05,
           1e-05
         ],
         [
-          0.0145,
-          0.01731,
-          0.01033,
-          0.00411,
-          0.00123,
-          0.00029,
-          6e-05,
-          1e-05,
+          0.02871,
+          0.03643,
+          0.02311,
+          0.00977,
+          0.0031,
+          0.00079,
+          0.00017,
+          3e-05,
           0.0
         ],
         [
-          0.00321,
-          0.00384,
-          0.00229,
-          0.00091,
-          0.00027,
-          6e-05,
-          1e-05,
-          0.0,
-          0.0
-        ],
-        [
-          0.00057,
-          0.00068,
-          0.00041,
-          0.00016,
+          0.00946,
+          0.012,
+          0.00761,
+          0.00322,
+          0.00102,
+          0.00026,
           5e-05,
           1e-05,
+          0.0
+        ],
+        [
+          0.00249,
+          0.00316,
+          0.00201,
+          0.00085,
+          0.00027,
+          7e-05,
+          1e-05,
+          0.0,
+          0.0
+        ],
+        [
+          0.00055,
+          0.00069,
+          0.00044,
+          0.00019,
+          6e-05,
+          1e-05,
           0.0,
           0.0,
           0.0
         ],
         [
-          8e-05,
           0.0001,
-          6e-05,
+          0.00013,
+          8e-05,
+          4e-05,
+          1e-05,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          2e-05,
           2e-05,
           1e-05,
-          0.0,
-          0.0,
-          0.0,
-          0.0
-        ],
-        [
           1e-05,
-          1e-05,
-          1e-05,
-          0.0,
-          0.0,
-          0.0,
-          0.0,
-          0.0,
-          0.0
-        ],
-        [
-          0.0,
-          0.0,
-          0.0,
-          0.0,
           0.0,
           0.0,
           0.0,
@@ -1917,16 +1941,16 @@
       ],
       "source": "model_only",
       "blend_weights": null,
-      "news_adjustment": {
-        "home": 0.82,
-        "away": 0.97,
-        "notes": "Canada missing confirmed tournament absentees Marcelo Flores (ACL) and Moise Bombito (tibia), while star left-back and captain Alphonso Davies is a major doubt/late fitness test with a hamstring strain — three significant players absent or uncertain, severely denting attacking width and quality. Bos…"
-      },
       "team_news": {
         "notes": "Canada missing confirmed tournament absentees Marcelo Flores (ACL) and Moise Bombito (tibia), while star left-back and captain Alphonso Davies is a major doubt/late fitness test with a hamstring strain — three significant players absent or uncertain, severely denting attacking width and quality. Bos…",
         "home_scorers": [],
         "away_scorers": [],
         "fetched_at": "2026-06-12T20:38:57.785301+00:00"
+      },
+      "news_adjustment": {
+        "home": 0.82,
+        "away": 0.97,
+        "notes": "Canada missing confirmed tournament absentees Marcelo Flores (ACL) and Moise Bombito (tibia), while star left-back and captain Alphonso Davies is a major doubt/late fitness test with a hamstring strain — three significant players absent or uncertain, severely denting attacking width and quality. Bos…"
       }
     },
     {
@@ -1940,19 +1964,25 @@
       "kickoff_utc": "19:00",
       "venue": "Levi's Stadium",
       "city": "Santa Clara",
-      "status": "scheduled",
-      "result": null,
+      "status": "finished",
+      "result": {
+        "home": 1,
+        "away": 1
+      },
       "xg_home": 1.068,
       "xg_away": 1.812,
-      "win_prob": 0.131,
-      "draw_prob": 0.1809,
-      "loss_prob": 0.6882,
+      "win_prob": 0.1325,
+      "draw_prob": 0.1741,
+      "loss_prob": 0.6934,
       "model_win": 0.2221,
       "model_draw": 0.2302,
       "model_loss": 0.5478,
-      "market_win": 0.0702,
-      "market_draw": 0.148,
-      "market_loss": 0.7818,
+      "market_win": 0.0728,
+      "market_draw": 0.1368,
+      "market_loss": 0.7904,
+      "best_odds_home": 13.25,
+      "best_odds_draw": 7.05,
+      "best_odds_away": 1.22,
       "top_scorelines": [
         {
           "home": 1,
@@ -2228,6 +2258,9 @@
       "market_win": null,
       "market_draw": null,
       "market_loss": null,
+      "best_odds_home": null,
+      "best_odds_draw": null,
+      "best_odds_away": null,
       "top_scorelines": [
         {
           "home": 1,
@@ -2494,6 +2527,9 @@
       "market_win": 0.7329,
       "market_draw": 0.1759,
       "market_loss": 0.0913,
+      "best_odds_home": 1.32,
+      "best_odds_draw": 5.5,
+      "best_odds_away": 10.6,
       "top_scorelines": [
         {
           "home": 1,
@@ -2754,15 +2790,18 @@
       "result": null,
       "xg_home": 1.68,
       "xg_away": 1.28,
-      "win_prob": 0.4509,
-      "draw_prob": 0.2664,
-      "loss_prob": 0.2827,
+      "win_prob": 0.457,
+      "draw_prob": 0.2689,
+      "loss_prob": 0.2741,
       "model_win": 0.4681,
       "model_draw": 0.2396,
       "model_loss": 0.2923,
-      "market_win": 0.4394,
-      "market_draw": 0.2843,
-      "market_loss": 0.2762,
+      "market_win": 0.4495,
+      "market_draw": 0.2885,
+      "market_loss": 0.2619,
+      "best_odds_home": 2.15,
+      "best_odds_draw": 3.35,
+      "best_odds_away": 3.69,
       "top_scorelines": [
         {
           "home": 1,
@@ -3032,6 +3071,9 @@
       "market_win": null,
       "market_draw": null,
       "market_loss": null,
+      "best_odds_home": null,
+      "best_odds_draw": null,
+      "best_odds_away": null,
       "top_scorelines": [
         {
           "home": 1,
@@ -3285,19 +3327,25 @@
       "kickoff_utc": "22:00",
       "venue": "MetLife Stadium",
       "city": "East Rutherford",
-      "status": "scheduled",
-      "result": null,
+      "status": "finished",
+      "result": {
+        "home": 1,
+        "away": 1
+      },
       "xg_home": 1.847,
       "xg_away": 1.143,
-      "win_prob": 0.5704,
-      "draw_prob": 0.2394,
-      "loss_prob": 0.1902,
+      "win_prob": 0.5608,
+      "draw_prob": 0.2399,
+      "loss_prob": 0.1993,
       "model_win": 0.5381,
       "model_draw": 0.2276,
       "model_loss": 0.2343,
-      "market_win": 0.5919,
-      "market_draw": 0.2474,
-      "market_loss": 0.1608,
+      "market_win": 0.576,
+      "market_draw": 0.2481,
+      "market_loss": 0.1759,
+      "best_odds_home": 1.68,
+      "best_odds_draw": 3.9,
+      "best_odds_away": 5.5,
       "top_scorelines": [
         {
           "home": 1,
@@ -3554,19 +3602,25 @@
       "kickoff_utc": "01:00",
       "venue": "Gillette Stadium",
       "city": "Foxborough",
-      "status": "scheduled",
-      "result": null,
+      "status": "finished",
+      "result": {
+        "home": 0,
+        "away": 1
+      },
       "xg_home": 0.991,
       "xg_away": 1.79,
-      "win_prob": 0.179,
-      "draw_prob": 0.2291,
-      "loss_prob": 0.5918,
+      "win_prob": 0.1789,
+      "draw_prob": 0.2274,
+      "loss_prob": 0.5937,
       "model_win": 0.2073,
       "model_draw": 0.2314,
       "model_loss": 0.5612,
-      "market_win": 0.1602,
-      "market_draw": 0.2276,
-      "market_loss": 0.6122,
+      "market_win": 0.16,
+      "market_draw": 0.2247,
+      "market_loss": 0.6154,
+      "best_odds_home": 6.04,
+      "best_odds_draw": 4.3,
+      "best_odds_away": 1.57,
       "top_scorelines": [
         {
           "home": 0,
@@ -3836,6 +3890,9 @@
       "market_win": 0.2271,
       "market_draw": 0.283,
       "market_loss": 0.4899,
+      "best_odds_home": 4.25,
+      "best_odds_draw": 3.41,
+      "best_odds_away": 1.97,
       "top_scorelines": [
         {
           "home": 1,
@@ -4105,6 +4162,9 @@
       "market_win": 0.8967,
       "market_draw": 0.0699,
       "market_loss": 0.0334,
+      "best_odds_home": 1.08,
+      "best_odds_draw": 13.85,
+      "best_odds_away": 29.0,
       "top_scorelines": [
         {
           "home": 2,
@@ -4374,6 +4434,9 @@
       "market_win": 0.7331,
       "market_draw": 0.1809,
       "market_loss": 0.086,
+      "best_odds_home": 1.32,
+      "best_odds_draw": 5.35,
+      "best_odds_away": 11.25,
       "top_scorelines": [
         {
           "home": 1,
@@ -4634,15 +4697,18 @@
       "result": null,
       "xg_home": 1.007,
       "xg_away": 1.988,
-      "win_prob": 0.1685,
-      "draw_prob": 0.2072,
-      "loss_prob": 0.6243,
+      "win_prob": 0.1635,
+      "draw_prob": 0.2037,
+      "loss_prob": 0.6328,
       "model_win": 0.1856,
       "model_draw": 0.213,
       "model_loss": 0.6014,
-      "market_win": 0.157,
-      "market_draw": 0.2033,
-      "market_loss": 0.6396,
+      "market_win": 0.1488,
+      "market_draw": 0.1974,
+      "market_loss": 0.6537,
+      "best_odds_home": 6.5,
+      "best_odds_draw": 4.9,
+      "best_odds_away": 1.48,
       "top_scorelines": [
         {
           "home": 1,
@@ -4899,19 +4965,25 @@
       "kickoff_utc": "01:00",
       "venue": "SoFi Stadium",
       "city": "Inglewood",
-      "status": "scheduled",
-      "result": null,
+      "status": "finished",
+      "result": {
+        "home": 4,
+        "away": 1
+      },
       "xg_home": 1.725,
       "xg_away": 1.181,
-      "win_prob": 0.4727,
-      "draw_prob": 0.2771,
-      "loss_prob": 0.2502,
+      "win_prob": 0.4992,
+      "draw_prob": 0.263,
+      "loss_prob": 0.2378,
       "model_win": 0.5011,
       "model_draw": 0.2375,
       "model_loss": 0.2614,
-      "market_win": 0.4538,
-      "market_draw": 0.3035,
-      "market_loss": 0.2428,
+      "market_win": 0.4979,
+      "market_draw": 0.28,
+      "market_loss": 0.2221,
+      "best_odds_home": 1.94,
+      "best_odds_draw": 3.45,
+      "best_odds_away": 4.35,
       "top_scorelines": [
         {
           "home": 1,
@@ -5168,19 +5240,25 @@
       "kickoff_utc": "04:00",
       "venue": "BC Place",
       "city": "Vancouver",
-      "status": "scheduled",
-      "result": null,
+      "status": "finished",
+      "result": {
+        "home": 2,
+        "away": 0
+      },
       "xg_home": 1.322,
       "xg_away": 1.572,
-      "win_prob": 0.2387,
-      "draw_prob": 0.2498,
-      "loss_prob": 0.5115,
+      "win_prob": 0.2338,
+      "draw_prob": 0.2524,
+      "loss_prob": 0.5138,
       "model_win": 0.3212,
       "model_draw": 0.2459,
       "model_loss": 0.4329,
-      "market_win": 0.1837,
-      "market_draw": 0.2524,
-      "market_loss": 0.5639,
+      "market_win": 0.1755,
+      "market_draw": 0.2567,
+      "market_loss": 0.5678,
+      "best_odds_home": 5.5,
+      "best_odds_draw": 3.76,
+      "best_odds_away": 1.7,
       "top_scorelines": [
         {
           "home": 1,
@@ -5450,6 +5528,9 @@
       "market_win": 0.5462,
       "market_draw": 0.2511,
       "market_loss": 0.2027,
+      "best_odds_home": 1.77,
+      "best_odds_draw": 3.85,
+      "best_odds_away": 4.77,
       "top_scorelines": [
         {
           "home": 1,
@@ -5719,6 +5800,9 @@
       "market_win": 0.4351,
       "market_draw": 0.2927,
       "market_loss": 0.2721,
+      "best_odds_home": 2.22,
+      "best_odds_draw": 3.3,
+      "best_odds_away": 3.55,
       "top_scorelines": [
         {
           "home": 1,
@@ -5988,6 +6072,9 @@
       "market_win": 0.367,
       "market_draw": 0.2659,
       "market_loss": 0.367,
+      "best_odds_home": 2.63,
+      "best_odds_draw": 3.63,
+      "best_odds_away": 2.63,
       "top_scorelines": [
         {
           "home": 1,
@@ -6257,6 +6344,9 @@
       "market_win": 0.4333,
       "market_draw": 0.302,
       "market_loss": 0.2647,
+      "best_odds_home": 2.23,
+      "best_odds_draw": 3.2,
+      "best_odds_away": 3.65,
       "top_scorelines": [
         {
           "home": 1,
@@ -6526,6 +6616,9 @@
       "market_win": null,
       "market_draw": null,
       "market_loss": null,
+      "best_odds_home": null,
+      "best_odds_draw": null,
+      "best_odds_away": null,
       "top_scorelines": [
         {
           "home": 2,
@@ -6792,6 +6885,9 @@
       "market_win": 0.2654,
       "market_draw": 0.3402,
       "market_loss": 0.3944,
+      "best_odds_home": 3.64,
+      "best_odds_draw": 2.84,
+      "best_odds_away": 2.45,
       "top_scorelines": [
         {
           "home": 1,
@@ -7061,6 +7157,9 @@
       "market_win": 0.6209,
       "market_draw": 0.2177,
       "market_loss": 0.1614,
+      "best_odds_home": 1.56,
+      "best_odds_draw": 4.45,
+      "best_odds_away": 6.0,
       "top_scorelines": [
         {
           "home": 1,
@@ -7330,6 +7429,9 @@
       "market_win": null,
       "market_draw": null,
       "market_loss": null,
+      "best_odds_home": null,
+      "best_odds_draw": null,
+      "best_odds_away": null,
       "top_scorelines": [
         {
           "home": 1,
@@ -7587,15 +7689,18 @@
       "result": null,
       "xg_home": 1.115,
       "xg_away": 1.983,
-      "win_prob": 0.2084,
-      "draw_prob": 0.2433,
-      "loss_prob": 0.5483,
+      "win_prob": 0.1997,
+      "draw_prob": 0.2353,
+      "loss_prob": 0.565,
       "model_win": 0.2094,
       "model_draw": 0.2158,
       "model_loss": 0.5748,
-      "market_win": 0.2077,
-      "market_draw": 0.2617,
-      "market_loss": 0.5306,
+      "market_win": 0.1932,
+      "market_draw": 0.2484,
+      "market_loss": 0.5584,
+      "best_odds_home": 5.0,
+      "best_odds_draw": 3.89,
+      "best_odds_away": 1.73,
       "top_scorelines": [
         {
           "home": 1,
@@ -7865,6 +7970,9 @@
       "market_win": null,
       "market_draw": null,
       "market_loss": null,
+      "best_odds_home": null,
+      "best_odds_draw": null,
+      "best_odds_away": null,
       "top_scorelines": [
         {
           "home": 0,
@@ -8122,15 +8230,18 @@
       "result": null,
       "xg_home": 1.636,
       "xg_away": 1.257,
-      "win_prob": 0.4722,
-      "draw_prob": 0.2584,
-      "loss_prob": 0.2695,
+      "win_prob": 0.4721,
+      "draw_prob": 0.2548,
+      "loss_prob": 0.2731,
       "model_win": 0.4627,
       "model_draw": 0.2432,
       "model_loss": 0.2942,
-      "market_win": 0.4785,
-      "market_draw": 0.2685,
-      "market_loss": 0.253,
+      "market_win": 0.4784,
+      "market_draw": 0.2626,
+      "market_loss": 0.2591,
+      "best_odds_home": 2.02,
+      "best_odds_draw": 3.68,
+      "best_odds_away": 3.73,
       "top_scorelines": [
         {
           "home": 1,
@@ -8391,15 +8502,18 @@
       "result": null,
       "xg_home": 1.692,
       "xg_away": 1.082,
-      "win_prob": 0.5153,
-      "draw_prob": 0.2599,
-      "loss_prob": 0.2248,
+      "win_prob": 0.5151,
+      "draw_prob": 0.2603,
+      "loss_prob": 0.2247,
       "model_win": 0.5162,
       "model_draw": 0.2409,
       "model_loss": 0.2429,
-      "market_win": 0.5147,
-      "market_draw": 0.2726,
-      "market_loss": 0.2127,
+      "market_win": 0.5143,
+      "market_draw": 0.2731,
+      "market_loss": 0.2125,
+      "best_odds_home": 1.88,
+      "best_odds_draw": 3.54,
+      "best_odds_away": 4.55,
       "top_scorelines": [
         {
           "home": 1,
@@ -8669,6 +8783,9 @@
       "market_win": 0.5858,
       "market_draw": 0.2301,
       "market_loss": 0.1841,
+      "best_odds_home": 1.65,
+      "best_odds_draw": 4.2,
+      "best_odds_away": 5.25,
       "top_scorelines": [
         {
           "home": 1,
@@ -8938,6 +9055,9 @@
       "market_win": 0.1678,
       "market_draw": 0.268,
       "market_loss": 0.5642,
+      "best_odds_home": 5.75,
+      "best_odds_draw": 3.6,
+      "best_odds_away": 1.71,
       "top_scorelines": [
         {
           "home": 1,
@@ -9198,15 +9318,18 @@
       "result": null,
       "xg_home": 1.016,
       "xg_away": 2.01,
-      "win_prob": 0.1631,
-      "draw_prob": 0.2163,
-      "loss_prob": 0.6206,
+      "win_prob": 0.1569,
+      "draw_prob": 0.2221,
+      "loss_prob": 0.621,
       "model_win": 0.1848,
       "model_draw": 0.2113,
       "model_loss": 0.6039,
-      "market_win": 0.1487,
-      "market_draw": 0.2196,
-      "market_loss": 0.6317,
+      "market_win": 0.1382,
+      "market_draw": 0.2293,
+      "market_loss": 0.6325,
+      "best_odds_home": 7.0,
+      "best_odds_draw": 4.22,
+      "best_odds_away": 1.53,
       "top_scorelines": [
         {
           "home": 1,
@@ -9476,6 +9599,9 @@
       "market_win": 0.4494,
       "market_draw": 0.2784,
       "market_loss": 0.2722,
+      "best_odds_home": 2.15,
+      "best_odds_draw": 3.47,
+      "best_odds_away": 3.55,
       "top_scorelines": [
         {
           "home": 1,
@@ -9736,15 +9862,18 @@
       "result": null,
       "xg_home": 1.863,
       "xg_away": 1.205,
-      "win_prob": 0.5634,
-      "draw_prob": 0.2345,
-      "loss_prob": 0.2022,
+      "win_prob": 0.5585,
+      "draw_prob": 0.2367,
+      "loss_prob": 0.2048,
       "model_win": 0.5277,
       "model_draw": 0.2264,
       "model_loss": 0.2459,
-      "market_win": 0.5872,
-      "market_draw": 0.2398,
-      "market_loss": 0.173,
+      "market_win": 0.579,
+      "market_draw": 0.2436,
+      "market_loss": 0.1774,
+      "best_odds_home": 1.67,
+      "best_odds_draw": 3.97,
+      "best_odds_away": 5.45,
       "top_scorelines": [
         {
           "home": 1,
@@ -10005,15 +10134,18 @@
       "result": null,
       "xg_home": 1.521,
       "xg_away": 1.164,
-      "win_prob": 0.4984,
-      "draw_prob": 0.2634,
-      "loss_prob": 0.2382,
+      "win_prob": 0.4883,
+      "draw_prob": 0.2661,
+      "loss_prob": 0.2456,
       "model_win": 0.455,
       "model_draw": 0.2542,
       "model_loss": 0.2908,
-      "market_win": 0.5273,
-      "market_draw": 0.2695,
-      "market_loss": 0.2032,
+      "market_win": 0.5105,
+      "market_draw": 0.2741,
+      "market_loss": 0.2154,
+      "best_odds_home": 1.89,
+      "best_odds_draw": 3.52,
+      "best_odds_away": 4.48,
       "top_scorelines": [
         {
           "home": 1,
@@ -10283,6 +10415,9 @@
       "market_win": 0.6901,
       "market_draw": 0.2025,
       "market_loss": 0.1073,
+      "best_odds_home": 1.4,
+      "best_odds_draw": 4.77,
+      "best_odds_away": 9.0,
       "top_scorelines": [
         {
           "home": 1,
@@ -10543,15 +10678,18 @@
       "result": null,
       "xg_home": 1.188,
       "xg_away": 1.63,
-      "win_prob": 0.2321,
-      "draw_prob": 0.2497,
-      "loss_prob": 0.5182,
+      "win_prob": 0.232,
+      "draw_prob": 0.2446,
+      "loss_prob": 0.5234,
       "model_win": 0.2783,
       "model_draw": 0.245,
       "model_loss": 0.4767,
-      "market_win": 0.2013,
-      "market_draw": 0.2529,
-      "market_loss": 0.5458,
+      "market_win": 0.2011,
+      "market_draw": 0.2443,
+      "market_loss": 0.5546,
+      "best_odds_home": 4.8,
+      "best_odds_draw": 3.95,
+      "best_odds_away": 1.74,
       "top_scorelines": [
         {
           "home": 1,
@@ -10821,6 +10959,9 @@
       "market_win": 0.096,
       "market_draw": 0.16,
       "market_loss": 0.744,
+      "best_odds_home": 10.0,
+      "best_odds_draw": 6.0,
+      "best_odds_away": 1.29,
       "top_scorelines": [
         {
           "home": 1,
@@ -11090,6 +11231,9 @@
       "market_win": 0.4238,
       "market_draw": 0.3077,
       "market_loss": 0.2684,
+      "best_odds_home": 2.28,
+      "best_odds_draw": 3.14,
+      "best_odds_away": 3.6,
       "top_scorelines": [
         {
           "home": 1,
@@ -11350,15 +11494,18 @@
       "result": null,
       "xg_home": 2.177,
       "xg_away": 0.867,
-      "win_prob": 0.7983,
-      "draw_prob": 0.1245,
-      "loss_prob": 0.0772,
+      "win_prob": 0.8009,
+      "draw_prob": 0.1243,
+      "loss_prob": 0.0747,
       "model_win": 0.673,
       "model_draw": 0.1901,
       "model_loss": 0.1369,
-      "market_win": 0.8819,
-      "market_draw": 0.0808,
-      "market_loss": 0.0373,
+      "market_win": 0.8862,
+      "market_draw": 0.0805,
+      "market_loss": 0.0333,
+      "best_odds_home": 1.09,
+      "best_odds_draw": 12.0,
+      "best_odds_away": 29.0,
       "top_scorelines": [
         {
           "home": 2,
@@ -11628,6 +11775,9 @@
       "market_win": 0.119,
       "market_draw": 0.2118,
       "market_loss": 0.6692,
+      "best_odds_home": 8.1,
+      "best_odds_draw": 4.55,
+      "best_odds_away": 1.44,
       "top_scorelines": [
         {
           "home": 1,
@@ -11897,6 +12047,9 @@
       "market_win": 0.8676,
       "market_draw": 0.0954,
       "market_loss": 0.037,
+      "best_odds_home": 1.11,
+      "best_odds_draw": 10.1,
+      "best_odds_away": 26.0,
       "top_scorelines": [
         {
           "home": 2,
@@ -12166,6 +12319,9 @@
       "market_win": 0.6713,
       "market_draw": 0.2079,
       "market_loss": 0.1208,
+      "best_odds_home": 1.44,
+      "best_odds_draw": 4.65,
+      "best_odds_away": 8.0,
       "top_scorelines": [
         {
           "home": 1,
@@ -12435,6 +12591,9 @@
       "market_win": 0.1625,
       "market_draw": 0.2406,
       "market_loss": 0.5969,
+      "best_odds_home": 5.95,
+      "best_odds_draw": 4.02,
+      "best_odds_away": 1.62,
       "top_scorelines": [
         {
           "home": 1,
@@ -12695,15 +12854,18 @@
       "result": null,
       "xg_home": 1.185,
       "xg_away": 1.408,
-      "win_prob": 0.3901,
-      "draw_prob": 0.2575,
-      "loss_prob": 0.3524,
+      "win_prob": 0.3454,
+      "draw_prob": 0.2754,
+      "loss_prob": 0.3791,
       "model_win": 0.3167,
       "model_draw": 0.2624,
       "model_loss": 0.4209,
-      "market_win": 0.4391,
-      "market_draw": 0.2542,
-      "market_loss": 0.3067,
+      "market_win": 0.3646,
+      "market_draw": 0.2841,
+      "market_loss": 0.3513,
+      "best_odds_home": 2.65,
+      "best_odds_draw": 3.4,
+      "best_odds_away": 2.75,
       "top_scorelines": [
         {
           "home": 1,
@@ -12973,6 +13135,9 @@
       "market_win": 0.6588,
       "market_draw": 0.2162,
       "market_loss": 0.125,
+      "best_odds_home": 1.47,
+      "best_odds_draw": 4.48,
+      "best_odds_away": 7.75,
       "top_scorelines": [
         {
           "home": 2,
@@ -13242,6 +13407,9 @@
       "market_win": 0.0717,
       "market_draw": 0.1353,
       "market_loss": 0.793,
+      "best_odds_home": 13.5,
+      "best_odds_draw": 7.15,
+      "best_odds_away": 1.22,
       "top_scorelines": [
         {
           "home": 1,
@@ -13511,6 +13679,9 @@
       "market_win": 0.8637,
       "market_draw": 0.1024,
       "market_loss": 0.0339,
+      "best_odds_home": 1.12,
+      "best_odds_draw": 9.45,
+      "best_odds_away": 28.5,
       "top_scorelines": [
         {
           "home": 2,
@@ -13771,15 +13942,18 @@
       "result": null,
       "xg_home": 1.577,
       "xg_away": 1.341,
-      "win_prob": 0.433,
-      "draw_prob": 0.2613,
+      "win_prob": 0.4379,
+      "draw_prob": 0.2564,
       "loss_prob": 0.3057,
       "model_win": 0.4299,
       "model_draw": 0.245,
       "model_loss": 0.3252,
-      "market_win": 0.4351,
-      "market_draw": 0.2721,
-      "market_loss": 0.2927,
+      "market_win": 0.4432,
+      "market_draw": 0.264,
+      "market_loss": 0.2928,
+      "best_odds_home": 2.18,
+      "best_odds_draw": 3.66,
+      "best_odds_away": 3.3,
       "top_scorelines": [
         {
           "home": 1,
@@ -14049,6 +14223,9 @@
       "market_win": 0.2195,
       "market_draw": 0.2583,
       "market_loss": 0.5222,
+      "best_odds_home": 4.4,
+      "best_odds_draw": 3.74,
+      "best_odds_away": 1.85,
       "top_scorelines": [
         {
           "home": 1,
@@ -14318,6 +14495,9 @@
       "market_win": 0.6698,
       "market_draw": 0.2097,
       "market_loss": 0.1206,
+      "best_odds_home": 1.44,
+      "best_odds_draw": 4.6,
+      "best_odds_away": 8.0,
       "top_scorelines": [
         {
           "home": 1,
@@ -14587,6 +14767,9 @@
       "market_win": 0.6889,
       "market_draw": 0.2009,
       "market_loss": 0.1102,
+      "best_odds_home": 1.4,
+      "best_odds_draw": 4.8,
+      "best_odds_away": 8.75,
       "top_scorelines": [
         {
           "home": 2,
@@ -14856,6 +15039,9 @@
       "market_win": 0.7268,
       "market_draw": 0.1714,
       "market_loss": 0.1018,
+      "best_odds_home": 1.33,
+      "best_odds_draw": 5.64,
+      "best_odds_away": 9.5,
       "top_scorelines": [
         {
           "home": 1,
@@ -15125,6 +15311,9 @@
       "market_win": 0.5848,
       "market_draw": 0.2474,
       "market_loss": 0.1678,
+      "best_odds_home": 1.65,
+      "best_odds_draw": 3.9,
+      "best_odds_away": 5.75,
       "top_scorelines": [
         {
           "home": 1,
@@ -15385,15 +15574,18 @@
       "result": null,
       "xg_home": 1.188,
       "xg_away": 1.616,
-      "win_prob": 0.2009,
-      "draw_prob": 0.2304,
-      "loss_prob": 0.5687,
+      "win_prob": 0.2007,
+      "draw_prob": 0.2316,
+      "loss_prob": 0.5678,
       "model_win": 0.2807,
       "model_draw": 0.2461,
       "model_loss": 0.4732,
-      "market_win": 0.1477,
-      "market_draw": 0.2199,
-      "market_loss": 0.6324,
+      "market_win": 0.1473,
+      "market_draw": 0.2219,
+      "market_loss": 0.6308,
+      "best_odds_home": 6.55,
+      "best_odds_draw": 4.35,
+      "best_odds_away": 1.53,
       "top_scorelines": [
         {
           "home": 1,
@@ -15663,6 +15855,9 @@
       "market_win": 0.069,
       "market_draw": 0.1332,
       "market_loss": 0.7979,
+      "best_odds_home": 14.0,
+      "best_odds_draw": 7.25,
+      "best_odds_away": 1.21,
       "top_scorelines": [
         {
           "home": 0,
@@ -15932,6 +16127,9 @@
       "market_win": 0.2507,
       "market_draw": 0.3065,
       "market_loss": 0.4428,
+      "best_odds_home": 3.85,
+      "best_odds_draw": 3.15,
+      "best_odds_away": 2.18,
       "top_scorelines": [
         {
           "home": 1,
@@ -16192,15 +16390,18 @@
       "result": null,
       "xg_home": 2.126,
       "xg_away": 0.968,
-      "win_prob": 0.7039,
-      "draw_prob": 0.1811,
-      "loss_prob": 0.115,
+      "win_prob": 0.7111,
+      "draw_prob": 0.1761,
+      "loss_prob": 0.1129,
       "model_win": 0.6391,
       "model_draw": 0.1991,
       "model_loss": 0.1617,
-      "market_win": 0.7471,
-      "market_draw": 0.1691,
-      "market_loss": 0.0838,
+      "market_win": 0.759,
+      "market_draw": 0.1607,
+      "market_loss": 0.0803,
+      "best_odds_home": 1.27,
+      "best_odds_draw": 6.0,
+      "best_odds_away": 12.0,
       "top_scorelines": [
         {
           "home": 2,
@@ -16461,15 +16662,18 @@
       "result": null,
       "xg_home": 1.049,
       "xg_away": 1.492,
-      "win_prob": 0.166,
-      "draw_prob": 0.2236,
-      "loss_prob": 0.6104,
+      "win_prob": 0.1709,
+      "draw_prob": 0.2254,
+      "loss_prob": 0.6038,
       "model_win": 0.2662,
       "model_draw": 0.2596,
       "model_loss": 0.4742,
-      "market_win": 0.0993,
-      "market_draw": 0.1995,
-      "market_loss": 0.7012,
+      "market_win": 0.1073,
+      "market_draw": 0.2025,
+      "market_loss": 0.6901,
+      "best_odds_home": 9.0,
+      "best_odds_draw": 4.77,
+      "best_odds_away": 1.4,
       "top_scorelines": [
         {
           "home": 1,
@@ -16730,15 +16934,18 @@
       "result": null,
       "xg_home": 1.974,
       "xg_away": 1.031,
-      "win_prob": 0.7067,
-      "draw_prob": 0.1697,
-      "loss_prob": 0.1235,
+      "win_prob": 0.7117,
+      "draw_prob": 0.1668,
+      "loss_prob": 0.1215,
       "model_win": 0.5928,
       "model_draw": 0.2149,
       "model_loss": 0.1923,
-      "market_win": 0.7827,
-      "market_draw": 0.1396,
-      "market_loss": 0.0776,
+      "market_win": 0.791,
+      "market_draw": 0.1348,
+      "market_loss": 0.0742,
+      "best_odds_home": 1.22,
+      "best_odds_draw": 7.16,
+      "best_odds_away": 13.0,
       "top_scorelines": [
         {
           "home": 1,
@@ -17008,6 +17215,9 @@
       "market_win": 0.6588,
       "market_draw": 0.2191,
       "market_loss": 0.1221,
+      "best_odds_home": 1.47,
+      "best_odds_draw": 4.42,
+      "best_odds_away": 7.93,
       "top_scorelines": [
         {
           "home": 1,
@@ -17277,6 +17487,9 @@
       "market_win": 0.2762,
       "market_draw": 0.2843,
       "market_loss": 0.4394,
+      "best_odds_home": 3.5,
+      "best_odds_draw": 3.4,
+      "best_odds_away": 2.2,
       "top_scorelines": [
         {
           "home": 1,
@@ -17546,6 +17759,9 @@
       "market_win": 0.4096,
       "market_draw": 0.2974,
       "market_loss": 0.2929,
+      "best_odds_home": 2.36,
+      "best_odds_draw": 3.25,
+      "best_odds_away": 3.3,
       "top_scorelines": [
         {
           "home": 1,
@@ -17815,6 +18031,9 @@
       "market_win": 0.5559,
       "market_draw": 0.2506,
       "market_loss": 0.1935,
+      "best_odds_home": 1.74,
+      "best_odds_draw": 3.86,
+      "best_odds_away": 5.0,
       "top_scorelines": [
         {
           "home": 1,
@@ -18075,15 +18294,18 @@
       "result": null,
       "xg_home": 1.462,
       "xg_away": 1.307,
-      "win_prob": 0.4317,
+      "win_prob": 0.4355,
       "draw_prob": 0.2661,
-      "loss_prob": 0.3022,
+      "loss_prob": 0.2984,
       "model_win": 0.4086,
       "model_draw": 0.2536,
       "model_loss": 0.3379,
-      "market_win": 0.4472,
+      "market_win": 0.4535,
       "market_draw": 0.2744,
-      "market_loss": 0.2784,
+      "market_loss": 0.2721,
+      "best_odds_home": 2.13,
+      "best_odds_draw": 3.52,
+      "best_odds_away": 3.55,
       "top_scorelines": [
         {
           "home": 1,
@@ -18353,6 +18575,9 @@
       "market_win": 0.7309,
       "market_draw": 0.1702,
       "market_loss": 0.099,
+      "best_odds_home": 1.32,
+      "best_odds_draw": 5.67,
+      "best_odds_away": 9.75,
       "top_scorelines": [
         {
           "home": 2,
@@ -18622,6 +18847,9 @@
       "market_win": 0.1342,
       "market_draw": 0.2427,
       "market_loss": 0.6232,
+      "best_odds_home": 7.2,
+      "best_odds_draw": 3.98,
+      "best_odds_away": 1.55,
       "top_scorelines": [
         {
           "home": 1,
@@ -18882,15 +19110,18 @@
       "result": null,
       "xg_home": 0.927,
       "xg_away": 2.232,
-      "win_prob": 0.1296,
-      "draw_prob": 0.1642,
-      "loss_prob": 0.7062,
+      "win_prob": 0.1183,
+      "draw_prob": 0.1711,
+      "loss_prob": 0.7106,
       "model_win": 0.143,
       "model_draw": 0.1878,
       "model_loss": 0.6691,
-      "market_win": 0.1206,
-      "market_draw": 0.1484,
-      "market_loss": 0.731,
+      "market_win": 0.1018,
+      "market_draw": 0.1599,
+      "market_loss": 0.7383,
+      "best_odds_home": 9.5,
+      "best_odds_draw": 6.05,
+      "best_odds_away": 1.31,
       "top_scorelines": [
         {
           "home": 0,
@@ -19151,15 +19382,18 @@
       "result": null,
       "xg_home": 1.901,
       "xg_away": 1.116,
-      "win_prob": 0.5747,
-      "draw_prob": 0.2361,
-      "loss_prob": 0.1892,
+      "win_prob": 0.5703,
+      "draw_prob": 0.2447,
+      "loss_prob": 0.185,
       "model_win": 0.5567,
       "model_draw": 0.2228,
       "model_loss": 0.2205,
-      "market_win": 0.5866,
-      "market_draw": 0.245,
-      "market_loss": 0.1683,
+      "market_win": 0.5794,
+      "market_draw": 0.2594,
+      "market_loss": 0.1613,
+      "best_odds_home": 1.67,
+      "best_odds_draw": 3.73,
+      "best_odds_away": 6.0,
       "top_scorelines": [
         {
           "home": 1,
