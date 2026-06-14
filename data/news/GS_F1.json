@@ -2,8 +2,8 @@
   "fixture_id": "GS_F1",
   "home": "Netherlands",
   "away": "Japan",
-  "home_multiplier": 0.88,
-  "away_multiplier": 0.82,
+  "home_multiplier": 1.0,
+  "away_multiplier": 1.0,
   "notes": "Netherlands are without Jurriën Timber (groin, ruled out of tournament), Matthijs de Ligt (back surgery), Xavi Simons (injury, not called up), and Jerdy Schouten (ACL); GK Bart Verbruggen is a major doubt after a bruised hip in the Uzbekistan warm-up, with Memphis Depay also carrying a hamstring issue and likely to start on the bench. Japan have suffered devastating pre-tournament blows: captain Wataru Endo (foot surgery, retired from internationals), star winger Kaoru Mitoma (hamstring), and…",
   "home_scorers": [
     "Cody Gakpo (primary set-piece taker and penalty taker, Koeman's certain starter)",
@@ -15,6 +15,8 @@
     "Takefusa Kubo (creative No.10, primary playmaker in absence of Mitoma and Endo)",
     "Ritsu Doan (wing-back/wide forward, dynamic counter-attacking threat, qualifying"
   ],
-  "source": "anthropic_web_search",
-  "fetched_at": "2026-06-14T16:15:50.193212+00:00"
+  "source": "lineup_fetch",
+  "fetched_at": "2026-06-14T18:52:49.998939+00:00",
+  "lineup_home_absent": 0,
+  "lineup_away_absent": 0
 }
