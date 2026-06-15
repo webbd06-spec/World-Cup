@@ -1,8 +1,9 @@
 name: WC 2026 — Live Results
 
 on:
-  schedule:
-    - cron: "*/10 0-5,13-23 * * *"   # every 10 min during match hours UTC
+  # Native schedule removed — cron-job.org dispatches workflow_dispatch
+  # every 10 min (results_only) and every 4 hrs (full) instead, which is
+  # more reliable than GitHub's native cron (which fires 4-12 hrs late).
   workflow_dispatch:
     inputs:
       mode:
@@ -114,5 +115,17 @@ jobs:
           git diff --staged --quiet && { echo "No result changes — nothing to commit."; exit 0; }
           TIMESTAMP=$(date -u +"%H:%M UTC")
           git commit -m "chore: live results update ${TIMESTAMP} [skip ci]"
-          git pull --rebase --autostash origin main
-          git push origin HEAD:main
+          # Retry push up to 3 times — if another run committed first, pull
+          # with ours strategy on data files (last writer wins for JSON data)
+          # then retry rather than hard-failing on merge conflict.
+          for i in 1 2 3; do
+            git push origin HEAD:main && break
+            echo "Push attempt $i failed, pulling and retrying..."
+            git fetch origin main
+            git checkout --ours data/fixtures.json data/results.json \
+              docs/predictions.json docs/results.json docs/live_odds_uk.json 2>/dev/null || true
+            git add data/fixtures.json data/results.json \
+              docs/predictions.json docs/results.json docs/live_odds_uk.json 2>/dev/null || true
+            git rebase --continue 2>/dev/null || \
+              git merge -X ours origin/main --no-edit 2>/dev/null || true
+          done
