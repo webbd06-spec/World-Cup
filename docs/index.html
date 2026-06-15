@@ -2006,8 +2006,16 @@ function renderAccuracy() {
     const predScore = topSl ? `${topSl.home}–${topSl.away}` : '?–?';
     const tick      = isOk    ? '<span style="color:var(--green)">✓</span>'
                                : '<span style="color:var(--red)">✗</span>';
-    const exactTick = isExact ? '<span style="color:var(--green)">✓</span>'
-                               : `<span style="color:var(--muted)">${predScore}</span>`;
+    // Always show the score pick alongside its own tick — this is a SEPARATE
+    // prediction from "Predicted"/tick above (which is the result/1X2 pick).
+    // Previously a correct score pick showed only "✓" and an incorrect one
+    // showed only the muted score with no mark, which made an incorrect
+    // score pick (e.g. "1-1") sitting next to a correct, profitable result
+    // pick look contradictory. Showing "1-1 ✗" / "5-1 ✓" makes clear these
+    // are two independent bets that can (and often do) disagree.
+    const exactTick = isExact
+      ? `${predScore} <span style="color:var(--green)">✓</span>`
+      : `<span style="color:var(--muted)">${predScore}</span> <span style="color:var(--red)">✗</span>`;
 
     return `<tr class="${isOk ? 'acc-ok' : 'acc-miss'}">
       <td>${flag(m.home)} ${m.home} <b>${hr}–${ar}</b> ${flag(m.away)} ${m.away}</td>
@@ -2054,7 +2062,7 @@ function renderAccuracy() {
     <div class="acc-tbl-wrap">
       <table class="acc-tbl">
         <thead><tr>
-          <th>Match</th><th>Predicted</th><th>Result</th><th>W/D/L</th><th>Exact</th><th>P&amp;L (Result)</th><th>P&amp;L (Score)</th>
+          <th>Match</th><th>Result pick</th><th>Actual</th><th>✓</th><th>Score pick</th><th>P&amp;L (Result)</th><th>P&amp;L (Score)</th>
         </tr></thead>
         <tbody>${trs}</tbody>
       </table>
