@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-15T21:01:05.760030Z",
+  "generated_at": "2026-06-15T21:10:42.530279Z",
   "date": "2026-06-15",
   "model_version": "1.0.0",
   "blend_weights": {
@@ -9874,7 +9874,7 @@
       "kickoff_utc": "19:00",
       "venue": "Lumen Field",
       "city": "Seattle",
-      "status": "in_play",
+      "status": "finished",
       "result": {
         "home": 1,
         "away": 1
