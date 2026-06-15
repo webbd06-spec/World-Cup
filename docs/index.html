@@ -1918,7 +1918,9 @@ function poissonSample(lam) {
 
 function renderAccuracy() {
   const all      = S.preds.predictions || [];
-  const finished = all.filter(p => (p.result || S.results[p.id]) && p.home && p.away && p.win_prob != null);
+  const finished = all
+    .filter(p => (p.result || S.results[p.id]) && p.home && p.away && p.win_prob != null)
+    .sort((a, b) => `${a.date}T${a.kickoff_utc}`.localeCompare(`${b.date}T${b.kickoff_utc}`));
 
   if (!finished.length) {
     render(`<div class="empty-state">
