@@ -4,6 +4,17 @@ on:
   schedule:
     - cron: "*/10 0-5,13-23 * * *"   # every 10 min during match hours UTC
   workflow_dispatch:
+    inputs:
+      mode:
+        description: >-
+          results_only (default, free — fixtures/results only) or
+          full (also refreshes venues/Elo/odds — costs odds-api credits)
+        required: false
+        type: choice
+        default: results_only
+        options:
+          - results_only
+          - full
 
 permissions:
   contents: write
@@ -53,12 +64,23 @@ jobs:
         run: pip install -r requirements.txt
 
       # Step 1 — fetch latest fixture statuses and results from football-data.org
+      # mode=results_only (default, also used for schedule-triggered runs):
+      #   fixtures + results only — no odds-api.com calls, free.
+      # mode=full (workflow_dispatch only):
+      #   also refreshes venues/Elo/odds — costs ~3 odds-api credits.
       - name: "Step 1 — Fetch live fixture statuses (update.py)"
         if: steps.date-gate.outputs.in_window == 'true'
         env:
           FOOTBALL_DATA_API_KEY: ${{ secrets.FOOTBALL_DATA_API_KEY }}
           ODDS_API_KEY: ${{ secrets.ODDS_API_KEY }}
-        run: python src/update.py
+        run: |
+          if [ "${{ github.event.inputs.mode }}" = "full" ]; then
+            echo "Mode: full (fixtures + venues + Elo + odds)"
+            python src/update.py
+          else
+            echo "Mode: results_only (fixtures + results only)"
+            python src/update.py --results-only
+          fi
 
       # Step 2 — rebuild predictions with updated results in fixtures.json
       - name: "Step 2 — Rebuild predictions (predict.py)"

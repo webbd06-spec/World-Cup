@@ -10,8 +10,16 @@ Pipeline (in order):
                         aborts the process on any failure
 
 Never call predict.py on data that has not passed validation.
+
+--results-only
+    Skips steps 2-4 (Wikipedia/Elo/odds). Only refreshes fixtures
+    (statuses + scores) and rewrites results.json. Intended for
+    high-frequency polling (e.g. every 10 min) where the odds-api.com
+    credit cost of steps 4 would be prohibitive. Step 5 (validation)
+    still runs — it's pure local computation against cached venue data.
 """
 
+import argparse
 import json
 import os
 import re
@@ -664,6 +672,14 @@ def write_results():
 # ---------------------------------------------------------------------------
 
 def main():
+    parser = argparse.ArgumentParser()
+    parser.add_argument(
+        "--results-only", action="store_true",
+        help="Skip venues/Elo/odds (steps 2-4) — just refresh fixture "
+             "statuses/scores and results.json. For high-frequency polling."
+    )
+    args = parser.parse_args()
+
     print("=" * 60)
     print("=== Step 1: Fixtures (football-data.org) ===")
     ok = fetch_fixtures()
@@ -677,6 +693,13 @@ def main():
 
     print("\n=== Step 1b: Results snapshot ===")
     write_results()
+
+    if args.results_only:
+        print("\n--results-only: skipping Steps 2-4 (venues/Elo/odds)")
+        print("\n=== Step 5: Validation ===")
+        validate_data()
+        print("\n✓ update.py --results-only complete — safe to run predict.py")
+        return
 
     print("\n=== Step 2: Venues (Wikipedia) ===")
     fetch_venues()
