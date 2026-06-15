@@ -747,13 +747,46 @@ const BM_ORDER = Object.keys(BM_NAME);
 
 const S = { preds: null, oddsUK: null, results: {}, group: 'all', date: null, view: 'fixtures', team: '', bracketStage: 'round_of_32' };
 
+const REFRESH_INTERVAL_MS = 60_000; // re-poll data every 60s while the tab is visible
+
+// ── Data loading ─────────────────────────────────────────────────────────────
+// Cache-busting query param: GitHub Pages serves these JSON files with a short
+// cache lifetime, but browsers (especially mobile) can hold onto a fetch()'d
+// copy well past that and a manual "hard refresh" doesn't reliably clear it
+// for script-driven requests. Appending ?v=<timestamp> makes every request a
+// distinct URL so it always goes to the network.
+
+async function loadData() {
+  const bust = '?v=' + Date.now();
+
+  const r = await fetch('./predictions.json' + bust, { cache: 'no-store' });
+  if (!r.ok) throw new Error('HTTP ' + r.status);
+  S.preds = await r.json();
+
+  try {
+    const ro = await fetch('./live_odds_uk.json' + bust, { cache: 'no-store' });
+    if (ro.ok) S.oddsUK = await ro.json();
+  } catch (_) { /* odds unavailable */ }
+
+  try {
+    const rr = await fetch('./results.json' + bust, { cache: 'no-store' });
+    if (rr.ok) {
+      const d = await rr.json();
+      S.results = Object.fromEntries(
+        (d.results || []).map(res => [res.id, res])
+      );
+    }
+  } catch (_) { /* results unavailable */ }
+
+  document.getElementById('updated').textContent =
+    'Updated ' + relTime(S.preds.generated_at);
+}
+
 // ── Boot ─────────────────────────────────────────────────────────────────────
 
 (async () => {
   try {
-    const r = await fetch('./predictions.json');
-    if (!r.ok) throw new Error('HTTP ' + r.status);
-    S.preds = await r.json();
+    await loadData();
   } catch (e) {
     render(`<div class="err-state">
       <h2>Could not load predictions.json</h2>
@@ -765,29 +798,29 @@ const S = { preds: null, oddsUK: null, results: {}, group: 'all', date: null, vi
     return;
   }
 
-  try {
-    const r = await fetch('./live_odds_uk.json');
-    if (r.ok) S.oddsUK = await r.json();
-  } catch (_) { /* odds unavailable */ }
-
-  try {
-    const r = await fetch('./results.json');
-    if (r.ok) {
-      const d = await r.json();
-      S.results = Object.fromEntries(
-        (d.results || []).map(res => [res.id, res])
-      );
-    }
-  } catch (_) { /* results unavailable */ }
-
   S.date = defaultDate();
-
-  document.getElementById('updated').textContent =
-    'Updated ' + relTime(S.preds.generated_at);
 
   buildGroupFilter();
   buildDateStrip();
   renderMatches();
+
+  // ── Auto-refresh ──────────────────────────────────────────────────────────
+  // Re-fetch every 60s while the tab is visible, and immediately whenever the
+  // tab regains focus (covers "switched away during the match, came back").
+  async function refresh() {
+    if (document.visibilityState !== 'visible') return;
+    try {
+      await loadData();
+      buildDateStrip();      // dates list is cheap to rebuild and keeps the
+                              // active-day highlight in sync
+      renderCurrentView();
+    } catch (_) { /* keep showing last good data on a transient fetch error */ }
+  }
+
+  setInterval(refresh, REFRESH_INTERVAL_MS);
+  document.addEventListener('visibilitychange', () => {
+    if (document.visibilityState === 'visible') refresh();
+  });
 })();
 
 // ── View management ───────────────────────────────────────────────────────────
@@ -799,11 +832,15 @@ function setView(v) {
   });
   const ff = document.getElementById('ffilters');
   ff.style.display = v === 'fixtures' ? '' : 'none';
-  if      (v === 'fixtures')  renderMatches();
-  else if (v === 'standings') renderStandings();
-  else if (v === 'bracket')   renderBracket();
-  else if (v === 'accuracy')  renderAccuracy();
-  else if (v === 'model')     renderModel();
+  renderCurrentView();
+}
+
+function renderCurrentView() {
+  if      (S.view === 'fixtures')  renderMatches();
+  else if (S.view === 'standings') renderStandings();
+  else if (S.view === 'bracket')   renderBracket();
+  else if (S.view === 'accuracy')  renderAccuracy();
+  else if (S.view === 'model')     renderModel();
 }
 
 function setTeam(v) {
