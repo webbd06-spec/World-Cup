@@ -1936,11 +1936,17 @@ function renderAccuracy() {
     const ar = m.result ? m.result.away : live.away_score;
     const actual  = hr > ar ? 'win' : hr === ar ? 'draw' : 'loss';
     const topSl   = (m.top_scorelines || [])[0];
-    // Derive predicted W/D/L from the top scoreline — consistent with what the result card displays
-    const predicted = topSl
-      ? (topSl.home > topSl.away ? 'win' : topSl.home === topSl.away ? 'draw' : 'loss')
-      : (m.win_prob >= m.draw_prob && m.win_prob >= m.loss_prob ? 'win'
-         : m.draw_prob >= m.loss_prob ? 'draw' : 'loss');
+    // Predicted result = the model's headline W/D/L call (win_prob/draw_prob/
+    // loss_prob — same numbers as the W-D-L bar on the match card), since
+    // that's what the £10 bet below and the home/draw/away odds represent.
+    // NOTE: top_scorelines[0] is NOT used here — a single draw scoreline
+    // (e.g. 1-1) is often individually more likely than any one winning
+    // scoreline even when "any win" outranks "any draw" in aggregate, so
+    // deriving the result prediction from it disagrees with the model's
+    // actual 1X2 call about half the time. top_scorelines[0] is still used
+    // below for the separate "Exact score" column.
+    const predicted = m.win_prob >= m.draw_prob && m.win_prob >= m.loss_prob ? 'win'
+      : m.draw_prob >= m.loss_prob ? 'draw' : 'loss';
     const isOk    = actual === predicted;
     if (isOk) correct++;
 
