@@ -1,0 +1,11 @@
+{
+  "fixture_id": "GS_G1",
+  "home": "Belgium",
+  "away": "Egypt",
+  "home_multiplier": 1.0,
+  "away_multiplier": 1.0,
+  "lineup_home_absent": 0,
+  "lineup_away_absent": 0,
+  "source": "lineup_fetch",
+  "fetched_at": "2026-06-15T18:01:18.074759+00:00"
+}
