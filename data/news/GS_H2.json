@@ -1,0 +1,20 @@
+{
+  "fixture_id": "GS_H2",
+  "home": "Saudi Arabia",
+  "away": "Uruguay",
+  "home_multiplier": 0.97,
+  "away_multiplier": 0.82,
+  "notes": "Saudi Arabia are near full strength with only Nawaf Al-Aqidi (muscle) confirmed out and coach Donis reporting a largely healthy squad; Salem Al-Dawsari leads the line as captain. Uruguay face a severe defensive injury crisis: Ronald Araujo is effectively ruled out (calf), Jose Gimenez is a major doubt (ankle), Matias Vina is managing a muscle issue, and de Arrascaeta carries a minor knock — forcing Bielsa into significant defensive reshuffling.",
+  "home_scorers": [
+    "Salem Al-Dawsari (captain, leading scorer with 34 international goals, primary c",
+    "Firas Al-Buraikan (expected starting striker, 16 goals in 72 caps)",
+    "Musab Al-Juwayr (attacking midfielder, set-piece and counter-attack threat)"
+  ],
+  "away_scorers": [
+    "Darwin Nunez (starting striker, primary goal threat for Uruguay)",
+    "Federico Valverde (midfield engine, drives forward, key attacking force)",
+    "Maximiliano Araujoo (wide attacker, direct and dangerous on the break)"
+  ],
+  "source": "anthropic_web_search",
+  "fetched_at": "2026-06-15T21:39:11.145430+00:00"
+}

@@ -2,10 +2,19 @@
   "fixture_id": "GS_G1",
   "home": "Belgium",
   "away": "Egypt",
-  "home_multiplier": 1.0,
-  "away_multiplier": 1.0,
-  "lineup_home_absent": 0,
-  "lineup_away_absent": 0,
-  "source": "lineup_fetch",
-  "fetched_at": "2026-06-15T18:01:18.074759+00:00"
+  "home_multiplier": 0.92,
+  "away_multiplier": 0.95,
+  "notes": "Belgium's Zeno Debast is ruled out with injury and Romelu Lukaku starts on the bench after a season hampered by a long-term hamstring problem, with Charles De Ketelaere leading the attack; Egypt's Mohamed Salah recovered from an April hamstring injury in time to start, but fitness concerns lingered heading into the match.",
+  "home_scorers": [
+    "Kevin De Bruyne (creative playmaker, 6 qualifying goals, set-piece threat)",
+    "Charles De Ketelaere (leading starter in attack with Lukaku benched)",
+    "Jérémy Doku (direct winger, transition threat)"
+  ],
+  "away_scorers": [
+    "Mohamed Salah (captain, penalty taker, Egypt's primary attacking reference)",
+    "Omar Marmoush (starting striker, Manchester City forward, direct goal threat)",
+    "Mostafa Mohamed (centre-forward, dangerous inside the box)"
+  ],
+  "source": "anthropic_web_search",
+  "fetched_at": "2026-06-15T21:38:45.251012+00:00"
 }

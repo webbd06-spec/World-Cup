@@ -1,0 +1,20 @@
+{
+  "fixture_id": "GS_H1",
+  "home": "Spain",
+  "away": "Cape Verde",
+  "home_multiplier": 0.92,
+  "away_multiplier": 1.0,
+  "notes": "Spain start without injured Fermín López (fractured metatarsal, tournament miss) and begin Lamine Yamal & Nico Williams on the bench after hamstring recoveries, with Víctor Muñoz also a late doubt (muscular overload); De la Fuente opted to rotate the wingers in as impact subs. Cape Verde have no reported injuries or suspensions and field a full squad.",
+  "home_scorers": [
+    "Mikel Oyarzabal (first-choice striker, leads the line from kick-off)",
+    "Ferran Torres (starting winger, direct goal threat in attack)",
+    "Pedri (central creator, late-run goalscorer and set-piece contributor)"
+  ],
+  "away_scorers": [
+    "Ryan Mendes (experienced winger, Cape Verde's primary attacking outlet)",
+    "Garry Rodrigues (forward/wide, top scorer in qualification)",
+    "Jamiro Monteiro (attacking midfielder, set-piece and long-range threat)"
+  ],
+  "source": "anthropic_web_search",
+  "fetched_at": "2026-06-15T21:38:56.234664+00:00"
+}

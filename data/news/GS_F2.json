@@ -1,0 +1,20 @@
+{
+  "fixture_id": "GS_F2",
+  "home": "Sweden",
+  "away": "Tunisia",
+  "home_multiplier": 0.97,
+  "away_multiplier": 0.82,
+  "notes": "Sweden are near full-strength but missing Dejan Kulusevski (long-term knee injury, out of the tournament entirely) and Gabriel Gudmundsson was a late doubt due to illness but cleared to start; Isak returned from a broken leg and is fit alongside Gyökeres. Tunisia's key creative player Hannibal Mejbri was a significant doubt for the opener after picking up an injury in a pre-tournament friendly against Austria, with his fitness closely monitored right up to kickoff.",
+  "home_scorers": [
+    "Viktor Gyökeres (leading striker, Premier League winner with Arsenal, Sweden's t",
+    "Alexander Isak (co-striker, record Liverpool signing, returning to fitness and p",
+    "Yasin Ayari (set-piece threat / long-range shooting, Brighton midfielder with po"
+  ],
+  "away_scorers": [
+    "Hannibal Mejbri (primary playmaker/No.10, Burnley attacker and Tunisia's main cr",
+    "Ellyes Skhiri (captain/set-piece threat, Eintracht Frankfurt midfielder and Tuni",
+    "Hazem Mastouri (leading striker, expected starting centre-forward in Lamouchi's "
+  ],
+  "source": "anthropic_web_search",
+  "fetched_at": "2026-06-15T21:38:34.591214+00:00"
+}
