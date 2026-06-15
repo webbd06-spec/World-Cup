@@ -7,6 +7,88 @@ GitHub Actions.
 
 ---
 
+## Session update — 2026-06-15
+
+The "Build Status (as of 2026-06-11)" section below is now stale (written
+before the tournament started). Since then, the live pipeline has been
+running through matchdays 1-4 with daily predictions, live results polling,
+pre-kickoff lineup updates, and Telegram notifications all committing
+successfully. The Asian Handicap tab, team news 5th tab, bracket view, and
+team search were also shipped (see commit history 2026-06-11 → 2026-06-14).
+
+**Changes made this session:**
+
+- **External scheduling via cron-job.org**: GitHub's `schedule:` cron triggers
+  for `live-results.yml` and `pre-kickoff.yml` were firing every 4-12 hours
+  instead of every 10/15 min (GitHub deprioritises high-frequency scheduled
+  workflows). Two cron-job.org jobs now call `workflow_dispatch` on
+  `live-results.yml` directly via the GitHub API:
+    - every 10 min, default `mode=results_only`
+    - every 4 hours, `mode=full`
+  PAT for cron-job.org is scoped to Actions read/write only on this repo.
+
+- **`update.py --results-only` mode** added: skips Wikipedia venues, Elo, and
+  odds-api.com calls — just fixtures + results from football-data.org. Keeps
+  the-odds-api.com usage (~3 credits per full run) within the 500/month free
+  tier even at 10-minute polling (full pipeline runs ~6x/day via the 4-hourly
+  cron-job.org job + once via `morning.yml` ≈ 21 credits/day vs ~26/day budget).
+
+- **`docs/index.html`**: all data fetches (`predictions.json`, `results.json`,
+  `live_odds_uk.json`) now cache-bust with `?v=<timestamp>` + `cache:
+  'no-store'`, and the dashboard auto-refreshes every 60s + on tab
+  visibilitychange via new `loadData()`/`renderCurrentView()` helpers.
+  Previously the dashboard could show data many hours stale even after a
+  manual hard refresh.
+
+- **Accuracy tab fix**: "predicted result" (used for both the ✓/✗ column and
+  the £10 P&L bet) now comes from `win_prob`/`draw_prob`/`loss_prob` (the
+  model's headline 1X2 call, same as the W-D-L bar on match cards) instead of
+  `top_scorelines[0]`. Previously these disagreed on 8/12 finished matches —
+  e.g. Netherlands 2-2 Japan: top scoreline was 1-1 (draw) but win_prob (46%)
+  favoured a Netherlands win, so the old code marked it a correct "draw"
+  prediction worth +£23.50 when the model's actual call was wrong (-£10).
+  `top_scorelines[0]` is still used for the separate "Exact score" column.
+
+### Known issue — market blend currently disabled (source always "model_only")
+
+As of the `--results-only` split above, **all 104 predictions show
+`source: "model_only"`** — the intended 60% market / 40% model blend
+(`MARKET_WEIGHT`/`MODEL_WEIGHT` in `predict.py`) is not being applied.
+
+Root cause: `predict.py` reads market odds from `outputs/live_odds.json`,
+written by `update.py`'s `fetch_odds()` (the `regions=us` odds-api call).
+That file is gitignored/ephemeral. Previously every run did the full
+pipeline, so `fetch_odds()` always ran immediately before `predict.py` in the
+same job. Now the 10-min `results_only` runs (6x more frequent than `full`
+runs) skip `fetch_odds()` — on a fresh checkout `outputs/live_odds.json`
+doesn't exist, so `predict.py` sees no market data and **every** prediction
+reverts to model-only, overwriting the blended predictions.json from the last
+`mode=full` run.
+
+**Proposed fix (not yet implemented — deferred to avoid a 5th same-day push)**:
+have `predict.py` derive market odds from `docs/live_odds_uk.json` instead
+(committed, persisted, refreshed every 4h by the `mode=full` cron job —
+available on every checkout regardless of mode). Add a "best price per
+outcome across UK bookmakers" helper (same logic as the dashboard's
+`bestOdds()` in `docs/index.html`) feeding into `odds_to_probs()`. Bonus: UK
+odds are more relevant to the P&L tracker than the current US-region odds.
+
+### Model review — revisit once more results land (currently n=12, too small)
+
+From the first 12 finished matches (all model-only, see above — re-check
+after the blend fix):
+- Actual draw rate 4/12 (33%) vs mean predicted `draw_prob` 24%. Independent-
+  Poisson models are known to underestimate draws; a Dixon-Coles low-score
+  correlation adjustment (boosts 0-0/1-1-type scorelines) is the standard fix.
+  Worth checking once n≈30-40.
+- Home/away goal calibration: predicted avg home xG 1.51 vs actual 2.33;
+  predicted avg away xG 1.26 vs actual 0.83. Possibly a few early blowouts
+  (Germany 7-1, USA 4-1, Sweden 5-1) skewing a small sample rather than a
+  systematic attack/defence-rating issue — re-check with more data before
+  changing `data/teams.json` ratings or `LEAGUE_AVG`/adjustment factors.
+
+---
+
 ## Build Status (as of 2026-06-11)
 
 **Commits on main:**
