@@ -630,6 +630,21 @@ main {
 }
 @keyframes pulse-live { 0%,100%{opacity:1} 50%{opacity:.45} }
 
+/* ── Live match card ─────────────────────────────────────── */
+.live-card { border: 1px solid rgba(239,68,68,.35); }
+.live-body { padding: 11px 11px 13px; }
+.live-score-box {
+  background: rgba(239,68,68,.08); border: 2px solid rgba(239,68,68,.4);
+  border-radius: 7px; padding: 5px 13px;
+  font-size: 1.25rem; font-weight: 800;
+  text-align: center; white-space: nowrap; flex-shrink: 0;
+  color: var(--red);
+}
+.live-pred-row {
+  text-align: center; font-size: .78rem;
+  color: var(--muted); margin: 7px 0 2px;
+}
+
 /* ── Group context strip ─────────────────────────────────── */
 .grp-ctx {
   display: flex; align-items: center; gap: 7px; flex-wrap: wrap;
@@ -1057,10 +1072,63 @@ function card(p) {
   // Resolve result from predictions.json or results.json
   const live      = S.results[id];
   const result    = p.result || (live ? {home: live.home_score, away: live.away_score} : null);
-  const isFinished = !!result;
+  const isLiveNow  = p.status === 'in_play';
+  const isFinished = !!result && !isLiveNow;
 
   const wp = p.win_prob||0, dp = p.draw_prob||0, lp = p.loss_prob||0;
   const topSl = (p.top_scorelines||[])[0];
+
+  // ── Live card ──────────────────────────────────────────────
+  if (isLiveNow) {
+    const liveScore = live ? { home: live.home_score, away: live.away_score } : null;
+    const scoreDisp = liveScore ? `${liveScore.home} – ${liveScore.away}` : '? – ?';
+    const wBar = Math.round(wp*100), dBar = Math.round(dp*100), lBar = 100-wBar-dBar;
+    const predOutcome = wp >= dp && wp >= lp ? p.home : dp >= lp ? 'Draw' : p.away;
+    const topScore = topSl ? `${topSl.home}–${topSl.away}` : '?–?';
+    return `
+<div class="card live-card${isEng?' england':''}" id="c_${id}">
+  <div class="cmeta">
+    <span class="stage-badge">${stageLabel(p)}</span>
+    <span class="live-badge">● LIVE</span>
+  </div>
+  <div class="live-body">
+    <div class="result-score-row">
+      <div class="team home">
+        <span class="flag">${flag(p.home)}</span>
+        <span class="tname">${p.home}</span>
+      </div>
+      <div class="live-score-box">${scoreDisp}</div>
+      <div class="team away">
+        <span class="flag">${flag(p.away)}</span>
+        <span class="tname">${p.away}</span>
+      </div>
+    </div>
+    <div class="live-pred-row">
+      Predicted <span class="rp-score">${predOutcome}</span> &nbsp;·&nbsp; Score pick <span class="rp-score">${topScore}</span>
+    </div>
+    <div class="wdl-bar" style="margin-top:8px">
+      <div class="wdl-w" style="width:${wBar}%">${wBar}%</div>
+      <div class="wdl-d" style="width:${dBar}%">${dBar}%</div>
+      <div class="wdl-l" style="width:${lBar}%">${lBar}%</div>
+    </div>
+    <div class="wdl-labels">
+      <span>${p.home}</span><span>Draw</span><span>${p.away}</span>
+    </div>
+  </div>
+  <div class="tabs">
+    <button class="tab-btn" onclick="tab(this,'${id}-sl')">Scorelines</button>
+    <button class="tab-btn" onclick="tab(this,'${id}-odds')">Bookmaker odds</button>
+    <button class="tab-btn" onclick="tab(this,'${id}-val')">Value bets</button>
+    <button class="tab-btn" onclick="tab(this,'${id}-ah')">Asian H.</button>
+    <button class="tab-btn" onclick="tab(this,'${id}-news')">Team news</button>
+  </div>
+  <div id="${id}-sl"   class="tab-panel">${panelScorelines(p)}</div>
+  <div id="${id}-odds" class="tab-panel">${panelOdds(p, mOdds)}</div>
+  <div id="${id}-val"  class="tab-panel">${panelValue(p, mOdds)}</div>
+  <div id="${id}-ah"   class="tab-panel">${panelAH(p, mOdds)}</div>
+  <div id="${id}-news" class="tab-panel">${panelTeamNews(p)}</div>
+</div>`;
+  }
 
   // ── Finished card ──────────────────────────────────────────
   if (isFinished) {
