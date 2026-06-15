@@ -579,7 +579,7 @@ main {
 
 /* ── Accuracy view ───────────────────────────────────────── */
 .acc-summary {
-  display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; margin-bottom: 16px;
+  display: grid; grid-template-columns: repeat(auto-fit, minmax(110px, 1fr)); gap: 8px; margin-bottom: 16px;
 }
 .acc-stat {
   background: var(--s1); border: 1px solid var(--border);
@@ -1928,7 +1928,7 @@ function renderAccuracy() {
     return;
   }
 
-  let correct = 0, exactCorrect = 0, betCount = 0, pnl = 0;
+  let correct = 0, exactCorrect = 0, betCount = 0, pnl = 0, scoreBetCount = 0, scorePnl = 0;
 
   const trs = finished.map(m => {
     const live = S.results[m.id];
@@ -1983,6 +1983,24 @@ function renderAccuracy() {
     const pnlCell = matchPnl === null ? '<td style="color:var(--muted)">—</td>'
       : `<td>${betLabels.join(' ')}</td>`;
 
+    // Score P&L: £10 on the model's #1 scoreline pick (top_scorelines[0]).
+    // the-odds-api.com doesn't offer correct-score markets for this
+    // competition, so there's no live price to use — instead we use the
+    // model's own implied probability as "fair" (no-vig) odds: 1/prob.
+    // A real bookmaker correct-score price would carry margin and so be
+    // somewhat lower than this; treat this column as an upper bound.
+    let scoreMatchPnl = null;
+    if (topSl && topSl.prob > 0) {
+      scoreBetCount++;
+      const fairOdds = 1 / topSl.prob;
+      scoreMatchPnl = isExact ? 10 * (fairOdds - 1) : -10;
+      scorePnl += scoreMatchPnl;
+    }
+    const scorePnlCell = scoreMatchPnl === null ? '<td style="color:var(--muted)">—</td>'
+      : `<td>${scoreMatchPnl >= 0
+          ? `<span class="pnl-pos">+£${scoreMatchPnl.toFixed(2)}</span>`
+          : `<span class="pnl-neg">−£${Math.abs(scoreMatchPnl).toFixed(2)}</span>`}</td>`;
+
     const predLbl   = predicted === 'win' ? m.home : predicted === 'draw' ? 'Draw' : m.away;
     const actLbl    = actual === 'win' ? 'Home win' : actual === 'draw' ? 'Draw' : 'Away win';
     const predScore = topSl ? `${topSl.home}–${topSl.away}` : '?–?';
@@ -1998,6 +2016,7 @@ function renderAccuracy() {
       <td style="text-align:center">${tick}</td>
       <td style="text-align:center">${exactTick}</td>
       ${pnlCell}
+      ${scorePnlCell}
     </tr>`;
   }).join('');
 
@@ -2006,6 +2025,8 @@ function renderAccuracy() {
   const exactPct  = (exactCorrect / total * 100).toFixed(1);
   const pnlCls = pnl >= 0 ? 'green' : 'red';
   const pnlStr = (pnl >= 0 ? '+' : '−') + '£' + Math.abs(pnl).toFixed(2);
+  const scorePnlCls = scorePnl >= 0 ? 'green' : 'red';
+  const scorePnlStr = (scorePnl >= 0 ? '+' : '−') + '£' + Math.abs(scorePnl).toFixed(2);
 
   render(`
     <div class="acc-summary">
@@ -2023,19 +2044,24 @@ function renderAccuracy() {
       </div>
       <div class="acc-stat ${pnlCls}">
         <div class="acc-stat-val">${pnlStr}</div>
-        <div class="acc-stat-lbl">P&amp;L £10/match (${betCount} bets)</div>
+        <div class="acc-stat-lbl">P&amp;L: result bet (${betCount})</div>
+      </div>
+      <div class="acc-stat ${scorePnlCls}">
+        <div class="acc-stat-val">${scorePnlStr}</div>
+        <div class="acc-stat-lbl">P&amp;L: score bet (${scoreBetCount})</div>
       </div>
     </div>
     <div class="acc-tbl-wrap">
       <table class="acc-tbl">
         <thead><tr>
-          <th>Match</th><th>Predicted</th><th>Result</th><th>W/D/L</th><th>Exact</th><th>P&amp;L</th>
+          <th>Match</th><th>Predicted</th><th>Result</th><th>W/D/L</th><th>Exact</th><th>P&amp;L (Result)</th><th>P&amp;L (Score)</th>
         </tr></thead>
         <tbody>${trs}</tbody>
       </table>
     </div>
     <p style="font-size:.68rem;color:var(--muted);margin-top:10px">
-      P&amp;L tracks £10 stakes on value bets where model edge ≥ 5%. Odds from live_odds_uk.json at time of last update.
+      P&amp;L (Result): £10 on the model's predicted home/draw/away outcome for every match, at the best available 1X2 odds (live, falling back to odds at prediction time).<br>
+      P&amp;L (Score): £10 on the model's #1 predicted exact scoreline, at the model's own implied "fair" odds (1 / probability) — correct-score markets aren't available from the odds API, so this has no bookmaker margin and is an upper bound on real returns.<br>
       Not financial advice.
     </p>`);
 }
