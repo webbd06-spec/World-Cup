@@ -193,7 +193,11 @@ def fetch_fixtures():
         date_str    = utc_dt.strftime("%Y-%m-%d")
         kickoff_str = utc_dt.strftime("%H:%M")
 
-        score_ft = (m.get("score") or {}).get("fullTime") or {}
+        score_obj = m.get("score") or {}
+        score_ft = score_obj.get("fullTime") or {}
+        # For in_play matches, fullTime may be null — fall back to regularTime or halfTime
+        if score_ft.get("home") is None:
+            score_ft = score_obj.get("regularTime") or score_obj.get("halfTime") or {}
         result = None
         if score_ft.get("home") is not None and score_ft.get("away") is not None:
             result = {"home": score_ft["home"], "away": score_ft["away"]}
@@ -641,7 +645,7 @@ def write_results():
     results = []
     for m in fixtures.get("matches", []):
         r = m.get("result") or {}
-        if (m.get("status") == "finished"
+        if (m.get("status") in ("finished", "in_play")
                 and r.get("home") is not None
                 and r.get("away") is not None):
             results.append({
