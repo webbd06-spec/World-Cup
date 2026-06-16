@@ -4,8 +4,17 @@
   "away": "Senegal",
   "home_multiplier": 1.0,
   "away_multiplier": 1.0,
-  "lineup_home_absent": 0,
-  "lineup_away_absent": 0,
-  "source": "lineup_fetch",
-  "fetched_at": "2026-06-16T18:22:32.574827+00:00"
+  "notes": "France are near full strength — Saliba, Koundé, and Tchouameni all cleared minor injury concerns, with only Hugo Ekitike confirmed absent long-term; Deschamps expected to field his strongest XI with no rotation hints. Senegal receive a major boost with Koulibaly cleared to play, and Mané, Jackson, and Sarr all available, giving Thiaw a full-strength attacking lineup.",
+  "home_scorers": [
+    "Kylian Mbappé (leading striker, on penalties, World Cup pedigree)",
+    "Ousmane Dembélé (wide attacker, Champions League form, set-piece threat)",
+    "Michael Olise (dynamic wide forward, goals and assists from midfield line)"
+  ],
+  "away_scorers": [
+    "Sadio Mané (all-time top scorer, talisman, left wing/second striker)",
+    "Nicolas Jackson (centre-forward, Bayern Munich form, direct runner)",
+    "Ismaila Sarr (pacey wide attacker, Crystal Palace, dangerous in transition)"
+  ],
+  "source": "anthropic_web_search",
+  "fetched_at": "2026-06-16T21:39:06.181515+00:00"
 }

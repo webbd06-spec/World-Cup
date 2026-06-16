@@ -2,10 +2,19 @@
   "fixture_id": "GS_G2",
   "home": "Iran",
   "away": "New Zealand",
-  "home_multiplier": 1.0,
-  "away_multiplier": 1.0,
-  "lineup_home_absent": 0,
-  "lineup_away_absent": 0,
-  "source": "lineup_fetch",
-  "fetched_at": "2026-06-16T00:15:57.762920+00:00"
+  "home_multiplier": 0.92,
+  "away_multiplier": 0.9,
+  "notes": "Iran are without Alireza Jahanbakhsh (muscle), Dennis Eckert, and Mehdi Torabi (both unspecified), with Roozbeh Cheshmi also a late fitness doubt, and Sardar Azmoun left out for disciplinary reasons — Taremi leads a depleted but functional attack. New Zealand lose Matt Garbett to a confirmed pre-tournament hamstring injury (replaced by Logan Rogerson), Ryan Thomas is also out for the opener, and captain Chris Wood carries fitness concerns after a knee injury kept him out for six months.",
+  "home_scorers": [
+    "Mehdi Taremi (leading striker, 60 international goals, focal point of attack)",
+    "Mehdi Ghayedi (attacking midfielder, double-figure international scorer, expecte",
+    "Mohammad Mohebi (forward/midfielder, 14 international goals, starting in final t"
+  ],
+  "away_scorers": [
+    "Chris Wood (captain and striker, 45 international goals, set-piece aerial threat",
+    "Sarpreet Singh (attacking midfielder, creative outlet and secondary scorer)",
+    "Elijah Just (forward, starting winger, secondary attacking option)"
+  ],
+  "source": "anthropic_web_search",
+  "fetched_at": "2026-06-16T21:38:55.233785+00:00"
 }

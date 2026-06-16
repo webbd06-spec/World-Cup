@@ -1,0 +1,20 @@
+{
+  "fixture_id": "GS_I2",
+  "home": "Iraq",
+  "away": "Norway",
+  "home_multiplier": 1.03,
+  "away_multiplier": 1.05,
+  "notes": "Iraq have a fully fit 26-man squad with no confirmed injuries or suspensions reported, giving Graham Arnold a free selection hand. Norway are also at full strength — Haaland confirmed fit by Solbakken and Ødegaard has dismissed prior fitness concerns — though Oscar Bobb and Jørgen Strand Larsen drop to the bench as rotation choices.",
+  "home_scorers": [
+    "Aymen Hussein (leading striker / main goal threat up front)",
+    "Ali Al-Hamadi (Luton striker / expected to start alongside Hussein)",
+    "Zidane Iqbal (box-to-box midfielder / late runs into the area)"
+  ],
+  "away_scorers": [
+    "Erling Haaland (world-class centre-forward / all-time top Norway scorer, 16 qual",
+    "Alexander Sørloth (starting striker / physical threat on the right of attack)",
+    "Martin Ødegaard (captain / creative playmaker, set-piece and long-range threat)"
+  ],
+  "source": "anthropic_web_search",
+  "fetched_at": "2026-06-16T21:39:18.505415+00:00"
+}
