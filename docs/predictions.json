@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-16T21:01:07.294792Z",
+  "generated_at": "2026-06-16T21:10:45.219720Z",
   "date": "2026-06-16",
   "model_version": "1.0.0",
   "blend_weights": {
@@ -13196,10 +13196,10 @@
       "kickoff_utc": "19:00",
       "venue": "MetLife Stadium",
       "city": "East Rutherford",
-      "status": "in_play",
+      "status": "finished",
       "result": {
-        "home": 2,
-        "away": 0
+        "home": 3,
+        "away": 1
       },
       "xg_home": 2.112,
       "xg_away": 1.094,
