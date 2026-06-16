@@ -1,0 +1,11 @@
+{
+  "fixture_id": "GS_J1",
+  "home": "Argentina",
+  "away": "Algeria",
+  "home_multiplier": 1.0,
+  "away_multiplier": 1.0,
+  "lineup_home_absent": 0,
+  "lineup_away_absent": 0,
+  "source": "lineup_fetch",
+  "fetched_at": "2026-06-16T23:54:19.626244+00:00"
+}
