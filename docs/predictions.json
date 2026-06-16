@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-16T00:01:06.085213Z",
+  "generated_at": "2026-06-16T00:10:46.628543Z",
   "date": "2026-06-16",
   "model_version": "1.0.0",
   "blend_weights": {
@@ -11820,7 +11820,7 @@
       "kickoff_utc": "22:00",
       "venue": "Hard Rock Stadium",
       "city": "Miami Gardens",
-      "status": "in_play",
+      "status": "finished",
       "result": {
         "home": 1,
         "away": 1
