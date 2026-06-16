@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-16T20:50:49.259438Z",
+  "generated_at": "2026-06-16T21:01:07.294792Z",
   "date": "2026-06-16",
   "model_version": "1.0.0",
   "blend_weights": {
@@ -13198,7 +13198,7 @@
       "city": "East Rutherford",
       "status": "in_play",
       "result": {
-        "home": 1,
+        "home": 2,
         "away": 0
       },
       "xg_home": 2.112,
