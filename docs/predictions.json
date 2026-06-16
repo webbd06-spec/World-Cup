@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-16T02:30:51.183143Z",
+  "generated_at": "2026-06-16T02:40:44.125356Z",
   "date": "2026-06-16",
   "model_version": "1.0.0",
   "blend_weights": {
@@ -10186,7 +10186,7 @@
       "city": "Inglewood",
       "status": "in_play",
       "result": {
-        "home": 1,
+        "home": 2,
         "away": 2
       },
       "xg_home": 1.521,
