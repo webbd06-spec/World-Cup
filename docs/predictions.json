@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-17T01:40:38.473707Z",
+  "generated_at": "2026-06-17T01:50:39.416588Z",
   "date": "2026-06-17",
   "model_version": "1.0.0",
   "blend_weights": {
@@ -14862,7 +14862,7 @@
       "kickoff_utc": "01:00",
       "venue": "Arrowhead Stadium",
       "city": "Kansas City",
-      "status": "scheduled",
+      "status": "in_play",
       "result": {
         "home": 1,
         "away": 0
