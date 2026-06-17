@@ -1,0 +1,20 @@
+{
+  "fixture_id": "GS_L2",
+  "home": "Ghana",
+  "away": "Panama",
+  "home_multiplier": 0.78,
+  "away_multiplier": 0.92,
+  "notes": "Ghana are severely depleted: Mohammed Kudus (quadriceps, tournament-ending), Mohammed Salisu (ACL, tournament-ending), and Thomas Partey (denied entry to Canada) all miss the opener, with Elisha Owusu expected to deputise in midfield. Panama are near full-strength but key creative midfielder Adalberto Carrasquilla missed both warm-up matches with a muscle injury and has been confirmed as starting on the bench by coach Christiansen.",
+  "home_scorers": [
+    "Jordan Ayew (leading scorer in qualifying, captain, box threat)",
+    "Antoine Semenyo (in-form attacker, primary goal threat with Kudus absent)",
+    "Inaki Williams (pace and physicality up front, set-piece presence)"
+  ],
+  "away_scorers": [
+    "Ismael Diaz (starting forward, key attacking outlet in predicted XI)",
+    "Jose Fajardo (starting striker, dangerous in transition)",
+    "Yoel Barcenas (wide attacker, direct runner, goal threat)"
+  ],
+  "source": "anthropic_web_search",
+  "fetched_at": "2026-06-17T19:33:33.769211+00:00"
+}

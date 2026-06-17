@@ -1,0 +1,20 @@
+{
+  "fixture_id": "GS_K1",
+  "home": "Portugal",
+  "away": "DR Congo",
+  "home_multiplier": 1.0,
+  "away_multiplier": 0.97,
+  "notes": "Portugal had no confirmed injuries or suspensions, with Roberto Martinez fielding a fully fit squad; rotation saw Leao and Conceicao benched in favour of Pedro Neto and Bernardo Silva. DR Congo had no confirmed injuries or suspensions either, though their pre-tournament concern was squad cohesion rather than fitness, and Bakambu's recent club form at Real Betis was noted as limited.",
+  "home_scorers": [
+    "Cristiano Ronaldo (leading striker, sixth World Cup, penalty taker)",
+    "Bruno Fernandes (attacking midfielder, 29 international goals, set-piece threat)",
+    "João Neves (box-to-box midfielder, set-piece delivery and late runs)"
+  ],
+  "away_scorers": [
+    "Yoane Wissa (main striker, Newcastle forward, counter-attack threat)",
+    "Cédric Bakambu (experienced forward, 70 caps, 21 international goals)",
+    "Chancel Mbemba (centre-back, aerial set-piece threat, over 100 caps)"
+  ],
+  "source": "anthropic_web_search",
+  "fetched_at": "2026-06-17T19:33:11.956127+00:00"
+}

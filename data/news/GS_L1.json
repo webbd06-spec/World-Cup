@@ -1,0 +1,20 @@
+{
+  "fixture_id": "GS_L1",
+  "home": "England",
+  "away": "Croatia",
+  "home_multiplier": 0.92,
+  "away_multiplier": 1.02,
+  "notes": "England are without Tino Livramento (calf, tournament-ruled out) and have a late doubt over Bukayo Saka's workload management, while Tuchel faces selection dilemmas at centre-back, left wing, and No.10; Croatia arrive with a fully fit squad — Luka Modrić (recovered from fractured cheekbone) and Joško Gvardiol (recovered from fractured shin) both confirmed starters, and neither side carries any suspensions.",
+  "home_scorers": [
+    "Harry Kane (leading striker, on penalties)",
+    "Jude Bellingham (expected No.10 starter, goal threat from midfield)",
+    "Bukayo Saka (first-choice right winger, set-piece and dribble threat)"
+  ],
+  "away_scorers": [
+    "Andrej Kramarić (experienced No.9, 36 international goals)",
+    "Ivan Perišić (left wing, 26 goal involvements last club season)",
+    "Luka Modrić (deep-lying playmaker, set-piece and long-range threat)"
+  ],
+  "source": "anthropic_web_search",
+  "fetched_at": "2026-06-17T19:33:22.799316+00:00"
+}

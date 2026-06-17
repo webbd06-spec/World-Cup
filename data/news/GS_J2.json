@@ -1,0 +1,20 @@
+{
+  "fixture_id": "GS_J2",
+  "home": "Austria",
+  "away": "Jordan",
+  "home_multiplier": 0.97,
+  "away_multiplier": 0.95,
+  "notes": "Austria are largely at full strength with Florian Grillitsch and Patrick Wimmer listed as doubts to start, while tournament absentee Christoph Baumgartner (thigh) is ruled out of the whole competition; Jordan are without influential striker Yazan Al Naimat (knee, Arab Cup injury) and late call-up Ibrahim Sabra (injury), though captain Ehsan Haddad is fit after returning from a lengthy spell on the sidelines.",
+  "home_scorers": [
+    "Marko Arnautovic (all-time Austria top scorer, focal point of attack)",
+    "Marcel Sabitzer (dynamic box-to-box midfielder, goal threat from distance)",
+    "Michael Gregoritsch (wide forward, clinical finisher, set-piece threat)"
+  ],
+  "away_scorers": [
+    "Mousa Al Tamari (talisman winger, 7 international goals this season, main attack",
+    "Ali Olwan (leading striker, expected to lead the line per predicted XI)",
+    "Odeh Fakhoury (attacking midfielder, creative force in Jordan's front line)"
+  ],
+  "source": "anthropic_web_search",
+  "fetched_at": "2026-06-17T19:33:00.456363+00:00"
+}
