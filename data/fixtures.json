@@ -603,8 +603,8 @@
       "away": "Egypt",
       "date": "2026-06-15",
       "kickoff_utc": "19:00",
-      "venue": "Seattle Stadium",
-      "city": null,
+      "venue": "Lumen Field",
+      "city": "Seattle",
       "result": {
         "home": 1,
         "away": 1
@@ -684,8 +684,8 @@
       "away": "Iran",
       "date": "2026-06-27",
       "kickoff_utc": "03:00",
-      "venue": "Seattle Stadium",
-      "city": null,
+      "venue": "Lumen Field",
+      "city": "Seattle",
       "result": null,
       "status": "scheduled"
     },
