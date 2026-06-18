@@ -2,8 +2,8 @@
   "fixture_id": "GS_B4",
   "home": "Canada",
   "away": "Qatar",
-  "home_multiplier": 0.92,
-  "away_multiplier": 1.05,
+  "home_multiplier": 1.0,
+  "away_multiplier": 1.0,
   "notes": "Canada captain Alphonso Davies (hamstring) is now declared available but likely to be managed off the bench or used sparingly, while defender Moise Bombito (tibia/leg) is expected to miss out again; striker Cyle Larin is set to replace Tani Oluwaseyi in a rotation hint from Marsch. Qatar came through their opener against Switzerland unscathed with no injuries or suspensions, and Lopetegui is expected to name an unchanged XI, though Almoez Ali is pushing to start over Yusuf Abdurisag up front.",
   "home_scorers": [
     "Jonathan David (leading striker, Canada's primary goalscoring threat)",
@@ -15,6 +15,8 @@
     "Almoez Ali (pushing to start, Qatar's all-time top scorer)",
     "Yusuf Abdurisag (starting forward from opener, goal threat in behind)"
   ],
-  "source": "anthropic_web_search",
-  "fetched_at": "2026-06-18T19:38:58.058926+00:00"
+  "source": "lineup_fetch",
+  "fetched_at": "2026-06-18T21:35:20.388010+00:00",
+  "lineup_home_absent": 0,
+  "lineup_away_absent": 0
 }
