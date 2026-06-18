@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-18T01:10:48.768883Z",
+  "generated_at": "2026-06-18T01:20:43.152899Z",
   "date": "2026-06-18",
   "model_version": "1.0.0",
   "blend_weights": {
@@ -18447,7 +18447,7 @@
       "kickoff_utc": "23:00",
       "venue": "BMO Field",
       "city": "Toronto",
-      "status": "finished",
+      "status": "in_play",
       "result": {
         "home": 1,
         "away": 0
