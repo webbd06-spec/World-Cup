@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-18T16:13:22.008825Z",
+  "generated_at": "2026-06-18T17:50:48.383577Z",
   "date": "2026-06-18",
   "model_version": "1.1.0",
   "blend_weights": {
@@ -300,7 +300,13 @@
         }
       ],
       "source": "model_only",
-      "blend_weights": null
+      "blend_weights": null,
+      "team_news": {
+        "notes": "",
+        "home_scorers": [],
+        "away_scorers": [],
+        "fetched_at": "2026-06-11T20:01:26.543524+00:00"
+      }
     },
     {
       "id": "GS_A2",
@@ -318,14 +324,14 @@
         "home": 2,
         "away": 1
       },
-      "xg_home": 1.369,
-      "xg_away": 1.279,
-      "win_prob": 0.3745,
-      "draw_prob": 0.293,
-      "loss_prob": 0.3325,
-      "model_win": 0.3745,
-      "model_draw": 0.293,
-      "model_loss": 0.3325,
+      "xg_home": 1.328,
+      "xg_away": 1.228,
+      "win_prob": 0.3741,
+      "draw_prob": 0.2991,
+      "loss_prob": 0.3268,
+      "model_win": 0.3741,
+      "model_draw": 0.2991,
+      "model_loss": 0.3268,
       "market_win": null,
       "market_draw": null,
       "market_loss": null,
@@ -336,32 +342,32 @@
         {
           "home": 1,
           "away": 1,
-          "prob": 0.1401
+          "prob": 0.143
         },
         {
           "home": 0,
           "away": 0,
-          "prob": 0.0869
+          "prob": 0.0941
+        },
+        {
+          "home": 1,
+          "away": 0,
+          "prob": 0.0866
         },
         {
           "home": 2,
           "away": 1,
-          "prob": 0.0849
-        },
-        {
-          "home": 1,
-          "away": 0,
-          "prob": 0.0808
-        },
-        {
-          "home": 1,
-          "away": 2,
-          "prob": 0.0793
+          "prob": 0.084
         },
         {
           "home": 0,
           "away": 1,
-          "prob": 0.0744
+          "prob": 0.0789
+        },
+        {
+          "home": 1,
+          "away": 2,
+          "prob": 0.0777
         }
       ],
       "top_score_conditional": {
@@ -372,87 +378,87 @@
       },
       "score_matrix": [
         [
-          0.08689,
-          0.07441,
-          0.05789,
-          0.02468,
-          0.00789,
-          0.00202,
-          0.00043,
-          8e-05,
+          0.09409,
+          0.07887,
+          0.05852,
+          0.02395,
+          0.00735,
+          0.00181,
+          0.00037,
+          6e-05,
           1e-05
         ],
         [
-          0.0808,
-          0.14006,
-          0.07927,
-          0.03379,
-          0.01081,
-          0.00276,
-          0.00059,
-          0.00011,
-          2e-05
-        ],
-        [
-          0.06635,
-          0.08486,
-          0.05427,
-          0.02314,
-          0.0074,
-          0.00189,
-          0.0004,
-          7e-05,
+          0.08664,
+          0.14304,
+          0.07771,
+          0.03181,
+          0.00976,
+          0.0024,
+          0.00049,
+          9e-05,
           1e-05
         ],
         [
-          0.03028,
-          0.03873,
-          0.02477,
-          0.01056,
-          0.00338,
-          0.00086,
-          0.00018,
+          0.06845,
+          0.08405,
+          0.0516,
+          0.02112,
+          0.00648,
+          0.00159,
+          0.00033,
+          6e-05,
+          1e-05
+        ],
+        [
+          0.0303,
+          0.0372,
+          0.02284,
+          0.00935,
+          0.00287,
+          0.0007,
+          0.00014,
           3e-05,
-          1e-05
+          0.0
         ],
         [
-          0.01037,
-          0.01326,
-          0.00848,
-          0.00361,
-          0.00116,
-          0.0003,
+          0.01006,
+          0.01235,
+          0.00758,
+          0.0031,
+          0.00095,
+          0.00023,
+          5e-05,
+          1e-05,
+          0.0
+        ],
+        [
+          0.00267,
+          0.00328,
+          0.00201,
+          0.00082,
+          0.00025,
           6e-05,
           1e-05,
+          0.0,
           0.0
         ],
         [
-          0.00284,
-          0.00363,
-          0.00232,
-          0.00099,
-          0.00032,
+          0.00059,
+          0.00073,
+          0.00045,
+          0.00018,
+          6e-05,
+          1e-05,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.00011,
+          0.00014,
           8e-05,
-          2e-05,
-          0.0,
-          0.0
-        ],
-        [
-          0.00065,
-          0.00083,
-          0.00053,
-          0.00023,
-          7e-05,
-          2e-05,
-          0.0,
-          0.0,
-          0.0
-        ],
-        [
-          0.00013,
-          0.00016,
-          0.0001,
-          4e-05,
+          3e-05,
           1e-05,
           0.0,
           0.0,
@@ -461,8 +467,8 @@
         ],
         [
           2e-05,
-          3e-05,
           2e-05,
+          1e-05,
           1e-05,
           0.0,
           0.0,
@@ -578,7 +584,18 @@
         }
       ],
       "source": "model_only",
-      "blend_weights": null
+      "blend_weights": null,
+      "team_news": {
+        "notes": "South Korea (home): Defender Cho Yu-min ruled out with a plantar foot injury, replaced by uncapped Jo Wi-je — a defensive loss with negligible attacking impact. Attack remains fully intact with Son Heung-min, Lee Kang-in, and Hwang Hee-chan all fit and expected to start; warm-up wins over Trinidad &…",
+        "home_scorers": [],
+        "away_scorers": [],
+        "fetched_at": "2026-06-12T20:38:47.363464+00:00"
+      },
+      "news_adjustment": {
+        "home": 0.97,
+        "away": 0.96,
+        "notes": "South Korea (home): Defender Cho Yu-min ruled out with a plantar foot injury, replaced by uncapped Jo Wi-je — a defensive loss with negligible attacking impact. Attack remains fully intact with Son Heung-min, Lee Kang-in, and Hwang Hee-chan all fit and expected to start; warm-up wins over Trinidad &…"
+      }
     },
     {
       "id": "GS_A3",
@@ -594,7 +611,7 @@
       "status": "in_play",
       "result": {
         "home": 1,
-        "away": 0
+        "away": 1
       },
       "xg_home": 1.551,
       "xg_away": 1.163,
@@ -1711,14 +1728,14 @@
         "home": 1,
         "away": 1
       },
-      "xg_home": 1.607,
-      "xg_away": 1.308,
-      "win_prob": 0.4296,
-      "draw_prob": 0.2736,
-      "loss_prob": 0.2968,
-      "model_win": 0.4296,
-      "model_draw": 0.2736,
-      "model_loss": 0.2968,
+      "xg_home": 1.318,
+      "xg_away": 1.269,
+      "win_prob": 0.3628,
+      "draw_prob": 0.2974,
+      "loss_prob": 0.3398,
+      "model_win": 0.3628,
+      "model_draw": 0.2974,
+      "model_loss": 0.3398,
       "market_win": null,
       "market_draw": null,
       "market_loss": null,
@@ -1729,32 +1746,32 @@
         {
           "home": 1,
           "away": 1,
-          "prob": 0.1287
-        },
-        {
-          "home": 2,
-          "away": 1,
-          "prob": 0.0916
-        },
-        {
-          "home": 1,
-          "away": 2,
-          "prob": 0.0745
-        },
-        {
-          "home": 1,
-          "away": 0,
-          "prob": 0.0723
-        },
-        {
-          "home": 2,
-          "away": 0,
-          "prob": 0.07
+          "prob": 0.1422
         },
         {
           "home": 0,
           "away": 0,
-          "prob": 0.069
+          "prob": 0.0916
+        },
+        {
+          "home": 2,
+          "away": 1,
+          "prob": 0.0829
+        },
+        {
+          "home": 1,
+          "away": 0,
+          "prob": 0.0828
+        },
+        {
+          "home": 1,
+          "away": 2,
+          "prob": 0.0798
+        },
+        {
+          "home": 0,
+          "away": 1,
+          "prob": 0.0792
         }
       ],
       "top_score_conditional": {
@@ -1765,99 +1782,99 @@
       },
       "score_matrix": [
         [
-          0.06898,
-          0.05606,
-          0.04635,
-          0.02021,
-          0.00661,
-          0.00173,
+          0.09165,
+          0.07916,
+          0.06059,
+          0.02563,
+          0.00813,
+          0.00206,
+          0.00044,
+          8e-05,
+          1e-05
+        ],
+        [
+          0.08284,
+          0.14223,
+          0.07985,
+          0.03377,
+          0.01071,
+          0.00272,
+          0.00057,
+          0.0001,
+          2e-05
+        ],
+        [
+          0.06536,
+          0.08293,
+          0.05261,
+          0.02225,
+          0.00706,
+          0.00179,
           0.00038,
           7e-05,
           1e-05
         ],
         [
-          0.07227,
-          0.12873,
-          0.07451,
-          0.03249,
-          0.01063,
-          0.00278,
-          0.00061,
-          0.00011,
-          2e-05
-        ],
-        [
-          0.06999,
-          0.09156,
-          0.05989,
-          0.02611,
-          0.00854,
-          0.00223,
-          0.00049,
-          9e-05,
-          1e-05
-        ],
-        [
-          0.0375,
-          0.04906,
-          0.03209,
-          0.01399,
-          0.00458,
-          0.0012,
-          0.00026,
-          5e-05,
-          1e-05
-        ],
-        [
-          0.01507,
-          0.01971,
-          0.01289,
-          0.00562,
-          0.00184,
-          0.00048,
-          0.0001,
-          2e-05,
-          0.0
-        ],
-        [
-          0.00485,
-          0.00634,
-          0.00415,
-          0.00181,
-          0.00059,
-          0.00015,
+          0.02871,
+          0.03643,
+          0.02311,
+          0.00977,
+          0.0031,
+          0.00079,
+          0.00017,
           3e-05,
-          1e-05,
           0.0
         ],
         [
-          0.0013,
-          0.0017,
-          0.00111,
-          0.00048,
-          0.00016,
-          4e-05,
-          1e-05,
-          0.0,
-          0.0
-        ],
-        [
-          0.0003,
-          0.00039,
+          0.00946,
+          0.012,
+          0.00761,
+          0.00322,
+          0.00102,
           0.00026,
-          0.00011,
-          4e-05,
+          5e-05,
+          1e-05,
+          0.0
+        ],
+        [
+          0.00249,
+          0.00316,
+          0.00201,
+          0.00085,
+          0.00027,
+          7e-05,
+          1e-05,
+          0.0,
+          0.0
+        ],
+        [
+          0.00055,
+          0.00069,
+          0.00044,
+          0.00019,
+          6e-05,
           1e-05,
           0.0,
           0.0,
           0.0
         ],
         [
-          6e-05,
+          0.0001,
+          0.00013,
           8e-05,
-          5e-05,
+          4e-05,
+          1e-05,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          2e-05,
           2e-05,
           1e-05,
+          1e-05,
+          0.0,
           0.0,
           0.0,
           0.0,
@@ -1971,7 +1988,18 @@
         }
       ],
       "source": "model_only",
-      "blend_weights": null
+      "blend_weights": null,
+      "team_news": {
+        "notes": "Canada missing confirmed tournament absentees Marcelo Flores (ACL) and Moise Bombito (tibia), while star left-back and captain Alphonso Davies is a major doubt/late fitness test with a hamstring strain — three significant players absent or uncertain, severely denting attacking width and quality. Bos…",
+        "home_scorers": [],
+        "away_scorers": [],
+        "fetched_at": "2026-06-12T20:38:57.785301+00:00"
+      },
+      "news_adjustment": {
+        "home": 0.82,
+        "away": 0.97,
+        "notes": "Canada missing confirmed tournament absentees Marcelo Flores (ACL) and Moise Bombito (tibia), while star left-back and captain Alphonso Davies is a major doubt/late fitness test with a hamstring strain — three significant players absent or uncertain, severely denting attacking width and quality. Bos…"
+      }
     },
     {
       "id": "GS_B2",
@@ -2249,7 +2277,13 @@
         }
       ],
       "source": "model_only",
-      "blend_weights": null
+      "blend_weights": null,
+      "team_news": {
+        "notes": "",
+        "home_scorers": [],
+        "away_scorers": [],
+        "fetched_at": "2026-06-13T18:03:52.803572+00:00"
+      }
     },
     {
       "id": "GS_B3",
@@ -3651,14 +3685,14 @@
         "home": 0,
         "away": 1
       },
-      "xg_home": 0.991,
-      "xg_away": 1.79,
-      "win_prob": 0.193,
-      "draw_prob": 0.26,
-      "loss_prob": 0.5469,
-      "model_win": 0.193,
-      "model_draw": 0.26,
-      "model_loss": 0.5469,
+      "xg_home": 0.941,
+      "xg_away": 1.647,
+      "win_prob": 0.2001,
+      "draw_prob": 0.2757,
+      "loss_prob": 0.5242,
+      "model_win": 0.2001,
+      "model_draw": 0.2757,
+      "model_loss": 0.5242,
       "market_win": null,
       "market_draw": null,
       "market_loss": null,
@@ -3669,32 +3703,32 @@
         {
           "home": 1,
           "away": 1,
-          "prob": 0.1242
-        },
-        {
-          "home": 0,
-          "away": 2,
-          "prob": 0.0993
-        },
-        {
-          "home": 1,
-          "away": 2,
-          "prob": 0.0984
+          "prob": 0.1317
         },
         {
           "home": 0,
           "away": 1,
-          "prob": 0.0966
+          "prob": 0.1086
+        },
+        {
+          "home": 0,
+          "away": 2,
+          "prob": 0.1019
+        },
+        {
+          "home": 1,
+          "away": 2,
+          "prob": 0.0959
         },
         {
           "home": 0,
           "away": 0,
-          "prob": 0.0762
+          "prob": 0.0903
         },
         {
           "home": 0,
           "away": 3,
-          "prob": 0.0592
+          "prob": 0.0559
         }
       ],
       "top_score_conditional": {
@@ -3705,77 +3739,77 @@
       },
       "score_matrix": [
         [
-          0.07624,
-          0.0966,
-          0.09926,
-          0.05923,
-          0.02651,
-          0.00949,
-          0.00283,
-          0.00072,
-          0.00016
+          0.0903,
+          0.10862,
+          0.10191,
+          0.05594,
+          0.02303,
+          0.00759,
+          0.00208,
+          0.00049,
+          0.0001
         ],
         [
-          0.04713,
-          0.12424,
-          0.09841,
-          0.05872,
-          0.02628,
-          0.00941,
-          0.00281,
-          0.00072,
-          0.00016
-        ],
-        [
-          0.03045,
-          0.0545,
-          0.04878,
-          0.02911,
-          0.01303,
-          0.00466,
-          0.00139,
-          0.00036,
-          8e-05
-        ],
-        [
-          0.01006,
-          0.01801,
-          0.01612,
-          0.00962,
-          0.00431,
-          0.00154,
+          0.05561,
+          0.13167,
+          0.09594,
+          0.05267,
+          0.02168,
+          0.00714,
+          0.00196,
           0.00046,
-          0.00012,
-          3e-05
+          9e-05
         ],
         [
-          0.00249,
-          0.00446,
-          0.004,
-          0.00238,
-          0.00107,
-          0.00038,
-          0.00011,
-          3e-05,
+          0.03331,
+          0.05485,
+          0.04516,
+          0.02479,
+          0.01021,
+          0.00336,
+          0.00092,
+          0.00022,
+          4e-05
+        ],
+        [
+          0.01045,
+          0.01721,
+          0.01417,
+          0.00778,
+          0.0032,
+          0.00105,
+          0.00029,
+          7e-05,
           1e-05
         ],
         [
-          0.00049,
-          0.00089,
-          0.00079,
-          0.00047,
-          0.00021,
-          8e-05,
+          0.00246,
+          0.00405,
+          0.00334,
+          0.00183,
+          0.00075,
+          0.00025,
+          7e-05,
           2e-05,
-          1e-05,
           0.0
         ],
         [
-          8e-05,
-          0.00015,
-          0.00013,
-          8e-05,
-          3e-05,
+          0.00046,
+          0.00076,
+          0.00063,
+          0.00034,
+          0.00014,
+          5e-05,
+          1e-05,
+          0.0,
+          0.0
+        ],
+        [
+          7e-05,
+          0.00012,
+          0.0001,
+          5e-05,
+          2e-05,
           1e-05,
           0.0,
           0.0,
@@ -3784,7 +3818,7 @@
         [
           1e-05,
           2e-05,
-          2e-05,
+          1e-05,
           1e-05,
           0.0,
           0.0,
@@ -3911,7 +3945,26 @@
         }
       ],
       "source": "model_only",
-      "blend_weights": null
+      "blend_weights": null,
+      "team_news": {
+        "notes": "Haiti report a fully fit squad with no injury concerns ahead of their first World Cup match in 52 years. Scotland are without key midfielder Billy Gilmour (knee injury, tournament-ending), while Scott McTominay (illness) and Scott McKenna (knock) were late doubts but both are expected to start; Tommy Conway also misses out with an ankle problem.",
+        "home_scorers": [
+          "Duckens Nazon (leading striker / Haiti's record goalscorer)",
+          "Wilson Isidor (co-striker / Premier League experience, Sunderland)",
+          "Jean-Ricner Bellegarde (attacking midfielder / midfield fulcrum, set-piece threa"
+        ],
+        "away_scorers": [
+          "Scott McTominay (attacking midfielder / 15 international goals, clinical in box)",
+          "Lawrence Shankland (striker / first-choice starter in 4-4-2)",
+          "John McGinn (wide midfielder / set-piece threat, experienced campaigner)"
+        ],
+        "fetched_at": "2026-06-14T16:14:42.148878+00:00"
+      },
+      "news_adjustment": {
+        "home": 0.95,
+        "away": 0.92,
+        "notes": "Haiti report a fully fit squad with no injury concerns ahead of their first World Cup match in 52 years. Scotland are without key midfielder Billy Gilmour (knee injury, tournament-ending), while Scott McTominay (illness) and Scott McKenna (knock) were late doubts but both are expected to start; Tommy Conway also misses out with an ankle problem."
+      }
     },
     {
       "id": "GS_C3",
@@ -5311,14 +5364,14 @@
         "home": 2,
         "away": 0
       },
-      "xg_home": 1.322,
-      "xg_away": 1.572,
-      "win_prob": 0.3063,
-      "draw_prob": 0.2758,
-      "loss_prob": 0.4179,
-      "model_win": 0.3063,
-      "model_draw": 0.2758,
-      "model_loss": 0.4179,
+      "xg_home": 1.388,
+      "xg_away": 1.383,
+      "win_prob": 0.3583,
+      "draw_prob": 0.2856,
+      "loss_prob": 0.3561,
+      "model_win": 0.3583,
+      "model_draw": 0.2856,
+      "model_loss": 0.3561,
       "market_win": null,
       "market_draw": null,
       "market_loss": null,
@@ -5329,32 +5382,32 @@
         {
           "home": 1,
           "away": 1,
-          "prob": 0.13
-        },
-        {
-          "home": 1,
-          "away": 2,
-          "prob": 0.0904
+          "prob": 0.1358
         },
         {
           "home": 2,
           "away": 1,
-          "prob": 0.076
+          "prob": 0.0834
         },
         {
-          "home": 0,
-          "away": 1,
-          "prob": 0.0721
+          "home": 1,
+          "away": 2,
+          "prob": 0.0831
         },
         {
           "home": 0,
           "away": 0,
-          "prob": 0.0703
+          "prob": 0.0782
+        },
+        {
+          "home": 1,
+          "away": 0,
+          "prob": 0.0712
         },
         {
           "home": 0,
-          "away": 2,
-          "prob": 0.0684
+          "away": 1,
+          "prob": 0.0709
         }
       ],
       "top_score_conditional": {
@@ -5365,86 +5418,86 @@
       },
       "score_matrix": [
         [
-          0.07029,
-          0.07206,
-          0.06841,
-          0.03586,
-          0.0141,
-          0.00443,
-          0.00116,
-          0.00026,
-          5e-05
-        ],
-        [
-          0.0582,
-          0.12998,
-          0.09044,
-          0.0474,
-          0.01864,
-          0.00586,
-          0.00154,
-          0.00035,
-          7e-05
-        ],
-        [
-          0.04835,
-          0.07603,
-          0.05978,
-          0.03133,
-          0.01232,
-          0.00387,
-          0.00102,
-          0.00023,
-          4e-05
-        ],
-        [
-          0.0213,
-          0.0335,
-          0.02634,
-          0.01381,
-          0.00543,
-          0.00171,
-          0.00045,
-          0.0001,
+          0.07819,
+          0.07094,
+          0.05987,
+          0.02761,
+          0.00955,
+          0.00264,
+          0.00061,
+          0.00012,
           2e-05
         ],
         [
-          0.00704,
-          0.01107,
-          0.0087,
-          0.00456,
-          0.00179,
-          0.00056,
-          0.00015,
-          3e-05,
+          0.07124,
+          0.13577,
+          0.08311,
+          0.03832,
+          0.01325,
+          0.00367,
+          0.00085,
+          0.00017,
+          3e-05
+        ],
+        [
+          0.06028,
+          0.08339,
+          0.05768,
+          0.0266,
+          0.0092,
+          0.00255,
+          0.00059,
+          0.00012,
+          2e-05
+        ],
+        [
+          0.02789,
+          0.03859,
+          0.02669,
+          0.01231,
+          0.00426,
+          0.00118,
+          0.00027,
+          5e-05,
           1e-05
         ],
         [
-          0.00186,
-          0.00293,
-          0.0023,
-          0.00121,
-          0.00047,
-          0.00015,
-          4e-05,
+          0.00968,
+          0.01339,
+          0.00926,
+          0.00427,
+          0.00148,
+          0.00041,
+          9e-05,
+          2e-05,
+          0.0
+        ],
+        [
+          0.00269,
+          0.00372,
+          0.00257,
+          0.00119,
+          0.00041,
+          0.00011,
+          3e-05,
           1e-05,
           0.0
         ],
         [
-          0.00041,
-          0.00064,
-          0.00051,
+          0.00062,
+          0.00086,
+          0.00059,
           0.00027,
-          0.0001,
+          9e-05,
           3e-05,
           1e-05,
           0.0,
           0.0
         ],
         [
-          8e-05,
           0.00012,
-          0.0001,
+          0.00017,
+          0.00012,
           5e-05,
           2e-05,
           1e-05,
@@ -5453,8 +5506,8 @@
           0.0
         ],
         [
-          1e-05,
           2e-05,
+          3e-05,
           2e-05,
           1e-05,
           0.0,
@@ -5571,7 +5624,26 @@
         }
       ],
       "source": "model_only",
-      "blend_weights": null
+      "blend_weights": null,
+      "team_news": {
+        "notes": "Australia head into the match with a fully fit 26-man squad — no injuries or suspensions reported — while Turkey are significantly disrupted: Kenan Yildiz (calf) is confirmed on the bench/rested, Hakan Calhanoglu is managing a calf issue and not expected to complete 90 minutes, and Ferdi Kadioglu only recently returned to full training after an undisclosed injury setback.",
+        "home_scorers": [
+          "Mohamed Toure (leading striker, 10 goals in 12 Championship appearances, expecte",
+          "Mathew Leckie (experienced wide attacker, World Cup pedigree, threat in transiti",
+          "Nestory Irankunda (exciting young wide forward, identified as key attacking spar"
+        ],
+        "away_scorers": [
+          "Arda Guler (chief attacking threat, fully fit after injury, set-piece and creati",
+          "Kerem Akturkoglu (expected starter up top as striker, regular throughout qualify",
+          "Hakan Calhanoglu (captain and midfield regista, confirmed starter despite fitnes"
+        ],
+        "fetched_at": "2026-06-14T16:15:00.140861+00:00"
+      },
+      "news_adjustment": {
+        "home": 1.05,
+        "away": 0.88,
+        "notes": "Australia head into the match with a fully fit 26-man squad — no injuries or suspensions reported — while Turkey are significantly disrupted: Kenan Yildiz (calf) is confirmed on the bench/rested, Hakan Calhanoglu is managing a calf issue and not expected to complete 90 minutes, and Ferdi Kadioglu only recently returned to full training after an undisclosed injury setback."
+      }
     },
     {
       "id": "GS_D3",
@@ -6701,14 +6773,14 @@
         "home": 7,
         "away": 1
       },
-      "xg_home": 2.364,
-      "xg_away": 0.748,
-      "win_prob": 0.7238,
-      "draw_prob": 0.1863,
-      "loss_prob": 0.09,
-      "model_win": 0.7238,
-      "model_draw": 0.1863,
-      "model_loss": 0.09,
+      "xg_home": 2.199,
+      "xg_away": 0.726,
+      "win_prob": 0.6996,
+      "draw_prob": 0.2026,
+      "loss_prob": 0.0977,
+      "model_win": 0.6996,
+      "model_draw": 0.2026,
+      "model_loss": 0.0977,
       "market_win": null,
       "market_draw": null,
       "market_loss": null,
@@ -6719,32 +6791,32 @@
         {
           "home": 2,
           "away": 0,
-          "prob": 0.1245
-        },
-        {
-          "home": 3,
-          "away": 0,
-          "prob": 0.0981
+          "prob": 0.1299
         },
         {
           "home": 1,
           "away": 0,
-          "prob": 0.0951
+          "prob": 0.107
+        },
+        {
+          "home": 1,
+          "away": 1,
+          "prob": 0.0969
+        },
+        {
+          "home": 3,
+          "away": 0,
+          "prob": 0.0952
         },
         {
           "home": 2,
           "away": 1,
-          "prob": 0.0931
-        },
-        {
-          "home": 1,
-          "away": 1,
-          "prob": 0.089
+          "prob": 0.0942
         },
         {
           "home": 3,
           "away": 1,
-          "prob": 0.0734
+          "prob": 0.0691
         }
       ],
       "top_score_conditional": {
@@ -6755,98 +6827,98 @@
       },
       "score_matrix": [
         [
-          0.05479,
-          0.02308,
-          0.01246,
-          0.00311,
-          0.00058,
+          0.06488,
+          0.02785,
+          0.01415,
+          0.00342,
+          0.00062,
           9e-05,
           1e-05,
           0.0,
           0.0
         ],
         [
-          0.09508,
-          0.08901,
-          0.02946,
-          0.00734,
-          0.00137,
-          0.00021,
+          0.107,
+          0.09687,
+          0.0311,
+          0.00752,
+          0.00136,
+          0.0002,
+          2e-05,
+          0.0,
+          0.0
+        ],
+        [
+          0.12987,
+          0.09423,
+          0.03419,
+          0.00827,
+          0.0015,
+          0.00022,
           3e-05,
           0.0,
           0.0
         ],
         [
-          0.12448,
-          0.09311,
-          0.03482,
-          0.00868,
-          0.00162,
-          0.00024,
-          3e-05,
+          0.09518,
+          0.06906,
+          0.02505,
+          0.00606,
+          0.0011,
+          0.00016,
+          2e-05,
           0.0,
           0.0
         ],
         [
-          0.09809,
-          0.07336,
-          0.02744,
-          0.00684,
-          0.00128,
+          0.05231,
+          0.03796,
+          0.01377,
+          0.00333,
+          0.0006,
+          9e-05,
+          1e-05,
+          0.0,
+          0.0
+        ],
+        [
+          0.023,
+          0.01669,
+          0.00605,
+          0.00146,
+          0.00027,
+          4e-05,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.00843,
+          0.00612,
+          0.00222,
+          0.00054,
+          0.0001,
+          1e-05,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.00265,
+          0.00192,
+          0.0007,
+          0.00017,
+          3e-05,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.00073,
+          0.00053,
           0.00019,
-          2e-05,
-          0.0,
-          0.0
-        ],
-        [
-          0.05797,
-          0.04336,
-          0.01621,
-          0.00404,
-          0.00076,
-          0.00011,
-          1e-05,
-          0.0,
-          0.0
-        ],
-        [
-          0.02741,
-          0.0205,
-          0.00767,
-          0.00191,
-          0.00036,
           5e-05,
-          1e-05,
-          0.0,
-          0.0
-        ],
-        [
-          0.0108,
-          0.00808,
-          0.00302,
-          0.00075,
-          0.00014,
-          2e-05,
-          0.0,
-          0.0,
-          0.0
-        ],
-        [
-          0.00365,
-          0.00273,
-          0.00102,
-          0.00025,
-          5e-05,
-          1e-05,
-          0.0,
-          0.0,
-          0.0
-        ],
-        [
-          0.00108,
-          0.00081,
-          0.0003,
-          8e-05,
           1e-05,
           0.0,
           0.0,
@@ -6953,7 +7025,26 @@
         }
       ],
       "source": "model_only",
-      "blend_weights": null
+      "blend_weights": null,
+      "team_news": {
+        "notes": "Germany are without confirmed absentees Serge Gnabry (adductor tear), Lennart Karl (torn muscle, replaced by Ouédraogo), Ridle Baku, and Jonathan Burkardt (all injured), while Manuel Neuer carries a calf concern but is expected to start; Curaçao are close to full strength with only Riechedly Bazoer ruled out through injury.",
+        "home_scorers": [
+          "Kai Havertz (leading striker, expected starter in attack)",
+          "Jamal Musiala (creative playmaker, declared 100% fit)",
+          "Florian Wirtz (attacking midfielder, set-piece and through-ball threat)"
+        ],
+        "away_scorers": [
+          "Tahith Chong (standout attacker, three goals in first six caps)",
+          "Leandro Bacuna (captain, experienced midfielder, set-piece threat)",
+          "Juninho Bacuna (central midfielder, goal threat from midfield)"
+        ],
+        "fetched_at": "2026-06-14T16:15:10.437424+00:00"
+      },
+      "news_adjustment": {
+        "home": 0.93,
+        "away": 0.97,
+        "notes": "Germany are without confirmed absentees Serge Gnabry (adductor tear), Lennart Karl (torn muscle, replaced by Ouédraogo), Ridle Baku, and Jonathan Burkardt (all injured), while Manuel Neuer carries a calf concern but is expected to start; Curaçao are close to full strength with only Riechedly Bazoer ruled out through injury."
+      }
     },
     {
       "id": "GS_E2",
@@ -7231,7 +7322,21 @@
         }
       ],
       "source": "model_only",
-      "blend_weights": null
+      "blend_weights": null,
+      "team_news": {
+        "notes": "Ivory Coast are without key defensive pillar Evan Ndicka (fitness concern ruled out of opener), with Odilon Kossounou stepping in, and there is a striker rotation battle between Guessand, Wahi, and Bonny. Ecuador's talismanic captain Enner Valencia — their only player with a double-figure international goal tally — is a minor fitness doubt ahead of kick-off, though he is expected to start; Kendry Paez is also nursing a knock but likely to play.",
+        "home_scorers": [
+          "Amad Diallo (dangerous winger, top creator in recent friendlies incl. vs France)",
+          "Evann Guessand (first-choice striker, leading the line in predicted XIs)",
+          "Yan Diomande (emerging Bundesliga forward, set-piece threat and direct runner)"
+        ],
+        "away_scorers": [
+          "Enner Valencia (all-time Ecuador top scorer, 49 international goals, leads attac",
+          "Gonzalo Plata (second-highest scorer in squad on 8 goals, dangerous wide forward",
+          "Moises Caicedo (engine of midfield, drives into box, key creative force)"
+        ],
+        "fetched_at": "2026-06-14T22:55:15.900743+00:00"
+      }
     },
     {
       "id": "GS_E3",
@@ -8621,7 +8726,21 @@
         }
       ],
       "source": "model_only",
-      "blend_weights": null
+      "blend_weights": null,
+      "team_news": {
+        "notes": "Netherlands are without Jurriën Timber (groin, ruled out of tournament), Matthijs de Ligt (back surgery), Xavi Simons (injury, not called up), and Jerdy Schouten (ACL); GK Bart Verbruggen is a major doubt after a bruised hip in the Uzbekistan warm-up, with Memphis Depay also carrying a hamstring issue and likely to start on the bench. Japan have suffered devastating pre-tournament blows: captain Wataru Endo (foot surgery, retired from internationals), star winger Kaoru Mitoma (hamstring), and…",
+        "home_scorers": [
+          "Cody Gakpo (primary set-piece taker and penalty taker, Koeman's certain starter)",
+          "Donyell Malen (Serie A top scorer this season for Roma, likely preferred starter",
+          "Tijjani Reijnders (attacking midfielder, strong run from deep, set-piece threat)"
+        ],
+        "away_scorers": [
+          "Ayase Ueda (lone striker, 2025-26 Eredivisie golden boot winner with 25 goals in",
+          "Takefusa Kubo (creative No.10, primary playmaker in absence of Mitoma and Endo)",
+          "Ritsu Doan (wing-back/wide forward, dynamic counter-attacking threat, qualifying"
+        ],
+        "fetched_at": "2026-06-14T18:52:49.998939+00:00"
+      }
     },
     {
       "id": "GS_F2",
@@ -8639,14 +8758,14 @@
         "home": 5,
         "away": 1
       },
-      "xg_home": 1.692,
-      "xg_away": 1.082,
-      "win_prob": 0.5013,
-      "draw_prob": 0.2707,
-      "loss_prob": 0.228,
-      "model_win": 0.5013,
-      "model_draw": 0.2707,
-      "model_loss": 0.228,
+      "xg_home": 1.641,
+      "xg_away": 0.887,
+      "win_prob": 0.5365,
+      "draw_prob": 0.276,
+      "loss_prob": 0.1876,
+      "model_win": 0.5365,
+      "model_draw": 0.276,
+      "model_loss": 0.1876,
       "market_win": null,
       "market_draw": null,
       "market_loss": null,
@@ -8657,32 +8776,32 @@
         {
           "home": 1,
           "away": 1,
-          "prob": 0.1291
+          "prob": 0.1313
+        },
+        {
+          "home": 1,
+          "away": 0,
+          "prob": 0.1158
+        },
+        {
+          "home": 2,
+          "away": 0,
+          "prob": 0.1075
         },
         {
           "home": 2,
           "away": 1,
-          "prob": 0.0967
-        },
-        {
-          "home": 1,
-          "away": 0,
-          "prob": 0.0907
-        },
-        {
-          "home": 2,
-          "away": 0,
-          "prob": 0.0893
+          "prob": 0.0953
         },
         {
           "home": 0,
           "away": 0,
-          "prob": 0.0773
+          "prob": 0.0949
         },
         {
-          "home": 1,
-          "away": 2,
-          "prob": 0.0618
+          "home": 3,
+          "away": 0,
+          "prob": 0.0588
         }
       ],
       "top_score_conditional": {
@@ -8693,99 +8812,99 @@
       },
       "score_matrix": [
         [
-          0.07726,
-          0.05269,
-          0.03656,
-          0.01319,
-          0.00357,
-          0.00077,
-          0.00014,
-          2e-05,
-          0.0
-        ],
-        [
-          0.09072,
-          0.12913,
-          0.06185,
-          0.02231,
-          0.00604,
-          0.00131,
-          0.00024,
-          4e-05,
-          0.0
-        ],
-        [
-          0.0893,
-          0.09666,
-          0.05232,
-          0.01888,
-          0.00511,
-          0.00111,
-          0.0002,
-          3e-05,
-          0.0
-        ],
-        [
-          0.05036,
-          0.05451,
-          0.0295,
-          0.01064,
-          0.00288,
-          0.00062,
-          0.00011,
-          2e-05,
-          0.0
-        ],
-        [
-          0.0213,
-          0.02306,
-          0.01248,
-          0.0045,
-          0.00122,
-          0.00026,
+          0.09489,
+          0.05568,
+          0.0314,
+          0.00929,
+          0.00206,
+          0.00037,
           5e-05,
           1e-05,
           0.0
         ],
         [
-          0.00721,
-          0.0078,
-          0.00422,
-          0.00152,
-          0.00041,
+          0.11584,
+          0.13128,
+          0.05154,
+          0.01524,
+          0.00338,
+          0.0006,
           9e-05,
-          2e-05,
-          0.0,
+          1e-05,
           0.0
         ],
         [
-          0.00203,
-          0.0022,
-          0.00119,
-          0.00043,
-          0.00012,
-          3e-05,
-          0.0,
-          0.0,
-          0.0
-        ],
-        [
+          0.10746,
+          0.09534,
+          0.04229,
+          0.01251,
+          0.00277,
           0.00049,
-          0.00053,
-          0.00029,
-          0.0001,
-          3e-05,
+          7e-05,
+          1e-05,
+          0.0
+        ],
+        [
+          0.05879,
+          0.05216,
+          0.02314,
+          0.00684,
+          0.00152,
+          0.00027,
+          4e-05,
+          1e-05,
+          0.0
+        ],
+        [
+          0.02412,
+          0.0214,
+          0.00949,
+          0.00281,
+          0.00062,
+          0.00011,
+          2e-05,
+          0.0,
+          0.0
+        ],
+        [
+          0.00792,
+          0.00702,
+          0.00312,
+          0.00092,
+          0.0002,
+          4e-05,
+          1e-05,
+          0.0,
+          0.0
+        ],
+        [
+          0.00217,
+          0.00192,
+          0.00085,
+          0.00025,
+          6e-05,
           1e-05,
           0.0,
           0.0,
           0.0
         ],
         [
-          0.0001,
-          0.00011,
+          0.00051,
+          0.00045,
+          0.0002,
           6e-05,
-          2e-05,
           1e-05,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0001,
+          9e-05,
+          4e-05,
+          1e-05,
+          0.0,
           0.0,
           0.0,
           0.0,
@@ -8899,7 +9018,26 @@
         }
       ],
       "source": "model_only",
-      "blend_weights": null
+      "blend_weights": null,
+      "team_news": {
+        "notes": "Sweden are near full-strength but missing Dejan Kulusevski (long-term knee injury, out of the tournament entirely) and Gabriel Gudmundsson was a late doubt due to illness but cleared to start; Isak returned from a broken leg and is fit alongside Gyökeres. Tunisia's key creative player Hannibal Mejbri was a significant doubt for the opener after picking up an injury in a pre-tournament friendly against Austria, with his fitness closely monitored right up to kickoff.",
+        "home_scorers": [
+          "Viktor Gyökeres (leading striker, Premier League winner with Arsenal, Sweden's t",
+          "Alexander Isak (co-striker, record Liverpool signing, returning to fitness and p",
+          "Yasin Ayari (set-piece threat / long-range shooting, Brighton midfielder with po"
+        ],
+        "away_scorers": [
+          "Hannibal Mejbri (primary playmaker/No.10, Burnley attacker and Tunisia's main cr",
+          "Ellyes Skhiri (captain/set-piece threat, Eintracht Frankfurt midfielder and Tuni",
+          "Hazem Mastouri (leading striker, expected starting centre-forward in Lamouchi's "
+        ],
+        "fetched_at": "2026-06-15T21:38:34.591214+00:00"
+      },
+      "news_adjustment": {
+        "home": 0.97,
+        "away": 0.82,
+        "notes": "Sweden are near full-strength but missing Dejan Kulusevski (long-term knee injury, out of the tournament entirely) and Gabriel Gudmundsson was a late doubt due to illness but cleared to start; Isak returned from a broken leg and is fit alongside Gyökeres. Tunisia's key creative player Hannibal Mejbri was a significant doubt for the opener after picking up an injury in a pre-tournament friendly against Austria, with his fitness closely monitored right up to kickoff."
+      }
     },
     {
       "id": "GS_F3",
@@ -10029,14 +10167,14 @@
         "home": 1,
         "away": 1
       },
-      "xg_home": 1.863,
-      "xg_away": 1.205,
-      "win_prob": 0.5141,
-      "draw_prob": 0.2536,
-      "loss_prob": 0.2323,
-      "model_win": 0.5141,
-      "model_draw": 0.2536,
-      "model_loss": 0.2323,
+      "xg_home": 1.714,
+      "xg_away": 1.145,
+      "win_prob": 0.4922,
+      "draw_prob": 0.2679,
+      "loss_prob": 0.2398,
+      "model_win": 0.4922,
+      "model_draw": 0.2679,
+      "model_loss": 0.2398,
       "market_win": null,
       "market_draw": null,
       "market_loss": null,
@@ -10047,32 +10185,32 @@
         {
           "home": 1,
           "away": 1,
-          "prob": 0.118
+          "prob": 0.1271
         },
         {
           "home": 2,
           "away": 1,
-          "prob": 0.0973
+          "prob": 0.0964
         },
         {
           "home": 2,
           "away": 0,
-          "prob": 0.0807
+          "prob": 0.0842
         },
         {
           "home": 1,
           "away": 0,
-          "prob": 0.0731
+          "prob": 0.0837
+        },
+        {
+          "home": 0,
+          "away": 0,
+          "prob": 0.072
         },
         {
           "home": 1,
           "away": 2,
-          "prob": 0.0629
-        },
-        {
-          "home": 3,
-          "away": 1,
-          "prob": 0.0604
+          "prob": 0.0644
         }
       ],
       "top_score_conditional": {
@@ -10083,98 +10221,98 @@
       },
       "score_matrix": [
         [
-          0.0601,
-          0.04248,
-          0.03377,
-          0.01356,
-          0.00409,
-          0.00098,
-          0.0002,
+          0.07197,
+          0.05102,
+          0.03758,
+          0.01434,
+          0.0041,
+          0.00094,
+          0.00018,
           3e-05,
+          0.0
+        ],
+        [
+          0.08366,
+          0.12715,
+          0.0644,
+          0.02458,
+          0.00703,
+          0.00161,
+          0.00031,
+          5e-05,
           1e-05
         ],
         [
-          0.0731,
-          0.11801,
-          0.06292,
-          0.02527,
-          0.00761,
-          0.00183,
-          0.00037,
-          6e-05,
+          0.08423,
+          0.09643,
+          0.05519,
+          0.02106,
+          0.00603,
+          0.00138,
+          0.00026,
+          4e-05,
           1e-05
         ],
         [
-          0.08074,
-          0.09728,
-          0.05861,
-          0.02354,
-          0.00709,
-          0.00171,
+          0.04812,
+          0.05509,
+          0.03153,
+          0.01203,
+          0.00344,
+          0.00079,
+          0.00015,
+          2e-05,
+          0.0
+        ],
+        [
+          0.02062,
+          0.02361,
+          0.01351,
+          0.00516,
+          0.00148,
           0.00034,
           6e-05,
-          1e-05
-        ],
-        [
-          0.05014,
-          0.06041,
-          0.0364,
-          0.01462,
-          0.0044,
-          0.00106,
-          0.00021,
-          4e-05,
-          1e-05
-        ],
-        [
-          0.02335,
-          0.02814,
-          0.01695,
-          0.00681,
-          0.00205,
-          0.00049,
-          0.0001,
-          2e-05,
-          0.0
-        ],
-        [
-          0.0087,
-          0.01048,
-          0.00632,
-          0.00254,
-          0.00076,
-          0.00018,
-          4e-05,
           1e-05,
           0.0
         ],
         [
-          0.0027,
-          0.00326,
-          0.00196,
-          0.00079,
-          0.00024,
-          6e-05,
-          1e-05,
-          0.0,
-          0.0
-        ],
-        [
-          0.00072,
-          0.00087,
-          0.00052,
-          0.00021,
-          6e-05,
-          2e-05,
-          0.0,
-          0.0,
-          0.0
-        ],
-        [
-          0.00017,
-          0.0002,
+          0.00707,
+          0.00809,
+          0.00463,
+          0.00177,
+          0.00051,
           0.00012,
-          5e-05,
+          2e-05,
+          0.0,
+          0.0
+        ],
+        [
+          0.00202,
+          0.00231,
+          0.00132,
+          0.0005,
+          0.00014,
+          3e-05,
+          1e-05,
+          0.0,
+          0.0
+        ],
+        [
+          0.00049,
+          0.00057,
+          0.00032,
+          0.00012,
+          4e-05,
+          1e-05,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.00011,
+          0.00012,
+          7e-05,
+          3e-05,
           1e-05,
           0.0,
           0.0,
@@ -10289,7 +10427,26 @@
         }
       ],
       "source": "model_only",
-      "blend_weights": null
+      "blend_weights": null,
+      "team_news": {
+        "notes": "Belgium's Zeno Debast is ruled out with injury and Romelu Lukaku starts on the bench after a season hampered by a long-term hamstring problem, with Charles De Ketelaere leading the attack; Egypt's Mohamed Salah recovered from an April hamstring injury in time to start, but fitness concerns lingered heading into the match.",
+        "home_scorers": [
+          "Kevin De Bruyne (creative playmaker, 6 qualifying goals, set-piece threat)",
+          "Charles De Ketelaere (leading starter in attack with Lukaku benched)",
+          "Jérémy Doku (direct winger, transition threat)"
+        ],
+        "away_scorers": [
+          "Mohamed Salah (captain, penalty taker, Egypt's primary attacking reference)",
+          "Omar Marmoush (starting striker, Manchester City forward, direct goal threat)",
+          "Mostafa Mohamed (centre-forward, dangerous inside the box)"
+        ],
+        "fetched_at": "2026-06-15T21:38:45.251012+00:00"
+      },
+      "news_adjustment": {
+        "home": 0.92,
+        "away": 0.95,
+        "notes": "Belgium's Zeno Debast is ruled out with injury and Romelu Lukaku starts on the bench after a season hampered by a long-term hamstring problem, with Charles De Ketelaere leading the attack; Egypt's Mohamed Salah recovered from an April hamstring injury in time to start, but fitness concerns lingered heading into the match."
+      }
     },
     {
       "id": "GS_G2",
@@ -10307,14 +10464,14 @@
         "home": 2,
         "away": 2
       },
-      "xg_home": 1.521,
-      "xg_away": 1.164,
-      "win_prob": 0.4393,
-      "draw_prob": 0.2856,
-      "loss_prob": 0.2751,
-      "model_win": 0.4393,
-      "model_draw": 0.2856,
-      "model_loss": 0.2751,
+      "xg_home": 1.399,
+      "xg_away": 1.048,
+      "win_prob": 0.4335,
+      "draw_prob": 0.3013,
+      "loss_prob": 0.2652,
+      "model_win": 0.4335,
+      "model_draw": 0.3013,
+      "model_loss": 0.2652,
       "market_win": null,
       "market_draw": null,
       "market_loss": null,
@@ -10325,32 +10482,32 @@
         {
           "home": 1,
           "away": 1,
-          "prob": 0.1365
-        },
-        {
-          "home": 2,
-          "away": 1,
-          "prob": 0.0919
+          "prob": 0.1434
         },
         {
           "home": 1,
           "away": 0,
-          "prob": 0.088
+          "prob": 0.1046
         },
         {
           "home": 0,
           "away": 0,
-          "prob": 0.0839
+          "prob": 0.1031
+        },
+        {
+          "home": 2,
+          "away": 1,
+          "prob": 0.0888
         },
         {
           "home": 2,
           "away": 0,
-          "prob": 0.0789
+          "prob": 0.0847
         },
         {
-          "home": 1,
-          "away": 2,
-          "prob": 0.0703
+          "home": 0,
+          "away": 1,
+          "prob": 0.0742
         }
       ],
       "top_score_conditional": {
@@ -10361,97 +10518,97 @@
       },
       "score_matrix": [
         [
-          0.08388,
-          0.06367,
-          0.04621,
-          0.01793,
-          0.00522,
-          0.00122,
-          0.00024,
-          4e-05,
-          1e-05
-        ],
-        [
-          0.08803,
-          0.13646,
-          0.0703,
-          0.02728,
-          0.00794,
-          0.00185,
-          0.00036,
-          6e-05,
-          1e-05
-        ],
-        [
-          0.07891,
-          0.09187,
-          0.05348,
-          0.02075,
-          0.00604,
-          0.00141,
-          0.00027,
-          5e-05,
-          1e-05
-        ],
-        [
-          0.04002,
-          0.04659,
-          0.02712,
-          0.01053,
-          0.00306,
-          0.00071,
-          0.00014,
+          0.10306,
+          0.07419,
+          0.0475,
+          0.01659,
+          0.00434,
+          0.00091,
+          0.00016,
           2e-05,
           0.0
         ],
         [
-          0.01522,
-          0.01772,
-          0.01032,
-          0.004,
-          0.00117,
-          0.00027,
-          5e-05,
+          0.10463,
+          0.14339,
+          0.06647,
+          0.02321,
+          0.00608,
+          0.00127,
+          0.00022,
+          3e-05,
+          0.0
+        ],
+        [
+          0.08475,
+          0.08878,
+          0.0465,
+          0.01624,
+          0.00425,
+          0.00089,
+          0.00016,
+          2e-05,
+          0.0
+        ],
+        [
+          0.03953,
+          0.04141,
+          0.02169,
+          0.00757,
+          0.00198,
+          0.00042,
+          7e-05,
           1e-05,
           0.0
         ],
         [
-          0.00463,
-          0.00539,
-          0.00314,
-          0.00122,
-          0.00035,
-          8e-05,
-          2e-05,
-          0.0,
-          0.0
-        ],
-        [
-          0.00117,
-          0.00137,
-          0.0008,
-          0.00031,
-          9e-05,
-          2e-05,
-          0.0,
-          0.0,
-          0.0
-        ],
-        [
-          0.00026,
-          0.0003,
-          0.00017,
-          7e-05,
-          2e-05,
-          0.0,
-          0.0,
-          0.0,
-          0.0
-        ],
-        [
-          5e-05,
-          6e-05,
+          0.01383,
+          0.01449,
+          0.00759,
+          0.00265,
+          0.00069,
+          0.00015,
           3e-05,
+          0.0,
+          0.0
+        ],
+        [
+          0.00387,
+          0.00405,
+          0.00212,
+          0.00074,
+          0.00019,
+          4e-05,
+          1e-05,
+          0.0,
+          0.0
+        ],
+        [
+          0.0009,
+          0.00095,
+          0.0005,
+          0.00017,
+          5e-05,
+          1e-05,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.00018,
+          0.00019,
+          0.0001,
+          3e-05,
+          1e-05,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          3e-05,
+          3e-05,
+          2e-05,
           1e-05,
           0.0,
           0.0,
@@ -10567,7 +10724,26 @@
         }
       ],
       "source": "model_only",
-      "blend_weights": null
+      "blend_weights": null,
+      "team_news": {
+        "notes": "Iran are without Alireza Jahanbakhsh (muscle), Dennis Eckert, and Mehdi Torabi (both unspecified), with Roozbeh Cheshmi also a late fitness doubt, and Sardar Azmoun left out for disciplinary reasons — Taremi leads a depleted but functional attack. New Zealand lose Matt Garbett to a confirmed pre-tournament hamstring injury (replaced by Logan Rogerson), Ryan Thomas is also out for the opener, and captain Chris Wood carries fitness concerns after a knee injury kept him out for six months.",
+        "home_scorers": [
+          "Mehdi Taremi (leading striker, 60 international goals, focal point of attack)",
+          "Mehdi Ghayedi (attacking midfielder, double-figure international scorer, expecte",
+          "Mohammad Mohebi (forward/midfielder, 14 international goals, starting in final t"
+        ],
+        "away_scorers": [
+          "Chris Wood (captain and striker, 45 international goals, set-piece aerial threat",
+          "Sarpreet Singh (attacking midfielder, creative outlet and secondary scorer)",
+          "Elijah Just (forward, starting winger, secondary attacking option)"
+        ],
+        "fetched_at": "2026-06-16T21:38:55.233785+00:00"
+      },
+      "news_adjustment": {
+        "home": 0.92,
+        "away": 0.9,
+        "notes": "Iran are without Alireza Jahanbakhsh (muscle), Dennis Eckert, and Mehdi Torabi (both unspecified), with Roozbeh Cheshmi also a late fitness doubt, and Sardar Azmoun left out for disciplinary reasons — Taremi leads a depleted but functional attack. New Zealand lose Matt Garbett to a confirmed pre-tournament hamstring injury (replaced by Logan Rogerson), Ryan Thomas is also out for the opener, and captain Chris Wood carries fitness concerns after a knee injury kept him out for six months."
+      }
     },
     {
       "id": "GS_G3",
@@ -11697,14 +11873,14 @@
         "home": 0,
         "away": 0
       },
-      "xg_home": 2.177,
+      "xg_home": 2.003,
       "xg_away": 0.867,
-      "win_prob": 0.6613,
-      "draw_prob": 0.2135,
-      "loss_prob": 0.1252,
-      "model_win": 0.6613,
-      "model_draw": 0.2135,
-      "model_loss": 0.1252,
+      "win_prob": 0.6256,
+      "draw_prob": 0.2328,
+      "loss_prob": 0.1416,
+      "model_win": 0.6256,
+      "model_draw": 0.2328,
+      "model_loss": 0.1416,
       "market_win": null,
       "market_draw": null,
       "market_loss": null,
@@ -11715,32 +11891,32 @@
         {
           "home": 2,
           "away": 0,
-          "prob": 0.113
+          "prob": 0.1138
         },
         {
           "home": 1,
           "away": 1,
-          "prob": 0.1016
+          "prob": 0.1113
+        },
+        {
+          "home": 1,
+          "away": 0,
+          "prob": 0.1008
         },
         {
           "home": 2,
           "away": 1,
-          "prob": 0.0979
-        },
-        {
-          "home": 1,
-          "away": 0,
-          "prob": 0.0921
+          "prob": 0.0986
         },
         {
           "home": 3,
           "away": 0,
-          "prob": 0.082
+          "prob": 0.076
         },
         {
-          "home": 3,
-          "away": 1,
-          "prob": 0.0711
+          "home": 0,
+          "away": 0,
+          "prob": 0.0695
         }
       ],
       "top_score_conditional": {
@@ -11751,98 +11927,98 @@
       },
       "score_matrix": [
         [
-          0.05936,
-          0.02962,
-          0.0179,
-          0.00517,
-          0.00112,
-          0.00019,
+          0.06953,
+          0.03637,
+          0.02132,
+          0.00616,
+          0.00134,
+          0.00023,
           3e-05,
           0.0,
           0.0
         ],
         [
-          0.09208,
-          0.10164,
-          0.03898,
-          0.01126,
-          0.00244,
-          0.00042,
-          6e-05,
-          1e-05,
-          0.0
-        ],
-        [
-          0.11297,
-          0.09792,
-          0.04244,
-          0.01226,
-          0.00266,
+          0.1008,
+          0.1113,
+          0.0427,
+          0.01234,
+          0.00267,
           0.00046,
           7e-05,
           1e-05,
           0.0
         ],
         [
-          0.08199,
-          0.07107,
-          0.0308,
-          0.0089,
-          0.00193,
-          0.00033,
-          5e-05,
-          1e-05,
-          0.0
-        ],
-        [
-          0.04463,
-          0.03868,
-          0.01676,
-          0.00484,
-          0.00105,
-          0.00018,
-          3e-05,
-          0.0,
-          0.0
-        ],
-        [
-          0.01943,
-          0.01684,
-          0.0073,
-          0.00211,
+          0.11377,
+          0.09863,
+          0.04276,
+          0.01236,
+          0.00268,
           0.00046,
-          8e-05,
+          7e-05,
           1e-05,
-          0.0,
           0.0
         ],
         [
-          0.00705,
-          0.00611,
-          0.00265,
-          0.00077,
-          0.00017,
-          3e-05,
-          0.0,
-          0.0,
-          0.0
-        ],
-        [
-          0.00219,
-          0.0019,
-          0.00082,
-          0.00024,
-          5e-05,
+          0.07595,
+          0.06585,
+          0.02855,
+          0.00825,
+          0.00179,
+          0.00031,
+          4e-05,
           1e-05,
-          0.0,
+          0.0
+        ],
+        [
+          0.03803,
+          0.03297,
+          0.01429,
+          0.00413,
+          0.0009,
+          0.00016,
+          2e-05,
           0.0,
           0.0
         ],
         [
-          0.0006,
-          0.00052,
-          0.00022,
+          0.01523,
+          0.01321,
+          0.00573,
+          0.00165,
+          0.00036,
           6e-05,
+          1e-05,
+          0.0,
+          0.0
+        ],
+        [
+          0.00509,
+          0.00441,
+          0.00191,
+          0.00055,
+          0.00012,
+          2e-05,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.00145,
+          0.00126,
+          0.00055,
+          0.00016,
+          3e-05,
+          1e-05,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.00036,
+          0.00032,
+          0.00014,
+          4e-05,
           1e-05,
           0.0,
           0.0,
@@ -11957,7 +12133,26 @@
         }
       ],
       "source": "model_only",
-      "blend_weights": null
+      "blend_weights": null,
+      "team_news": {
+        "notes": "Spain start without injured Fermín López (fractured metatarsal, tournament miss) and begin Lamine Yamal & Nico Williams on the bench after hamstring recoveries, with Víctor Muñoz also a late doubt (muscular overload); De la Fuente opted to rotate the wingers in as impact subs. Cape Verde have no reported injuries or suspensions and field a full squad.",
+        "home_scorers": [
+          "Mikel Oyarzabal (first-choice striker, leads the line from kick-off)",
+          "Ferran Torres (starting winger, direct goal threat in attack)",
+          "Pedri (central creator, late-run goalscorer and set-piece contributor)"
+        ],
+        "away_scorers": [
+          "Ryan Mendes (experienced winger, Cape Verde's primary attacking outlet)",
+          "Garry Rodrigues (forward/wide, top scorer in qualification)",
+          "Jamiro Monteiro (attacking midfielder, set-piece and long-range threat)"
+        ],
+        "fetched_at": "2026-06-15T21:38:56.234664+00:00"
+      },
+      "news_adjustment": {
+        "home": 0.92,
+        "away": 1.0,
+        "notes": "Spain start without injured Fermín López (fractured metatarsal, tournament miss) and begin Lamine Yamal & Nico Williams on the bench after hamstring recoveries, with Víctor Muñoz also a late doubt (muscular overload); De la Fuente opted to rotate the wingers in as impact subs. Cape Verde have no reported injuries or suspensions and field a full squad."
+      }
     },
     {
       "id": "GS_H2",
@@ -11975,14 +12170,14 @@
         "home": 1,
         "away": 1
       },
-      "xg_home": 1.106,
-      "xg_away": 1.683,
-      "win_prob": 0.235,
-      "draw_prob": 0.2713,
-      "loss_prob": 0.4937,
-      "model_win": 0.235,
-      "model_draw": 0.2713,
-      "model_loss": 0.4937,
+      "xg_home": 1.073,
+      "xg_away": 1.38,
+      "win_prob": 0.2754,
+      "draw_prob": 0.3022,
+      "loss_prob": 0.4224,
+      "model_win": 0.2754,
+      "model_draw": 0.3022,
+      "model_loss": 0.4224,
       "market_win": null,
       "market_draw": null,
       "market_loss": null,
@@ -11993,32 +12188,32 @@
         {
           "home": 1,
           "away": 1,
-          "prob": 0.1293
-        },
-        {
-          "home": 1,
-          "away": 2,
-          "prob": 0.0963
-        },
-        {
-          "home": 0,
-          "away": 1,
-          "prob": 0.0886
-        },
-        {
-          "home": 0,
-          "away": 2,
-          "prob": 0.0871
+          "prob": 0.144
         },
         {
           "home": 0,
           "away": 0,
-          "prob": 0.0763
+          "prob": 0.1026
         },
         {
-          "home": 2,
+          "home": 0,
           "away": 1,
-          "prob": 0.0633
+          "prob": 0.1022
+        },
+        {
+          "home": 1,
+          "away": 2,
+          "prob": 0.0879
+        },
+        {
+          "home": 0,
+          "away": 2,
+          "prob": 0.0819
+        },
+        {
+          "home": 1,
+          "away": 0,
+          "prob": 0.0758
         }
       ],
       "top_score_conditional": {
@@ -12029,88 +12224,88 @@
       },
       "score_matrix": [
         [
-          0.07634,
-          0.08859,
-          0.08708,
-          0.04886,
-          0.02056,
-          0.00692,
-          0.00194,
-          0.00047,
-          0.0001
+          0.10261,
+          0.10219,
+          0.08194,
+          0.03769,
+          0.01301,
+          0.00359,
+          0.00083,
+          0.00016,
+          3e-05
         ],
         [
-          0.05311,
-          0.12932,
-          0.09632,
-          0.05404,
-          0.02274,
-          0.00766,
-          0.00215,
-          0.00052,
-          0.00011
+          0.07575,
+          0.14396,
+          0.08791,
+          0.04044,
+          0.01395,
+          0.00385,
+          0.00089,
+          0.00017,
+          3e-05
         ],
         [
-          0.0376,
-          0.06329,
-          0.05326,
-          0.02989,
-          0.01258,
-          0.00423,
-          0.00119,
-          0.00029,
-          6e-05
-        ],
-        [
-          0.01386,
-          0.02333,
-          0.01964,
-          0.01102,
-          0.00464,
-          0.00156,
-          0.00044,
-          0.00011,
+          0.04952,
+          0.06834,
+          0.04715,
+          0.02169,
+          0.00748,
+          0.00207,
+          0.00048,
+          9e-05,
           2e-05
         ],
         [
-          0.00383,
-          0.00645,
-          0.00543,
-          0.00305,
-          0.00128,
-          0.00043,
-          0.00012,
+          0.01771,
+          0.02444,
+          0.01686,
+          0.00776,
+          0.00268,
+          0.00074,
+          0.00017,
           3e-05,
           1e-05
         ],
         [
-          0.00085,
-          0.00143,
-          0.0012,
-          0.00067,
-          0.00028,
-          0.0001,
-          3e-05,
+          0.00475,
+          0.00655,
+          0.00452,
+          0.00208,
+          0.00072,
+          0.0002,
+          5e-05,
           1e-05,
           0.0
         ],
         [
-          0.00016,
-          0.00026,
-          0.00022,
-          0.00012,
-          5e-05,
-          2e-05,
+          0.00102,
+          0.00141,
+          0.00097,
+          0.00045,
+          0.00015,
+          4e-05,
+          1e-05,
+          0.0,
+          0.0
+        ],
+        [
+          0.00018,
+          0.00025,
+          0.00017,
+          8e-05,
+          3e-05,
+          1e-05,
           0.0,
           0.0,
           0.0
         ],
         [
-          2e-05,
+          3e-05,
           4e-05,
           3e-05,
-          2e-05,
           1e-05,
+          0.0,
           0.0,
           0.0,
           0.0,
@@ -12235,7 +12430,26 @@
         }
       ],
       "source": "model_only",
-      "blend_weights": null
+      "blend_weights": null,
+      "team_news": {
+        "notes": "Saudi Arabia are near full strength with only Nawaf Al-Aqidi (muscle) confirmed out and coach Donis reporting a largely healthy squad; Salem Al-Dawsari leads the line as captain. Uruguay face a severe defensive injury crisis: Ronald Araujo is effectively ruled out (calf), Jose Gimenez is a major doubt (ankle), Matias Vina is managing a muscle issue, and de Arrascaeta carries a minor knock — forcing Bielsa into significant defensive reshuffling.",
+        "home_scorers": [
+          "Salem Al-Dawsari (captain, leading scorer with 34 international goals, primary c",
+          "Firas Al-Buraikan (expected starting striker, 16 goals in 72 caps)",
+          "Musab Al-Juwayr (attacking midfielder, set-piece and counter-attack threat)"
+        ],
+        "away_scorers": [
+          "Darwin Nunez (starting striker, primary goal threat for Uruguay)",
+          "Federico Valverde (midfield engine, drives forward, key attacking force)",
+          "Maximiliano Araujoo (wide attacker, direct and dangerous on the break)"
+        ],
+        "fetched_at": "2026-06-15T21:39:11.145430+00:00"
+      },
+      "news_adjustment": {
+        "home": 0.97,
+        "away": 0.82,
+        "notes": "Saudi Arabia are near full strength with only Nawaf Al-Aqidi (muscle) confirmed out and coach Donis reporting a largely healthy squad; Salem Al-Dawsari leads the line as captain. Uruguay face a severe defensive injury crisis: Ronald Araujo is effectively ruled out (calf), Jose Gimenez is a major doubt (ankle), Matias Vina is managing a muscle issue, and de Arrascaeta carries a minor knock — forcing Bielsa into significant defensive reshuffling."
+      }
     },
     {
       "id": "GS_H3",
@@ -13625,7 +13839,21 @@
         }
       ],
       "source": "model_only",
-      "blend_weights": null
+      "blend_weights": null,
+      "team_news": {
+        "notes": "France are near full strength — Saliba, Koundé, and Tchouameni all cleared minor injury concerns, with only Hugo Ekitike confirmed absent long-term; Deschamps expected to field his strongest XI with no rotation hints. Senegal receive a major boost with Koulibaly cleared to play, and Mané, Jackson, and Sarr all available, giving Thiaw a full-strength attacking lineup.",
+        "home_scorers": [
+          "Kylian Mbappé (leading striker, on penalties, World Cup pedigree)",
+          "Ousmane Dembélé (wide attacker, Champions League form, set-piece threat)",
+          "Michael Olise (dynamic wide forward, goals and assists from midfield line)"
+        ],
+        "away_scorers": [
+          "Sadio Mané (all-time top scorer, talisman, left wing/second striker)",
+          "Nicolas Jackson (centre-forward, Bayern Munich form, direct runner)",
+          "Ismaila Sarr (pacey wide attacker, Crystal Palace, dangerous in transition)"
+        ],
+        "fetched_at": "2026-06-16T21:39:06.181515+00:00"
+      }
     },
     {
       "id": "GS_I2",
@@ -13643,14 +13871,14 @@
         "home": 1,
         "away": 4
       },
-      "xg_home": 1.118,
-      "xg_away": 1.784,
-      "win_prob": 0.2233,
-      "draw_prob": 0.2613,
-      "loss_prob": 0.5155,
-      "model_win": 0.2233,
-      "model_draw": 0.2613,
-      "model_loss": 0.5155,
+      "xg_home": 1.152,
+      "xg_away": 1.873,
+      "win_prob": 0.2188,
+      "draw_prob": 0.2527,
+      "loss_prob": 0.5286,
+      "model_win": 0.2188,
+      "model_draw": 0.2527,
+      "model_loss": 0.5286,
       "market_win": null,
       "market_draw": null,
       "market_loss": null,
@@ -13661,32 +13889,32 @@
         {
           "home": 1,
           "away": 1,
-          "prob": 0.1238
+          "prob": 0.1184
         },
         {
           "home": 1,
           "away": 2,
-          "prob": 0.0977
+          "prob": 0.0981
         },
         {
           "home": 0,
           "away": 2,
-          "prob": 0.0874
+          "prob": 0.0852
         },
         {
           "home": 0,
           "away": 1,
-          "prob": 0.0837
+          "prob": 0.0774
         },
         {
           "home": 0,
           "away": 0,
-          "prob": 0.0692
+          "prob": 0.0622
         },
         {
-          "home": 2,
-          "away": 1,
-          "prob": 0.0612
+          "home": 1,
+          "away": 3,
+          "prob": 0.0613
         }
       ],
       "top_score_conditional": {
@@ -13697,87 +13925,87 @@
       },
       "score_matrix": [
         [
-          0.06916,
-          0.08375,
-          0.08741,
-          0.05199,
-          0.02319,
-          0.00827,
-          0.00246,
-          0.00063,
-          0.00014
+          0.0622,
+          0.07737,
+          0.08523,
+          0.05322,
+          0.02492,
+          0.00934,
+          0.00291,
+          0.00078,
+          0.00018
         ],
         [
-          0.04715,
-          0.12377,
-          0.09771,
-          0.05811,
-          0.02592,
-          0.00925,
-          0.00275,
-          0.0007,
-          0.00016
+          0.04232,
+          0.11841,
+          0.09814,
+          0.06128,
+          0.0287,
+          0.01075,
+          0.00336,
+          0.0009,
+          0.00021
         ],
         [
-          0.03431,
-          0.06122,
-          0.05461,
-          0.03248,
-          0.01449,
-          0.00517,
-          0.00154,
-          0.00039,
-          9e-05
-        ],
-        [
-          0.01278,
-          0.02281,
-          0.02035,
-          0.0121,
-          0.0054,
+          0.03221,
+          0.06033,
+          0.05651,
+          0.03528,
+          0.01652,
+          0.00619,
           0.00193,
-          0.00057,
-          0.00015,
-          3e-05
+          0.00052,
+          0.00012
         ],
         [
-          0.00357,
-          0.00637,
-          0.00569,
-          0.00338,
-          0.00151,
-          0.00054,
-          0.00016,
-          4e-05,
+          0.01236,
+          0.02316,
+          0.02169,
+          0.01354,
+          0.00634,
+          0.00238,
+          0.00074,
+          0.0002,
+          5e-05
+        ],
+        [
+          0.00356,
+          0.00667,
+          0.00624,
+          0.0039,
+          0.00183,
+          0.00068,
+          0.00021,
+          6e-05,
           1e-05
         ],
         [
-          0.0008,
-          0.00142,
-          0.00127,
-          0.00076,
-          0.00034,
-          0.00012,
-          4e-05,
+          0.00082,
+          0.00154,
+          0.00144,
+          0.0009,
+          0.00042,
+          0.00016,
+          5e-05,
           1e-05,
           0.0
         ],
         [
-          0.00015,
-          0.00027,
-          0.00024,
-          0.00014,
-          6e-05,
-          2e-05,
+          0.00016,
+          0.00029,
+          0.00028,
+          0.00017,
+          8e-05,
+          3e-05,
           1e-05,
           0.0,
           0.0
         ],
         [
-          2e-05,
-          4e-05,
-          4e-05,
-          2e-05,
+          3e-05,
+          5e-05,
+          5e-05,
+          3e-05,
           1e-05,
           0.0,
           0.0,
@@ -13903,7 +14131,26 @@
         }
       ],
       "source": "model_only",
-      "blend_weights": null
+      "blend_weights": null,
+      "team_news": {
+        "notes": "Iraq have a fully fit 26-man squad with no confirmed injuries or suspensions reported, giving Graham Arnold a free selection hand. Norway are also at full strength — Haaland confirmed fit by Solbakken and Ødegaard has dismissed prior fitness concerns — though Oscar Bobb and Jørgen Strand Larsen drop to the bench as rotation choices.",
+        "home_scorers": [
+          "Aymen Hussein (leading striker / main goal threat up front)",
+          "Ali Al-Hamadi (Luton striker / expected to start alongside Hussein)",
+          "Zidane Iqbal (box-to-box midfielder / late runs into the area)"
+        ],
+        "away_scorers": [
+          "Erling Haaland (world-class centre-forward / all-time top Norway scorer, 16 qual",
+          "Alexander Sørloth (starting striker / physical threat on the right of attack)",
+          "Martin Ødegaard (captain / creative playmaker, set-piece and long-range threat)"
+        ],
+        "fetched_at": "2026-06-16T21:39:18.505415+00:00"
+      },
+      "news_adjustment": {
+        "home": 1.03,
+        "away": 1.05,
+        "notes": "Iraq have a fully fit 26-man squad with no confirmed injuries or suspensions reported, giving Graham Arnold a free selection hand. Norway are also at full strength — Haaland confirmed fit by Solbakken and Ødegaard has dismissed prior fitness concerns — though Oscar Bobb and Jørgen Strand Larsen drop to the bench as rotation choices."
+      }
     },
     {
       "id": "GS_I3",
@@ -15034,13 +15281,13 @@
         "away": 0
       },
       "xg_home": 2.143,
-      "xg_away": 1.0,
-      "win_prob": 0.6229,
-      "draw_prob": 0.2228,
-      "loss_prob": 0.1543,
-      "model_win": 0.6229,
-      "model_draw": 0.2228,
-      "model_loss": 0.1543,
+      "xg_away": 0.92,
+      "win_prob": 0.6418,
+      "draw_prob": 0.2197,
+      "loss_prob": 0.1386,
+      "model_win": 0.6418,
+      "model_draw": 0.2197,
+      "model_loss": 0.1386,
       "market_win": null,
       "market_draw": null,
       "market_loss": null,
@@ -15049,34 +15296,34 @@
       "best_odds_away": 8.4,
       "top_scorelines": [
         {
+          "home": 2,
+          "away": 0,
+          "prob": 0.1074
+        },
+        {
           "home": 1,
           "away": 1,
-          "prob": 0.1045
+          "prob": 0.1042
         },
         {
           "home": 2,
           "away": 1,
-          "prob": 0.0991
-        },
-        {
-          "home": 2,
-          "away": 0,
-          "prob": 0.0991
+          "prob": 0.0988
         },
         {
           "home": 1,
           "away": 0,
-          "prob": 0.0805
-        },
-        {
-          "home": 3,
-          "away": 1,
-          "prob": 0.0708
+          "prob": 0.0882
         },
         {
           "home": 3,
           "away": 0,
-          "prob": 0.0708
+          "prob": 0.0767
+        },
+        {
+          "home": 3,
+          "away": 1,
+          "prob": 0.0706
         }
       ],
       "top_score_conditional": {
@@ -15087,98 +15334,98 @@
       },
       "score_matrix": [
         [
-          0.05518,
-          0.03113,
-          0.02158,
-          0.0072,
-          0.0018,
-          0.00036,
+          0.05875,
+          0.03104,
+          0.01979,
+          0.00607,
+          0.0014,
+          0.00026,
+          4e-05,
+          1e-05,
+          0.0
+        ],
+        [
+          0.08823,
+          0.10419,
+          0.04241,
+          0.01301,
+          0.00299,
+          0.00055,
+          8e-05,
+          1e-05,
+          0.0
+        ],
+        [
+          0.10738,
+          0.09879,
+          0.04544,
+          0.01394,
+          0.00321,
+          0.00059,
+          9e-05,
+          1e-05,
+          0.0
+        ],
+        [
+          0.07671,
+          0.07057,
+          0.03246,
+          0.00996,
+          0.00229,
+          0.00042,
           6e-05,
           1e-05,
           0.0
         ],
         [
-          0.08046,
-          0.10453,
-          0.04626,
-          0.01542,
-          0.00386,
-          0.00077,
-          0.00013,
-          2e-05,
+          0.0411,
+          0.03781,
+          0.01739,
+          0.00533,
+          0.00123,
+          0.00023,
+          3e-05,
+          0.0,
           0.0
         ],
         [
-          0.09911,
-          0.09913,
-          0.04957,
-          0.01653,
-          0.00413,
-          0.00083,
-          0.00014,
-          2e-05,
-          0.0
-        ],
-        [
-          0.0708,
-          0.07082,
-          0.03542,
-          0.01181,
-          0.00295,
-          0.00059,
+          0.01761,
+          0.0162,
+          0.00745,
+          0.00229,
+          0.00053,
           0.0001,
           1e-05,
-          0.0
-        ],
-        [
-          0.03794,
-          0.03795,
-          0.01898,
-          0.00633,
-          0.00158,
-          0.00032,
-          5e-05,
-          1e-05,
-          0.0
-        ],
-        [
-          0.01626,
-          0.01627,
-          0.00813,
-          0.00271,
-          0.00068,
-          0.00014,
-          2e-05,
           0.0,
           0.0
         ],
         [
-          0.00581,
-          0.00581,
-          0.00291,
-          0.00097,
-          0.00024,
-          5e-05,
+          0.00629,
+          0.00579,
+          0.00266,
+          0.00082,
+          0.00019,
+          3e-05,
           1e-05,
           0.0,
           0.0
         ],
         [
-          0.00178,
-          0.00178,
-          0.00089,
-          0.0003,
+          0.00193,
+          0.00177,
+          0.00082,
+          0.00025,
+          6e-05,
+          1e-05,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.00052,
+          0.00047,
+          0.00022,
           7e-05,
-          1e-05,
-          0.0,
-          0.0,
-          0.0
-        ],
-        [
-          0.00048,
-          0.00048,
-          0.00024,
-          8e-05,
           2e-05,
           0.0,
           0.0,
@@ -15293,7 +15540,26 @@
         }
       ],
       "source": "model_only",
-      "blend_weights": null
+      "blend_weights": null,
+      "team_news": {
+        "notes": "Argentina were near full-strength despite pre-tournament concerns: Messi (mild hamstring), Álvarez (ankle) and Martínez (fractured finger) all cleared to play, with Tagliafico monitored but available; Otamendi served a one-match suspension (red card vs Ecuador in qualifying). Algeria's sole confirmed absence was LB Ramy Bensebaini (ankle injury, ruled out), leaving Petkovic without a key left-back option.",
+        "home_scorers": [
+          "Lionel Messi (captain/talisman, penalties, set-piece threat, generational form)",
+          "Julián Álvarez (dynamic striker, high press, box presence)",
+          "Lautaro Martínez (backup striker option, clinical finisher)"
+        ],
+        "away_scorers": [
+          "Mohamed Amoura (leading striker, top scorer in qualifying with 10 goals)",
+          "Riyad Mahrez (captain, creative winger, free-kick and set-piece threat)",
+          "Ibrahim Maza (exciting young forward, dubbed 'Mazadona', breakout candidate)"
+        ],
+        "fetched_at": "2026-06-17T19:32:49.518363+00:00"
+      },
+      "news_adjustment": {
+        "home": 1.0,
+        "away": 0.92,
+        "notes": "Argentina were near full-strength despite pre-tournament concerns: Messi (mild hamstring), Álvarez (ankle) and Martínez (fractured finger) all cleared to play, with Tagliafico monitored but available; Otamendi served a one-match suspension (red card vs Ecuador in qualifying). Algeria's sole confirmed absence was LB Ramy Bensebaini (ankle injury, ruled out), leaving Petkovic without a key left-back option."
+      }
     },
     {
       "id": "GS_J2",
@@ -15311,14 +15577,14 @@
         "home": 3,
         "away": 1
       },
-      "xg_home": 1.77,
-      "xg_away": 1.105,
-      "win_prob": 0.5151,
-      "draw_prob": 0.2627,
-      "loss_prob": 0.2222,
-      "model_win": 0.5151,
-      "model_draw": 0.2627,
-      "model_loss": 0.2222,
+      "xg_home": 1.717,
+      "xg_away": 1.05,
+      "win_prob": 0.5152,
+      "draw_prob": 0.2682,
+      "loss_prob": 0.2166,
+      "model_win": 0.5152,
+      "model_draw": 0.2682,
+      "model_loss": 0.2166,
       "market_win": null,
       "market_draw": null,
       "market_loss": null,
@@ -15329,32 +15595,32 @@
         {
           "home": 1,
           "away": 1,
-          "prob": 0.1247
+          "prob": 0.1281
         },
         {
           "home": 2,
           "away": 1,
-          "prob": 0.0977
+          "prob": 0.0973
+        },
+        {
+          "home": 1,
+          "away": 0,
+          "prob": 0.0932
         },
         {
           "home": 2,
           "away": 0,
-          "prob": 0.0884
-        },
-        {
-          "home": 1,
-          "away": 0,
-          "prob": 0.0855
+          "prob": 0.0927
         },
         {
           "home": 0,
           "away": 0,
-          "prob": 0.0708
+          "prob": 0.0776
         },
         {
           "home": 1,
           "away": 2,
-          "prob": 0.061
+          "prob": 0.0595
         }
       ],
       "top_score_conditional": {
@@ -15365,98 +15631,98 @@
       },
       "score_matrix": [
         [
-          0.07079,
-          0.04801,
-          0.03445,
-          0.01269,
-          0.0035,
-          0.00077,
-          0.00014,
+          0.07761,
+          0.05127,
+          0.03464,
+          0.01212,
+          0.00318,
+          0.00067,
+          0.00012,
           2e-05,
           0.0
         ],
         [
-          0.08554,
-          0.12471,
-          0.06097,
-          0.02245,
-          0.0062,
-          0.00137,
-          0.00025,
-          4e-05,
-          1e-05
-        ],
-        [
-          0.08839,
-          0.09766,
-          0.05395,
-          0.01987,
-          0.00549,
-          0.00121,
-          0.00022,
-          4e-05,
+          0.09322,
+          0.12806,
+          0.05948,
+          0.02081,
+          0.00546,
+          0.00115,
+          0.0002,
+          3e-05,
           0.0
         ],
         [
-          0.05215,
-          0.05762,
-          0.03183,
-          0.01172,
-          0.00324,
-          0.00072,
-          0.00013,
-          2e-05,
+          0.09267,
+          0.09728,
+          0.05106,
+          0.01787,
+          0.00469,
+          0.00098,
+          0.00017,
+          3e-05,
           0.0
         ],
         [
-          0.02307,
-          0.02549,
-          0.01408,
-          0.00519,
-          0.00143,
-          0.00032,
-          6e-05,
+          0.05304,
+          0.05568,
+          0.02922,
+          0.01023,
+          0.00268,
+          0.00056,
+          0.0001,
           1e-05,
           0.0
         ],
         [
-          0.00817,
-          0.00902,
-          0.00498,
-          0.00184,
-          0.00051,
+          0.02276,
+          0.0239,
+          0.01254,
+          0.00439,
+          0.00115,
+          0.00024,
+          4e-05,
+          1e-05,
+          0.0
+        ],
+        [
+          0.00782,
+          0.00821,
+          0.00431,
+          0.00151,
+          0.0004,
+          8e-05,
+          1e-05,
+          0.0,
+          0.0
+        ],
+        [
+          0.00224,
+          0.00235,
+          0.00123,
+          0.00043,
           0.00011,
           2e-05,
           0.0,
+          0.0,
           0.0
         ],
         [
-          0.00241,
-          0.00266,
-          0.00147,
-          0.00054,
-          0.00015,
+          0.00055,
+          0.00058,
+          0.0003,
+          0.00011,
           3e-05,
           1e-05,
           0.0,
-          0.0
-        ],
-        [
-          0.00061,
-          0.00067,
-          0.00037,
-          0.00014,
-          4e-05,
-          1e-05,
-          0.0,
           0.0,
           0.0
         ],
         [
-          0.00013,
-          0.00015,
-          8e-05,
-          3e-05,
+          0.00012,
+          0.00012,
+          6e-05,
+          2e-05,
           1e-05,
           0.0,
           0.0,
@@ -15571,7 +15837,26 @@
         }
       ],
       "source": "model_only",
-      "blend_weights": null
+      "blend_weights": null,
+      "team_news": {
+        "notes": "Austria are largely at full strength with Florian Grillitsch and Patrick Wimmer listed as doubts to start, while tournament absentee Christoph Baumgartner (thigh) is ruled out of the whole competition; Jordan are without influential striker Yazan Al Naimat (knee, Arab Cup injury) and late call-up Ibrahim Sabra (injury), though captain Ehsan Haddad is fit after returning from a lengthy spell on the sidelines.",
+        "home_scorers": [
+          "Marko Arnautovic (all-time Austria top scorer, focal point of attack)",
+          "Marcel Sabitzer (dynamic box-to-box midfielder, goal threat from distance)",
+          "Michael Gregoritsch (wide forward, clinical finisher, set-piece threat)"
+        ],
+        "away_scorers": [
+          "Mousa Al Tamari (talisman winger, 7 international goals this season, main attack",
+          "Ali Olwan (leading striker, expected to lead the line per predicted XI)",
+          "Odeh Fakhoury (attacking midfielder, creative force in Jordan's front line)"
+        ],
+        "fetched_at": "2026-06-17T19:33:00.456363+00:00"
+      },
+      "news_adjustment": {
+        "home": 0.97,
+        "away": 0.95,
+        "notes": "Austria are largely at full strength with Florian Grillitsch and Patrick Wimmer listed as doubts to start, while tournament absentee Christoph Baumgartner (thigh) is ruled out of the whole competition; Jordan are without influential striker Yazan Al Naimat (knee, Arab Cup injury) and late call-up Ibrahim Sabra (injury), though captain Ehsan Haddad is fit after returning from a lengthy spell on the sidelines."
+      }
     },
     {
       "id": "GS_J3",
@@ -16702,13 +16987,13 @@
         "away": 1
       },
       "xg_home": 2.126,
-      "xg_away": 0.968,
-      "win_prob": 0.627,
-      "draw_prob": 0.2234,
-      "loss_prob": 0.1496,
-      "model_win": 0.627,
-      "model_draw": 0.2234,
-      "model_loss": 0.1496,
+      "xg_away": 0.939,
+      "win_prob": 0.6338,
+      "draw_prob": 0.2223,
+      "loss_prob": 0.1439,
+      "model_win": 0.6338,
+      "model_draw": 0.2223,
+      "model_loss": 0.1439,
       "market_win": null,
       "market_draw": null,
       "market_loss": null,
@@ -16717,34 +17002,34 @@
       "best_odds_away": 11.5,
       "top_scorelines": [
         {
-          "home": 1,
-          "away": 1,
-          "prob": 0.1054
-        },
-        {
           "home": 2,
           "away": 0,
-          "prob": 0.1025
-        },
-        {
-          "home": 2,
-          "away": 1,
-          "prob": 0.0992
+          "prob": 0.1055
         },
         {
           "home": 1,
+          "away": 1,
+          "prob": 0.1053
+        },
+        {
+          "home": 2,
+          "away": 1,
+          "prob": 0.099
+        },
+        {
+          "home": 1,
           "away": 0,
-          "prob": 0.0843
+          "prob": 0.0871
         },
         {
           "home": 3,
           "away": 0,
-          "prob": 0.0726
+          "prob": 0.0747
         },
         {
           "home": 3,
           "away": 1,
-          "prob": 0.0703
+          "prob": 0.0702
         }
       ],
       "top_score_conditional": {
@@ -16755,87 +17040,87 @@
       },
       "score_matrix": [
         [
-          0.05749,
-          0.03176,
-          0.02123,
-          0.00685,
-          0.00166,
-          0.00032,
-          5e-05,
-          1e-05,
-          0.0
-        ],
-        [
-          0.08431,
-          0.10544,
-          0.04514,
-          0.01456,
-          0.00352,
-          0.00068,
-          0.00011,
-          2e-05,
-          0.0
-        ],
-        [
-          0.10251,
-          0.09918,
-          0.04798,
-          0.01547,
-          0.00374,
-          0.00072,
-          0.00012,
-          2e-05,
-          0.0
-        ],
-        [
-          0.07264,
-          0.07028,
-          0.034,
-          0.01096,
-          0.00265,
-          0.00051,
-          8e-05,
-          1e-05,
-          0.0
-        ],
-        [
-          0.03861,
-          0.03735,
-          0.01807,
-          0.00583,
-          0.00141,
-          0.00027,
+          0.05879,
+          0.03171,
+          0.02057,
+          0.00644,
+          0.00151,
+          0.00028,
           4e-05,
           1e-05,
           0.0
         ],
         [
-          0.01641,
-          0.01588,
-          0.00768,
-          0.00248,
+          0.08711,
+          0.10528,
+          0.04374,
+          0.01369,
+          0.00321,
           0.0006,
-          0.00012,
+          9e-05,
+          1e-05,
+          0.0
+        ],
+        [
+          0.10548,
+          0.09904,
+          0.0465,
+          0.01455,
+          0.00342,
+          0.00064,
+          0.0001,
+          1e-05,
+          0.0
+        ],
+        [
+          0.07475,
+          0.07019,
+          0.03295,
+          0.01031,
+          0.00242,
+          0.00045,
+          7e-05,
+          1e-05,
+          0.0
+        ],
+        [
+          0.03973,
+          0.0373,
+          0.01751,
+          0.00548,
+          0.00129,
+          0.00024,
+          4e-05,
+          1e-05,
+          0.0
+        ],
+        [
+          0.01689,
+          0.01586,
+          0.00745,
+          0.00233,
+          0.00055,
+          0.0001,
           2e-05,
           0.0,
           0.0
         ],
         [
-          0.00582,
-          0.00563,
-          0.00272,
-          0.00088,
-          0.00021,
+          0.00599,
+          0.00562,
+          0.00264,
+          0.00083,
+          0.00019,
           4e-05,
           1e-05,
           0.0,
           0.0
         ],
         [
-          0.00177,
+          0.00182,
           0.00171,
-          0.00083,
-          0.00027,
+          0.0008,
+          0.00025,
           6e-05,
           1e-05,
           0.0,
@@ -16843,9 +17128,9 @@
           0.0
         ],
         [
-          0.00047,
+          0.00048,
           0.00045,
-          0.00022,
+          0.00021,
           7e-05,
           2e-05,
           0.0,
@@ -16961,7 +17246,26 @@
         }
       ],
       "source": "model_only",
-      "blend_weights": null
+      "blend_weights": null,
+      "team_news": {
+        "notes": "Portugal had no confirmed injuries or suspensions, with Roberto Martinez fielding a fully fit squad; rotation saw Leao and Conceicao benched in favour of Pedro Neto and Bernardo Silva. DR Congo had no confirmed injuries or suspensions either, though their pre-tournament concern was squad cohesion rather than fitness, and Bakambu's recent club form at Real Betis was noted as limited.",
+        "home_scorers": [
+          "Cristiano Ronaldo (leading striker, sixth World Cup, penalty taker)",
+          "Bruno Fernandes (attacking midfielder, 29 international goals, set-piece threat)",
+          "João Neves (box-to-box midfielder, set-piece delivery and late runs)"
+        ],
+        "away_scorers": [
+          "Yoane Wissa (main striker, Newcastle forward, counter-attack threat)",
+          "Cédric Bakambu (experienced forward, 70 caps, 21 international goals)",
+          "Chancel Mbemba (centre-back, aerial set-piece threat, over 100 caps)"
+        ],
+        "fetched_at": "2026-06-17T19:33:11.956127+00:00"
+      },
+      "news_adjustment": {
+        "home": 1.0,
+        "away": 0.97,
+        "notes": "Portugal had no confirmed injuries or suspensions, with Roberto Martinez fielding a fully fit squad; rotation saw Leao and Conceicao benched in favour of Pedro Neto and Bernardo Silva. DR Congo had no confirmed injuries or suspensions either, though their pre-tournament concern was squad cohesion rather than fitness, and Bakambu's recent club form at Real Betis was noted as limited."
+      }
     },
     {
       "id": "GS_K2",
@@ -18369,14 +18673,14 @@
         "home": 4,
         "away": 2
       },
-      "xg_home": 1.652,
-      "xg_away": 1.307,
-      "win_prob": 0.4408,
-      "draw_prob": 0.2701,
-      "loss_prob": 0.2891,
-      "model_win": 0.4408,
-      "model_draw": 0.2701,
-      "model_loss": 0.2891,
+      "xg_home": 1.52,
+      "xg_away": 1.333,
+      "win_prob": 0.4023,
+      "draw_prob": 0.2793,
+      "loss_prob": 0.3184,
+      "model_win": 0.4023,
+      "model_draw": 0.2793,
+      "model_loss": 0.3184,
       "market_win": null,
       "market_draw": null,
       "market_loss": null,
@@ -18387,32 +18691,32 @@
         {
           "home": 1,
           "away": 1,
-          "prob": 0.1266
+          "prob": 0.132
         },
         {
           "home": 2,
           "away": 1,
-          "prob": 0.0925
+          "prob": 0.0888
         },
         {
           "home": 1,
           "away": 2,
-          "prob": 0.0732
-        },
-        {
-          "home": 1,
-          "away": 0,
-          "prob": 0.0711
-        },
-        {
-          "home": 2,
-          "away": 0,
-          "prob": 0.0708
+          "prob": 0.0779
         },
         {
           "home": 0,
           "away": 0,
-          "prob": 0.0664
+          "prob": 0.0729
+        },
+        {
+          "home": 1,
+          "away": 0,
+          "prob": 0.0725
+        },
+        {
+          "home": 2,
+          "away": 0,
+          "prob": 0.0666
         }
       ],
       "top_score_conditional": {
@@ -18423,98 +18727,98 @@
       },
       "score_matrix": [
         [
-          0.06642,
-          0.05324,
-          0.04432,
-          0.01931,
-          0.00631,
-          0.00165,
-          0.00036,
-          7e-05,
-          1e-05
-        ],
-        [
-          0.0711,
-          0.12656,
-          0.07321,
-          0.03191,
-          0.01043,
-          0.00273,
-          0.00059,
-          0.00011,
-          2e-05
-        ],
-        [
-          0.07076,
-          0.09251,
-          0.06047,
-          0.02635,
-          0.00861,
-          0.00225,
-          0.00049,
+          0.07287,
+          0.0617,
+          0.05125,
+          0.02278,
+          0.00759,
+          0.00202,
+          0.00045,
           9e-05,
           1e-05
         ],
         [
-          0.03896,
-          0.05094,
-          0.0333,
-          0.01451,
-          0.00474,
-          0.00124,
-          0.00027,
+          0.07246,
+          0.13205,
+          0.07789,
+          0.03461,
+          0.01154,
+          0.00308,
+          0.00068,
+          0.00013,
+          2e-05
+        ],
+        [
+          0.06661,
+          0.0888,
+          0.05919,
+          0.0263,
+          0.00877,
+          0.00234,
+          0.00052,
+          0.0001,
+          2e-05
+        ],
+        [
+          0.03375,
+          0.04499,
+          0.02999,
+          0.01333,
+          0.00444,
+          0.00118,
+          0.00026,
           5e-05,
           1e-05
         ],
         [
-          0.01609,
-          0.02104,
-          0.01375,
-          0.00599,
-          0.00196,
-          0.00051,
-          0.00011,
+          0.01282,
+          0.01709,
+          0.01139,
+          0.00506,
+          0.00169,
+          0.00045,
+          0.0001,
           2e-05,
           0.0
         ],
         [
-          0.00532,
-          0.00695,
-          0.00454,
-          0.00198,
-          0.00065,
-          0.00017,
-          4e-05,
-          1e-05,
-          0.0
-        ],
-        [
-          0.00146,
-          0.00191,
-          0.00125,
-          0.00055,
-          0.00018,
-          5e-05,
-          1e-05,
-          0.0,
-          0.0
-        ],
-        [
-          0.00035,
-          0.00045,
-          0.0003,
-          0.00013,
-          4e-05,
-          1e-05,
-          0.0,
-          0.0,
-          0.0
-        ],
-        [
-          7e-05,
-          9e-05,
-          6e-05,
+          0.0039,
+          0.0052,
+          0.00346,
+          0.00154,
+          0.00051,
+          0.00014,
           3e-05,
+          1e-05,
+          0.0
+        ],
+        [
+          0.00099,
+          0.00132,
+          0.00088,
+          0.00039,
+          0.00013,
+          3e-05,
+          1e-05,
+          0.0,
+          0.0
+        ],
+        [
+          0.00021,
+          0.00029,
+          0.00019,
+          8e-05,
+          3e-05,
+          1e-05,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          4e-05,
+          5e-05,
+          4e-05,
+          2e-05,
           1e-05,
           0.0,
           0.0,
@@ -18629,7 +18933,26 @@
         }
       ],
       "source": "model_only",
-      "blend_weights": null
+      "blend_weights": null,
+      "team_news": {
+        "notes": "England are without Tino Livramento (calf, tournament-ruled out) and have a late doubt over Bukayo Saka's workload management, while Tuchel faces selection dilemmas at centre-back, left wing, and No.10; Croatia arrive with a fully fit squad — Luka Modrić (recovered from fractured cheekbone) and Joško Gvardiol (recovered from fractured shin) both confirmed starters, and neither side carries any suspensions.",
+        "home_scorers": [
+          "Harry Kane (leading striker, on penalties)",
+          "Jude Bellingham (expected No.10 starter, goal threat from midfield)",
+          "Bukayo Saka (first-choice right winger, set-piece and dribble threat)"
+        ],
+        "away_scorers": [
+          "Andrej Kramarić (experienced No.9, 36 international goals)",
+          "Ivan Perišić (left wing, 26 goal involvements last club season)",
+          "Luka Modrić (deep-lying playmaker, set-piece and long-range threat)"
+        ],
+        "fetched_at": "2026-06-17T19:33:22.799316+00:00"
+      },
+      "news_adjustment": {
+        "home": 0.92,
+        "away": 1.02,
+        "notes": "England are without Tino Livramento (calf, tournament-ruled out) and have a late doubt over Bukayo Saka's workload management, while Tuchel faces selection dilemmas at centre-back, left wing, and No.10; Croatia arrive with a fully fit squad — Luka Modrić (recovered from fractured cheekbone) and Joško Gvardiol (recovered from fractured shin) both confirmed starters, and neither side carries any suspensions."
+      }
     },
     {
       "id": "GS_L2",
@@ -18907,7 +19230,21 @@
         }
       ],
       "source": "model_only",
-      "blend_weights": null
+      "blend_weights": null,
+      "team_news": {
+        "notes": "Ghana are severely depleted: Mohammed Kudus (quadriceps, tournament-ending), Mohammed Salisu (ACL, tournament-ending), and Thomas Partey (denied entry to Canada) all miss the opener, with Elisha Owusu expected to deputise in midfield. Panama are near full-strength but key creative midfielder Adalberto Carrasquilla missed both warm-up matches with a muscle injury and has been confirmed as starting on the bench by coach Christiansen.",
+        "home_scorers": [
+          "Jordan Ayew (leading scorer in qualifying, captain, box threat)",
+          "Antoine Semenyo (in-form attacker, primary goal threat with Kudus absent)",
+          "Inaki Williams (pace and physicality up front, set-piece presence)"
+        ],
+        "away_scorers": [
+          "Ismael Diaz (starting forward, key attacking outlet in predicted XI)",
+          "Jose Fajardo (starting striker, dangerous in transition)",
+          "Yoel Barcenas (wide attacker, direct runner, goal threat)"
+        ],
+        "fetched_at": "2026-06-17T21:30:41.757855+00:00"
+      }
     },
     {
       "id": "GS_L3",
