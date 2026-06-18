@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-18T21:00:59.640222Z",
+  "generated_at": "2026-06-18T21:10:43.078513Z",
   "date": "2026-06-18",
   "model_version": "1.1.0",
   "blend_weights": {
@@ -2312,10 +2312,10 @@
       "kickoff_utc": "19:00",
       "venue": "SoFi Stadium",
       "city": "Inglewood",
-      "status": "in_play",
+      "status": "finished",
       "result": {
-        "home": 1,
-        "away": 0
+        "home": 4,
+        "away": 1
       },
       "xg_home": 1.778,
       "xg_away": 0.886,
