@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-18T16:01:43.978191Z",
+  "generated_at": "2026-06-18T16:10:48.110108Z",
   "date": "2026-06-18",
   "model_version": "1.0.0",
   "blend_weights": {
@@ -596,8 +596,11 @@
       "kickoff_utc": "16:00",
       "venue": "Mercedes-Benz Stadium",
       "city": "Atlanta",
-      "status": "scheduled",
-      "result": null,
+      "status": "in_play",
+      "result": {
+        "home": 1,
+        "away": 0
+      },
       "xg_home": 1.551,
       "xg_away": 1.163,
       "win_prob": 0.4627,
