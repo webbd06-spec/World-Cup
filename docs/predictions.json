@@ -18564,7 +18564,7 @@
       "kickoff_utc": "23:00",
       "venue": "BMO Field",
       "city": "Toronto",
-      "status": "finished",
+      "status": "in_play",
       "result": {
         "home": 1,
         "away": 0
