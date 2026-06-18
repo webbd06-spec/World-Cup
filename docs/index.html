@@ -978,6 +978,15 @@ function topScore(pred) {
   return s ? `${s.home}–${s.away}` : '?–?';
 }
 
+function topScoreConditional(pred) {
+  // Most probable scoreline consistent with the predicted result.
+  // W → best home-win score, D → best draw score, L → best away-win score.
+  // Falls back to raw modal if top_score_conditional is absent (old data).
+  const tsc = pred.top_score_conditional;
+  if (tsc && tsc.home != null) return `${tsc.home}–${tsc.away}`;
+  return topScore(pred);
+}
+
 function bestOdds(market) {
   if (!market) return {};
   const best = {};
@@ -1134,14 +1143,16 @@ function card(p) {
   if (isFinished) {
     const actualOutcome = result.home > result.away ? 'home'
                         : result.home === result.away ? 'draw' : 'away';
-    const predOutcome   = topSl
-                        ? (topSl.home > topSl.away ? 'home' : topSl.home === topSl.away ? 'draw' : 'away')
-                        : (wp >= dp && wp >= lp ? 'home' : dp >= lp ? 'draw' : 'away');
+    // Predicted result: drive from W/D/L probs (same as WDL bar), not from topSl
+    const predOutcome   = wp >= dp && wp >= lp ? 'home' : dp >= lp ? 'draw' : 'away';
     const outcomeOk  = actualOutcome === predOutcome;
+    // Exact score: raw modal (top_scorelines[0]) — used for CS P&L and Exact badge
     const exactOk    = topSl && topSl.home === result.home && topSl.away === result.away;
     const predLabel  = predOutcome === 'home' ? p.home
                      : predOutcome === 'draw' ? 'Draw' : p.away;
     const predScore  = topSl ? `${topSl.home}–${topSl.away}` : '?–?';
+    // Conditional score: most likely scoreline given predicted result (headline display)
+    const predScoreCond = topScoreConditional(p);
 
     return `
 <div class="card${isEng?' england':''}" id="c_${id}">
@@ -1173,7 +1184,8 @@ function card(p) {
     </div>
 
     <div class="result-pred-row">
-      Predicted <span class="rp-score">${p.home} ${predScore} ${p.away}</span>
+      Predicted <span class="rp-score">${p.home} ${predScoreCond} ${p.away}</span>
+      ${predScoreCond !== predScore ? `<div style="font-size:11px;color:var(--muted);margin-top:2px">CS bet: ${predScore}</div>` : ''}
       <div class="rp-probs">
         <span class="w">Win ${pct(wp)}</span>
         <span class="d">Draw ${pct(dp)}</span>
@@ -1825,7 +1837,7 @@ function bracketCard(p) {
     <div class="cbody">
       <div class="teams">
         <div class="team home"><span class="flag">${flag(p.home)}</span><span class="tname">${p.home}</span></div>
-        <div class="score-box">${topScore(p)}</div>
+        <div class="score-box">${topScoreConditional(p)}</div>
         <div class="team away"><span class="flag">${flag(p.away)}</span><span class="tname">${p.away}</span></div>
       </div>
       ${venueLine}
@@ -2087,8 +2099,11 @@ function renderAccuracy() {
       ? `${predScore} <span style="color:var(--green)">✓</span>`
       : `<span style="color:var(--muted)">${predScore}</span> <span style="color:var(--red)">✗</span>`;
 
+    const srcBadge = m.source === 'blend'
+      ? '<span style="font-size:10px;color:var(--color-text-tertiary);margin-left:4px">(blend)</span>'
+      : '';
     return `<tr class="${isOk ? 'acc-ok' : 'acc-miss'}">
-      <td>${flag(m.home)} ${m.home} <b>${hr}–${ar}</b> ${flag(m.away)} ${m.away}</td>
+      <td>${flag(m.home)} ${m.home} <b>${hr}–${ar}</b> ${flag(m.away)} ${m.away}${srcBadge}</td>
       <td>${predLbl}</td>
       <td>${actLbl}</td>
       <td style="text-align:center">${tick}</td>
@@ -2138,9 +2153,9 @@ function renderAccuracy() {
       </table>
     </div>
     <p style="font-size:.68rem;color:var(--muted);margin-top:10px">
-      P&amp;L (Result): £10 on the model's predicted home/draw/away outcome for every match, at the best available 1X2 odds (live, falling back to odds at prediction time).<br>
-      P&amp;L (Score): £10 on the model's #1 predicted exact scoreline, at the model's own implied "fair" odds (1 / probability) — correct-score markets aren't available from the odds API, so this has no bookmaker margin and is an upper bound on real returns.<br>
-      Not financial advice.
+      P&amp;L (Result): £10 on the model's predicted home/draw/away outcome, at best available 1X2 odds (live, falling back to odds at prediction time).<br>
+      P&amp;L (Score): £10 on the model's #1 CS pick (raw modal scoreline, e.g. 1-1), at the model's own implied fair odds (1/prob). No bookmaker margin — upper bound on real returns. Match cards show a "conditional score" (best scoreline given the predicted result) as the headline; the CS bet column always uses the raw modal.<br>
+      (blend) = 60% market / 40% model blend active for this prediction. Not financial advice.
     </p>`);
 }
 
@@ -2325,7 +2340,7 @@ function renderModel() {
             <tr><td>Poisson model</td><td>${pill('40%','neutral')}</td><td>xG-derived score matrix with all adjustments applied</td></tr>
           </tbody>
         </table>
-        <p style="margin-top:6px">Bookmaker odds are converted to implied probabilities (removing overround/vig by normalising to 100%), then blended. When no live odds are available, the card shows model-only probabilities (source: <em>model_only</em>).</p>
+        <p style="margin-top:6px">Bookmaker odds are converted to implied probabilities (removing overround/vig by normalising to 100%), then blended. Odds are read from the persisted <em>docs/live_odds_uk.json</em> (refreshed every 4h) so blending runs on every pipeline invocation, not just full-mode runs. When no live odds exist for a match, the card shows model-only probabilities (source: <em>model_only</em>).</p>
       </div>
     </div>`,
 

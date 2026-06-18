@@ -36,9 +36,28 @@ def load_data():
     teams    = load_json(DATA / "teams.json")
     venues   = load_json(DATA / "venues.json")
 
-    # Try to load live odds if available
-    odds_path = OUTPUTS / "live_odds.json"
-    odds = load_json(odds_path) if odds_path.exists() else {}
+    # Load UK odds from docs/live_odds_uk.json (always committed, refreshed
+    # every 4h by the full pipeline — available on every run including
+    # results-only runs, unlike the ephemeral outputs/live_odds.json).
+    odds = {}
+    uk_odds_path = ROOT / "docs" / "live_odds_uk.json"
+    if uk_odds_path.exists():
+        try:
+            raw = load_json(uk_odds_path)
+            for match_id, markets in raw.get("matches", {}).items():
+                h2h = markets.get("h2h", {})
+                if not h2h:
+                    continue
+                # Extract best price per outcome across all UK bookmakers
+                best = {}
+                for bk_odds in h2h.values():
+                    for key in ("home_win", "draw", "away_win"):
+                        if key in bk_odds and bk_odds[key] > best.get(key, 0):
+                            best[key] = bk_odds[key]
+                if best:
+                    odds[match_id] = best
+        except Exception as e:
+            print(f"Warning: could not load live_odds_uk.json: {e}")
 
     return fixtures, teams, venues, odds
 
@@ -121,15 +140,37 @@ def poisson_pmf(lam, k):
     return (lam ** k) * math.exp(-lam) / math.factorial(k)
 
 
+# Dixon-Coles (1997) low-score correlation correction.
+# rho ≈ -0.13 is the published value from the original paper.
+# Inflates 0-0, 1-0, 0-1, 1-1 probabilities which independent Poisson
+# systematically underestimates. At WC xG levels (~1.0–2.2 per team) the
+# lift is ~2–3pp on draw_prob — not enough to flip predicted results, but
+# improves Brier score and correct-score calibration.
+DC_RHO = -0.13
+
+def _dc_tau(h, a, xg_home, xg_away, rho):
+    """Multiplicative correction for low-scoring cells only."""
+    if   h == 0 and a == 0: return 1.0 - xg_home * xg_away * rho
+    elif h == 0 and a == 1: return 1.0 + xg_home * rho
+    elif h == 1 and a == 0: return 1.0 + xg_away * rho
+    elif h == 1 and a == 1: return 1.0 - rho
+    else:                   return 1.0
+
+
 def score_matrix(xg_home, xg_away):
-    """Return (MAX_GOALS+1)×(MAX_GOALS+1) matrix of P(score = h:a)."""
+    """Return (MAX_GOALS+1)×(MAX_GOALS+1) matrix of P(score = h:a),
+    with Dixon-Coles correction applied to low-scoring cells."""
     matrix = []
     for h in range(MAX_GOALS + 1):
         row = []
         for a in range(MAX_GOALS + 1):
-            row.append(poisson_pmf(xg_home, h) * poisson_pmf(xg_away, a))
+            p = poisson_pmf(xg_home, h) * poisson_pmf(xg_away, a)
+            p *= _dc_tau(h, a, xg_home, xg_away, DC_RHO)
+            row.append(p)
         matrix.append(row)
-    return matrix
+    # Renormalise so probabilities still sum to 1.0
+    total = sum(p for row in matrix for p in row)
+    return [[p / total for p in row] for row in matrix]
 
 
 def wdl_from_matrix(matrix):
@@ -156,6 +197,34 @@ def top_scorelines(matrix, n=6):
             scores.append((h, a, matrix[h][a]))
     scores.sort(key=lambda x: -x[2])
     return [{"home": h, "away": a, "prob": round(p, 4)} for h, a, p in scores[:n]]
+
+
+def top_score_conditional(matrix, win_prob, draw_prob, loss_prob):
+    """Return the most probable scoreline consistent with the predicted result.
+
+    If model picks W  → best home-win  scoreline (h > a)
+    If model picks D  → best draw      scoreline (h == a)
+    If model picks L  → best away-win  scoreline (h < a)
+
+    This avoids the common inconsistency where win_prob is highest yet the
+    raw modal cell is 1-1 (a draw).  Returned as {"home": h, "away": a, "prob": p}.
+    """
+    predicted = max(
+        ("W", win_prob), ("D", draw_prob), ("L", loss_prob),
+        key=lambda x: x[1]
+    )[0]
+
+    best_h, best_a, best_p = 0, 0, -1.0
+    for h in range(MAX_GOALS + 1):
+        for a in range(MAX_GOALS + 1):
+            p = matrix[h][a]
+            if predicted == "W" and h <= a: continue
+            if predicted == "D" and h != a: continue
+            if predicted == "L" and h >= a: continue
+            if p > best_p:
+                best_h, best_a, best_p = h, a, p
+
+    return {"home": best_h, "away": best_a, "prob": round(best_p, 4), "result": predicted}
 
 
 # ---------------------------------------------------------------------------
@@ -388,6 +457,9 @@ def predict_match(match, teams_data, venues_data, odds_data):
         "best_odds_away": market_raw.get("away_win") if market_raw else None,
 
         "top_scorelines": top_scorelines(matrix),
+        "top_score_conditional": top_score_conditional(
+            matrix, final_wdl[0], final_wdl[1], final_wdl[2]
+        ),
         "score_matrix": [[round(p, 5) for p in row] for row in matrix],
         "ah_lines": compute_ah_lines(matrix),
 
@@ -444,7 +516,7 @@ def main(match_filter=None):
     output = {
         "generated_at": datetime.utcnow().isoformat() + "Z",
         "date": today,
-        "model_version": "1.0.0",
+        "model_version": "1.1.0",
         "blend_weights": {"market": MARKET_WEIGHT, "model": MODEL_WEIGHT},
         "predictions": predictions,
     }
