@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-18T19:30:54.733382Z",
+  "generated_at": "2026-06-18T19:39:12.062918Z",
   "date": "2026-06-18",
   "model_version": "1.1.0",
   "blend_weights": {
@@ -613,14 +613,14 @@
         "home": 1,
         "away": 1
       },
-      "xg_home": 1.551,
-      "xg_away": 1.163,
-      "win_prob": 0.4472,
-      "draw_prob": 0.2829,
-      "loss_prob": 0.2699,
-      "model_win": 0.4472,
-      "model_draw": 0.2829,
-      "model_loss": 0.2699,
+      "xg_home": 1.582,
+      "xg_away": 0.954,
+      "win_prob": 0.5047,
+      "draw_prob": 0.2832,
+      "loss_prob": 0.2121,
+      "model_win": 0.5047,
+      "model_draw": 0.2832,
+      "model_loss": 0.2121,
       "market_win": null,
       "market_draw": null,
       "market_loss": null,
@@ -631,32 +631,32 @@
         {
           "home": 1,
           "away": 1,
-          "prob": 0.1351
-        },
-        {
-          "home": 2,
-          "away": 1,
-          "prob": 0.0927
+          "prob": 0.135
         },
         {
           "home": 1,
           "away": 0,
-          "prob": 0.0872
+          "prob": 0.1098
+        },
+        {
+          "home": 2,
+          "away": 0,
+          "prob": 0.0991
         },
         {
           "home": 0,
           "away": 0,
-          "prob": 0.0818
+          "prob": 0.0947
         },
         {
           "home": 2,
-          "away": 0,
-          "prob": 0.0797
+          "away": 1,
+          "prob": 0.0945
         },
         {
-          "home": 1,
-          "away": 2,
-          "prob": 0.0695
+          "home": 0,
+          "away": 1,
+          "prob": 0.06
         }
       ],
       "top_score_conditional": {
@@ -667,96 +667,96 @@
       },
       "score_matrix": [
         [
-          0.08177,
-          0.06151,
-          0.04482,
-          0.01738,
-          0.00505,
-          0.00118,
-          0.00023,
-          4e-05,
-          1e-05
+          0.09475,
+          0.06,
+          0.03602,
+          0.01145,
+          0.00273,
+          0.00052,
+          8e-05,
+          1e-05,
+          0.0
         ],
         [
-          0.08721,
-          0.13507,
-          0.06952,
-          0.02696,
-          0.00784,
-          0.00182,
-          0.00035,
-          6e-05,
-          1e-05
+          0.10978,
+          0.13504,
+          0.05698,
+          0.01811,
+          0.00432,
+          0.00082,
+          0.00013,
+          2e-05,
+          0.0
         ],
         [
-          0.0797,
-          0.09271,
-          0.05393,
-          0.02091,
-          0.00608,
-          0.00141,
-          0.00027,
+          0.09912,
+          0.09453,
+          0.04508,
+          0.01433,
+          0.00342,
+          0.00065,
+          0.0001,
+          1e-05,
+          0.0
+        ],
+        [
+          0.05227,
+          0.04985,
+          0.02377,
+          0.00756,
+          0.0018,
+          0.00034,
           5e-05,
-          1e-05
+          1e-05,
+          0.0
         ],
         [
-          0.04121,
-          0.04794,
-          0.02789,
-          0.01081,
-          0.00314,
-          0.00073,
+          0.02067,
+          0.01972,
+          0.0094,
+          0.00299,
+          0.00071,
           0.00014,
           2e-05,
+          0.0,
           0.0
         ],
         [
-          0.01598,
-          0.01859,
-          0.01081,
-          0.00419,
-          0.00122,
-          0.00028,
+          0.00654,
+          0.00624,
+          0.00297,
+          0.00095,
+          0.00023,
+          4e-05,
+          1e-05,
+          0.0,
+          0.0
+        ],
+        [
+          0.00172,
+          0.00164,
+          0.00078,
+          0.00025,
           6e-05,
           1e-05,
-          0.0
-        ],
-        [
-          0.00496,
-          0.00577,
-          0.00336,
-          0.0013,
-          0.00038,
-          9e-05,
-          2e-05,
-          0.0,
-          0.0
-        ],
-        [
-          0.00128,
-          0.00149,
-          0.00087,
-          0.00034,
-          0.0001,
-          2e-05,
           0.0,
           0.0,
           0.0
         ],
         [
-          0.00028,
-          0.00033,
-          0.00019,
+          0.00039,
+          0.00037,
+          0.00018,
+          6e-05,
+          1e-05,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          8e-05,
           7e-05,
-          2e-05,
-          1e-05,
-          0.0,
-          0.0,
-          0.0
-        ],
-        [
-          6e-05,
-          6e-05,
           4e-05,
           1e-05,
           0.0,
@@ -873,7 +873,26 @@
         }
       ],
       "source": "model_only",
-      "blend_weights": null
+      "blend_weights": null,
+      "team_news": {
+        "notes": "Czechia have no injuries or suspensions and Koubek is expected to avoid sweeping changes from the South Korea defeat, sticking with his 3-4-2-1. South Africa are severely depleted: Themba Zwane is banned for 3 matches (red card vs Mexico) and Sphephelo Sithole serves a 1-match suspension, forcing Thalente Mbatha into midfield.",
+        "home_scorers": [
+          "Patrik Schick (leading striker, 25 international goals, first-choice No.9)",
+          "Ladislav Krejci (set-piece threat, headed the goal vs South Korea)",
+          "Tomas Soucek (box-to-box midfielder, aerial presence, set-piece danger)"
+        ],
+        "away_scorers": [
+          "Lyle Foster (focal-point striker, only South Africa player in European top 5 lea",
+          "Oswin Appollis (pacey left-winger, 11 goals + 9 assists for Pirates this season,",
+          "Iqraam Rayners (in-form finisher, 12 league goals for Sundowns, box presence)"
+        ],
+        "fetched_at": "2026-06-18T19:38:31.508055+00:00"
+      },
+      "news_adjustment": {
+        "home": 1.02,
+        "away": 0.82,
+        "notes": "Czechia have no injuries or suspensions and Koubek is expected to avoid sweeping changes from the South Korea defeat, sticking with his 3-4-2-1. South Africa are severely depleted: Themba Zwane is banned for 3 matches (red card vs Mexico) and Sphephelo Sithole serves a 1-match suspension, forcing Thalente Mbatha into midfield."
+      }
     },
     {
       "id": "GS_A4",
@@ -2295,14 +2314,14 @@
       "city": "Inglewood",
       "status": "scheduled",
       "result": null,
-      "xg_home": 1.743,
-      "xg_away": 1.081,
-      "win_prob": 0.5142,
-      "draw_prob": 0.2654,
-      "loss_prob": 0.2203,
-      "model_win": 0.5142,
-      "model_draw": 0.2654,
-      "model_loss": 0.2203,
+      "xg_home": 1.778,
+      "xg_away": 0.886,
+      "win_prob": 0.5701,
+      "draw_prob": 0.2596,
+      "loss_prob": 0.1703,
+      "model_win": 0.5701,
+      "model_draw": 0.2596,
+      "model_loss": 0.1703,
       "market_win": null,
       "market_draw": null,
       "market_loss": null,
@@ -2313,32 +2332,32 @@
         {
           "home": 1,
           "away": 1,
-          "prob": 0.1264
+          "prob": 0.124
+        },
+        {
+          "home": 2,
+          "away": 0,
+          "prob": 0.1101
+        },
+        {
+          "home": 1,
+          "away": 0,
+          "prob": 0.1096
         },
         {
           "home": 2,
           "away": 1,
-          "prob": 0.0975
-        },
-        {
-          "home": 2,
-          "away": 0,
-          "prob": 0.0902
-        },
-        {
-          "home": 1,
-          "away": 0,
-          "prob": 0.0889
+          "prob": 0.0976
         },
         {
           "home": 0,
           "away": 0,
-          "prob": 0.0739
+          "prob": 0.0839
         },
         {
-          "home": 1,
-          "away": 2,
-          "prob": 0.0605
+          "home": 3,
+          "away": 0,
+          "prob": 0.0652
         }
       ],
       "top_score_conditional": {
@@ -2349,99 +2368,99 @@
       },
       "score_matrix": [
         [
-          0.07391,
-          0.04963,
-          0.03468,
-          0.0125,
-          0.00338,
-          0.00073,
-          0.00013,
-          2e-05,
-          0.0
-        ],
-        [
-          0.08895,
-          0.1264,
-          0.06046,
-          0.02178,
-          0.00589,
-          0.00127,
-          0.00023,
-          4e-05,
-          0.0
-        ],
-        [
-          0.0902,
-          0.0975,
-          0.05269,
-          0.01898,
-          0.00513,
-          0.00111,
-          0.0002,
-          3e-05,
-          0.0
-        ],
-        [
-          0.05241,
-          0.05665,
-          0.03062,
-          0.01103,
-          0.00298,
-          0.00064,
-          0.00012,
-          2e-05,
-          0.0
-        ],
-        [
-          0.02284,
-          0.02469,
-          0.01334,
-          0.00481,
-          0.0013,
-          0.00028,
+          0.08393,
+          0.04747,
+          0.02737,
+          0.00809,
+          0.00179,
+          0.00032,
           5e-05,
           1e-05,
           0.0
         ],
         [
-          0.00796,
-          0.00861,
-          0.00465,
+          0.10957,
+          0.12404,
+          0.04865,
+          0.01438,
+          0.00319,
+          0.00056,
+          8e-05,
+          1e-05,
+          0.0
+        ],
+        [
+          0.11008,
+          0.09758,
+          0.04325,
+          0.01278,
+          0.00283,
+          0.0005,
+          7e-05,
+          1e-05,
+          0.0
+        ],
+        [
+          0.06524,
+          0.05783,
+          0.02563,
+          0.00757,
           0.00168,
-          0.00045,
-          0.0001,
+          0.0003,
+          4e-05,
+          1e-05,
+          0.0
+        ],
+        [
+          0.029,
+          0.0257,
+          0.01139,
+          0.00337,
+          0.00075,
+          0.00013,
           2e-05,
           0.0,
           0.0
         ],
         [
-          0.00231,
-          0.0025,
-          0.00135,
-          0.00049,
-          0.00013,
-          3e-05,
+          0.01031,
+          0.00914,
+          0.00405,
+          0.0012,
+          0.00027,
+          5e-05,
           1e-05,
           0.0,
           0.0
         ],
         [
-          0.00058,
-          0.00062,
-          0.00034,
-          0.00012,
-          3e-05,
+          0.00306,
+          0.00271,
+          0.0012,
+          0.00035,
+          8e-05,
           1e-05,
           0.0,
           0.0,
           0.0
         ],
         [
-          0.00013,
-          0.00014,
+          0.00078,
+          0.00069,
+          0.0003,
+          9e-05,
+          2e-05,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.00017,
+          0.00015,
           7e-05,
-          3e-05,
-          1e-05,
+          2e-05,
+          0.0,
           0.0,
           0.0,
           0.0,
@@ -2555,7 +2574,26 @@
         }
       ],
       "source": "model_only",
-      "blend_weights": null
+      "blend_weights": null,
+      "team_news": {
+        "notes": "Switzerland have a clean bill of health and are near full-strength, with Yakin only considering minor attacking rotation (Manzambi potentially in for Vargas/Okafor). Bosnia-Herzegovina are hit by multiple injury concerns: Nidal Celik is ruled out of the entire tournament (replaced by Arjan Malic), captain Edin Dzeko missed the opener with a shoulder injury and remains doubtful, Haris Tabakovic is also ruled out, and Sead Kolasinac faces a late fitness test after limping off against Canada.",
+        "home_scorers": [
+          "Breel Embolo (leading striker, scored penalty vs Qatar, set to start)",
+          "Granit Xhaka (set-piece threat, midfield engine, high-volume shooter)",
+          "Dan Ndoye (dynamic wide attacker, direct runner into box)"
+        ],
+        "away_scorers": [
+          "Ermedin Demirovic (co-striker, key attacking outlet with Dzeko absent/doubtful)",
+          "Jovo Lukic (scored opener vs Canada, partner striker, aerial threat)",
+          "Esmir Bajraktarevic (creative wide midfielder, direct, scored World Cup penalty "
+        ],
+        "fetched_at": "2026-06-18T19:38:44.528828+00:00"
+      },
+      "news_adjustment": {
+        "home": 1.02,
+        "away": 0.82,
+        "notes": "Switzerland have a clean bill of health and are near full-strength, with Yakin only considering minor attacking rotation (Manzambi potentially in for Vargas/Okafor). Bosnia-Herzegovina are hit by multiple injury concerns: Nidal Celik is ruled out of the entire tournament (replaced by Arjan Malic), captain Edin Dzeko missed the opener with a shoulder injury and remains doubtful, Haris Tabakovic is also ruled out, and Sead Kolasinac faces a late fitness test after limping off against Canada."
+      }
     },
     {
       "id": "GS_B4",
@@ -2570,14 +2608,14 @@
       "city": "Vancouver",
       "status": "scheduled",
       "result": null,
-      "xg_home": 1.637,
-      "xg_away": 1.267,
-      "win_prob": 0.6262,
-      "draw_prob": 0.209,
-      "loss_prob": 0.1648,
-      "model_win": 0.4459,
-      "model_draw": 0.2725,
-      "model_loss": 0.2816,
+      "xg_home": 1.506,
+      "xg_away": 1.33,
+      "win_prob": 0.6075,
+      "draw_prob": 0.2122,
+      "loss_prob": 0.1803,
+      "model_win": 0.3994,
+      "model_draw": 0.2804,
+      "model_loss": 0.3202,
       "market_win": 0.7463,
       "market_draw": 0.1667,
       "market_loss": 0.087,
@@ -2588,32 +2626,32 @@
         {
           "home": 1,
           "away": 1,
-          "prob": 0.1284
+          "prob": 0.1328
         },
         {
           "home": 2,
           "away": 1,
-          "prob": 0.093
-        },
-        {
-          "home": 1,
-          "away": 0,
-          "prob": 0.0749
-        },
-        {
-          "home": 2,
-          "away": 0,
-          "prob": 0.0735
+          "prob": 0.0885
         },
         {
           "home": 1,
           "away": 2,
-          "prob": 0.072
+          "prob": 0.0781
         },
         {
           "home": 0,
           "away": 0,
-          "prob": 0.0696
+          "prob": 0.0739
+        },
+        {
+          "home": 1,
+          "away": 0,
+          "prob": 0.073
+        },
+        {
+          "home": 2,
+          "away": 0,
+          "prob": 0.0665
         }
       ],
       "top_score_conditional": {
@@ -2624,97 +2662,97 @@
       },
       "score_matrix": [
         [
-          0.06958,
-          0.05465,
-          0.04398,
-          0.01857,
-          0.00588,
-          0.00149,
-          0.00031,
-          6e-05,
-          1e-05
-        ],
-        [
-          0.07495,
-          0.12845,
-          0.072,
-          0.0304,
-          0.00963,
-          0.00244,
-          0.00052,
-          9e-05,
-          1e-05
-        ],
-        [
-          0.07345,
-          0.09305,
-          0.05894,
-          0.02489,
-          0.00788,
-          0.002,
-          0.00042,
-          8e-05,
-          1e-05
-        ],
-        [
-          0.04008,
-          0.05078,
-          0.03217,
-          0.01358,
-          0.0043,
-          0.00109,
-          0.00023,
-          4e-05,
-          1e-05
-        ],
-        [
-          0.01641,
-          0.02078,
-          0.01317,
-          0.00556,
-          0.00176,
+          0.07391,
+          0.06274,
+          0.05189,
+          0.02301,
+          0.00765,
+          0.00204,
           0.00045,
           9e-05,
+          1e-05
+        ],
+        [
+          0.07304,
+          0.13276,
+          0.07815,
+          0.03466,
+          0.01153,
+          0.00307,
+          0.00068,
+          0.00013,
+          2e-05
+        ],
+        [
+          0.0665,
+          0.08847,
+          0.05885,
+          0.0261,
+          0.00868,
+          0.00231,
+          0.00051,
+          0.0001,
+          2e-05
+        ],
+        [
+          0.03338,
+          0.04441,
+          0.02954,
+          0.0131,
+          0.00436,
+          0.00116,
+          0.00026,
+          5e-05,
+          1e-05
+        ],
+        [
+          0.01257,
+          0.01672,
+          0.01112,
+          0.00493,
+          0.00164,
+          0.00044,
+          0.0001,
           2e-05,
           0.0
         ],
         [
-          0.00537,
-          0.00681,
-          0.00431,
-          0.00182,
-          0.00058,
-          0.00015,
+          0.00379,
+          0.00504,
+          0.00335,
+          0.00149,
+          0.00049,
+          0.00013,
           3e-05,
           1e-05,
           0.0
         ],
         [
-          0.00147,
-          0.00186,
-          0.00118,
-          0.0005,
-          0.00016,
-          4e-05,
-          1e-05,
-          0.0,
-          0.0
-        ],
-        [
-          0.00034,
-          0.00043,
-          0.00028,
+          0.00095,
+          0.00126,
+          0.00084,
+          0.00037,
           0.00012,
-          4e-05,
+          3e-05,
+          1e-05,
+          0.0,
+          0.0
+        ],
+        [
+          0.0002,
+          0.00027,
+          0.00018,
+          8e-05,
+          3e-05,
           1e-05,
           0.0,
           0.0,
           0.0
         ],
         [
-          7e-05,
-          9e-05,
-          6e-05,
+          4e-05,
+          5e-05,
+          3e-05,
           2e-05,
           1e-05,
           0.0,
@@ -2833,6 +2871,25 @@
       "blend_weights": {
         "market": 0.6,
         "model": 0.4
+      },
+      "team_news": {
+        "notes": "Canada captain Alphonso Davies (hamstring) is now declared available but likely to be managed off the bench or used sparingly, while defender Moise Bombito (tibia/leg) is expected to miss out again; striker Cyle Larin is set to replace Tani Oluwaseyi in a rotation hint from Marsch. Qatar came through their opener against Switzerland unscathed with no injuries or suspensions, and Lopetegui is expected to name an unchanged XI, though Almoez Ali is pushing to start over Yusuf Abdurisag up front.",
+        "home_scorers": [
+          "Jonathan David (leading striker, Canada's primary goalscoring threat)",
+          "Cyle Larin (rotation starter/impact forward, scored vs Bosnia from bench)",
+          "Tajon Buchanan (attacking wide player, set-piece and direct threat)"
+        ],
+        "away_scorers": [
+          "Akram Afif (creative attacker/wide forward, key outlet in Lopetegui's 4-3-3)",
+          "Almoez Ali (pushing to start, Qatar's all-time top scorer)",
+          "Yusuf Abdurisag (starting forward from opener, goal threat in behind)"
+        ],
+        "fetched_at": "2026-06-18T19:38:58.058926+00:00"
+      },
+      "news_adjustment": {
+        "home": 0.92,
+        "away": 1.05,
+        "notes": "Canada captain Alphonso Davies (hamstring) is now declared available but likely to be managed off the bench or used sparingly, while defender Moise Bombito (tibia/leg) is expected to miss out again; striker Cyle Larin is set to replace Tani Oluwaseyi in a rotation hint from Marsch. Qatar came through their opener against Switzerland unscathed with no injuries or suspensions, and Lopetegui is expected to name an unchanged XI, though Almoez Ali is pushing to start over Yusuf Abdurisag up front."
       }
     },
     {
@@ -17280,14 +17337,14 @@
         "home": 1,
         "away": 3
       },
-      "xg_home": 1.049,
-      "xg_away": 1.492,
-      "win_prob": 0.2501,
-      "draw_prob": 0.2917,
-      "loss_prob": 0.4582,
-      "model_win": 0.2501,
-      "model_draw": 0.2917,
-      "model_loss": 0.4582,
+      "xg_home": 0.965,
+      "xg_away": 1.522,
+      "win_prob": 0.2238,
+      "draw_prob": 0.29,
+      "loss_prob": 0.4862,
+      "model_win": 0.2238,
+      "model_draw": 0.29,
+      "model_loss": 0.4862,
       "market_win": null,
       "market_draw": null,
       "market_loss": null,
@@ -17298,32 +17355,32 @@
         {
           "home": 1,
           "away": 1,
-          "prob": 0.1393
+          "prob": 0.138
         },
         {
           "home": 0,
           "away": 1,
-          "prob": 0.1015
+          "prob": 0.1107
         },
         {
           "home": 0,
           "away": 0,
-          "prob": 0.0948
-        },
-        {
-          "home": 1,
-          "away": 2,
-          "prob": 0.092
+          "prob": 0.099
         },
         {
           "home": 0,
           "away": 2,
-          "prob": 0.0877
+          "prob": 0.0963
+        },
+        {
+          "home": 1,
+          "away": 2,
+          "prob": 0.0929
         },
         {
           "home": 1,
           "away": 0,
-          "prob": 0.0666
+          "prob": 0.0644
         }
       ],
       "top_score_conditional": {
@@ -17334,86 +17391,86 @@
       },
       "score_matrix": [
         [
-          0.09481,
-          0.10153,
-          0.08772,
-          0.04363,
-          0.01628,
-          0.00486,
-          0.00121,
-          0.00026,
-          5e-05
+          0.09905,
+          0.11069,
+          0.09631,
+          0.04886,
+          0.01859,
+          0.00566,
+          0.00143,
+          0.00031,
+          6e-05
         ],
         [
-          0.0666,
-          0.13933,
-          0.092,
-          0.04576,
-          0.01707,
-          0.0051,
-          0.00127,
-          0.00027,
-          5e-05
+          0.06438,
+          0.13803,
+          0.09295,
+          0.04715,
+          0.01794,
+          0.00546,
+          0.00138,
+          0.0003,
+          6e-05
         ],
         [
-          0.04333,
-          0.06466,
-          0.04825,
-          0.024,
-          0.00895,
-          0.00267,
-          0.00066,
-          0.00014,
+          0.03873,
+          0.05894,
+          0.04485,
+          0.02275,
+          0.00866,
+          0.00263,
+          0.00067,
+          0.00015,
           3e-05
         ],
         [
-          0.01515,
-          0.02261,
-          0.01687,
-          0.00839,
-          0.00313,
-          0.00093,
-          0.00023,
+          0.01246,
+          0.01896,
+          0.01443,
+          0.00732,
+          0.00278,
+          0.00085,
+          0.00021,
           5e-05,
           1e-05
         ],
         [
-          0.00397,
-          0.00593,
-          0.00442,
-          0.0022,
-          0.00082,
-          0.00024,
-          6e-05,
-          1e-05,
-          0.0
-        ],
-        [
-          0.00083,
-          0.00124,
-          0.00093,
-          0.00046,
-          0.00017,
+          0.00301,
+          0.00457,
+          0.00348,
+          0.00177,
+          0.00067,
+          0.0002,
           5e-05,
           1e-05,
+          0.0
+        ],
+        [
+          0.00058,
+          0.00088,
+          0.00067,
+          0.00034,
+          0.00013,
+          4e-05,
+          1e-05,
           0.0,
           0.0
         ],
         [
-          0.00015,
-          0.00022,
-          0.00016,
-          8e-05,
-          3e-05,
+          9e-05,
+          0.00014,
+          0.00011,
+          5e-05,
+          2e-05,
           1e-05,
           0.0,
           0.0,
           0.0
         ],
         [
+          1e-05,
           2e-05,
-          3e-05,
-          2e-05,
+          1e-05,
           1e-05,
           0.0,
           0.0,
@@ -17540,7 +17597,26 @@
         }
       ],
       "source": "model_only",
-      "blend_weights": null
+      "blend_weights": null,
+      "team_news": {
+        "notes": "Uzbekistan reported no injury concerns heading into the match, fielding a full-strength squad led by captain Eldor Shomurodov and Abbosbek Fayzullaev under Fabio Cannavaro's 3-4-2-1 system. Colombia also had no confirmed injuries or suspensions pre-match, presenting a fully fit squad headlined by Luis Díaz, James Rodríguez, and Luis Suárez — Colombia went on to win 3-1 with goals from Díaz, Campaz, and Muñoz.",
+        "home_scorers": [
+          "Eldor Shomurodov (all-time top scorer, 44 international goals, lead striker and ",
+          "Abbosbek Fayzullaev (key creative threat, 4 qualifying goals, set-piece and drib",
+          "Abdukodir Khusanov (Man City centre-back, aerial set-piece threat from corners)"
+        ],
+        "away_scorers": [
+          "Luis Díaz (Bayern Munich winger, explosive pace, primary attacking threat and le",
+          "Jaminton Campaz (dynamic attacker, confirmed goalscorer vs Uzbekistan, rotation ",
+          "Daniel Muñoz (attacking right back, set-piece and box-to-box threat, confirmed g"
+        ],
+        "fetched_at": "2026-06-18T19:39:11.928873+00:00"
+      },
+      "news_adjustment": {
+        "home": 0.92,
+        "away": 1.02,
+        "notes": "Uzbekistan reported no injury concerns heading into the match, fielding a full-strength squad led by captain Eldor Shomurodov and Abbosbek Fayzullaev under Fabio Cannavaro's 3-4-2-1 system. Colombia also had no confirmed injuries or suspensions pre-match, presenting a fully fit squad headlined by Luis Díaz, James Rodríguez, and Luis Suárez — Colombia went on to win 3-1 with goals from Díaz, Campaz, and Muñoz."
+      }
     },
     {
       "id": "GS_K3",

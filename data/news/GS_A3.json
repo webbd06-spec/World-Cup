@@ -1,0 +1,20 @@
+{
+  "fixture_id": "GS_A3",
+  "home": "Czechia",
+  "away": "South Africa",
+  "home_multiplier": 1.02,
+  "away_multiplier": 0.82,
+  "notes": "Czechia have no injuries or suspensions and Koubek is expected to avoid sweeping changes from the South Korea defeat, sticking with his 3-4-2-1. South Africa are severely depleted: Themba Zwane is banned for 3 matches (red card vs Mexico) and Sphephelo Sithole serves a 1-match suspension, forcing Thalente Mbatha into midfield.",
+  "home_scorers": [
+    "Patrik Schick (leading striker, 25 international goals, first-choice No.9)",
+    "Ladislav Krejci (set-piece threat, headed the goal vs South Korea)",
+    "Tomas Soucek (box-to-box midfielder, aerial presence, set-piece danger)"
+  ],
+  "away_scorers": [
+    "Lyle Foster (focal-point striker, only South Africa player in European top 5 lea",
+    "Oswin Appollis (pacey left-winger, 11 goals + 9 assists for Pirates this season,",
+    "Iqraam Rayners (in-form finisher, 12 league goals for Sundowns, box presence)"
+  ],
+  "source": "anthropic_web_search",
+  "fetched_at": "2026-06-18T19:38:31.508055+00:00"
+}

@@ -1,0 +1,20 @@
+{
+  "fixture_id": "GS_B3",
+  "home": "Switzerland",
+  "away": "Bosnia-Herzegovina",
+  "home_multiplier": 1.02,
+  "away_multiplier": 0.82,
+  "notes": "Switzerland have a clean bill of health and are near full-strength, with Yakin only considering minor attacking rotation (Manzambi potentially in for Vargas/Okafor). Bosnia-Herzegovina are hit by multiple injury concerns: Nidal Celik is ruled out of the entire tournament (replaced by Arjan Malic), captain Edin Dzeko missed the opener with a shoulder injury and remains doubtful, Haris Tabakovic is also ruled out, and Sead Kolasinac faces a late fitness test after limping off against Canada.",
+  "home_scorers": [
+    "Breel Embolo (leading striker, scored penalty vs Qatar, set to start)",
+    "Granit Xhaka (set-piece threat, midfield engine, high-volume shooter)",
+    "Dan Ndoye (dynamic wide attacker, direct runner into box)"
+  ],
+  "away_scorers": [
+    "Ermedin Demirovic (co-striker, key attacking outlet with Dzeko absent/doubtful)",
+    "Jovo Lukic (scored opener vs Canada, partner striker, aerial threat)",
+    "Esmir Bajraktarevic (creative wide midfielder, direct, scored World Cup penalty "
+  ],
+  "source": "anthropic_web_search",
+  "fetched_at": "2026-06-18T19:38:44.528828+00:00"
+}

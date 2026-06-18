@@ -1,0 +1,20 @@
+{
+  "fixture_id": "GS_K2",
+  "home": "Uzbekistan",
+  "away": "Colombia",
+  "home_multiplier": 0.92,
+  "away_multiplier": 1.02,
+  "notes": "Uzbekistan reported no injury concerns heading into the match, fielding a full-strength squad led by captain Eldor Shomurodov and Abbosbek Fayzullaev under Fabio Cannavaro's 3-4-2-1 system. Colombia also had no confirmed injuries or suspensions pre-match, presenting a fully fit squad headlined by Luis Díaz, James Rodríguez, and Luis Suárez — Colombia went on to win 3-1 with goals from Díaz, Campaz, and Muñoz.",
+  "home_scorers": [
+    "Eldor Shomurodov (all-time top scorer, 44 international goals, lead striker and ",
+    "Abbosbek Fayzullaev (key creative threat, 4 qualifying goals, set-piece and drib",
+    "Abdukodir Khusanov (Man City centre-back, aerial set-piece threat from corners)"
+  ],
+  "away_scorers": [
+    "Luis Díaz (Bayern Munich winger, explosive pace, primary attacking threat and le",
+    "Jaminton Campaz (dynamic attacker, confirmed goalscorer vs Uzbekistan, rotation ",
+    "Daniel Muñoz (attacking right back, set-piece and box-to-box threat, confirmed g"
+  ],
+  "source": "anthropic_web_search",
+  "fetched_at": "2026-06-18T19:39:11.928873+00:00"
+}
