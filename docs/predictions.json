@@ -1759,10 +1759,7 @@
       "venue": "BMO Field",
       "city": "Toronto",
       "status": "finished",
-      "result": {
-        "home": 1,
-        "away": 1
-      },
+      "result": null,
       "xg_home": 1.318,
       "xg_away": 1.269,
       "win_prob": 0.3628,
