@@ -1,0 +1,20 @@
+{
+  "fixture_id": "GS_C3",
+  "home": "Scotland",
+  "away": "Morocco",
+  "home_multiplier": 0.88,
+  "away_multiplier": 0.82,
+  "notes": "Scotland are without key creative midfielder Billy Gilmour (knee, tournament-ending) and defender Scott McKenna is a fitness doubt after picking up a knock vs Haiti; Ché Adams started vs Haiti but had a pre-tournament thigh injury concern. Morocco are missing winger Abde Ezzalzouli (knee, ruled out before tournament) and cornerstone defender Nayef Aguerd (injury withdrawal), both confirmed squad replacements before their opener vs Brazil; no new injury concerns reported after the Brazil draw.",
+  "home_scorers": [
+    "Scott McTominay (set-piece threat and most likely Scotland scorer against the ru",
+    "John McGinn (scored vs Haiti, aggressive runner into the box, set-piece presence",
+    "Ché Adams (leading striker, started vs Haiti, Scotland's main focal point up fro"
+  ],
+  "away_scorers": [
+    "Ismael Saibari (led the line vs Brazil, scored opener, expected starter again)",
+    "Brahim Diaz (creative Real Madrid playmaker, Morocco's most dangerous attacking ",
+    "Achraf Hakimi (marauding right-back, free-kick and penalty taker, constant attac"
+  ],
+  "source": "anthropic_web_search",
+  "fetched_at": "2026-06-19T17:33:59.197952+00:00"
+}

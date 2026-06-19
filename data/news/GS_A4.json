@@ -1,0 +1,20 @@
+{
+  "fixture_id": "GS_A4",
+  "home": "Mexico",
+  "away": "South Korea",
+  "home_multiplier": 0.92,
+  "away_multiplier": 1.02,
+  "notes": "Mexico were without suspended CB César Montes (red card vs South Africa) forcing Edson Álvarez into a defensive reshuffling, while Julián Quiñones was a slight doubt after being withdrawn through injury in the opener but was expected to start. South Korea came into the match fully fit and with no suspensions — captain Son Heung-min and Lee Kang-in both came through the Czechia win unscathed, with the only selection debate being whether to start impact sub Oh Hyeon-gyu from kick-off.",
+  "home_scorers": [
+    "Raúl Jiménez (leading striker, scored header vs South Africa)",
+    "Julián Quiñones (winger/opener goalscorer, 5 shot attempts vs South Africa)",
+    "Luis Romo (midfielder, set-piece threat and box-to-box presence)"
+  ],
+  "away_scorers": [
+    "Son Heung-min (captain and primary attacking threat, on penalties)",
+    "Lee Kang-in (creative playmaker, direct goal threat)",
+    "Oh Hyeon-gyu (impact striker, match-winner off the bench vs Czechia)"
+  ],
+  "source": "anthropic_web_search",
+  "fetched_at": "2026-06-19T17:33:43.303285+00:00"
+}
