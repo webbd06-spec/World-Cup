@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-19T00:01:05.849775Z",
+  "generated_at": "2026-06-19T00:10:46.674593Z",
   "date": "2026-06-19",
   "model_version": "1.1.0",
   "blend_weights": {
@@ -2609,7 +2609,7 @@
       "kickoff_utc": "22:00",
       "venue": "BC Place",
       "city": "Vancouver",
-      "status": "in_play",
+      "status": "finished",
       "result": {
         "home": 6,
         "away": 0
