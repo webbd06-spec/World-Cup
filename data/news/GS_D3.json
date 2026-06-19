@@ -2,8 +2,8 @@
   "fixture_id": "GS_D3",
   "home": "USA",
   "away": "Australia",
-  "home_multiplier": 0.88,
-  "away_multiplier": 1.05,
+  "home_multiplier": 1.0,
+  "away_multiplier": 1.0,
   "notes": "USA's Christian Pulisic (calf) has been training individually all week after coming off at half-time vs. Paraguay and Pochettino has not confirmed him as a starter — his absence is now the more likely scenario per CBS Sports, with Timothy Weah expected to deputise; no other confirmed USA absences. Australia's Tony Popovic confirmed a full 26-player squad fit and available, with an unchanged XI the clear expectation after their 2-0 win over Turkey, though veteran options Mat Ryan and Jackson…",
   "home_scorers": [
     "Folarin Balogun (leading striker, penalty taker if Pulisic absent, scored brace ",
@@ -15,6 +15,8 @@
     "Nestory Irankunda (goalscorer vs. Turkey, direct wide attacker, set-piece danger",
     "Connor Metcalfe (scored vs. Turkey, energetic midfielder with late runs into the"
   ],
-  "source": "anthropic_web_search",
-  "fetched_at": "2026-06-19T17:34:16.022942+00:00"
+  "source": "lineup_fetch",
+  "fetched_at": "2026-06-19T19:19:27.344900+00:00",
+  "lineup_home_absent": 0,
+  "lineup_away_absent": 0
 }
