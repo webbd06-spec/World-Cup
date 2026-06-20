@@ -43,16 +43,6 @@
       "away_score": 0
     },
     {
-      "id": "GS_B1",
-      "home": "Canada",
-      "away": "Bosnia-Herzegovina",
-      "date": "2026-06-12",
-      "stage": "group",
-      "group": "B",
-      "home_score": 1,
-      "away_score": 1
-    },
-    {
       "id": "GS_B2",
       "home": "Qatar",
       "away": "Switzerland",
