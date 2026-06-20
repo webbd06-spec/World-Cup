@@ -2,10 +2,19 @@
   "fixture_id": "GS_C4",
   "home": "Brazil",
   "away": "Haiti",
-  "home_multiplier": 1.0,
-  "away_multiplier": 1.0,
-  "lineup_home_absent": 0,
-  "lineup_away_absent": 0,
-  "source": "lineup_fetch",
-  "fetched_at": "2026-06-19T22:39:06.117247+00:00"
+  "home_multiplier": 0.92,
+  "away_multiplier": 0.88,
+  "notes": "Brazil were without Neymar (confirmed absent, Grade 2 calf strain) and Ancelotti rotated Casemiro/Fabinho and started Matheus Cunha over Igor Thiago; Raphinha suffered a hamstring injury during the match and is now a doubt going forward. Haiti lost pre-tournament squad member Leverton Pierre (muscle problem, tournament-ending), and had no other confirmed injury absences, though they were eliminated after a second straight defeat.",
+  "home_scorers": [
+    "Matheus Cunha (leading striker/rotation starter, scored twice vs Haiti)",
+    "Vinicius Jr (star winger, scored in stoppage time, involved in all 3 goals)",
+    "Raphinha (attacking threat from wide, started before going off injured)"
+  ],
+  "away_scorers": [
+    "Wilson Isidor (Sunderland attacker, 2 goals in 5 caps, main offensive threat)",
+    "Frantzdy Pierro (forward, part of Haiti's limited attacking options)",
+    "Jean-Ricner Bellegarde (creative midfielder, set-piece and transition threat)"
+  ],
+  "source": "anthropic_web_search",
+  "fetched_at": "2026-06-20T16:07:32.504325+00:00"
 }

@@ -1,0 +1,20 @@
+{
+  "fixture_id": "GS_D4",
+  "home": "Turkey",
+  "away": "Paraguay",
+  "home_multiplier": 0.92,
+  "away_multiplier": 0.88,
+  "notes": "Turkey (home) had Kenan Yildiz nursing a calf strain and only fit for cameo duty, with rotation hints from Montella at striker (Akturkoglu vs Deniz Gul) and doubts over Caballero and Ramon Sosa for Paraguay. Paraguay entered with two confirmed doubts — Gustavo Caballero (muscular issue) and Ramon Sosa (ankle problem) — reducing their attacking width, while Miguel Almiron was available to start but later received a red card in-game.",
+  "home_scorers": [
+    "Arda Guler (creative fulcrum, best chance creator, operates between lines)",
+    "Hakan Calhanoglu (captain, set-piece specialist, penalties)",
+    "Kerem Akturkoglu (lone striker or false nine, leading attacking outlet)"
+  ],
+  "away_scorers": [
+    "Antonio Sanabria (lone striker, top scorer in qualifying with 4 goals)",
+    "Julio Enciso (key creator and direct goal threat, counter-attack weapon)",
+    "Matias Galarza (supporting midfielder, scored the winner vs Turkey)"
+  ],
+  "source": "anthropic_web_search",
+  "fetched_at": "2026-06-20T16:07:52.661484+00:00"
+}

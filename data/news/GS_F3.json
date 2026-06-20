@@ -1,0 +1,20 @@
+{
+  "fixture_id": "GS_F3",
+  "home": "Netherlands",
+  "away": "Sweden",
+  "home_multiplier": 0.82,
+  "away_multiplier": 1.03,
+  "notes": "Netherlands are without defender Quinten Timber (concussion, ruled out) and Jurrien Timber (groin, tournament-absent), while key midfielder Frenkie de Jong is a late fitness doubt with an abdominal complaint and Memphis Depay is managing a thigh issue; Sweden have no confirmed injuries or suspensions and are expected to name an unchanged XI from their 5-1 demolition of Tunisia, with Isak and Gyökeres both fit and firing.",
+  "home_scorers": [
+    "Cody Gakpo (creative attacker, primary goal threat from left channel)",
+    "Virgil van Dijk (set-piece aerial threat, scored vs Japan)",
+    "Crysencio Summerville (direct winger, scored vs Japan, likely starter)"
+  ],
+  "away_scorers": [
+    "Viktor Gyökeres (leading striker, scored vs Tunisia, Europe's top club scorer)",
+    "Alexander Isak (co-striker, goal and assist vs Tunisia, fully fit)",
+    "Yasin Ayari (attacking midfielder, brace vs Tunisia, set-piece and driving threa"
+  ],
+  "source": "anthropic_web_search",
+  "fetched_at": "2026-06-20T16:08:22.723915+00:00"
+}
