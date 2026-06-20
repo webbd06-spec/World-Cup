@@ -2,8 +2,8 @@
   "fixture_id": "GS_E3",
   "home": "Germany",
   "away": "Ivory Coast",
-  "home_multiplier": 1.02,
-  "away_multiplier": 0.92,
+  "home_multiplier": 1.0,
+  "away_multiplier": 1.0,
   "notes": "Germany report no confirmed injuries or suspensions going into this match, though Nagelsmann is hinting at a possible rotation with Deniz Undav pushing to start in place of Leroy Sané. Ivory Coast's key doubt is centre-back Evan Ndicka, who missed the opener vs Ecuador with a hamstring problem and remains doubtful, while defender Clément Akpa also withdrew from the squad before the tournament and was replaced by Christopher Operi.",
   "home_scorers": [
     "Kai Havertz (leading striker, early Golden Boot contender)",
@@ -15,6 +15,8 @@
     "Yan Diomande (in-form RB Leipzig forward, focal point of attack)",
     "Yoan-Ange Bonny (Inter Milan forward, fresh option to lead the line)"
   ],
-  "source": "anthropic_web_search",
-  "fetched_at": "2026-06-20T16:08:06.314578+00:00"
+  "source": "lineup_fetch",
+  "fetched_at": "2026-06-20T18:57:40.779318+00:00",
+  "lineup_home_absent": 0,
+  "lineup_away_absent": 0
 }
