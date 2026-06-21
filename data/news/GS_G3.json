@@ -1,0 +1,20 @@
+{
+  "fixture_id": "GS_G3",
+  "home": "Belgium",
+  "away": "Iran",
+  "home_multiplier": 0.95,
+  "away_multiplier": 0.97,
+  "notes": "Belgium are missing defender Zeno Debast (thigh injury) and Rudi Garcia faces a rotation call between Lukaku and Openda up front after Lukaku's impactful sub appearance vs Egypt; Iran captain Alireza Jahanbakhsh remains out (muscle injury) and Saman Ghoddos is a doubt after going off with an ankle issue vs New Zealand, though no suspensions affect either side.",
+  "home_scorers": [
+    "Romelu Lukaku (leading striker / likely starter, penalty taker, immediate impact",
+    "Kevin De Bruyne (creative engine, long-range threat, set-piece deliveries)",
+    "Leandro Trossard (dynamic wide forward, direct runner, goal threat from left cha"
+  ],
+  "away_scorers": [
+    "Mehdi Taremi (captain, star striker, 60 international goals, focal point of atta",
+    "Shahriar Moghanlou (striking partner to Taremi, direct threat in transition)",
+    "Mehdi Ghayedi (attacking midfielder, counter-attacking runner, goal threat from "
+  ],
+  "source": "anthropic_web_search",
+  "fetched_at": "2026-06-21T16:57:48.904818+00:00"
+}

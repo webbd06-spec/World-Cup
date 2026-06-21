@@ -1,0 +1,20 @@
+{
+  "fixture_id": "GS_H4",
+  "home": "Uruguay",
+  "away": "Cape Verde",
+  "home_multiplier": 0.82,
+  "away_multiplier": 1.02,
+  "notes": "Uruguay are without two confirmed calf-injury absentees — Ronald Araujo (CB) and Giorgian De Arrascaeta (creative midfielder) — while Darwin Nunez is a rotation doubt after being hooked at half-time vs Saudi Arabia; Cape Verde have no injuries or suspensions and Bubista is expected to name an unchanged XI after their heroic 0-0 draw with Spain.",
+  "home_scorers": [
+    "Darwin Nunez (leading striker, likely starter despite poor MD1 performance)",
+    "Federico Valverde (midfield engine, set-piece threat with De Arrascaeta absent)",
+    "Maxi Araujo (impact sub / late goal threat, scored the equaliser vs Saudi Arabia"
+  ],
+  "away_scorers": [
+    "Dailon Livramento (leading striker, 4 qualifying goals, on penalties)",
+    "Ryan Mendes (experienced winger, penalty-taking threat)",
+    "Jamiro Monteiro (set-piece and free-kick taker, creative hub in midfield)"
+  ],
+  "source": "anthropic_web_search",
+  "fetched_at": "2026-06-21T16:58:11.135521+00:00"
+}

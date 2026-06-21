@@ -1,0 +1,20 @@
+{
+  "fixture_id": "GS_F4",
+  "home": "Tunisia",
+  "away": "Japan",
+  "home_multiplier": 0.88,
+  "away_multiplier": 0.87,
+  "notes": "Tunisia (home) had no injury absences but faced massive instability — manager Sabri Lamouchi was sacked after a 5-1 loss to Sweden and replaced by Hervé Renard with only four days to prepare, prompting a full formation reset and goalkeeper change (Chamakh dropped for Dahmen); Japan (away) were without tournament-ruled-out captain Wataru Endo (foot injury/retirement), pre-tournament absentee Kaoru Mitoma (hamstring, not in squad), and in-tournament injury victim Takefusa Kubo (knee vs…",
+  "home_scorers": [
+    "Hannibal Mejbri (Tunisia's primary creative outlet and best chance of a goal, pe",
+    "Omar Rekik (set-piece threat — scored a header vs Sweden, rare bright spot defen",
+    "Elias Saad (leading striker in predicted 4-2-3-1, lone forward role)"
+  ],
+  "away_scorers": [
+    "Ayase Ueda (starting central striker, consistent scorer, leading FanDuel odds +1",
+    "Daichi Kamada (attacking midfielder, scored dramatic 88th-minute equaliser vs Ne",
+    "Ritsu Doan (pushed into attack to cover Kubo absence, wing threat, ~+210)"
+  ],
+  "source": "anthropic_web_search",
+  "fetched_at": "2026-06-21T16:57:37.888700+00:00"
+}

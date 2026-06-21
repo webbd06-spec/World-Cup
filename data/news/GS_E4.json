@@ -2,10 +2,19 @@
   "fixture_id": "GS_E4",
   "home": "Ecuador",
   "away": "Curacao",
-  "home_multiplier": 1.0,
-  "away_multiplier": 1.0,
-  "lineup_home_absent": 0,
-  "lineup_away_absent": 0,
-  "source": "lineup_fetch",
-  "fetched_at": "2026-06-20T22:52:25.874914+00:00"
+  "home_multiplier": 0.97,
+  "away_multiplier": 1.02,
+  "notes": "Ecuador had no confirmed injuries but Pervis Estupiñán was a surprise omission vs Ivory Coast (expected to return) and Kendry Páez carried a knock concern; Beccacece hinted at a formation shift from 3-4-3 to 4-3-3 with Nilson Angulo potentially starting over Alan Minda. Curaçao had a fully fit squad with no injuries or suspensions after the 7-1 Germany loss, though Sontje Hansen was doubted to start and Dick Advocaat made minimal rotation hints beyond a possible Hansen-for-Antonisse swap.",
+  "home_scorers": [
+    "Enner Valencia (all-time top scorer, 49 goals, penalty taker, focal striker)",
+    "Gonzalo Plata (wide attacker, direct runner, set-piece threat)",
+    "Moisés Caicedo (midfield engine, set-piece specialist, long-range threat)"
+  ],
+  "away_scorers": [
+    "Leandro Bacuna (captain, 16 international goals, penalty taker, set-piece delive",
+    "Juninho Bacuna (15 international goals, central driving force, penalty option)",
+    "Livano Comenencia (scored Curaçao's only World Cup goal vs Germany, attacking mi"
+  ],
+  "source": "anthropic_web_search",
+  "fetched_at": "2026-06-21T16:57:22.004286+00:00"
 }

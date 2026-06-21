@@ -1,0 +1,20 @@
+{
+  "fixture_id": "GS_H3",
+  "home": "Spain",
+  "away": "Saudi Arabia",
+  "home_multiplier": 0.97,
+  "away_multiplier": 1.02,
+  "notes": "Spain are without pre-tournament absentee Fermín López (fractured metatarsal) and Victor Munoz is a doubt with a hamstring problem; Lamine Yamal and Nico Williams were only used as substitutes in MD1 but are expected to start here following De la Fuente's rotation reset. Saudi Arabia have no injury or suspension concerns and coach Georgios Donis is tipped to field an unchanged XI from the organized 1-1 draw with Uruguay.",
+  "home_scorers": [
+    "Lamine Yamal (wide attacker, expected starter after MD1 rotation, direct dribbli",
+    "Mikel Oyarzabal (centre-forward/striker, leading Spain's attacking line)",
+    "Mikel Merino (set-piece threat, dangerous from corners and free-kicks)"
+  ],
+  "away_scorers": [
+    "Salem Al-Dawsari (captain and primary creative threat, joint-highest WC scorer i",
+    "Firas Al-Buraikan (centre-forward, main striker, movement in behind)",
+    "Musab Al-Juwayr (attacking midfielder, pulls strings centrally, capable of late "
+  ],
+  "source": "anthropic_web_search",
+  "fetched_at": "2026-06-21T16:58:00.331892+00:00"
+}
