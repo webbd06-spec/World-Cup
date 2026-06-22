@@ -1,0 +1,20 @@
+{
+  "fixture_id": "GS_J3",
+  "home": "Argentina",
+  "away": "Austria",
+  "home_multiplier": 0.97,
+  "away_multiplier": 0.93,
+  "notes": "Argentina are without Gonzalo Montiel (hamstring), with Nahuel Molina stepping in at right back; no suspensions confirmed. Austria are missing tournament absentee Christoph Baumgartner (thigh), while Stefan Posch (broken jaw) cleared a late fitness test and will be available but may not start, and David Alaba is flagged with muscle fatigue.",
+  "home_scorers": [
+    "Lionel Messi (all-time WC record-chaser, penalties, free kicks)",
+    "Lautaro Martínez (leading striker, started vs Algeria)",
+    "Julián Álvarez (rotation threat, pushing for start after Lautaro's quiet opener)"
+  ],
+  "away_scorers": [
+    "Marcel Sabitzer (set-piece threat, key creative force)",
+    "Romano Schmid (goal vs Jordan, dynamic wide attacker)",
+    "Marko Arnautović (impact sub, scored penalty vs Jordan, veteran finisher)"
+  ],
+  "source": "anthropic_web_search",
+  "fetched_at": "2026-06-22T21:25:08.778029+00:00"
+}

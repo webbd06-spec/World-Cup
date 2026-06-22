@@ -2,10 +2,19 @@
   "fixture_id": "GS_G4",
   "home": "New Zealand",
   "away": "Egypt",
-  "home_multiplier": 1.0,
-  "away_multiplier": 1.0,
-  "lineup_home_absent": 0,
-  "lineup_away_absent": 0,
-  "source": "lineup_fetch",
-  "fetched_at": "2026-06-21T23:54:45.327654+00:00"
+  "home_multiplier": 0.92,
+  "away_multiplier": 1.02,
+  "notes": "New Zealand entered with no in-tournament injuries but were without pre-squad Matthew Garbett (hamstring, replaced by Logan Rogerson), thinning their creative depth; Egypt had a fully fit squad with no new injury concerns from their Belgium draw, though Salah's role (scorer vs. deeper creator) and Marmoush's poor finishing form were flagged as tactical uncertainties.",
+  "home_scorers": [
+    "Chris Wood (captain and lone striker, 45 international goals, focal point of all",
+    "Elijah Just (double-scorer vs Iran, set-piece and second-ball threat)",
+    "Finn Surman (attacking threat from deep, scored in the actual match)"
+  ],
+  "away_scorers": [
+    "Mohamed Salah (talisman, scorer and creator, chasing national goal record)",
+    "Omar Marmoush (second striker, flagged for wayward finishing but high-volume att",
+    "Emam Ashour (goalscorer vs Belgium, direct runner and set-piece presence)"
+  ],
+  "source": "anthropic_web_search",
+  "fetched_at": "2026-06-22T21:24:41.265508+00:00"
 }

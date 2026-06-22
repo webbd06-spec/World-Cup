@@ -1,0 +1,20 @@
+{
+  "fixture_id": "GS_I3",
+  "home": "France",
+  "away": "Iraq",
+  "home_multiplier": 1.0,
+  "away_multiplier": 0.92,
+  "notes": "France are close to full strength — Theo Hernandez and Tchouameni are rested (rotation), Saliba plays through pain, and Malo Gusto's ankle concern is confirmed minor; no suspensions. Iraq have no suspensions but carry fitness doubts: Ali Jasim is a game-time decision (neck), Mohanad Ali Al-Shammari is doubtful after a training injury, and goalkeeper Jalal Hassan missed training for undisclosed non-injury reasons.",
+  "home_scorers": [
+    "Kylian Mbappe (leading striker, brace vs Senegal, penalty taker)",
+    "Ousmane Dembele (starting attacker, set-piece threat, high-volume dribbler)",
+    "Michael Olise (creative hub, central role, assisted goal vs Senegal)"
+  ],
+  "away_scorers": [
+    "Aymen Hussein (Iraq's all-time leading active scorer with 33 international goals",
+    "Ali Al-Hamadi (Premier League-experienced striker, dangerous in transition)",
+    "Zidane Iqbal (pushing for start after cameo vs Norway, dynamic midfielder)"
+  ],
+  "source": "anthropic_web_search",
+  "fetched_at": "2026-06-22T21:24:53.844675+00:00"
+}
