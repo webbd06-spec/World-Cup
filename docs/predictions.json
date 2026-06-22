@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-22T01:20:43.550230Z",
+  "generated_at": "2026-06-22T01:30:55.227785Z",
   "date": "2026-06-22",
   "model_version": "1.1.0",
   "blend_weights": {
@@ -1759,10 +1759,7 @@
       "venue": "BMO Field",
       "city": "Toronto",
       "status": "finished",
-      "result": {
-        "home": 1,
-        "away": 1
-      },
+      "result": null,
       "xg_home": 1.318,
       "xg_away": 1.269,
       "win_prob": 0.3628,
@@ -11263,7 +11260,7 @@
       "city": "Vancouver",
       "status": "in_play",
       "result": {
-        "home": 0,
+        "home": 1,
         "away": 0
       },
       "xg_home": 1.188,
