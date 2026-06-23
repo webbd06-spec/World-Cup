@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-23T18:50:48.837889Z",
+  "generated_at": "2026-06-23T19:02:32.159204Z",
   "date": "2026-06-23",
   "model_version": "1.1.0",
   "blend_weights": {
@@ -17905,7 +17905,7 @@
       "city": "Houston",
       "status": "in_play",
       "result": {
-        "home": 4,
+        "home": 5,
         "away": 0
       },
       "xg_home": 1.974,
