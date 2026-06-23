@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-23T05:01:01.925059Z",
+  "generated_at": "2026-06-23T05:10:43.931540Z",
   "date": "2026-06-23",
   "model_version": "1.1.0",
   "blend_weights": {
@@ -16475,7 +16475,7 @@
       "kickoff_utc": "03:00",
       "venue": "Levi's Stadium",
       "city": "Santa Clara",
-      "status": "in_play",
+      "status": "finished",
       "result": {
         "home": 1,
         "away": 2
