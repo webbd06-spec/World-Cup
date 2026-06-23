@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-23T00:10:45.467602Z",
+  "generated_at": "2026-06-23T00:20:41.750605Z",
   "date": "2026-06-23",
   "model_version": "1.1.0",
   "blend_weights": {
@@ -14449,7 +14449,7 @@
       "city": "Philadelphia",
       "status": "in_play",
       "result": {
-        "home": 1,
+        "home": 2,
         "away": 0
       },
       "xg_home": 2.389,
