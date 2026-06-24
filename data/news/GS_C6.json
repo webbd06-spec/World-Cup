@@ -2,8 +2,8 @@
   "fixture_id": "GS_C6",
   "home": "Scotland",
   "away": "Brazil",
-  "home_multiplier": 0.88,
-  "away_multiplier": 0.82,
+  "home_multiplier": 1.0,
+  "away_multiplier": 1.0,
   "notes": "Scotland are without pre-tournament absentee Billy Gilmour (knee), with Kieran Tierney back in training after a scare vs Morocco and Aaron Hickey remaining a doubt; Lawrence Shankland is expected to start from the bench per Clarke's defensive setup. Brazil are without the injured Raphinha (hamstring, confirmed out), plus pre-tournament absences Rodrygo (ACL), Estêvão and Militão; Neymar is available after missing the first two games but Ancelotti has been coy on whether he starts.",
   "home_scorers": [
     "John McGinn (only scorer so far this tournament, set-piece threat)",
@@ -15,6 +15,8 @@
     "Vinícius Júnior (leading attacking threat, dribbler and finisher)",
     "Neymar (returning superstar, on penalties if selected)"
   ],
-  "source": "anthropic_web_search",
-  "fetched_at": "2026-06-24T17:35:03.599319+00:00"
+  "source": "lineup_fetch",
+  "fetched_at": "2026-06-24T20:22:29.665557+00:00",
+  "lineup_home_absent": 0,
+  "lineup_away_absent": 0
 }
