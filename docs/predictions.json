@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-06-23T23:50:42.431734Z",
-  "date": "2026-06-23",
+  "generated_at": "2026-06-24T00:01:08.790948Z",
+  "date": "2026-06-24",
   "model_version": "1.1.0",
   "blend_weights": {
     "market": 0.6,
@@ -19882,7 +19882,7 @@
       "kickoff_utc": "23:00",
       "venue": "BMO Field",
       "city": "Toronto",
-      "status": "live",
+      "status": "in_play",
       "result": {
         "home": 0,
         "away": 0
@@ -20887,7 +20887,7 @@
     {
       "id": "R32_3",
       "stage": "round_of_32",
-      "home": null,
+      "home": "Germany",
       "away": null,
       "date": "2026-06-29",
       "venue": "TBC",
@@ -20955,7 +20955,7 @@
     {
       "id": "R32_7",
       "stage": "round_of_32",
-      "home": null,
+      "home": "Mexico",
       "away": null,
       "date": "2026-07-01",
       "venue": "TBC",
@@ -21006,7 +21006,7 @@
     {
       "id": "R32_10",
       "stage": "round_of_32",
-      "home": null,
+      "home": "USA",
       "away": null,
       "date": "2026-07-02",
       "venue": "TBC",
