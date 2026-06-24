@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-24T20:01:06.500457Z",
+  "generated_at": "2026-06-24T20:10:57.237609Z",
   "date": "2026-06-24",
   "model_version": "1.1.0",
   "blend_weights": {
@@ -2922,7 +2922,7 @@
       "city": "Vancouver",
       "status": "in_play",
       "result": {
-        "home": 0,
+        "home": 1,
         "away": 0
       },
       "xg_home": 1.68,
