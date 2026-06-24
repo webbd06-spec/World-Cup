@@ -1,0 +1,20 @@
+{
+  "fixture_id": "GS_C5",
+  "home": "Morocco",
+  "away": "Haiti",
+  "home_multiplier": 0.93,
+  "away_multiplier": 0.97,
+  "notes": "Morocco are without pre-tournament absentees Nayef Aguerd (groin/pubic fracture) and Abde Ezzalzouli (knee injury), both formally replaced in the squad; Ouahbi is expected to name an unchanged, fully available XI for this match. Haiti's only confirmed absence is midfielder Leverton Pierre, ruled out for the entire tournament with injury and replaced by Garven Metusala; no other suspensions or fitness concerns are reported for Les Grenadiers, and Duckens Nazon is listed as a doubt.",
+  "home_scorers": [
+    "Ismael Saibari (leading striker, scored in both group games including fastest WC",
+    "Brahim Diaz (creative attacking midfielder, key chance creator)",
+    "Bilal El Khannouss (attacking midfielder, set-piece threat and direct runner)"
+  ],
+  "away_scorers": [
+    "Wilson Isidor (main striker, pace and movement on the break)",
+    "Jean-Ricner Bellegarde (midfield dynamo, standout performer, direct shooting run",
+    "Ruben Providence (wide attacker, flair and one-on-one ability)"
+  ],
+  "source": "anthropic_web_search",
+  "fetched_at": "2026-06-24T17:34:51.153862+00:00"
+}

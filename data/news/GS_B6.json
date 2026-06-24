@@ -1,0 +1,20 @@
+{
+  "fixture_id": "GS_B6",
+  "home": "Bosnia-Herzegovina",
+  "away": "Qatar",
+  "home_multiplier": 0.92,
+  "away_multiplier": 0.82,
+  "notes": "Bosnia lose CB Tarik Muharemovic (suspended, red card vs Switzerland) and have Nidal Celik sidelined through injury, while Barbarez is expected to bring in Hadzikadunic at centre-back; Qatar are severely depleted with both Assim Madibo and Homam El Amin suspended after red cards vs Canada, leaving Lopetegui short of first-team quality in midfield, with Sultan Al Brake and Ahmed Fathy expected to deputise and Almoez Ali potentially replacing the misfiring Yusuf Abdurisag.",
+  "home_scorers": [
+    "Edin Dzeko (veteran captain and leading striker, aerial set-piece threat)",
+    "Ermedin Demirovic (second striker, clinical finisher in the box)",
+    "Kerim Alajbegovic (set-piece taker, free kicks and corners)"
+  ],
+  "away_scorers": [
+    "Akram Afif (talisman winger, Qatar's creative focal point and set-piece threat)",
+    "Almoez Ali (record goalscorer, likely to start after Abdurisag's poor form)",
+    "Edmilson Junior (attacking midfielder, direct runner and goalscoring threat)"
+  ],
+  "source": "anthropic_web_search",
+  "fetched_at": "2026-06-24T17:34:38.613075+00:00"
+}

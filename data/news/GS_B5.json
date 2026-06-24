@@ -1,0 +1,20 @@
+{
+  "fixture_id": "GS_B5",
+  "home": "Switzerland",
+  "away": "Canada",
+  "home_multiplier": 1.0,
+  "away_multiplier": 0.88,
+  "notes": "Switzerland are near full strength with only Miro Muheim carrying a minor injury concern and Yakin hinting at a recall for Ruben Vargas; Canada are significantly weakened by the tournament-ending broken leg suffered by key midfielder Ismael Kone, while Alphonso Davies — an unused substitute vs. Qatar — remains a doubt to start and may only slot in depending on fitness.",
+  "home_scorers": [
+    "Breel Embolo (leading striker, focal point of Swiss attack, already scored at th",
+    "Granit Xhaka (captain and set-piece threat, 17 international goals in 146 caps)",
+    "Ruben Vargas (rotation recall hint from Yakin, scored vs. Bosnia off the bench)"
+  ],
+  "away_scorers": [
+    "Jonathan David (hat-trick vs. Qatar, tournament's standout attacker, on penaltie",
+    "Cyle Larin (scored in consecutive World Cup matches, physical striker alongside ",
+    "Nathan Saliba (Kone's direct replacement in midfield, scored vs. Qatar, box-to-b"
+  ],
+  "source": "anthropic_web_search",
+  "fetched_at": "2026-06-24T17:34:25.422106+00:00"
+}

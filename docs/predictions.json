@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-24T17:30:56.913958Z",
+  "generated_at": "2026-06-24T17:35:17.591570Z",
   "date": "2026-06-24",
   "model_version": "1.1.0",
   "blend_weights": {
@@ -2923,13 +2923,13 @@
       "status": "scheduled",
       "result": null,
       "xg_home": 1.68,
-      "xg_away": 1.28,
-      "win_prob": 0.4141,
-      "draw_prob": 0.2996,
-      "loss_prob": 0.2863,
-      "model_win": 0.4536,
-      "model_draw": 0.2686,
-      "model_loss": 0.2778,
+      "xg_away": 1.126,
+      "win_prob": 0.4279,
+      "draw_prob": 0.3007,
+      "loss_prob": 0.2714,
+      "model_win": 0.4881,
+      "model_draw": 0.2714,
+      "model_loss": 0.2404,
       "market_win": 0.3878,
       "market_draw": 0.3202,
       "market_loss": 0.292,
@@ -2940,32 +2940,32 @@
         {
           "home": 1,
           "away": 1,
-          "prob": 0.1259
+          "prob": 0.1292
         },
         {
           "home": 2,
           "away": 1,
-          "prob": 0.0936
+          "prob": 0.0961
+        },
+        {
+          "home": 1,
+          "away": 0,
+          "prob": 0.0867
         },
         {
           "home": 2,
           "away": 0,
-          "prob": 0.0731
-        },
-        {
-          "home": 1,
-          "away": 0,
-          "prob": 0.0726
-        },
-        {
-          "home": 1,
-          "away": 2,
-          "prob": 0.0713
+          "prob": 0.0853
         },
         {
           "home": 0,
           "away": 0,
-          "prob": 0.0663
+          "prob": 0.0753
+        },
+        {
+          "home": 1,
+          "away": 2,
+          "prob": 0.0644
         }
       ],
       "top_score_conditional": {
@@ -2976,98 +2976,98 @@
       },
       "score_matrix": [
         [
-          0.06631,
-          0.05185,
-          0.04246,
-          0.01811,
-          0.0058,
-          0.00148,
-          0.00032,
-          6e-05,
-          1e-05
+          0.07529,
+          0.0532,
+          0.03833,
+          0.01439,
+          0.00405,
+          0.00091,
+          0.00017,
+          3e-05,
+          0.0
         ],
         [
-          0.07258,
-          0.12593,
-          0.07132,
-          0.03043,
-          0.00974,
-          0.00249,
-          0.00053,
-          0.0001,
-          2e-05
-        ],
-        [
-          0.07313,
-          0.09361,
-          0.05991,
-          0.02556,
-          0.00818,
-          0.00209,
-          0.00045,
-          8e-05,
-          1e-05
-        ],
-        [
-          0.04095,
-          0.05242,
-          0.03355,
-          0.01431,
-          0.00458,
-          0.00117,
-          0.00025,
+          0.08665,
+          0.12921,
+          0.0644,
+          0.02418,
+          0.00681,
+          0.00153,
+          0.00029,
           5e-05,
           1e-05
         ],
         [
-          0.0172,
-          0.02202,
-          0.01409,
-          0.00601,
-          0.00192,
-          0.00049,
-          0.00011,
+          0.08527,
+          0.09605,
+          0.0541,
+          0.02031,
+          0.00572,
+          0.00129,
+          0.00024,
+          4e-05,
+          1e-05
+        ],
+        [
+          0.04775,
+          0.05379,
+          0.03029,
+          0.01137,
+          0.0032,
+          0.00072,
+          0.00014,
           2e-05,
           0.0
         ],
         [
-          0.00578,
-          0.0074,
-          0.00473,
-          0.00202,
-          0.00065,
-          0.00017,
-          4e-05,
+          0.02006,
+          0.02259,
+          0.01272,
+          0.00478,
+          0.00135,
+          0.0003,
+          6e-05,
           1e-05,
           0.0
         ],
         [
-          0.00162,
-          0.00207,
-          0.00133,
-          0.00057,
-          0.00018,
-          5e-05,
-          1e-05,
-          0.0,
-          0.0
-        ],
-        [
-          0.00039,
-          0.0005,
-          0.00032,
-          0.00014,
-          4e-05,
-          1e-05,
-          0.0,
-          0.0,
-          0.0
-        ],
-        [
-          8e-05,
+          0.00674,
+          0.00759,
+          0.00428,
+          0.00161,
+          0.00045,
           0.0001,
-          7e-05,
+          2e-05,
+          0.0,
+          0.0
+        ],
+        [
+          0.00189,
+          0.00213,
+          0.0012,
+          0.00045,
+          0.00013,
           3e-05,
+          1e-05,
+          0.0,
+          0.0
+        ],
+        [
+          0.00045,
+          0.00051,
+          0.00029,
+          0.00011,
+          3e-05,
+          1e-05,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0001,
+          0.00011,
+          6e-05,
+          2e-05,
           1e-05,
           0.0,
           0.0,
@@ -3185,6 +3185,25 @@
       "blend_weights": {
         "market": 0.6,
         "model": 0.4
+      },
+      "team_news": {
+        "notes": "Switzerland are near full strength with only Miro Muheim carrying a minor injury concern and Yakin hinting at a recall for Ruben Vargas; Canada are significantly weakened by the tournament-ending broken leg suffered by key midfielder Ismael Kone, while Alphonso Davies — an unused substitute vs. Qatar — remains a doubt to start and may only slot in depending on fitness.",
+        "home_scorers": [
+          "Breel Embolo (leading striker, focal point of Swiss attack, already scored at th",
+          "Granit Xhaka (captain and set-piece threat, 17 international goals in 146 caps)",
+          "Ruben Vargas (rotation recall hint from Yakin, scored vs. Bosnia off the bench)"
+        ],
+        "away_scorers": [
+          "Jonathan David (hat-trick vs. Qatar, tournament's standout attacker, on penaltie",
+          "Cyle Larin (scored in consecutive World Cup matches, physical striker alongside ",
+          "Nathan Saliba (Kone's direct replacement in midfield, scored vs. Qatar, box-to-b"
+        ],
+        "fetched_at": "2026-06-24T17:34:25.422106+00:00"
+      },
+      "news_adjustment": {
+        "home": 1.0,
+        "away": 0.88,
+        "notes": "Switzerland are near full strength with only Miro Muheim carrying a minor injury concern and Yakin hinting at a recall for Ruben Vargas; Canada are significantly weakened by the tournament-ending broken leg suffered by key midfielder Ismael Kone, while Alphonso Davies — an unused substitute vs. Qatar — remains a doubt to start and may only slot in depending on fitness."
       }
     },
     {
@@ -3200,14 +3219,14 @@
       "city": "Seattle",
       "status": "scheduled",
       "result": null,
-      "xg_home": 1.411,
-      "xg_away": 1.341,
-      "win_prob": 0.3726,
-      "draw_prob": 0.2866,
-      "loss_prob": 0.3409,
-      "model_win": 0.3726,
-      "model_draw": 0.2866,
-      "model_loss": 0.3409,
+      "xg_home": 1.298,
+      "xg_away": 1.1,
+      "win_prob": 0.3937,
+      "draw_prob": 0.3088,
+      "loss_prob": 0.2975,
+      "model_win": 0.3937,
+      "model_draw": 0.3088,
+      "model_loss": 0.2975,
       "market_win": null,
       "market_draw": null,
       "market_loss": null,
@@ -3218,32 +3237,32 @@
         {
           "home": 1,
           "away": 1,
-          "prob": 0.1364
+          "prob": 0.1467
+        },
+        {
+          "home": 0,
+          "away": 0,
+          "prob": 0.1078
+        },
+        {
+          "home": 1,
+          "away": 0,
+          "prob": 0.1012
         },
         {
           "home": 2,
           "away": 1,
-          "prob": 0.0852
-        },
-        {
-          "home": 1,
-          "away": 2,
-          "prob": 0.081
-        },
-        {
-          "home": 0,
-          "away": 0,
-          "prob": 0.0795
-        },
-        {
-          "home": 1,
-          "away": 0,
-          "prob": 0.0743
+          "prob": 0.0842
         },
         {
           "home": 0,
           "away": 1,
-          "prob": 0.0699
+          "prob": 0.0831
+        },
+        {
+          "home": 2,
+          "away": 0,
+          "prob": 0.0766
         }
       ],
       "top_score_conditional": {
@@ -3254,98 +3273,98 @@
       },
       "score_matrix": [
         [
-          0.07949,
-          0.06988,
-          0.05739,
-          0.02566,
-          0.00861,
-          0.00231,
-          0.00052,
-          0.0001,
-          2e-05
+          0.1078,
+          0.08311,
+          0.05497,
+          0.02015,
+          0.00554,
+          0.00122,
+          0.00022,
+          4e-05,
+          0.0
         ],
         [
-          0.07431,
-          0.13641,
-          0.08096,
-          0.0362,
-          0.01214,
-          0.00326,
-          0.00073,
-          0.00014,
-          2e-05
-        ],
-        [
-          0.06348,
-          0.08515,
-          0.05711,
-          0.02554,
-          0.00856,
-          0.0023,
-          0.00051,
-          0.0001,
-          2e-05
-        ],
-        [
-          0.02985,
-          0.04004,
-          0.02686,
-          0.01201,
-          0.00403,
-          0.00108,
-          0.00024,
+          0.10116,
+          0.14666,
+          0.07136,
+          0.02616,
+          0.00719,
+          0.00158,
+          0.00029,
           5e-05,
           1e-05
         ],
         [
-          0.01053,
-          0.01412,
-          0.00947,
-          0.00424,
-          0.00142,
-          0.00038,
-          9e-05,
-          2e-05,
-          0.0
-        ],
-        [
-          0.00297,
-          0.00398,
-          0.00267,
-          0.00119,
-          0.0004,
-          0.00011,
-          2e-05,
-          0.0,
-          0.0
-        ],
-        [
-          0.0007,
-          0.00094,
-          0.00063,
-          0.00028,
-          9e-05,
-          3e-05,
-          1e-05,
-          0.0,
-          0.0
-        ],
-        [
-          0.00014,
+          0.07661,
+          0.08424,
+          0.04632,
+          0.01698,
+          0.00467,
+          0.00103,
           0.00019,
+          3e-05,
+          0.0
+        ],
+        [
+          0.03315,
+          0.03645,
+          0.02004,
+          0.00735,
+          0.00202,
+          0.00044,
+          8e-05,
+          1e-05,
+          0.0
+        ],
+        [
+          0.01076,
+          0.01183,
+          0.0065,
+          0.00238,
+          0.00066,
+          0.00014,
+          3e-05,
+          0.0,
+          0.0
+        ],
+        [
+          0.00279,
+          0.00307,
+          0.00169,
+          0.00062,
+          0.00017,
+          4e-05,
+          1e-05,
+          0.0,
+          0.0
+        ],
+        [
+          0.0006,
+          0.00066,
+          0.00037,
           0.00013,
-          6e-05,
-          2e-05,
+          4e-05,
           1e-05,
           0.0,
           0.0,
           0.0
         ],
         [
-          2e-05,
-          3e-05,
+          0.00011,
+          0.00012,
+          7e-05,
           2e-05,
           1e-05,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          2e-05,
+          2e-05,
+          1e-05,
+          0.0,
           0.0,
           0.0,
           0.0,
@@ -3460,7 +3479,26 @@
         }
       ],
       "source": "model_only",
-      "blend_weights": null
+      "blend_weights": null,
+      "team_news": {
+        "notes": "Bosnia lose CB Tarik Muharemovic (suspended, red card vs Switzerland) and have Nidal Celik sidelined through injury, while Barbarez is expected to bring in Hadzikadunic at centre-back; Qatar are severely depleted with both Assim Madibo and Homam El Amin suspended after red cards vs Canada, leaving Lopetegui short of first-team quality in midfield, with Sultan Al Brake and Ahmed Fathy expected to deputise and Almoez Ali potentially replacing the misfiring Yusuf Abdurisag.",
+        "home_scorers": [
+          "Edin Dzeko (veteran captain and leading striker, aerial set-piece threat)",
+          "Ermedin Demirovic (second striker, clinical finisher in the box)",
+          "Kerim Alajbegovic (set-piece taker, free kicks and corners)"
+        ],
+        "away_scorers": [
+          "Akram Afif (talisman winger, Qatar's creative focal point and set-piece threat)",
+          "Almoez Ali (record goalscorer, likely to start after Abdurisag's poor form)",
+          "Edmilson Junior (attacking midfielder, direct runner and goalscoring threat)"
+        ],
+        "fetched_at": "2026-06-24T17:34:38.613075+00:00"
+      },
+      "news_adjustment": {
+        "home": 0.92,
+        "away": 0.82,
+        "notes": "Bosnia lose CB Tarik Muharemovic (suspended, red card vs Switzerland) and have Nidal Celik sidelined through injury, while Barbarez is expected to bring in Hadzikadunic at centre-back; Qatar are severely depleted with both Assim Madibo and Homam El Amin suspended after red cards vs Canada, leaving Lopetegui short of first-team quality in midfield, with Sultan Al Brake and Ahmed Fathy expected to deputise and Almoez Ali potentially replacing the misfiring Yusuf Abdurisag."
+      }
     },
     {
       "id": "GS_C1",
@@ -4636,14 +4674,14 @@
       "city": "Atlanta",
       "status": "scheduled",
       "result": null,
-      "xg_home": 1.853,
-      "xg_away": 0.84,
-      "win_prob": 0.7368,
-      "draw_prob": 0.1742,
-      "loss_prob": 0.0889,
-      "model_win": 0.5994,
-      "model_draw": 0.2492,
-      "model_loss": 0.1514,
+      "xg_home": 1.723,
+      "xg_away": 0.815,
+      "win_prob": 0.7272,
+      "draw_prob": 0.1803,
+      "loss_prob": 0.0925,
+      "model_win": 0.5754,
+      "model_draw": 0.2644,
+      "model_loss": 0.1602,
       "market_win": 0.8284,
       "market_draw": 0.1243,
       "market_loss": 0.0473,
@@ -4654,32 +4692,32 @@
         {
           "home": 1,
           "away": 1,
-          "prob": 0.119
-        },
-        {
-          "home": 2,
-          "away": 0,
-          "prob": 0.1162
+          "prob": 0.1254
         },
         {
           "home": 1,
           "away": 0,
-          "prob": 0.1117
+          "prob": 0.1218
+        },
+        {
+          "home": 2,
+          "away": 0,
+          "prob": 0.1173
         },
         {
           "home": 2,
           "away": 1,
-          "prob": 0.0976
+          "prob": 0.0956
         },
         {
           "home": 0,
           "away": 0,
-          "prob": 0.0814
+          "prob": 0.0934
         },
         {
           "home": 3,
           "away": 0,
-          "prob": 0.0718
+          "prob": 0.0674
         }
       ],
       "top_score_conditional": {
@@ -4690,98 +4728,98 @@
       },
       "score_matrix": [
         [
-          0.08137,
-          0.04314,
-          0.02387,
-          0.00668,
-          0.0014,
+          0.09345,
+          0.04996,
+          0.02623,
+          0.00712,
+          0.00145,
           0.00024,
           3e-05,
           0.0,
           0.0
         ],
         [
-          0.11174,
-          0.11903,
-          0.04423,
-          0.01238,
-          0.0026,
-          0.00044,
+          0.12176,
+          0.12538,
+          0.04521,
+          0.01228,
+          0.0025,
+          0.00041,
           6e-05,
           1e-05,
           0.0
         ],
         [
-          0.11623,
-          0.09761,
-          0.04099,
-          0.01147,
-          0.00241,
-          0.0004,
-          6e-05,
+          0.11734,
+          0.09561,
+          0.03895,
+          0.01058,
+          0.00215,
+          0.00035,
+          5e-05,
           1e-05,
           0.0
         ],
         [
-          0.0718,
-          0.0603,
-          0.02532,
-          0.00709,
-          0.00149,
-          0.00025,
+          0.0674,
+          0.05492,
+          0.02237,
+          0.00608,
+          0.00124,
+          0.0002,
           3e-05,
           0.0,
           0.0
         ],
         [
-          0.03327,
-          0.02794,
-          0.01173,
-          0.00328,
-          0.00069,
-          0.00012,
-          2e-05,
+          0.02904,
+          0.02366,
+          0.00964,
+          0.00262,
+          0.00053,
+          9e-05,
+          1e-05,
           0.0,
           0.0
         ],
         [
-          0.01233,
-          0.01036,
-          0.00435,
-          0.00122,
+          0.01001,
+          0.00815,
+          0.00332,
+          0.0009,
+          0.00018,
+          3e-05,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.00287,
+          0.00234,
+          0.00095,
           0.00026,
-          4e-05,
-          1e-05,
-          0.0,
-          0.0
-        ],
-        [
-          0.00381,
-          0.0032,
-          0.00134,
-          0.00038,
-          8e-05,
+          5e-05,
           1e-05,
           0.0,
           0.0,
           0.0
         ],
         [
-          0.00101,
-          0.00085,
-          0.00036,
-          0.0001,
-          2e-05,
-          0.0,
-          0.0,
-          0.0,
-          0.0
-        ],
-        [
+          0.00071,
+          0.00058,
           0.00023,
-          0.0002,
-          8e-05,
-          2e-05,
+          6e-05,
+          1e-05,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.00015,
+          0.00012,
+          5e-05,
+          1e-05,
           0.0,
           0.0,
           0.0,
@@ -4899,6 +4937,25 @@
       "blend_weights": {
         "market": 0.6,
         "model": 0.4
+      },
+      "team_news": {
+        "notes": "Morocco are without pre-tournament absentees Nayef Aguerd (groin/pubic fracture) and Abde Ezzalzouli (knee injury), both formally replaced in the squad; Ouahbi is expected to name an unchanged, fully available XI for this match. Haiti's only confirmed absence is midfielder Leverton Pierre, ruled out for the entire tournament with injury and replaced by Garven Metusala; no other suspensions or fitness concerns are reported for Les Grenadiers, and Duckens Nazon is listed as a doubt.",
+        "home_scorers": [
+          "Ismael Saibari (leading striker, scored in both group games including fastest WC",
+          "Brahim Diaz (creative attacking midfielder, key chance creator)",
+          "Bilal El Khannouss (attacking midfielder, set-piece threat and direct runner)"
+        ],
+        "away_scorers": [
+          "Wilson Isidor (main striker, pace and movement on the break)",
+          "Jean-Ricner Bellegarde (midfield dynamo, standout performer, direct shooting run",
+          "Ruben Providence (wide attacker, flair and one-on-one ability)"
+        ],
+        "fetched_at": "2026-06-24T17:34:51.153862+00:00"
+      },
+      "news_adjustment": {
+        "home": 0.93,
+        "away": 0.97,
+        "notes": "Morocco are without pre-tournament absentees Nayef Aguerd (groin/pubic fracture) and Abde Ezzalzouli (knee injury), both formally replaced in the squad; Ouahbi is expected to name an unchanged, fully available XI for this match. Haiti's only confirmed absence is midfielder Leverton Pierre, ruled out for the entire tournament with injury and replaced by Garven Metusala; no other suspensions or fitness concerns are reported for Les Grenadiers, and Duckens Nazon is listed as a doubt."
       }
     },
     {
@@ -4914,14 +4971,14 @@
       "city": "Miami Gardens",
       "status": "scheduled",
       "result": null,
-      "xg_home": 1.007,
-      "xg_away": 1.988,
-      "win_prob": 0.1234,
-      "draw_prob": 0.1952,
-      "loss_prob": 0.6814,
-      "model_win": 0.1725,
-      "model_draw": 0.2391,
-      "model_loss": 0.5884,
+      "xg_home": 0.886,
+      "xg_away": 1.63,
+      "win_prob": 0.1299,
+      "draw_prob": 0.2105,
+      "loss_prob": 0.6596,
+      "model_win": 0.1887,
+      "model_draw": 0.2773,
+      "model_loss": 0.534,
       "market_win": 0.0906,
       "market_draw": 0.166,
       "market_loss": 0.7434,
@@ -4932,32 +4989,32 @@
         {
           "home": 1,
           "away": 1,
-          "prob": 0.1132
-        },
-        {
-          "home": 1,
-          "away": 2,
-          "prob": 0.0996
-        },
-        {
-          "home": 0,
-          "away": 2,
-          "prob": 0.0989
+          "prob": 0.1318
         },
         {
           "home": 0,
           "away": 1,
-          "prob": 0.0864
+          "prob": 0.1165
+        },
+        {
+          "home": 0,
+          "away": 2,
+          "prob": 0.1073
+        },
+        {
+          "home": 0,
+          "away": 0,
+          "prob": 0.0959
         },
         {
           "home": 1,
-          "away": 3,
-          "prob": 0.066
+          "away": 2,
+          "prob": 0.0951
         },
         {
           "home": 0,
           "away": 3,
-          "prob": 0.0655
+          "prob": 0.0583
         }
       ],
       "top_score_conditional": {
@@ -4968,88 +5025,88 @@
       },
       "score_matrix": [
         [
-          0.06304,
-          0.08643,
-          0.09887,
-          0.06553,
-          0.03258,
-          0.01295,
-          0.00429,
-          0.00122,
-          0.0003
+          0.09593,
+          0.11649,
+          0.10731,
+          0.05831,
+          0.02376,
+          0.00775,
+          0.0021,
+          0.00049,
+          0.0001
         ],
         [
-          0.03736,
-          0.11319,
-          0.09959,
-          0.06601,
-          0.03281,
-          0.01305,
-          0.00432,
-          0.00123,
-          0.00031
+          0.0564,
+          0.13183,
+          0.09509,
+          0.05167,
+          0.02106,
+          0.00687,
+          0.00187,
+          0.00043,
+          9e-05
         ],
         [
-          0.02537,
-          0.05045,
-          0.05016,
-          0.03324,
-          0.01653,
-          0.00657,
-          0.00218,
-          0.00062,
-          0.00015
+          0.03171,
+          0.05169,
+          0.04213,
+          0.02289,
+          0.00933,
+          0.00304,
+          0.00083,
+          0.00019,
+          4e-05
         ],
         [
-          0.00852,
-          0.01694,
-          0.01684,
-          0.01116,
-          0.00555,
-          0.00221,
-          0.00073,
-          0.00021,
-          5e-05
-        ],
-        [
-          0.00215,
-          0.00427,
-          0.00424,
-          0.00281,
-          0.0014,
-          0.00056,
-          0.00018,
-          5e-05,
+          0.00937,
+          0.01527,
+          0.01245,
+          0.00676,
+          0.00276,
+          0.0009,
+          0.00024,
+          6e-05,
           1e-05
         ],
         [
-          0.00043,
-          0.00086,
-          0.00085,
-          0.00057,
-          0.00028,
-          0.00011,
-          4e-05,
+          0.00208,
+          0.00338,
+          0.00276,
+          0.0015,
+          0.00061,
+          0.0002,
+          5e-05,
           1e-05,
           0.0
         ],
         [
-          7e-05,
-          0.00014,
-          0.00014,
-          0.0001,
-          5e-05,
-          2e-05,
+          0.00037,
+          0.0006,
+          0.00049,
+          0.00027,
+          0.00011,
+          4e-05,
           1e-05,
           0.0,
           0.0
         ],
         [
-          1e-05,
+          5e-05,
+          9e-05,
+          7e-05,
+          4e-05,
           2e-05,
-          2e-05,
+          1e-05,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
           1e-05,
           1e-05,
+          1e-05,
+          0.0,
+          0.0,
           0.0,
           0.0,
           0.0,
@@ -5177,6 +5234,25 @@
       "blend_weights": {
         "market": 0.6,
         "model": 0.4
+      },
+      "team_news": {
+        "notes": "Scotland are without pre-tournament absentee Billy Gilmour (knee), with Kieran Tierney back in training after a scare vs Morocco and Aaron Hickey remaining a doubt; Lawrence Shankland is expected to start from the bench per Clarke's defensive setup. Brazil are without the injured Raphinha (hamstring, confirmed out), plus pre-tournament absences Rodrygo (ACL), Estêvão and Militão; Neymar is available after missing the first two games but Ancelotti has been coy on whether he starts.",
+        "home_scorers": [
+          "John McGinn (only scorer so far this tournament, set-piece threat)",
+          "Che Adams (starting striker, physical pressing outlet)",
+          "Scott McTominay (box-to-box runner, late arriving goalscorer)"
+        ],
+        "away_scorers": [
+          "Matheus Cunha (starting striker, brace vs Haiti, in-form finisher)",
+          "Vinícius Júnior (leading attacking threat, dribbler and finisher)",
+          "Neymar (returning superstar, on penalties if selected)"
+        ],
+        "fetched_at": "2026-06-24T17:35:03.599319+00:00"
+      },
+      "news_adjustment": {
+        "home": 0.88,
+        "away": 0.82,
+        "notes": "Scotland are without pre-tournament absentee Billy Gilmour (knee), with Kieran Tierney back in training after a scare vs Morocco and Aaron Hickey remaining a doubt; Lawrence Shankland is expected to start from the bench per Clarke's defensive setup. Brazil are without the injured Raphinha (hamstring, confirmed out), plus pre-tournament absences Rodrygo (ACL), Estêvão and Militão; Neymar is available after missing the first two games but Ancelotti has been coy on whether he starts."
       }
     },
     {
@@ -18186,14 +18262,14 @@
         "home": 1,
         "away": 0
       },
-      "xg_home": 1.698,
-      "xg_away": 1.041,
-      "win_prob": 0.5129,
-      "draw_prob": 0.2702,
-      "loss_prob": 0.217,
-      "model_win": 0.5129,
-      "model_draw": 0.2702,
-      "model_loss": 0.217,
+      "xg_home": 1.783,
+      "xg_away": 1.01,
+      "win_prob": 0.5408,
+      "draw_prob": 0.261,
+      "loss_prob": 0.1982,
+      "model_win": 0.5408,
+      "model_draw": 0.261,
+      "model_loss": 0.1982,
       "market_win": null,
       "market_draw": null,
       "market_loss": null,
@@ -18204,12 +18280,17 @@
         {
           "home": 1,
           "away": 1,
-          "prob": 0.1291
+          "prob": 0.1246
         },
         {
           "home": 2,
           "away": 1,
-          "prob": 0.097
+          "prob": 0.0983
+        },
+        {
+          "home": 2,
+          "away": 0,
+          "prob": 0.0974
         },
         {
           "home": 1,
@@ -18217,19 +18298,14 @@
           "prob": 0.0949
         },
         {
-          "home": 2,
-          "away": 0,
-          "prob": 0.0932
-        },
-        {
           "home": 0,
           "away": 0,
-          "prob": 0.0795
+          "prob": 0.0756
         },
         {
-          "home": 1,
-          "away": 2,
-          "prob": 0.0594
+          "home": 3,
+          "away": 1,
+          "prob": 0.0584
         }
       ],
       "top_score_conditional": {
@@ -18240,87 +18316,87 @@
       },
       "score_matrix": [
         [
-          0.07949,
-          0.05242,
-          0.035,
-          0.01214,
-          0.00316,
-          0.00066,
-          0.00011,
-          2e-05,
-          0.0
-        ],
-        [
-          0.09493,
-          0.12909,
-          0.05944,
-          0.02062,
-          0.00536,
-          0.00112,
-          0.00019,
-          3e-05,
-          0.0
-        ],
-        [
-          0.09323,
-          0.09701,
-          0.05048,
-          0.01751,
-          0.00455,
-          0.00095,
-          0.00016,
-          2e-05,
-          0.0
-        ],
-        [
-          0.05278,
-          0.05492,
-          0.02858,
-          0.00991,
-          0.00258,
+          0.0756,
+          0.04752,
+          0.03123,
+          0.01051,
+          0.00265,
           0.00054,
           9e-05,
           1e-05,
           0.0
         ],
         [
-          0.02241,
-          0.02332,
-          0.01213,
-          0.00421,
-          0.00109,
+          0.09489,
+          0.12463,
+          0.05569,
+          0.01874,
+          0.00473,
+          0.00096,
+          0.00016,
+          2e-05,
+          0.0
+        ],
+        [
+          0.09737,
+          0.09832,
+          0.04964,
+          0.01671,
+          0.00422,
+          0.00085,
+          0.00014,
+          2e-05,
+          0.0
+        ],
+        [
+          0.05787,
+          0.05843,
+          0.0295,
+          0.00993,
+          0.00251,
+          0.00051,
+          9e-05,
+          1e-05,
+          0.0
+        ],
+        [
+          0.02579,
+          0.02604,
+          0.01315,
+          0.00443,
+          0.00112,
           0.00023,
           4e-05,
           1e-05,
           0.0
         ],
         [
-          0.00761,
-          0.00792,
-          0.00412,
-          0.00143,
-          0.00037,
+          0.0092,
+          0.00929,
+          0.00469,
+          0.00158,
+          0.0004,
           8e-05,
           1e-05,
           0.0,
           0.0
         ],
         [
-          0.00215,
-          0.00224,
-          0.00117,
-          0.0004,
-          0.00011,
+          0.00273,
+          0.00276,
+          0.00139,
+          0.00047,
+          0.00012,
           2e-05,
           0.0,
           0.0,
           0.0
         ],
         [
-          0.00052,
-          0.00054,
-          0.00028,
-          0.0001,
+          0.0007,
+          0.0007,
+          0.00035,
+          0.00012,
           3e-05,
           1e-05,
           0.0,
@@ -18328,10 +18404,10 @@
           0.0
         ],
         [
-          0.00011,
-          0.00012,
-          6e-05,
-          2e-05,
+          0.00016,
+          0.00016,
+          8e-05,
+          3e-05,
           1e-05,
           0.0,
           0.0,
@@ -18446,7 +18522,26 @@
         }
       ],
       "source": "model_only",
-      "blend_weights": null
+      "blend_weights": null,
+      "team_news": {
+        "notes": "Colombia entered at full strength with no injuries or suspensions; Jhon Córdoba returned to 100% fitness after missing MD1. DR Congo had Théo Bongonda (injury) ruled out, while the rest of Desabre's MD1 XI — including Wissa and Bakambu — were available and unchanged.",
+        "home_scorers": [
+          "Luis Díaz (leading attacker, scored vs Uzbekistan, Colombia's primary creative/g",
+          "James Rodríguez (playmaker/set-piece threat, key creative hub in advanced midfie",
+          "Jhon Arias (wide attacker, goal threat from right flank, consistent starter)"
+        ],
+        "away_scorers": [
+          "Yoane Wissa (MD1 goalscorer vs Portugal, energetic central striker and main atta",
+          "Cédric Bakambu (veteran forward, DR Congo's top qualifying scorer, leads counter",
+          "Chancel Mbemba (captain/set-piece threat from centre-back, aerial danger at corn"
+        ],
+        "fetched_at": "2026-06-24T17:35:17.454243+00:00"
+      },
+      "news_adjustment": {
+        "home": 1.05,
+        "away": 0.97,
+        "notes": "Colombia entered at full strength with no injuries or suspensions; Jhon Córdoba returned to 100% fitness after missing MD1. DR Congo had Théo Bongonda (injury) ruled out, while the rest of Desabre's MD1 XI — including Wissa and Bakambu — were available and unchanged."
+      }
     },
     {
       "id": "GS_K5",
@@ -20884,7 +20979,7 @@
     {
       "id": "R32_3",
       "stage": "round_of_32",
-      "home": null,
+      "home": "Germany",
       "away": null,
       "date": "2026-06-29",
       "venue": "TBC",
@@ -20952,7 +21047,7 @@
     {
       "id": "R32_7",
       "stage": "round_of_32",
-      "home": null,
+      "home": "Mexico",
       "away": null,
       "date": "2026-07-01",
       "venue": "TBC",
@@ -21003,7 +21098,7 @@
     {
       "id": "R32_10",
       "stage": "round_of_32",
-      "home": null,
+      "home": "USA",
       "away": null,
       "date": "2026-07-02",
       "venue": "TBC",
@@ -21088,7 +21183,7 @@
     {
       "id": "R32_15",
       "stage": "round_of_32",
-      "home": null,
+      "home": "Argentina",
       "away": null,
       "date": "2026-07-03",
       "venue": "TBC",

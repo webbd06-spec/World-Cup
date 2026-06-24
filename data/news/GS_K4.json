@@ -1,0 +1,20 @@
+{
+  "fixture_id": "GS_K4",
+  "home": "Colombia",
+  "away": "DR Congo",
+  "home_multiplier": 1.05,
+  "away_multiplier": 0.97,
+  "notes": "Colombia entered at full strength with no injuries or suspensions; Jhon Córdoba returned to 100% fitness after missing MD1. DR Congo had Théo Bongonda (injury) ruled out, while the rest of Desabre's MD1 XI — including Wissa and Bakambu — were available and unchanged.",
+  "home_scorers": [
+    "Luis Díaz (leading attacker, scored vs Uzbekistan, Colombia's primary creative/g",
+    "James Rodríguez (playmaker/set-piece threat, key creative hub in advanced midfie",
+    "Jhon Arias (wide attacker, goal threat from right flank, consistent starter)"
+  ],
+  "away_scorers": [
+    "Yoane Wissa (MD1 goalscorer vs Portugal, energetic central striker and main atta",
+    "Cédric Bakambu (veteran forward, DR Congo's top qualifying scorer, leads counter",
+    "Chancel Mbemba (captain/set-piece threat from centre-back, aerial danger at corn"
+  ],
+  "source": "anthropic_web_search",
+  "fetched_at": "2026-06-24T17:35:17.454243+00:00"
+}
