@@ -1,0 +1,20 @@
+{
+  "fixture_id": "GS_A5",
+  "home": "Czechia",
+  "away": "Mexico",
+  "home_multiplier": 0.88,
+  "away_multiplier": 1.02,
+  "notes": "Czechia entered the match with Jan Kuchta listed as doubtful, and out-of-squad absentees Václav Černý and Matěj Vydra reducing attacking depth; César Montes was suspended for Mexico after a red card vs South Africa, but Mexico otherwise had a near-full-strength squad with Javier Aguirre hinting at rotation including a late appearance for veteran Guillermo Ochoa.",
+  "home_scorers": [
+    "Patrik Schick (leading striker, only reliable goal threat)",
+    "Pavel Šulc (attacking midfielder, set-piece and shooting threat)",
+    "Ladislav Krejčí (captain/set-piece threat, scored vs South Korea)"
+  ],
+  "away_scorers": [
+    "Julián Quiñones (in-form striker, scored in both prior group games)",
+    "Mateo Chávez (dynamic forward, rotation starter with goal threat)",
+    "Álvaro Fidalgo (creative midfielder, penalties/set-pieces)"
+  ],
+  "source": "anthropic_web_search",
+  "fetched_at": "2026-06-25T18:36:44.427749+00:00"
+}

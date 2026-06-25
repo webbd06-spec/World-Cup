@@ -1,0 +1,20 @@
+{
+  "fixture_id": "GS_E5",
+  "home": "Ecuador",
+  "away": "Germany",
+  "home_multiplier": 0.97,
+  "away_multiplier": 0.93,
+  "notes": "Ecuador have a clean bill of health with no injuries or suspensions, but Beccacece may tweak his midfield shape; Germany are without Nico Schlotterbeck (tournament-ending ankle ligament injury vs Ivory Coast) and Nathaniel Brown (minor adductor issue), though Nagelsmann confirmed only those two enforced changes and will largely field his strongest XI rather than rotate heavily.",
+  "home_scorers": [
+    "Enner Valencia (all-time record goalscorer, chasing 50th cap goal, set-piece thr",
+    "Gonzalo Plata (likely attacking partner, wide threat vs open Germany)",
+    "Moises Caicedo (set-piece taker, driving force from midfield)"
+  ],
+  "away_scorers": [
+    "Kai Havertz (confirmed starter, leads the line in 4-2-3-1)",
+    "Florian Wirtz (creative engine, highest xG of German attackers so far)",
+    "Deniz Undav (super-sub/potential starter, 3 goals in 2 games off bench, Golden B"
+  ],
+  "source": "anthropic_web_search",
+  "fetched_at": "2026-06-25T18:37:13.729993+00:00"
+}

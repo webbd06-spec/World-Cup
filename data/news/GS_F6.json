@@ -1,0 +1,20 @@
+{
+  "fixture_id": "GS_F6",
+  "home": "Japan",
+  "away": "Sweden",
+  "home_multiplier": 0.82,
+  "away_multiplier": 0.95,
+  "notes": "Japan are without pre-tournament absentees Wataru Endo (foot, retired internationally), Kaoru Mitoma (hamstring), and Takumi Minamino (ACL), while in-tournament attacker Takefusa Kubo is ruled out with a knee injury and Shuto Machino is listed as questionable (illness) — significant creative losses. Sweden have no confirmed in-tournament suspensions or injuries to key first-team players, though Eric Smith is listed as questionable and wing-backs Gudmundsson and Ayari carry yellow-card caution…",
+  "home_scorers": [
+    "Ayase Ueda (leading striker, brace vs Tunisia, focal point of attack)",
+    "Daichi Kamada (attacking midfielder, 2 tournament goals, set-piece taker)",
+    "Ritsu Doan (wide attacker, creative outlet post-Kubo injury)"
+  ],
+  "away_scorers": [
+    "Viktor Gyokeres (co-leading striker, physical focal point, must-win game)",
+    "Alexander Isak (co-leading striker, transitional threat, clinical finisher)",
+    "Yasin Ayari (attacking midfielder, 2 tournament goals, late runs into box)"
+  ],
+  "source": "anthropic_web_search",
+  "fetched_at": "2026-06-25T18:37:54.751181+00:00"
+}

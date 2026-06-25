@@ -1,0 +1,20 @@
+{
+  "fixture_id": "GS_F5",
+  "home": "Tunisia",
+  "away": "Netherlands",
+  "home_multiplier": 0.82,
+  "away_multiplier": 0.92,
+  "notes": "Tunisia have no confirmed injuries or suspensions but are already eliminated, suffered a mid-tournament coaching change (Hervé Renard replacing Lamouchi), and carry severe morale/form issues after conceding 9 goals in 2 games; they have a full squad available but Renard may rotate freely. Netherlands are without pre-tournament absentees Jurriën Timber (groin), Matthijs de Ligt (back surgery), Xavi Simons, and Jeroen Schouten — all ruled out before the tournament started — but no in-tournament…",
+  "home_scorers": [
+    "Firas Chaouat (leading striker, only consistent starter in attack across all thr",
+    "Hannibal Mejbri (creative engine, best chance-creation threat from midfield)",
+    "Elias Achouri (dynamic wide forward, direct runner likely to get Tunisia's best "
+  ],
+  "away_scorers": [
+    "Brian Brobbey (leading striker, scored 2 on World Cup debut vs Sweden, physical ",
+    "Cody Gakpo (in-form winger/forward, brace vs Sweden, set-piece and open-play thr",
+    "Memphis Depay (experienced penalty-taker, 109 caps, on penalties and dead-ball s"
+  ],
+  "source": "anthropic_web_search",
+  "fetched_at": "2026-06-25T18:37:40.334006+00:00"
+}

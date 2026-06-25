@@ -1,0 +1,20 @@
+{
+  "fixture_id": "GS_A6",
+  "home": "South Africa",
+  "away": "South Korea",
+  "home_multiplier": 0.82,
+  "away_multiplier": 0.8,
+  "notes": "South Africa were without suspended midfield pair Teboho Mokoena and Themba Zwane, with Sithole returning to the XI to partner Mbatha; South Korea made a shock rotation call dropping captain Son Heung-min entirely, replacing him with Oh Hyeon-gyu as the starting spearhead.",
+  "home_scorers": [
+    "Thapelo Maseko (set-piece / box-to-box threat, actual scorer 63')",
+    "Oswin Appollis (direct winger, leading assist-maker in qualifying)",
+    "Lyle Foster (leading striker, channel-runner)"
+  ],
+  "away_scorers": [
+    "Oh Hyeon-gyu (starting striker, replaced Son, scored vs Czechia)",
+    "Lee Kang-in (creative playmaker / set-piece threat)",
+    "Hwang Hee-chan (aggressive forward runner)"
+  ],
+  "source": "anthropic_web_search",
+  "fetched_at": "2026-06-25T18:36:57.660250+00:00"
+}

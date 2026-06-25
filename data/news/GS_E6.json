@@ -1,0 +1,20 @@
+{
+  "fixture_id": "GS_E6",
+  "home": "Curacao",
+  "away": "Ivory Coast",
+  "home_multiplier": 0.97,
+  "away_multiplier": 0.92,
+  "notes": "Curacao have no confirmed absences but striker Jurgen Locadia is a minor doubt after picking up a knock vs Ecuador, with Dick Advocaat expected to name an unchanged XI if he passes fit. Ivory Coast are without right-back Wilfried Singo (hamstring, out), while Evan N'Dicka has returned to training after a thigh injury but is unlikely to start, with Guela Doue stepping in at right-back.",
+  "home_scorers": [
+    "Jurgen Locadia (leading striker, sole focal point up front)",
+    "Juninho Bacuna (advanced midfielder, licence to attack from midfield)",
+    "Tahith Chong (creative wide threat, direct dribbler in attacking areas)"
+  ],
+  "away_scorers": [
+    "Yan Diomande (leading striker, scored winner vs Ecuador in MD1)",
+    "Amad Diallo (attacking wide player, scored 90th-minute winner vs Ecuador in MD2)",
+    "Amine Bonny (centre-forward, aggressive presser and goal threat)"
+  ],
+  "source": "anthropic_web_search",
+  "fetched_at": "2026-06-25T18:37:25.491003+00:00"
+}
