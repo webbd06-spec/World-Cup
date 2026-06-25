@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-25T21:20:49.460520Z",
+  "generated_at": "2026-06-25T21:30:53.947847Z",
   "date": "2026-06-25",
   "model_version": "1.1.0",
   "blend_weights": {
@@ -8187,11 +8187,8 @@
       "kickoff_utc": "20:00",
       "venue": "MetLife Stadium",
       "city": "East Rutherford",
-      "status": "in_play",
-      "result": {
-        "home": 1,
-        "away": 1
-      },
+      "status": "scheduled",
+      "result": null,
       "xg_home": 1.082,
       "xg_away": 1.844,
       "win_prob": 0.1996,
@@ -8487,11 +8484,8 @@
       "kickoff_utc": "20:00",
       "venue": "Lincoln Financial Field",
       "city": "Philadelphia",
-      "status": "in_play",
-      "result": {
-        "home": 0,
-        "away": 1
-      },
+      "status": "scheduled",
+      "result": null,
       "xg_home": 0.961,
       "xg_away": 1.669,
       "win_prob": 0.1123,
