@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-06-24T23:50:44.272045Z",
-  "date": "2026-06-24",
+  "generated_at": "2026-06-25T00:01:05.114420Z",
+  "date": "2026-06-25",
   "model_version": "1.1.0",
   "blend_weights": {
     "market": 0.6,
@@ -4677,7 +4677,7 @@
       "city": "Atlanta",
       "status": "in_play",
       "result": {
-        "home": 3,
+        "home": 4,
         "away": 2
       },
       "xg_home": 1.853,
