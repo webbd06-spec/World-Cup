@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-25T00:20:44.981599Z",
+  "generated_at": "2026-06-25T00:30:56.782837Z",
   "date": "2026-06-25",
   "model_version": "1.1.0",
   "blend_weights": {
@@ -1759,10 +1759,7 @@
       "venue": "BMO Field",
       "city": "Toronto",
       "status": "finished",
-      "result": {
-        "home": 1,
-        "away": 1
-      },
+      "result": null,
       "xg_home": 1.318,
       "xg_away": 1.269,
       "win_prob": 0.3628,
@@ -20978,7 +20975,7 @@
     {
       "id": "R32_3",
       "stage": "round_of_32",
-      "home": "Germany",
+      "home": null,
       "away": null,
       "date": "2026-06-29",
       "venue": "TBC",
@@ -21046,7 +21043,7 @@
     {
       "id": "R32_7",
       "stage": "round_of_32",
-      "home": "Mexico",
+      "home": null,
       "away": null,
       "date": "2026-07-01",
       "venue": "TBC",
@@ -21097,7 +21094,7 @@
     {
       "id": "R32_10",
       "stage": "round_of_32",
-      "home": "USA",
+      "home": null,
       "away": null,
       "date": "2026-07-02",
       "venue": "TBC",
@@ -21182,7 +21179,7 @@
     {
       "id": "R32_15",
       "stage": "round_of_32",
-      "home": "Argentina",
+      "home": null,
       "away": null,
       "date": "2026-07-03",
       "venue": "TBC",
