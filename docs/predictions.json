@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-25T00:01:05.114420Z",
+  "generated_at": "2026-06-25T00:10:45.285225Z",
   "date": "2026-06-25",
   "model_version": "1.1.0",
   "blend_weights": {
@@ -4675,7 +4675,7 @@
       "kickoff_utc": "22:00",
       "venue": "Mercedes-Benz Stadium",
       "city": "Atlanta",
-      "status": "in_play",
+      "status": "finished",
       "result": {
         "home": 4,
         "away": 2
@@ -4970,7 +4970,7 @@
       "kickoff_utc": "22:00",
       "venue": "Hard Rock Stadium",
       "city": "Miami Gardens",
-      "status": "in_play",
+      "status": "finished",
       "result": {
         "home": 0,
         "away": 3
