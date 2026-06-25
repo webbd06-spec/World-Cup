@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-25T00:30:56.782837Z",
+  "generated_at": "2026-06-25T00:40:43.826847Z",
   "date": "2026-06-25",
   "model_version": "1.1.0",
   "blend_weights": {
@@ -1759,7 +1759,10 @@
       "venue": "BMO Field",
       "city": "Toronto",
       "status": "finished",
-      "result": null,
+      "result": {
+        "home": 1,
+        "away": 1
+      },
       "xg_home": 1.318,
       "xg_away": 1.269,
       "win_prob": 0.3628,
