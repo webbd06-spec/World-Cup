@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-25T04:50:43.722294Z",
+  "generated_at": "2026-06-25T05:01:02.404505Z",
   "date": "2026-06-25",
   "model_version": "1.1.0",
   "blend_weights": {
@@ -20978,7 +20978,7 @@
     {
       "id": "R32_3",
       "stage": "round_of_32",
-      "home": "Germany",
+      "home": null,
       "away": null,
       "date": "2026-06-29",
       "venue": "TBC",
@@ -21046,7 +21046,7 @@
     {
       "id": "R32_7",
       "stage": "round_of_32",
-      "home": "Mexico",
+      "home": null,
       "away": null,
       "date": "2026-07-01",
       "venue": "TBC",
@@ -21097,7 +21097,7 @@
     {
       "id": "R32_10",
       "stage": "round_of_32",
-      "home": "USA",
+      "home": null,
       "away": null,
       "date": "2026-07-02",
       "venue": "TBC",
@@ -21182,7 +21182,7 @@
     {
       "id": "R32_15",
       "stage": "round_of_32",
-      "home": "Argentina",
+      "home": null,
       "away": null,
       "date": "2026-07-03",
       "venue": "TBC",
