@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-26T01:01:02.817000Z",
+  "generated_at": "2026-06-26T01:10:42.993190Z",
   "date": "2026-06-26",
   "model_version": "1.1.0",
   "blend_weights": {
@@ -8187,11 +8187,8 @@
       "kickoff_utc": "20:00",
       "venue": "MetLife Stadium",
       "city": "East Rutherford",
-      "status": "finished",
-      "result": {
-        "home": 2,
-        "away": 1
-      },
+      "status": "scheduled",
+      "result": null,
       "xg_home": 1.082,
       "xg_away": 1.844,
       "win_prob": 0.2067,
@@ -8484,11 +8481,8 @@
       "kickoff_utc": "20:00",
       "venue": "Lincoln Financial Field",
       "city": "Philadelphia",
-      "status": "finished",
-      "result": {
-        "home": 0,
-        "away": 2
-      },
+      "status": "scheduled",
+      "result": null,
       "xg_home": 0.961,
       "xg_away": 1.669,
       "win_prob": 0.2019,
@@ -9964,11 +9958,8 @@
       "kickoff_utc": "23:00",
       "venue": "Arrowhead Stadium",
       "city": "Kansas City",
-      "status": "finished",
-      "result": {
-        "home": 1,
-        "away": 3
-      },
+      "status": "scheduled",
+      "result": null,
       "xg_home": 1.016,
       "xg_away": 2.01,
       "win_prob": 0.096,
@@ -10259,11 +10250,8 @@
       "kickoff_utc": "23:00",
       "venue": "AT&T Stadium",
       "city": "Arlington",
-      "status": "in_play",
-      "result": {
-        "home": 1,
-        "away": 1
-      },
+      "status": "scheduled",
+      "result": null,
       "xg_home": 1.367,
       "xg_away": 1.406,
       "win_prob": 0.38,
@@ -21082,7 +21070,7 @@
     {
       "id": "R32_3",
       "stage": "round_of_32",
-      "home": "Germany",
+      "home": null,
       "away": null,
       "date": "2026-06-29",
       "venue": "TBC",
@@ -21150,7 +21138,7 @@
     {
       "id": "R32_7",
       "stage": "round_of_32",
-      "home": "Mexico",
+      "home": null,
       "away": null,
       "date": "2026-07-01",
       "venue": "TBC",
@@ -21201,7 +21189,7 @@
     {
       "id": "R32_10",
       "stage": "round_of_32",
-      "home": "USA",
+      "home": null,
       "away": null,
       "date": "2026-07-02",
       "venue": "TBC",
@@ -21286,7 +21274,7 @@
     {
       "id": "R32_15",
       "stage": "round_of_32",
-      "home": "Argentina",
+      "home": null,
       "away": null,
       "date": "2026-07-03",
       "venue": "TBC",
