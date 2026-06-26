@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-26T10:30:54.309899Z",
+  "generated_at": "2026-06-26T10:40:41.462392Z",
   "date": "2026-06-26",
   "model_version": "1.1.0",
   "blend_weights": {
@@ -1202,11 +1202,8 @@
       "kickoff_utc": "01:00",
       "venue": "Estadio Azteca",
       "city": "Mexico City",
-      "status": "finished",
-      "result": {
-        "home": 0,
-        "away": 3
-      },
+      "status": "scheduled",
+      "result": null,
       "xg_home": 1.044,
       "xg_away": 1.439,
       "win_prob": 0.2575,
@@ -1499,11 +1496,8 @@
       "kickoff_utc": "01:00",
       "venue": "Estadio BBVA",
       "city": "Guadalupe",
-      "status": "finished",
-      "result": {
-        "home": 1,
-        "away": 0
-      },
+      "status": "scheduled",
+      "result": null,
       "xg_home": 0.917,
       "xg_away": 1.277,
       "win_prob": 0.25,
@@ -8187,11 +8181,8 @@
       "kickoff_utc": "20:00",
       "venue": "MetLife Stadium",
       "city": "East Rutherford",
-      "status": "finished",
-      "result": {
-        "home": 2,
-        "away": 1
-      },
+      "status": "scheduled",
+      "result": null,
       "xg_home": 1.082,
       "xg_away": 1.844,
       "win_prob": 0.2067,
@@ -8484,11 +8475,8 @@
       "kickoff_utc": "20:00",
       "venue": "Lincoln Financial Field",
       "city": "Philadelphia",
-      "status": "finished",
-      "result": {
-        "home": 0,
-        "away": 2
-      },
+      "status": "scheduled",
+      "result": null,
       "xg_home": 0.961,
       "xg_away": 1.669,
       "win_prob": 0.2019,
@@ -9964,11 +9952,8 @@
       "kickoff_utc": "23:00",
       "venue": "Arrowhead Stadium",
       "city": "Kansas City",
-      "status": "finished",
-      "result": {
-        "home": 1,
-        "away": 3
-      },
+      "status": "scheduled",
+      "result": null,
       "xg_home": 1.016,
       "xg_away": 2.01,
       "win_prob": 0.1719,
@@ -10256,11 +10241,8 @@
       "kickoff_utc": "23:00",
       "venue": "AT&T Stadium",
       "city": "Arlington",
-      "status": "finished",
-      "result": {
-        "home": 1,
-        "away": 1
-      },
+      "status": "scheduled",
+      "result": null,
       "xg_home": 1.367,
       "xg_away": 1.406,
       "win_prob": 0.3485,
@@ -21076,7 +21058,7 @@
     {
       "id": "R32_3",
       "stage": "round_of_32",
-      "home": null,
+      "home": "Germany",
       "away": null,
       "date": "2026-06-29",
       "venue": "TBC",
@@ -21144,7 +21126,7 @@
     {
       "id": "R32_7",
       "stage": "round_of_32",
-      "home": null,
+      "home": "Mexico",
       "away": null,
       "date": "2026-07-01",
       "venue": "TBC",
@@ -21195,7 +21177,7 @@
     {
       "id": "R32_10",
       "stage": "round_of_32",
-      "home": null,
+      "home": "USA",
       "away": null,
       "date": "2026-07-02",
       "venue": "TBC",
@@ -21280,7 +21262,7 @@
     {
       "id": "R32_15",
       "stage": "round_of_32",
-      "home": null,
+      "home": "Argentina",
       "away": null,
       "date": "2026-07-03",
       "venue": "TBC",
