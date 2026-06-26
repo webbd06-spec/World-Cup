@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-26T19:50:43.917674Z",
+  "generated_at": "2026-06-26T20:01:00.333658Z",
   "date": "2026-06-26",
   "model_version": "1.1.0",
   "blend_weights": {
@@ -15201,7 +15201,7 @@
       "kickoff_utc": "19:00",
       "venue": "Gillette Stadium",
       "city": "Foxborough",
-      "status": "live",
+      "status": "in_play",
       "result": {
         "home": 1,
         "away": 3
