@@ -1,0 +1,11 @@
+{
+  "fixture_id": "GS_K6",
+  "home": "DR Congo",
+  "away": "Uzbekistan",
+  "home_multiplier": 1.0,
+  "away_multiplier": 1.0,
+  "lineup_home_absent": 0,
+  "lineup_away_absent": 0,
+  "source": "lineup_fetch",
+  "fetched_at": "2026-06-27T21:41:12.577011+00:00"
+}
