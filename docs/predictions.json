@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-27T19:30:59.417911Z",
+  "generated_at": "2026-06-27T19:40:44.906048Z",
   "date": "2026-06-27",
   "model_version": "1.1.0",
   "blend_weights": {
@@ -12012,7 +12012,7 @@
       "status": "finished",
       "result": {
         "home": 1,
-        "away": 1
+        "away": 2
       },
       "xg_home": 1.418,
       "xg_away": 1.35,
@@ -15201,11 +15201,8 @@
       "kickoff_utc": "19:00",
       "venue": "Gillette Stadium",
       "city": "Foxborough",
-      "status": "finished",
-      "result": {
-        "home": 1,
-        "away": 4
-      },
+      "status": "scheduled",
+      "result": null,
       "xg_home": 1.195,
       "xg_away": 1.962,
       "win_prob": 0.2165,
@@ -15479,11 +15476,8 @@
       "kickoff_utc": "19:00",
       "venue": "BMO Field",
       "city": "Toronto",
-      "status": "finished",
-      "result": {
-        "home": 5,
-        "away": 0
-      },
+      "status": "scheduled",
+      "result": null,
       "xg_home": 1.633,
       "xg_away": 1.203,
       "win_prob": 0.459,
@@ -21893,7 +21887,7 @@
     {
       "id": "R32_5",
       "stage": "round_of_32",
-      "home": "Ivory Coast",
+      "home": null,
       "away": null,
       "date": "2026-06-30",
       "venue": "TBC",
