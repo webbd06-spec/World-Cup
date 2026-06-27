@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-27T00:01:09.443737Z",
+  "generated_at": "2026-06-27T00:10:46.580184Z",
   "date": "2026-06-27",
   "model_version": "1.1.0",
   "blend_weights": {
@@ -13475,8 +13475,11 @@
       "kickoff_utc": "00:00",
       "venue": "Estadio Akron",
       "city": "Zapopan",
-      "status": "scheduled",
-      "result": null,
+      "status": "live",
+      "result": {
+        "home": 0,
+        "away": 0
+      },
       "xg_home": 1.181,
       "xg_away": 1.641,
       "win_prob": 0.1946,
@@ -13753,8 +13756,11 @@
       "kickoff_utc": "00:00",
       "venue": "NRG Stadium",
       "city": "Houston",
-      "status": "scheduled",
-      "result": null,
+      "status": "live",
+      "result": {
+        "home": 0,
+        "away": 0
+      },
       "xg_home": 1.185,
       "xg_away": 1.408,
       "win_prob": 0.3189,
