@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-27T02:10:50.741016Z",
+  "generated_at": "2026-06-27T02:20:43.672019Z",
   "date": "2026-06-27",
   "model_version": "1.1.0",
   "blend_weights": {
@@ -15207,11 +15207,8 @@
       "kickoff_utc": "19:00",
       "venue": "Gillette Stadium",
       "city": "Foxborough",
-      "status": "finished",
-      "result": {
-        "home": 1,
-        "away": 4
-      },
+      "status": "scheduled",
+      "result": null,
       "xg_home": 1.195,
       "xg_away": 1.962,
       "win_prob": 0.2165,
@@ -15485,11 +15482,8 @@
       "kickoff_utc": "19:00",
       "venue": "BMO Field",
       "city": "Toronto",
-      "status": "finished",
-      "result": {
-        "home": 5,
-        "away": 0
-      },
+      "status": "scheduled",
+      "result": null,
       "xg_home": 1.633,
       "xg_away": 1.203,
       "win_prob": 0.459,
