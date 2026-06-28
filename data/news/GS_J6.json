@@ -1,0 +1,20 @@
+{
+  "fixture_id": "GS_J6",
+  "home": "Algeria",
+  "away": "Austria",
+  "home_multiplier": 0.88,
+  "away_multiplier": 0.97,
+  "notes": "Algeria were without key striker Mohamed Amoura (hamstring injury sustained vs Argentina), their top scorer in World Cup qualifying, making Mahrez and Gouiri the focal attacking threats; Austria had no confirmed absences, though Arnautovic started only after consecutive substitute appearances, and Alaba (returning from a knee injury) was a late fitness monitor.",
+  "home_scorers": [
+    "Riyad Mahrez (captain & primary creative force, operating behind striker; scored",
+    "Amine Gouiri (leading striker in Amoura's absence; match-winner vs Jordan, poach",
+    "Fares Chaibi (attacking midfielder, set-piece and long-range threat)"
+  ],
+  "away_scorers": [
+    "Marcel Sabitzer (attacking midfielder, runs from deep, 100th-cap figurehead and ",
+    "Marko Arnautovic (veteran leading striker, Austria's all-time top scorer; scored",
+    "Romano Schmid (wide attacker, set-piece delivery and direct goal threat from the"
+  ],
+  "source": "anthropic_web_search",
+  "fetched_at": "2026-06-28T15:54:42.454589+00:00"
+}

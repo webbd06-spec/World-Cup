@@ -1,0 +1,20 @@
+{
+  "fixture_id": "GS_J5",
+  "home": "Jordan",
+  "away": "Argentina",
+  "home_multiplier": 0.92,
+  "away_multiplier": 0.88,
+  "notes": "Jordan have a clean bill of health with no injuries or suspensions, though Husam Abu Dahab carries a yellow card caution; Argentina are heavily rotating with Messi confirmed to start on the bench (rotation, not injury), while Tagliafico (muscle) and Julián Álvarez (ankle) are being managed carefully with potential for increased minutes.",
+  "home_scorers": [
+    "Yazan Al-Naimat (leading striker, 8 goals in AFC qualifying, main attacking thre",
+    "Nizar Al-Rashdan (goal-scorer vs Algeria, set-piece and central threat)",
+    "Mousa Al-Tamari (wide attacker, creative outlet and direct runner)"
+  ],
+  "away_scorers": [
+    "Nico Paz (expected starter in Messi's place, creative playmaker with eye for goa",
+    "Lautaro Martínez (leading striker, likely to start with Messi benched)",
+    "Julián Álvarez (impact substitute or starter, on penalties, returning from ankle"
+  ],
+  "source": "anthropic_web_search",
+  "fetched_at": "2026-06-28T15:54:26.794616+00:00"
+}

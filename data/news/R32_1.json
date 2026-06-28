@@ -1,0 +1,20 @@
+{
+  "fixture_id": "R32_1",
+  "home": "South Africa",
+  "away": "Canada",
+  "home_multiplier": 0.88,
+  "away_multiplier": 0.82,
+  "notes": "South Africa are without creative playmaker Themba Zwane (suspended after a red card vs Mexico) but are boosted by Teboho Mokoena's return from his one-game ban; Hugo Broos is expected to make just one change from the side that beat South Korea. Canada are severely depleted in midfield — Ismaël Koné is out for the tournament (broken tibia/fibula), Stephen Eustaquio is listed as doubtful/injured after sitting out the first half vs Switzerland with a leg issue, Alfie Jones remains out (thigh)…",
+  "home_scorers": [
+    "Evidence Makgopa (leading striker, expected to start as focal point of attack)",
+    "Oswin Appollis (pace threat on the wing, direct runner in transition)",
+    "Relebohile Mofokeng (creative attacker, set-piece and counter-attack threat)"
+  ],
+  "away_scorers": [
+    "Jonathan David (leading striker, hat-trick vs Qatar, three tournament goals)",
+    "Cyle Larin (co-striker, expected to start alongside David)",
+    "Tajon Buchanan (wide attacker, direct dribbler, set-piece threat)"
+  ],
+  "source": "anthropic_web_search",
+  "fetched_at": "2026-06-28T15:54:58.186360+00:00"
+}
