@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-28T03:20:48.220645Z",
+  "generated_at": "2026-06-28T03:30:59.661377Z",
   "date": "2026-06-28",
   "model_version": "1.1.0",
   "blend_weights": {
@@ -16928,7 +16928,7 @@
       "city": "Arlington",
       "status": "in_play",
       "result": {
-        "home": 0,
+        "home": 1,
         "away": 2
       },
       "xg_home": 0.83,
@@ -17209,8 +17209,8 @@
       "city": "Kansas City",
       "status": "in_play",
       "result": {
-        "home": 1,
-        "away": 1
+        "home": 2,
+        "away": 2
       },
       "xg_home": 1.292,
       "xg_away": 1.521,
@@ -20376,8 +20376,11 @@
       "kickoff_utc": "21:00",
       "venue": "MetLife Stadium",
       "city": "East Rutherford",
-      "status": "scheduled",
-      "result": null,
+      "status": "finished",
+      "result": {
+        "home": 0,
+        "away": 2
+      },
       "xg_home": 0.927,
       "xg_away": 2.232,
       "win_prob": 0.1316,
@@ -20651,8 +20654,11 @@
       "kickoff_utc": "21:00",
       "venue": "Lincoln Financial Field",
       "city": "Philadelphia",
-      "status": "scheduled",
-      "result": null,
+      "status": "finished",
+      "result": {
+        "home": 2,
+        "away": 1
+      },
       "xg_home": 1.901,
       "xg_away": 1.116,
       "win_prob": 0.5432,
