@@ -1,0 +1,20 @@
+{
+  "fixture_id": "R32_3",
+  "home": "Germany",
+  "away": "Paraguay",
+  "home_multiplier": 0.93,
+  "away_multiplier": 0.92,
+  "notes": "Germany are without CB Nico Schlotterbeck (knee ligament injury, tournament over) and LB Nathaniel Brown is a late fitness doubt (adductor) though Nagelsmann expects him to play; Paraguay are missing suspended MF Diego Gómez and CB Omar Alderete is doubtful (knee), while Almiron returns after serving his one-match ban for the red card vs Turkey.",
+  "home_scorers": [
+    "Kai Havertz (starting striker, focal point of attack)",
+    "Jamal Musiala (creative No.10, high goal involvement)",
+    "Florian Wirtz (attacking midfielder, set-piece threat)"
+  ],
+  "away_scorers": [
+    "Antonio Sanabria (lone striker, Paraguay's primary finisher)",
+    "Julio Enciso (dynamic forward, direct goal threat)",
+    "Miguel Almiron (returning attacker, energetic runner into box)"
+  ],
+  "source": "anthropic_web_search",
+  "fetched_at": "2026-06-29T18:30:44.281520+00:00"
+}

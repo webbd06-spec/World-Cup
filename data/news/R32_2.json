@@ -1,0 +1,20 @@
+{
+  "fixture_id": "R32_2",
+  "home": "Brazil",
+  "away": "Japan",
+  "home_multiplier": 0.88,
+  "away_multiplier": 0.82,
+  "notes": "Brazil are without pre-tournament absentees Rodrygo (torn ACL/meniscus), Estêvão (hamstring), Éder Militão, and Wesley, while Raphinha remains a doubt with a hamstring issue and Neymar is limited to a substitute role after his calf injury. Japan are missing key attackers Kaoru Mitoma (hamstring) and Takumi Minamino (ACL), lost captain Wataru Endo to a foot injury just before the tournament, and have a fitness concern over Takefusa Kubo (knee) who is not yet training fully ahead of the Round of…",
+  "home_scorers": [
+    "Vinícius Júnior (leading striker, scored in every group game, in-form)",
+    "Matheus Cunha (clinical finisher, key goal vs Scotland, likely starter)",
+    "Lucas Paquetá (attacking midfielder, set-piece threat, creative hub)"
+  ],
+  "away_scorers": [
+    "Ayase Ueda (main striker, scored twice in group stage, squad top scorer)",
+    "Ritsu Doan (wide attacker, danger man, 11 international goals)",
+    "Daichi Kamada (midfield goal threat, two group-stage goals, penalty taker)"
+  ],
+  "source": "anthropic_web_search",
+  "fetched_at": "2026-06-29T18:30:32.908729+00:00"
+}

@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-29T18:20:47.112857Z",
+  "generated_at": "2026-06-29T18:30:44.412084Z",
   "date": "2026-06-29",
   "model_version": "1.1.0",
   "blend_weights": {
@@ -21394,17 +21394,17 @@
       "city": null,
       "status": "in_play",
       "result": {
-        "home": 0,
+        "home": 1,
         "away": 1
       },
-      "xg_home": 1.842,
-      "xg_away": 1.272,
-      "win_prob": 0.5296,
-      "draw_prob": 0.2614,
-      "loss_prob": 0.209,
-      "model_win": 0.4941,
-      "model_draw": 0.255,
-      "model_loss": 0.2509,
+      "xg_home": 1.621,
+      "xg_away": 1.043,
+      "win_prob": 0.5292,
+      "draw_prob": 0.2707,
+      "loss_prob": 0.2002,
+      "model_win": 0.4929,
+      "model_draw": 0.2783,
+      "model_loss": 0.2288,
       "market_win": 0.5533,
       "market_draw": 0.2656,
       "market_loss": 0.1811,
@@ -21415,32 +21415,32 @@
         {
           "home": 1,
           "away": 1,
-          "prob": 0.1176
+          "prob": 0.1331
+        },
+        {
+          "home": 1,
+          "away": 0,
+          "prob": 0.0976
         },
         {
           "home": 2,
           "away": 1,
-          "prob": 0.0959
+          "prob": 0.0955
         },
         {
           "home": 2,
           "away": 0,
-          "prob": 0.0753
+          "prob": 0.0915
         },
         {
-          "home": 1,
+          "home": 0,
           "away": 0,
-          "prob": 0.0683
+          "prob": 0.085
         },
         {
           "home": 1,
           "away": 2,
-          "prob": 0.0662
-        },
-        {
-          "home": 2,
-          "away": 2,
-          "prob": 0.061
+          "prob": 0.0614
         }
       ],
       "top_score_conditional": {
@@ -21451,99 +21451,99 @@
       },
       "score_matrix": [
         [
-          0.05795,
-          0.04298,
-          0.03595,
-          0.01525,
-          0.00485,
-          0.00123,
-          0.00026,
-          5e-05,
-          1e-05
-        ],
-        [
-          0.06828,
-          0.11763,
-          0.06622,
-          0.02809,
-          0.00893,
-          0.00227,
-          0.00048,
-          9e-05,
-          1e-05
-        ],
-        [
-          0.07535,
-          0.09587,
-          0.06099,
-          0.02587,
-          0.00823,
-          0.00209,
-          0.00044,
-          8e-05,
-          1e-05
-        ],
-        [
-          0.04626,
-          0.05886,
-          0.03744,
-          0.01588,
-          0.00505,
-          0.00129,
-          0.00027,
-          5e-05,
-          1e-05
-        ],
-        [
-          0.0213,
-          0.0271,
-          0.01724,
-          0.00731,
-          0.00233,
-          0.00059,
-          0.00013,
-          2e-05,
-          0.0
-        ],
-        [
-          0.00785,
-          0.00998,
-          0.00635,
-          0.00269,
-          0.00086,
-          0.00022,
-          5e-05,
-          1e-05,
-          0.0
-        ],
-        [
-          0.00241,
-          0.00306,
-          0.00195,
-          0.00083,
-          0.00026,
-          7e-05,
-          1e-05,
-          0.0,
-          0.0
-        ],
-        [
-          0.00063,
-          0.00081,
-          0.00051,
-          0.00022,
-          7e-05,
-          2e-05,
-          0.0,
-          0.0,
-          0.0
-        ],
-        [
-          0.00015,
-          0.00019,
+          0.08499,
+          0.05736,
+          0.0379,
+          0.01318,
+          0.00344,
+          0.00072,
           0.00012,
-          5e-05,
           2e-05,
+          0.0
+        ],
+        [
+          0.09762,
+          0.13311,
+          0.06143,
+          0.02136,
+          0.00557,
+          0.00116,
+          0.0002,
+          3e-05,
+          0.0
+        ],
+        [
+          0.09153,
+          0.09547,
+          0.04979,
+          0.01731,
+          0.00451,
+          0.00094,
+          0.00016,
+          2e-05,
+          0.0
+        ],
+        [
+          0.04946,
+          0.05159,
+          0.0269,
+          0.00935,
+          0.00244,
+          0.00051,
+          9e-05,
+          1e-05,
+          0.0
+        ],
+        [
+          0.02004,
+          0.0209,
+          0.0109,
+          0.00379,
+          0.00099,
+          0.00021,
+          4e-05,
+          1e-05,
+          0.0
+        ],
+        [
+          0.0065,
+          0.00678,
+          0.00353,
+          0.00123,
+          0.00032,
+          7e-05,
+          1e-05,
+          0.0,
+          0.0
+        ],
+        [
+          0.00176,
+          0.00183,
+          0.00095,
+          0.00033,
+          9e-05,
+          2e-05,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.00041,
+          0.00042,
+          0.00022,
+          8e-05,
+          2e-05,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          8e-05,
+          9e-05,
+          4e-05,
+          2e-05,
+          0.0,
           0.0,
           0.0,
           0.0,
@@ -21660,6 +21660,25 @@
       "blend_weights": {
         "market": 0.6,
         "model": 0.4
+      },
+      "team_news": {
+        "notes": "Brazil are without pre-tournament absentees Rodrygo (torn ACL/meniscus), Estêvão (hamstring), Éder Militão, and Wesley, while Raphinha remains a doubt with a hamstring issue and Neymar is limited to a substitute role after his calf injury. Japan are missing key attackers Kaoru Mitoma (hamstring) and Takumi Minamino (ACL), lost captain Wataru Endo to a foot injury just before the tournament, and have a fitness concern over Takefusa Kubo (knee) who is not yet training fully ahead of the Round of…",
+        "home_scorers": [
+          "Vinícius Júnior (leading striker, scored in every group game, in-form)",
+          "Matheus Cunha (clinical finisher, key goal vs Scotland, likely starter)",
+          "Lucas Paquetá (attacking midfielder, set-piece threat, creative hub)"
+        ],
+        "away_scorers": [
+          "Ayase Ueda (main striker, scored twice in group stage, squad top scorer)",
+          "Ritsu Doan (wide attacker, danger man, 11 international goals)",
+          "Daichi Kamada (midfield goal threat, two group-stage goals, penalty taker)"
+        ],
+        "fetched_at": "2026-06-29T18:30:32.908729+00:00"
+      },
+      "news_adjustment": {
+        "home": 0.88,
+        "away": 0.82,
+        "notes": "Brazil are without pre-tournament absentees Rodrygo (torn ACL/meniscus), Estêvão (hamstring), Éder Militão, and Wesley, while Raphinha remains a doubt with a hamstring issue and Neymar is limited to a substitute role after his calf injury. Japan are missing key attackers Kaoru Mitoma (hamstring) and Takumi Minamino (ACL), lost captain Wataru Endo to a foot injury just before the tournament, and have a fitness concern over Takefusa Kubo (knee) who is not yet training fully ahead of the Round of…"
       }
     },
     {
@@ -21675,14 +21694,14 @@
       "city": null,
       "status": "scheduled",
       "result": null,
-      "xg_home": 2.142,
-      "xg_away": 1.06,
-      "win_prob": 0.6746,
-      "draw_prob": 0.2022,
-      "loss_prob": 0.1232,
-      "model_win": 0.6087,
-      "model_draw": 0.2249,
-      "model_loss": 0.1664,
+      "xg_home": 1.992,
+      "xg_away": 0.975,
+      "win_prob": 0.6698,
+      "draw_prob": 0.2074,
+      "loss_prob": 0.1228,
+      "model_win": 0.5969,
+      "model_draw": 0.2378,
+      "model_loss": 0.1653,
       "market_win": 0.7185,
       "market_draw": 0.1871,
       "market_loss": 0.0944,
@@ -21693,32 +21712,32 @@
         {
           "home": 1,
           "away": 1,
-          "prob": 0.1044
-        },
-        {
-          "home": 2,
-          "away": 1,
-          "prob": 0.099
+          "prob": 0.113
         },
         {
           "home": 2,
           "away": 0,
-          "prob": 0.0934
+          "prob": 0.1021
+        },
+        {
+          "home": 2,
+          "away": 1,
+          "prob": 0.0996
         },
         {
           "home": 1,
           "away": 0,
-          "prob": 0.0752
-        },
-        {
-          "home": 3,
-          "away": 1,
-          "prob": 0.0706
+          "prob": 0.0895
         },
         {
           "home": 3,
           "away": 0,
-          "prob": 0.0667
+          "prob": 0.0678
+        },
+        {
+          "home": 3,
+          "away": 1,
+          "prob": 0.0661
         }
       ],
       "top_score_conditional": {
@@ -21729,99 +21748,99 @@
       },
       "score_matrix": [
         [
-          0.05275,
-          0.03114,
-          0.02287,
-          0.00808,
-          0.00214,
-          0.00045,
+          0.06445,
+          0.03718,
+          0.02447,
+          0.00795,
+          0.00194,
+          0.00038,
+          6e-05,
+          1e-05,
+          0.0
+        ],
+        [
+          0.08951,
+          0.11296,
+          0.04874,
+          0.01584,
+          0.00386,
+          0.00075,
+          0.00012,
+          2e-05,
+          0.0
+        ],
+        [
+          0.1021,
+          0.09956,
+          0.04855,
+          0.01578,
+          0.00385,
+          0.00075,
+          0.00012,
+          2e-05,
+          0.0
+        ],
+        [
+          0.06779,
+          0.06611,
+          0.03224,
+          0.01048,
+          0.00255,
+          0.0005,
           8e-05,
           1e-05,
           0.0
         ],
         [
-          0.07521,
-          0.10444,
-          0.04897,
-          0.0173,
-          0.00458,
-          0.00097,
-          0.00017,
-          3e-05,
-          0.0
-        ],
-        [
-          0.0934,
-          0.09897,
-          0.05243,
-          0.01852,
-          0.00491,
-          0.00104,
-          0.00018,
-          3e-05,
-          0.0
-        ],
-        [
-          0.06667,
-          0.07065,
-          0.03743,
-          0.01322,
-          0.0035,
-          0.00074,
-          0.00013,
-          2e-05,
-          0.0
-        ],
-        [
-          0.0357,
-          0.03782,
-          0.02004,
-          0.00708,
-          0.00187,
-          0.0004,
-          7e-05,
-          1e-05,
-          0.0
-        ],
-        [
-          0.01529,
-          0.0162,
-          0.00858,
-          0.00303,
-          0.0008,
-          0.00017,
-          3e-05,
-          0.0,
-          0.0
-        ],
-        [
-          0.00546,
-          0.00578,
-          0.00306,
-          0.00108,
-          0.00029,
-          6e-05,
-          1e-05,
-          0.0,
-          0.0
-        ],
-        [
-          0.00167,
-          0.00177,
-          0.00094,
-          0.00033,
-          9e-05,
-          2e-05,
-          0.0,
-          0.0,
-          0.0
-        ],
-        [
-          0.00045,
-          0.00047,
+          0.03376,
+          0.03293,
+          0.01605,
+          0.00522,
+          0.00127,
           0.00025,
-          9e-05,
+          4e-05,
+          1e-05,
+          0.0
+        ],
+        [
+          0.01345,
+          0.01312,
+          0.0064,
+          0.00208,
+          0.00051,
+          0.0001,
           2e-05,
+          0.0,
+          0.0
+        ],
+        [
+          0.00447,
+          0.00436,
+          0.00212,
+          0.00069,
+          0.00017,
+          3e-05,
+          1e-05,
+          0.0,
+          0.0
+        ],
+        [
+          0.00127,
+          0.00124,
+          0.0006,
+          0.0002,
+          5e-05,
+          1e-05,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.00032,
+          0.00031,
+          0.00015,
+          5e-05,
+          1e-05,
           0.0,
           0.0,
           0.0,
@@ -21938,6 +21957,25 @@
       "blend_weights": {
         "market": 0.6,
         "model": 0.4
+      },
+      "team_news": {
+        "notes": "Germany are without CB Nico Schlotterbeck (knee ligament injury, tournament over) and LB Nathaniel Brown is a late fitness doubt (adductor) though Nagelsmann expects him to play; Paraguay are missing suspended MF Diego Gómez and CB Omar Alderete is doubtful (knee), while Almiron returns after serving his one-match ban for the red card vs Turkey.",
+        "home_scorers": [
+          "Kai Havertz (starting striker, focal point of attack)",
+          "Jamal Musiala (creative No.10, high goal involvement)",
+          "Florian Wirtz (attacking midfielder, set-piece threat)"
+        ],
+        "away_scorers": [
+          "Antonio Sanabria (lone striker, Paraguay's primary finisher)",
+          "Julio Enciso (dynamic forward, direct goal threat)",
+          "Miguel Almiron (returning attacker, energetic runner into box)"
+        ],
+        "fetched_at": "2026-06-29T18:30:44.281520+00:00"
+      },
+      "news_adjustment": {
+        "home": 0.93,
+        "away": 0.92,
+        "notes": "Germany are without CB Nico Schlotterbeck (knee ligament injury, tournament over) and LB Nathaniel Brown is a late fitness doubt (adductor) though Nagelsmann expects him to play; Paraguay are missing suspended MF Diego Gómez and CB Omar Alderete is doubtful (knee), while Almiron returns after serving his one-match ban for the red card vs Turkey."
       }
     },
     {
