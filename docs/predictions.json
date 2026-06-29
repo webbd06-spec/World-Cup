@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-29T06:10:51.523835Z",
+  "generated_at": "2026-06-29T06:20:45.545957Z",
   "date": "2026-06-29",
   "model_version": "1.1.0",
   "blend_weights": {
@@ -20956,7 +20956,7 @@
     {
       "id": "R16_1",
       "stage": "round_of_16",
-      "home": null,
+      "home": "Canada",
       "away": null,
       "date": "2026-07-04",
       "venue": "TBC",
