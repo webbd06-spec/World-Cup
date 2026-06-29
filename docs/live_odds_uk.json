@@ -1,10 +1,10 @@
 {
-  "_fetched": "2026-06-29T07:02:28.801306+00:00",
+  "_fetched": "2026-06-29T11:02:14.804498+00:00",
   "matches": {
     "R32_2": {
       "h2h": {
         "unibet_uk": {
-          "home_win": 1.7,
+          "home_win": 1.73,
           "draw": 3.75,
           "away_win": 5.25
         },
@@ -20,18 +20,18 @@
         },
         "ladbrokes_uk": {
           "home_win": 1.7,
-          "draw": 3.6,
+          "draw": 3.7,
           "away_win": 5.0
         },
         "betway": {
-          "home_win": 1.67,
-          "draw": 3.6,
-          "away_win": 5.0
-        },
-        "williamhill": {
           "home_win": 1.7,
           "draw": 3.6,
-          "away_win": 5.0
+          "away_win": 4.75
+        },
+        "williamhill": {
+          "home_win": 1.73,
+          "draw": 3.5,
+          "away_win": 4.8
         },
         "paddypower": {
           "home_win": 1.67,
@@ -44,19 +44,19 @@
           "away_win": 5.0
         },
         "betfair_ex_uk": {
-          "home_win": 1.75,
+          "home_win": 1.77,
           "draw": 3.85,
-          "away_win": 5.7
+          "away_win": 5.6
         },
         "boylesports": {
-          "home_win": 1.67,
-          "draw": 3.6,
-          "away_win": 5.0
+          "home_win": 1.73,
+          "draw": 3.4,
+          "away_win": 4.75
         },
         "betvictor": {
-          "home_win": 1.67,
+          "home_win": 1.7,
           "draw": 3.6,
-          "away_win": 5.25
+          "away_win": 5.0
         }
       },
       "totals": {
@@ -70,49 +70,49 @@
     "R32_3": {
       "h2h": {
         "unibet_uk": {
-          "home_win": 1.35,
-          "draw": 5.25,
-          "away_win": 9.0
-        },
-        "betvictor": {
-          "home_win": 1.33,
-          "draw": 5.0,
-          "away_win": 9.0
-        },
-        "betway": {
-          "home_win": 1.33,
+          "home_win": 1.37,
           "draw": 5.0,
           "away_win": 8.5
         },
-        "boylesports": {
-          "home_win": 1.3,
+        "betvictor": {
+          "home_win": 1.36,
+          "draw": 4.8,
+          "away_win": 8.5
+        },
+        "betway": {
+          "home_win": 1.35,
           "draw": 4.75,
-          "away_win": 9.5
+          "away_win": 8.5
+        },
+        "boylesports": {
+          "home_win": 1.33,
+          "draw": 4.75,
+          "away_win": 9.0
         },
         "betfred_uk": {
           "home_win": 1.3,
-          "draw": 5.5,
-          "away_win": 9.5
+          "draw": 4.6,
+          "away_win": 9.0
         },
         "williamhill": {
-          "home_win": 1.35,
-          "draw": 4.8,
+          "home_win": 1.36,
+          "draw": 4.75,
           "away_win": 8.0
         },
         "paddypower": {
           "home_win": 1.33,
-          "draw": 4.75,
+          "draw": 5.0,
           "away_win": 9.5
         },
         "skybet": {
           "home_win": 1.3,
           "draw": 5.0,
-          "away_win": 9.5
+          "away_win": 9.0
         },
         "betfair_ex_uk": {
           "home_win": 1.38,
-          "draw": 5.3,
-          "away_win": 11.0
+          "draw": 5.4,
+          "away_win": 10.5
         },
         "ladbrokes_uk": {
           "home_win": 1.36,
@@ -121,7 +121,7 @@
         },
         "coral": {
           "home_win": 1.36,
-          "draw": 5.0,
+          "draw": 5.25,
           "away_win": 8.0
         }
       },
@@ -136,9 +136,9 @@
     "R32_4": {
       "h2h": {
         "betfred_uk": {
-          "home_win": 2.25,
+          "home_win": 2.3,
           "draw": 3.2,
-          "away_win": 3.4
+          "away_win": 3.25
         },
         "coral": {
           "home_win": 2.25,
@@ -151,39 +151,39 @@
           "away_win": 3.4
         },
         "unibet_uk": {
-          "home_win": 2.3,
+          "home_win": 2.35,
           "draw": 3.1,
-          "away_win": 3.5
+          "away_win": 3.4
         },
         "betway": {
           "home_win": 2.2,
           "draw": 3.0,
-          "away_win": 3.5
+          "away_win": 3.4
         },
         "williamhill": {
-          "home_win": 2.2,
-          "draw": 3.1,
-          "away_win": 3.4
+          "home_win": 2.25,
+          "draw": 3.0,
+          "away_win": 3.3
         },
         "betvictor": {
           "home_win": 2.2,
           "draw": 3.25,
-          "away_win": 3.3
+          "away_win": 3.25
         },
         "paddypower": {
-          "home_win": 2.2,
+          "home_win": 2.25,
           "draw": 3.0,
-          "away_win": 3.6
-        },
-        "skybet": {
-          "home_win": 2.2,
-          "draw": 3.1,
           "away_win": 3.5
         },
+        "skybet": {
+          "home_win": 2.25,
+          "draw": 3.0,
+          "away_win": 3.4
+        },
         "betfair_ex_uk": {
-          "home_win": 2.34,
-          "draw": 3.2,
-          "away_win": 3.75
+          "home_win": 2.38,
+          "draw": 3.15,
+          "away_win": 3.7
         },
         "boylesports": {
           "home_win": 2.2,
@@ -193,8 +193,8 @@
       },
       "totals": {
         "williamhill": {
-          "over_2_5": 2.05,
-          "under_2_5": 1.7
+          "over_2_5": 2.2,
+          "under_2_5": 1.62
         }
       },
       "ah": {}
@@ -203,7 +203,7 @@
       "h2h": {
         "ladbrokes_uk": {
           "home_win": 3.6,
-          "draw": 3.6,
+          "draw": 3.5,
           "away_win": 2.0
         },
         "betfred_uk": {
@@ -247,8 +247,8 @@
           "away_win": 2.08
         },
         "williamhill": {
-          "home_win": 3.6,
-          "draw": 3.4,
+          "home_win": 3.5,
+          "draw": 3.5,
           "away_win": 2.0
         },
         "boylesports": {
@@ -259,8 +259,8 @@
       },
       "totals": {
         "williamhill": {
-          "over_2_5": 1.8,
-          "under_2_5": 1.95
+          "over_2_5": 1.73,
+          "under_2_5": 2.0
         }
       },
       "ah": {}
@@ -320,7 +320,7 @@
         "betfair_ex_uk": {
           "home_win": 1.29,
           "draw": 6.4,
-          "away_win": 13.5
+          "away_win": 13.0
         }
       },
       "totals": {
@@ -334,9 +334,9 @@
     "R32_7": {
       "h2h": {
         "betfred_uk": {
-          "home_win": 2.25,
+          "home_win": 2.2,
           "draw": 3.0,
-          "away_win": 3.6
+          "away_win": 3.75
         },
         "paddypower": {
           "home_win": 2.15,
@@ -364,19 +364,19 @@
           "away_win": 3.8
         },
         "ladbrokes_uk": {
-          "home_win": 2.25,
-          "draw": 3.0,
-          "away_win": 3.6
-        },
-        "coral": {
-          "home_win": 2.25,
-          "draw": 3.0,
-          "away_win": 3.6
-        },
-        "williamhill": {
           "home_win": 2.2,
           "draw": 2.9,
           "away_win": 3.7
+        },
+        "coral": {
+          "home_win": 2.2,
+          "draw": 3.0,
+          "away_win": 3.7
+        },
+        "williamhill": {
+          "home_win": 2.15,
+          "draw": 2.9,
+          "away_win": 3.8
         },
         "boylesports": {
           "home_win": 2.15,
@@ -386,7 +386,7 @@
         "betvictor": {
           "home_win": 2.15,
           "draw": 3.0,
-          "away_win": 3.75
+          "away_win": 3.8
         }
       },
       "totals": {
@@ -422,17 +422,17 @@
         "betway": {
           "home_win": 1.25,
           "draw": 5.5,
-          "away_win": 11.0
+          "away_win": 12.0
         },
         "paddypower": {
           "home_win": 1.22,
-          "draw": 5.0,
+          "draw": 5.5,
           "away_win": 14.0
         },
         "skybet": {
           "home_win": 1.25,
           "draw": 5.25,
-          "away_win": 12.0
+          "away_win": 13.0
         },
         "betvictor": {
           "home_win": 1.25,
@@ -445,9 +445,9 @@
           "away_win": 11.0
         },
         "betfair_ex_uk": {
-          "home_win": 1.29,
-          "draw": 5.8,
-          "away_win": 16.0
+          "home_win": 1.28,
+          "draw": 5.9,
+          "away_win": 16.5
         },
         "boylesports": {
           "home_win": 1.25,
@@ -481,14 +481,14 @@
           "away_win": 3.3
         },
         "paddypower": {
-          "home_win": 2.15,
+          "home_win": 2.2,
           "draw": 3.1,
           "away_win": 3.6
         },
         "skybet": {
-          "home_win": 2.15,
+          "home_win": 2.2,
           "draw": 3.1,
-          "away_win": 3.6
+          "away_win": 3.5
         },
         "betvictor": {
           "home_win": 2.15,
@@ -506,9 +506,9 @@
           "away_win": 3.4
         },
         "betfair_ex_uk": {
-          "home_win": 2.28,
+          "home_win": 2.3,
           "draw": 3.3,
-          "away_win": 3.8
+          "away_win": 3.75
         },
         "williamhill": {
           "home_win": 2.15,
@@ -564,7 +564,7 @@
         "skybet": {
           "home_win": 1.29,
           "draw": 5.0,
-          "away_win": 11.0
+          "away_win": 10.5
         },
         "paddypower": {
           "home_win": 1.25,
@@ -579,7 +579,7 @@
         "betfair_ex_uk": {
           "home_win": 1.33,
           "draw": 5.6,
-          "away_win": 13.5
+          "away_win": 12.5
         },
         "williamhill": {
           "home_win": 1.3,
@@ -618,19 +618,19 @@
           "away_win": 4.6
         },
         "betway": {
-          "home_win": 1.73,
+          "home_win": 1.75,
           "draw": 3.6,
-          "away_win": 4.5
+          "away_win": 4.33
         },
         "paddypower": {
-          "home_win": 1.75,
+          "home_win": 1.73,
           "draw": 3.5,
           "away_win": 4.75
         },
         "skybet": {
-          "home_win": 1.75,
-          "draw": 3.4,
-          "away_win": 4.6
+          "home_win": 1.73,
+          "draw": 3.5,
+          "away_win": 4.8
         },
         "williamhill": {
           "home_win": 1.75,
@@ -638,9 +638,9 @@
           "away_win": 4.75
         },
         "betfair_ex_uk": {
-          "home_win": 1.85,
-          "draw": 3.7,
-          "away_win": 5.2
+          "home_win": 1.81,
+          "draw": 3.8,
+          "away_win": 5.3
         },
         "boylesports": {
           "home_win": 1.73,
@@ -649,8 +649,8 @@
         },
         "betvictor": {
           "home_win": 1.75,
-          "draw": 3.6,
-          "away_win": 4.6
+          "draw": 3.5,
+          "away_win": 4.75
         }
       },
       "totals": {
@@ -696,17 +696,17 @@
         "skybet": {
           "home_win": 2.0,
           "draw": 3.2,
-          "away_win": 3.9
+          "away_win": 4.0
         },
         "paddypower": {
-          "home_win": 2.0,
+          "home_win": 1.95,
           "draw": 3.2,
-          "away_win": 3.8
+          "away_win": 4.0
         },
         "betfair_ex_uk": {
           "home_win": 2.08,
           "draw": 3.4,
-          "away_win": 4.2
+          "away_win": 4.3
         },
         "williamhill": {
           "home_win": 2.0,
@@ -714,7 +714,7 @@
           "away_win": 3.8
         },
         "betvictor": {
-          "home_win": 2.0,
+          "home_win": 1.95,
           "draw": 3.4,
           "away_win": 3.8
         }
@@ -740,19 +740,19 @@
           "away_win": 2.5
         },
         "paddypower": {
-          "home_win": 3.25,
+          "home_win": 3.3,
           "draw": 2.8,
-          "away_win": 2.5
+          "away_win": 2.45
         },
         "skybet": {
-          "home_win": 3.2,
+          "home_win": 3.25,
           "draw": 2.8,
-          "away_win": 2.5
+          "away_win": 2.45
         },
         "betway": {
           "home_win": 3.1,
-          "draw": 2.9,
-          "away_win": 2.4
+          "draw": 2.8,
+          "away_win": 2.38
         },
         "coral": {
           "home_win": 3.3,
@@ -765,9 +765,9 @@
           "away_win": 2.37
         },
         "betfair_ex_uk": {
-          "home_win": 3.45,
-          "draw": 2.98,
-          "away_win": 2.62
+          "home_win": 3.5,
+          "draw": 2.96,
+          "away_win": 2.6
         },
         "boylesports": {
           "home_win": 3.25,
@@ -780,9 +780,9 @@
           "away_win": 2.4
         },
         "betvictor": {
-          "home_win": 3.2,
+          "home_win": 3.25,
           "draw": 2.9,
-          "away_win": 2.45
+          "away_win": 2.4
         }
       },
       "totals": {
@@ -808,7 +808,7 @@
         "ladbrokes_uk": {
           "home_win": 1.17,
           "draw": 7.5,
-          "away_win": 15.0
+          "away_win": 17.0
         },
         "coral": {
           "home_win": 1.17,
@@ -842,8 +842,8 @@
         },
         "betfair_ex_uk": {
           "home_win": 1.17,
-          "draw": 9.0,
-          "away_win": 26.0
+          "draw": 8.8,
+          "away_win": 23.0
         },
         "betvictor": {
           "home_win": 1.14,
@@ -889,11 +889,11 @@
         "paddypower": {
           "home_win": 1.5,
           "draw": 3.8,
-          "away_win": 7.5
+          "away_win": 7.0
         },
         "skybet": {
           "home_win": 1.5,
-          "draw": 3.75,
+          "draw": 3.8,
           "away_win": 7.0
         },
         "williamhill": {
@@ -907,9 +907,9 @@
           "away_win": 7.5
         },
         "betfair_ex_uk": {
-          "home_win": 1.56,
-          "draw": 4.0,
-          "away_win": 8.2
+          "home_win": 1.57,
+          "draw": 4.1,
+          "away_win": 8.0
         }
       },
       "totals": {
