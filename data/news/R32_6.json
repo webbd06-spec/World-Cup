@@ -1,0 +1,20 @@
+{
+  "fixture_id": "R32_6",
+  "home": "France",
+  "away": "Sweden",
+  "home_multiplier": 0.97,
+  "away_multiplier": 0.82,
+  "notes": "France are near full-strength but carry concerns over Marcus Thuram (calf, out), N'Golo Kanté (physical discomfort, doubtful), and William Saliba (back issue, expected to start). Sweden are significantly weakened: key centre-back Isak Hien is ruled out for the rest of the tournament with a thigh injury, forcing a defensive reshuffle with Lindelöf dropping back and teenager Bergvall stepping into midfield.",
+  "home_scorers": [
+    "Kylian Mbappé (captain and leading striker, 4 goals in group stage)",
+    "Ousmane Dembélé (joint top scorer with 4 goals, including a hat-trick vs Norway)",
+    "Michael Olise (advanced playmaker, overloads half-spaces, set-piece threat)"
+  ],
+  "away_scorers": [
+    "Viktor Gyökeres (target man, hold-up play, primary striker)",
+    "Alexander Isak (counter-attack runner, 3 assists in tournament, pace threat in b",
+    "Anthony Elanga (wide forward, likely to carry ball on the break)"
+  ],
+  "source": "anthropic_web_search",
+  "fetched_at": "2026-06-30T17:30:54.960581+00:00"
+}

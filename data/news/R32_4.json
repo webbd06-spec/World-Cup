@@ -1,0 +1,20 @@
+{
+  "fixture_id": "R32_4",
+  "home": "Netherlands",
+  "away": "Morocco",
+  "home_multiplier": 0.92,
+  "away_multiplier": 0.95,
+  "notes": "Netherlands are missing pre-tournament absentees Jurriën Timber (groin), Matthijs de Ligt (back surgery), Xavi Simons (ACL), and Teun Schouten, though Dumfries and Brobbey passed late fitness tests and are available; Koeman rotates Micky van de Ven back in at left-back for Nathan Aké. Morocco are without pre-tournament casualties Nayef Aguerd (groin/pubic fracture) and Abde Ezzalzouli (knee), and had fitness concerns over Mazraoui, but he is expected to start; coach Ouahbi brings back Diop…",
+  "home_scorers": [
+    "Brian Brobbey (tournament top scorer with 3 goals, leading striker)",
+    "Cody Gakpo (2 World Cup goals in 2026, wide attacker with cutting runs)",
+    "Donyell Malen (right-wing starter, direct threat in transition)"
+  ],
+  "away_scorers": [
+    "Ismael Saibari (tournament's joint-top scorer with 3 goals, spearheads attack)",
+    "Achraf Hakimi (1 goal in group stage, marauding full-back, set-piece threat)",
+    "Brahim Díaz (2 assists in group stage, creative hub behind the striker)"
+  ],
+  "source": "anthropic_web_search",
+  "fetched_at": "2026-06-30T17:30:28.784783+00:00"
+}

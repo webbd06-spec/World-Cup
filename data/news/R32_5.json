@@ -1,0 +1,20 @@
+{
+  "fixture_id": "R32_5",
+  "home": "Ivory Coast",
+  "away": "Norway",
+  "home_multiplier": 0.95,
+  "away_multiplier": 1.05,
+  "notes": "Ivory Coast have no confirmed suspensions but Wilfried Singo (hamstring) remains a doubt at right centre-back, while Amad Diallo has been dropped to the bench by coach Fae in a tactical rotation. Norway return to full strength after Solbakken's mass rotation vs France — Haaland, Ødegaard and Nusa are all back starting — with only right-back Julian Ryerson carrying a thigh concern.",
+  "home_scorers": [
+    "Yan Diomande (leading striker / set-piece threat)",
+    "Nicolas Pépé (in-form winger, scored twice vs Curaçao)",
+    "Franck Kessié (penalty taker / box-to-box runner)"
+  ],
+  "away_scorers": [
+    "Erling Haaland (tournament top scorer, 4 goals, fully rested)",
+    "Alexander Sørloth (starting striker partner, physical aerial threat)",
+    "Martin Ødegaard (creative hub / set-piece delivery, back from rest)"
+  ],
+  "source": "anthropic_web_search",
+  "fetched_at": "2026-06-30T17:30:42.939489+00:00"
+}
