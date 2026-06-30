@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-30T19:31:06.677006Z",
+  "generated_at": "2026-06-30T19:40:53.725972Z",
   "date": "2026-06-30",
   "model_version": "1.1.0",
   "blend_weights": {
@@ -22539,8 +22539,11 @@
       "kickoff_utc": "17:00",
       "venue": "TBC",
       "city": null,
-      "status": "scheduled",
-      "result": null,
+      "status": "finished",
+      "result": {
+        "home": 1,
+        "away": 2
+      },
       "xg_home": 1.264,
       "xg_away": 1.74,
       "win_prob": 0.1069,
