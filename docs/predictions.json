@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-30T06:20:53.806945Z",
+  "generated_at": "2026-06-30T06:31:01.624810Z",
   "date": "2026-06-30",
   "model_version": "1.1.0",
   "blend_weights": {
@@ -20956,24 +20956,282 @@
     {
       "id": "R16_1",
       "stage": "round_of_16",
+      "group": null,
+      "matchday": null,
       "home": "Canada",
-      "away": null,
+      "away": "Morocco",
       "date": "2026-07-04",
+      "kickoff_utc": "17:00",
       "venue": "TBC",
-      "status": "tbd",
-      "win_prob": null,
-      "draw_prob": null,
-      "loss_prob": null,
-      "xg_home": null,
-      "xg_away": null,
-      "top_scorelines": [],
-      "score_matrix": [],
-      "source": "tbd"
+      "city": null,
+      "status": "scheduled",
+      "result": null,
+      "xg_home": 1.393,
+      "xg_away": 1.575,
+      "win_prob": 0.3235,
+      "draw_prob": 0.2727,
+      "loss_prob": 0.4038,
+      "model_win": 0.3235,
+      "model_draw": 0.2727,
+      "model_loss": 0.4038,
+      "market_win": null,
+      "market_draw": null,
+      "market_loss": null,
+      "best_odds_home": null,
+      "best_odds_draw": null,
+      "best_odds_away": null,
+      "top_scorelines": [
+        {
+          "home": 1,
+          "away": 1,
+          "prob": 0.1274
+        },
+        {
+          "home": 1,
+          "away": 2,
+          "prob": 0.0888
+        },
+        {
+          "home": 2,
+          "away": 1,
+          "prob": 0.0786
+        },
+        {
+          "home": 0,
+          "away": 1,
+          "prob": 0.0663
+        },
+        {
+          "home": 0,
+          "away": 0,
+          "prob": 0.066
+        },
+        {
+          "home": 0,
+          "away": 2,
+          "prob": 0.0638
+        }
+      ],
+      "top_score_conditional": {
+        "home": 1,
+        "away": 2,
+        "prob": 0.0888,
+        "result": "L"
+      },
+      "score_matrix": [
+        [
+          0.06605,
+          0.06629,
+          0.06376,
+          0.03348,
+          0.01319,
+          0.00415,
+          0.00109,
+          0.00025,
+          5e-05
+        ],
+        [
+          0.05693,
+          0.12743,
+          0.08883,
+          0.04664,
+          0.01837,
+          0.00579,
+          0.00152,
+          0.00034,
+          7e-05
+        ],
+        [
+          0.04987,
+          0.07855,
+          0.06187,
+          0.03249,
+          0.01279,
+          0.00403,
+          0.00106,
+          0.00024,
+          5e-05
+        ],
+        [
+          0.02316,
+          0.03648,
+          0.02873,
+          0.01509,
+          0.00594,
+          0.00187,
+          0.00049,
+          0.00011,
+          2e-05
+        ],
+        [
+          0.00806,
+          0.0127,
+          0.01001,
+          0.00525,
+          0.00207,
+          0.00065,
+          0.00017,
+          4e-05,
+          1e-05
+        ],
+        [
+          0.00225,
+          0.00354,
+          0.00279,
+          0.00146,
+          0.00058,
+          0.00018,
+          5e-05,
+          1e-05,
+          0.0
+        ],
+        [
+          0.00052,
+          0.00082,
+          0.00065,
+          0.00034,
+          0.00013,
+          4e-05,
+          1e-05,
+          0.0,
+          0.0
+        ],
+        [
+          0.0001,
+          0.00016,
+          0.00013,
+          7e-05,
+          3e-05,
+          1e-05,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          2e-05,
+          3e-05,
+          2e-05,
+          1e-05,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      ],
+      "ah_lines": [
+        {
+          "h": 0,
+          "key": "0",
+          "p_home": 0.4447,
+          "p_away": 0.5553,
+          "fair_home": 2.248,
+          "fair_away": 1.801
+        },
+        {
+          "h": -0.25,
+          "key": "-0.25",
+          "p_home": 0.3745,
+          "p_away": 0.6255,
+          "fair_home": 2.67,
+          "fair_away": 1.599
+        },
+        {
+          "h": -0.5,
+          "key": "-0.5",
+          "p_home": 0.3235,
+          "p_away": 0.6765,
+          "fair_home": 3.092,
+          "fair_away": 1.478
+        },
+        {
+          "h": -0.75,
+          "key": "-0.75",
+          "p_home": 0.2606,
+          "p_away": 0.7394,
+          "fair_home": 3.838,
+          "fair_away": 1.352
+        },
+        {
+          "h": -1.5,
+          "key": "-1.5",
+          "p_home": 0.1534,
+          "p_away": 0.8466,
+          "fair_home": 6.52,
+          "fair_away": 1.181
+        },
+        {
+          "h": -2.5,
+          "key": "-2.5",
+          "p_home": 0.0554,
+          "p_away": 0.9446,
+          "fair_home": 18.047,
+          "fair_away": 1.059
+        },
+        {
+          "h": -3.5,
+          "key": "-3.5",
+          "p_home": 0.0164,
+          "p_away": 0.9836,
+          "fair_home": 61.005,
+          "fair_away": 1.017
+        },
+        {
+          "h": 0.25,
+          "key": "0.25",
+          "p_home": 0.5324,
+          "p_away": 0.4676,
+          "fair_home": 1.878,
+          "fair_away": 2.139
+        },
+        {
+          "h": 0.5,
+          "key": "0.5",
+          "p_home": 0.5962,
+          "p_away": 0.4038,
+          "fair_home": 1.677,
+          "fair_away": 2.476
+        },
+        {
+          "h": 0.75,
+          "key": "0.75",
+          "p_home": 0.6603,
+          "p_away": 0.3397,
+          "fair_home": 1.514,
+          "fair_away": 2.944
+        },
+        {
+          "h": 1.5,
+          "key": "1.5",
+          "p_home": 0.7904,
+          "p_away": 0.2096,
+          "fair_home": 1.265,
+          "fair_away": 4.771
+        },
+        {
+          "h": 2.5,
+          "key": "2.5",
+          "p_home": 0.9157,
+          "p_away": 0.0843,
+          "fair_home": 1.092,
+          "fair_away": 11.857
+        },
+        {
+          "h": 3.5,
+          "key": "3.5",
+          "p_home": 0.9721,
+          "p_away": 0.0279,
+          "fair_home": 1.029,
+          "fair_away": 35.813
+        }
+      ],
+      "source": "model_only",
+      "blend_weights": null
     },
     {
       "id": "R16_2",
       "stage": "round_of_16",
-      "home": null,
+      "home": "Paraguay",
       "away": null,
       "date": "2026-07-04",
       "venue": "TBC",
@@ -20990,7 +21248,7 @@
     {
       "id": "R16_3",
       "stage": "round_of_16",
-      "home": null,
+      "home": "Brazil",
       "away": null,
       "date": "2026-07-05",
       "venue": "TBC",
@@ -21983,7 +22241,7 @@
       "city": null,
       "status": "finished",
       "result": {
-        "home": 4,
+        "home": 3,
         "away": 4
       },
       "xg_home": 1.76,
