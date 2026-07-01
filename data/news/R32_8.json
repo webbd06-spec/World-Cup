@@ -1,0 +1,20 @@
+{
+  "fixture_id": "R32_8",
+  "home": "England",
+  "away": "DR Congo",
+  "home_multiplier": 0.88,
+  "away_multiplier": 1.05,
+  "notes": "England are without both first-choice RB Reece James (hamstring) and backup Jarell Quansah (ankle), forcing uncapped Djed Spence into a starting role at right-back; Bukayo Saka started on the bench as Tuchel manages his fitness. DR Congo report no injury concerns and are at full strength for their historic first-ever World Cup knockout fixture.",
+  "home_scorers": [
+    "Harry Kane (leading striker, England all-time top WC scorer with 11 goals)",
+    "Jude Bellingham (midfield goal threat, joint-top scorer for England in tournamen",
+    "Marcus Rashford (wide forward, scored vs Croatia, dangerous in transition)"
+  ],
+  "away_scorers": [
+    "Yoane Wissa (leading striker, scored 3 of DR Congo's 4 WC goals, 1 goal per 90 m",
+    "Cédric Bakambu (experienced forward, set-piece and hold-up threat)",
+    "Brian Cipenga (dynamic winger, completed 6 dribbles on WC debut vs Uzbekistan)"
+  ],
+  "source": "anthropic_web_search",
+  "fetched_at": "2026-07-01T17:34:58.050072+00:00"
+}

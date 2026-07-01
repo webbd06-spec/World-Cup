@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-01T17:31:05.840627Z",
+  "generated_at": "2026-07-01T17:35:10.464812Z",
   "date": "2026-07-01",
   "model_version": "1.1.0",
   "blend_weights": {
@@ -23655,14 +23655,14 @@
         "home": 2,
         "away": 0
       },
-      "xg_home": 1.652,
-      "xg_away": 1.348,
-      "win_prob": 0.432,
-      "draw_prob": 0.2688,
-      "loss_prob": 0.2991,
-      "model_win": 0.432,
-      "model_draw": 0.2688,
-      "model_loss": 0.2991,
+      "xg_home": 1.735,
+      "xg_away": 1.24,
+      "win_prob": 0.4757,
+      "draw_prob": 0.2647,
+      "loss_prob": 0.2596,
+      "model_win": 0.4757,
+      "model_draw": 0.2647,
+      "model_loss": 0.2596,
       "market_win": null,
       "market_draw": null,
       "market_loss": null,
@@ -23673,32 +23673,32 @@
         {
           "home": 1,
           "away": 1,
-          "prob": 0.1253
+          "prob": 0.1241
         },
         {
           "home": 2,
           "away": 1,
-          "prob": 0.0916
-        },
-        {
-          "home": 1,
-          "away": 2,
-          "prob": 0.0748
+          "prob": 0.0953
         },
         {
           "home": 2,
           "away": 0,
-          "prob": 0.0679
+          "prob": 0.0768
         },
         {
           "home": 1,
           "away": 0,
-          "prob": 0.0678
+          "prob": 0.0743
+        },
+        {
+          "home": 1,
+          "away": 2,
+          "prob": 0.0681
         },
         {
           "home": 0,
           "away": 0,
-          "prob": 0.0642
+          "prob": 0.0653
         }
       ],
       "top_score_conditional": {
@@ -23709,76 +23709,76 @@
       },
       "score_matrix": [
         [
-          0.0642,
-          0.05271,
-          0.04526,
-          0.02034,
-          0.00686,
-          0.00185,
-          0.00042,
+          0.06534,
+          0.04905,
+          0.03927,
+          0.01623,
+          0.00503,
+          0.00125,
+          0.00026,
+          5e-05,
+          1e-05
+        ],
+        [
+          0.0743,
+          0.12413,
+          0.06811,
+          0.02816,
+          0.00873,
+          0.00217,
+          0.00045,
           8e-05,
           1e-05
         ],
         [
-          0.06782,
-          0.12529,
-          0.07475,
-          0.0336,
-          0.01133,
-          0.00305,
-          0.00069,
-          0.00013,
-          2e-05
-        ],
-        [
-          0.06791,
-          0.09157,
-          0.06174,
-          0.02775,
-          0.00935,
-          0.00252,
-          0.00057,
-          0.00011,
-          2e-05
-        ],
-        [
-          0.03739,
-          0.05042,
-          0.03399,
-          0.01528,
-          0.00515,
-          0.00139,
-          0.00031,
-          6e-05,
+          0.07682,
+          0.09527,
+          0.05908,
+          0.02442,
+          0.00757,
+          0.00188,
+          0.00039,
+          7e-05,
           1e-05
         ],
         [
-          0.01544,
-          0.02082,
-          0.01404,
-          0.00631,
-          0.00213,
-          0.00057,
-          0.00013,
+          0.04442,
+          0.05509,
+          0.03416,
+          0.01412,
+          0.00438,
+          0.00109,
+          0.00022,
+          4e-05,
+          1e-05
+        ],
+        [
+          0.01926,
+          0.02389,
+          0.01481,
+          0.00612,
+          0.0019,
+          0.00047,
+          0.0001,
           2e-05,
           0.0
         ],
         [
-          0.0051,
-          0.00688,
-          0.00464,
-          0.00208,
-          0.0007,
-          0.00019,
-          4e-05,
+          0.00668,
+          0.00829,
+          0.00514,
+          0.00212,
+          0.00066,
+          0.00016,
+          3e-05,
           1e-05,
           0.0
         ],
         [
-          0.0014,
-          0.00189,
-          0.00128,
-          0.00057,
+          0.00193,
+          0.0024,
+          0.00149,
+          0.00061,
           0.00019,
           5e-05,
           1e-05,
@@ -23786,10 +23786,10 @@
           0.0
         ],
         [
-          0.00033,
-          0.00045,
-          0.0003,
-          0.00014,
+          0.00048,
+          0.00059,
+          0.00037,
+          0.00015,
           5e-05,
           1e-05,
           0.0,
@@ -23797,9 +23797,9 @@
           0.0
         ],
         [
-          7e-05,
-          9e-05,
-          6e-05,
+          0.0001,
+          0.00013,
+          8e-05,
           3e-05,
           1e-05,
           0.0,
@@ -23915,7 +23915,26 @@
         }
       ],
       "source": "model_only",
-      "blend_weights": null
+      "blend_weights": null,
+      "team_news": {
+        "notes": "Mexico entered the match at full strength with no confirmed injuries or suspensions — Aguirre started 17-year-old Gilberto Mora alongside stalwarts Jimenez and Quinones in attack/midfield. Ecuador had no confirmed pre-match absentees but were weakened by Hincapie's red card late in the match; pre-game, Beccacece's side had fired blanks in two of three group games and relied on a dramatic late win over Germany to qualify.",
+        "home_scorers": [
+          "Raul Jimenez (leading striker, primary finisher, tournament top scorer threat)",
+          "Julian Quinones (pacey forward, opened the tournament's first goal, direct runne",
+          "Roberto Alvarado (creative midfielder, assist threat, set-piece deliverer)"
+        ],
+        "away_scorers": [
+          "Enner Valencia (captain, experienced target man, set-piece threat)",
+          "Pervis Estupinan (attacking left back, crosses and runs into the box)",
+          "Nilson Angulo (dynamic winger, identified as Ecuador's hero candidate going into"
+        ],
+        "fetched_at": "2026-07-01T17:34:45.537035+00:00"
+      },
+      "news_adjustment": {
+        "home": 1.05,
+        "away": 0.92,
+        "notes": "Mexico entered the match at full strength with no confirmed injuries or suspensions — Aguirre started 17-year-old Gilberto Mora alongside stalwarts Jimenez and Quinones in attack/midfield. Ecuador had no confirmed pre-match absentees but were weakened by Hincapie's red card late in the match; pre-game, Beccacece's side had fired blanks in two of three group games and relied on a dramatic late win over Germany to qualify."
+      }
     },
     {
       "id": "R32_8",
@@ -23933,14 +23952,14 @@
         "home": 0,
         "away": 1
       },
-      "xg_home": 2.236,
-      "xg_away": 0.988,
-      "win_prob": 0.7131,
-      "draw_prob": 0.1957,
-      "loss_prob": 0.0912,
-      "model_win": 0.6443,
-      "model_draw": 0.2129,
-      "model_loss": 0.1428,
+      "xg_home": 1.968,
+      "xg_away": 1.037,
+      "win_prob": 0.6861,
+      "draw_prob": 0.2072,
+      "loss_prob": 0.1066,
+      "model_win": 0.5767,
+      "model_draw": 0.2419,
+      "model_loss": 0.1814,
       "market_win": 0.759,
       "market_draw": 0.1841,
       "market_loss": 0.0568,
@@ -23949,34 +23968,34 @@
       "best_odds_away": 17.5,
       "top_scorelines": [
         {
+          "home": 1,
+          "away": 1,
+          "prob": 0.1143
+        },
+        {
           "home": 2,
-          "away": 0,
+          "away": 1,
           "prob": 0.0995
         },
         {
-          "home": 1,
-          "away": 1,
-          "prob": 0.0994
-        },
-        {
           "home": 2,
-          "away": 1,
-          "prob": 0.0983
+          "away": 0,
+          "prob": 0.0959
         },
         {
           "home": 1,
           "away": 0,
-          "prob": 0.0776
-        },
-        {
-          "home": 3,
-          "away": 0,
-          "prob": 0.0742
+          "prob": 0.0843
         },
         {
           "home": 3,
           "away": 1,
-          "prob": 0.0733
+          "prob": 0.0653
+        },
+        {
+          "home": 3,
+          "away": 0,
+          "prob": 0.0629
         }
       ],
       "top_score_conditional": {
@@ -23987,99 +24006,99 @@
       },
       "score_matrix": [
         [
-          0.05123,
-          0.0279,
-          0.01943,
-          0.0064,
-          0.00158,
+          0.06269,
+          0.03825,
+          0.02666,
+          0.00922,
+          0.00239,
+          0.0005,
+          9e-05,
+          1e-05,
+          0.0
+        ],
+        [
+          0.08434,
+          0.11428,
+          0.05246,
+          0.01814,
+          0.0047,
+          0.00098,
+          0.00017,
+          3e-05,
+          0.0
+        ],
+        [
+          0.09591,
+          0.0995,
+          0.05161,
+          0.01785,
+          0.00463,
+          0.00096,
+          0.00017,
+          2e-05,
+          0.0
+        ],
+        [
+          0.06291,
+          0.06526,
+          0.03385,
+          0.01171,
+          0.00304,
+          0.00063,
+          0.00011,
+          2e-05,
+          0.0
+        ],
+        [
+          0.03095,
+          0.0321,
+          0.01665,
+          0.00576,
+          0.00149,
           0.00031,
           5e-05,
           1e-05,
           0.0
         ],
         [
-          0.07757,
-          0.09938,
-          0.04345,
-          0.01431,
-          0.00354,
-          0.0007,
+          0.01218,
+          0.01263,
+          0.00655,
+          0.00227,
+          0.00059,
           0.00012,
           2e-05,
+          0.0,
           0.0
         ],
         [
-          0.09952,
-          0.09834,
-          0.04859,
-          0.016,
-          0.00395,
-          0.00078,
-          0.00013,
-          2e-05,
-          0.0
-        ],
-        [
-          0.07418,
-          0.0733,
-          0.03622,
-          0.01193,
-          0.00295,
-          0.00058,
-          0.0001,
-          1e-05,
-          0.0
-        ],
-        [
-          0.04147,
-          0.04098,
-          0.02025,
-          0.00667,
-          0.00165,
-          0.00033,
-          5e-05,
-          1e-05,
-          0.0
-        ],
-        [
-          0.01855,
-          0.01833,
-          0.00906,
-          0.00298,
+          0.00399,
+          0.00414,
+          0.00215,
           0.00074,
-          0.00015,
-          2e-05,
-          0.0,
-          0.0
-        ],
-        [
-          0.00691,
-          0.00683,
-          0.00338,
-          0.00111,
-          0.00027,
-          5e-05,
+          0.00019,
+          4e-05,
           1e-05,
           0.0,
           0.0
         ],
         [
-          0.00221,
-          0.00218,
-          0.00108,
-          0.00036,
-          9e-05,
-          2e-05,
+          0.00112,
+          0.00116,
+          0.0006,
+          0.00021,
+          5e-05,
+          1e-05,
           0.0,
           0.0,
           0.0
         ],
         [
-          0.00062,
-          0.00061,
-          0.0003,
-          0.0001,
-          2e-05,
+          0.00028,
+          0.00029,
+          0.00015,
+          5e-05,
+          1e-05,
           0.0,
           0.0,
           0.0,
@@ -24196,6 +24215,25 @@
       "blend_weights": {
         "market": 0.6,
         "model": 0.4
+      },
+      "team_news": {
+        "notes": "England are without both first-choice RB Reece James (hamstring) and backup Jarell Quansah (ankle), forcing uncapped Djed Spence into a starting role at right-back; Bukayo Saka started on the bench as Tuchel manages his fitness. DR Congo report no injury concerns and are at full strength for their historic first-ever World Cup knockout fixture.",
+        "home_scorers": [
+          "Harry Kane (leading striker, England all-time top WC scorer with 11 goals)",
+          "Jude Bellingham (midfield goal threat, joint-top scorer for England in tournamen",
+          "Marcus Rashford (wide forward, scored vs Croatia, dangerous in transition)"
+        ],
+        "away_scorers": [
+          "Yoane Wissa (leading striker, scored 3 of DR Congo's 4 WC goals, 1 goal per 90 m",
+          "Cédric Bakambu (experienced forward, set-piece and hold-up threat)",
+          "Brian Cipenga (dynamic winger, completed 6 dribbles on WC debut vs Uzbekistan)"
+        ],
+        "fetched_at": "2026-07-01T17:34:58.050072+00:00"
+      },
+      "news_adjustment": {
+        "home": 0.88,
+        "away": 1.05,
+        "notes": "England are without both first-choice RB Reece James (hamstring) and backup Jarell Quansah (ankle), forcing uncapped Djed Spence into a starting role at right-back; Bukayo Saka started on the bench as Tuchel manages his fitness. DR Congo report no injury concerns and are at full strength for their historic first-ever World Cup knockout fixture."
       }
     },
     {
@@ -24211,14 +24249,14 @@
       "city": null,
       "status": "scheduled",
       "result": null,
-      "xg_home": 1.881,
-      "xg_away": 1.264,
-      "win_prob": 0.4734,
-      "draw_prob": 0.2763,
-      "loss_prob": 0.2504,
-      "model_win": 0.5051,
-      "model_draw": 0.2517,
-      "model_loss": 0.2432,
+      "xg_home": 1.825,
+      "xg_away": 1.112,
+      "win_prob": 0.4819,
+      "draw_prob": 0.2785,
+      "loss_prob": 0.2396,
+      "model_win": 0.5263,
+      "model_draw": 0.2573,
+      "model_loss": 0.2164,
       "market_win": 0.4523,
       "market_draw": 0.2926,
       "market_loss": 0.2551,
@@ -24229,32 +24267,32 @@
         {
           "home": 1,
           "away": 1,
-          "prob": 0.1157
+          "prob": 0.1216
         },
         {
           "home": 2,
           "away": 1,
-          "prob": 0.0963
+          "prob": 0.0982
         },
         {
           "home": 2,
           "away": 0,
-          "prob": 0.0762
+          "prob": 0.0883
         },
         {
           "home": 1,
           "away": 0,
-          "prob": 0.0677
+          "prob": 0.0828
+        },
+        {
+          "home": 0,
+          "away": 0,
+          "prob": 0.067
         },
         {
           "home": 1,
           "away": 2,
-          "prob": 0.0647
-        },
-        {
-          "home": 2,
-          "away": 2,
-          "prob": 0.0609
+          "prob": 0.0599
         }
       ],
       "top_score_conditional": {
@@ -24265,99 +24303,99 @@
       },
       "score_matrix": [
         [
-          0.05637,
-          0.04112,
-          0.0344,
-          0.0145,
-          0.00458,
-          0.00116,
-          0.00024,
+          0.06703,
+          0.045,
+          0.03281,
+          0.01217,
+          0.00338,
+          0.00075,
+          0.00014,
+          2e-05,
+          0.0
+        ],
+        [
+          0.08278,
+          0.12163,
+          0.05986,
+          0.0222,
+          0.00617,
+          0.00137,
+          0.00025,
           4e-05,
           1e-05
         ],
         [
-          0.06769,
-          0.11571,
-          0.06472,
-          0.02727,
-          0.00862,
-          0.00218,
-          0.00046,
-          8e-05,
+          0.08828,
+          0.0982,
+          0.05461,
+          0.02025,
+          0.00563,
+          0.00125,
+          0.00023,
+          4e-05,
           1e-05
         ],
         [
-          0.0762,
-          0.09632,
-          0.06088,
-          0.02565,
-          0.00811,
-          0.00205,
-          0.00043,
-          8e-05,
-          1e-05
-        ],
-        [
-          0.04778,
-          0.0604,
-          0.03818,
-          0.01609,
-          0.00508,
-          0.00129,
-          0.00027,
-          5e-05,
-          1e-05
-        ],
-        [
-          0.02247,
-          0.02841,
-          0.01795,
-          0.00757,
-          0.00239,
-          0.0006,
-          0.00013,
+          0.05369,
+          0.05972,
+          0.03322,
+          0.01232,
+          0.00342,
+          0.00076,
+          0.00014,
           2e-05,
           0.0
         ],
         [
-          0.00846,
-          0.01069,
-          0.00676,
-          0.00285,
-          0.0009,
-          0.00023,
-          5e-05,
+          0.02449,
+          0.02724,
+          0.01515,
+          0.00562,
+          0.00156,
+          0.00035,
+          6e-05,
           1e-05,
           0.0
         ],
         [
-          0.00265,
-          0.00335,
-          0.00212,
-          0.00089,
-          0.00028,
-          7e-05,
+          0.00894,
+          0.00994,
+          0.00553,
+          0.00205,
+          0.00057,
+          0.00013,
           2e-05,
+          0.0,
+          0.0
+        ],
+        [
+          0.00272,
+          0.00302,
+          0.00168,
+          0.00062,
+          0.00017,
+          4e-05,
+          1e-05,
           0.0,
           0.0
         ],
         [
           0.00071,
-          0.0009,
-          0.00057,
-          0.00024,
-          8e-05,
-          2e-05,
+          0.00079,
+          0.00044,
+          0.00016,
+          5e-05,
+          1e-05,
           0.0,
           0.0,
           0.0
         ],
         [
-          0.00017,
-          0.00021,
-          0.00013,
-          6e-05,
-          2e-05,
+          0.00016,
+          0.00018,
+          0.0001,
+          4e-05,
+          1e-05,
           0.0,
           0.0,
           0.0,
@@ -24474,6 +24512,25 @@
       "blend_weights": {
         "market": 0.6,
         "model": 0.4
+      },
+      "team_news": {
+        "notes": "Belgium are near full strength with only defender Zeno Debast a late doubt (leg injury, returned to training Sunday); no outfield suspensions or absences confirmed for Rudi Garcia's side. Senegal are without first-choice goalkeeper Edouard Mendy (knee sprain sustained vs Norway, left camp for further assessment), their only confirmed absentee, with Kalidou Koulibaly also a potential rotation casualty after an uncertain performance against Norway.",
+        "home_scorers": [
+          "Leandro Trossard (tournament top scorer for Belgium with 2 goals, nailed starter",
+          "Kevin De Bruyne (creative hub and set-piece threat, central to all Belgium attac",
+          "Charles De Ketelaere (projected starter as lone striker/No.10, scorer vs New Zea"
+        ],
+        "away_scorers": [
+          "Ismaila Sarr (standout performer of group stage, expected to lead Senegal attack",
+          "Sadio Mane (talisman and all-time leading Senegal scorer, experienced goal threa",
+          "Nicolas Jackson (starting striker, direct and pacey, key part of Senegal's front"
+        ],
+        "fetched_at": "2026-07-01T17:35:10.330738+00:00"
+      },
+      "news_adjustment": {
+        "home": 0.97,
+        "away": 0.88,
+        "notes": "Belgium are near full strength with only defender Zeno Debast a late doubt (leg injury, returned to training Sunday); no outfield suspensions or absences confirmed for Rudi Garcia's side. Senegal are without first-choice goalkeeper Edouard Mendy (knee sprain sustained vs Norway, left camp for further assessment), their only confirmed absentee, with Kalidou Koulibaly also a potential rotation casualty after an uncertain performance against Norway."
       }
     },
     {

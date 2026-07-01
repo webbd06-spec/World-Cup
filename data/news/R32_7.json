@@ -1,0 +1,20 @@
+{
+  "fixture_id": "R32_7",
+  "home": "Mexico",
+  "away": "Ecuador",
+  "home_multiplier": 1.05,
+  "away_multiplier": 0.92,
+  "notes": "Mexico entered the match at full strength with no confirmed injuries or suspensions — Aguirre started 17-year-old Gilberto Mora alongside stalwarts Jimenez and Quinones in attack/midfield. Ecuador had no confirmed pre-match absentees but were weakened by Hincapie's red card late in the match; pre-game, Beccacece's side had fired blanks in two of three group games and relied on a dramatic late win over Germany to qualify.",
+  "home_scorers": [
+    "Raul Jimenez (leading striker, primary finisher, tournament top scorer threat)",
+    "Julian Quinones (pacey forward, opened the tournament's first goal, direct runne",
+    "Roberto Alvarado (creative midfielder, assist threat, set-piece deliverer)"
+  ],
+  "away_scorers": [
+    "Enner Valencia (captain, experienced target man, set-piece threat)",
+    "Pervis Estupinan (attacking left back, crosses and runs into the box)",
+    "Nilson Angulo (dynamic winger, identified as Ecuador's hero candidate going into"
+  ],
+  "source": "anthropic_web_search",
+  "fetched_at": "2026-07-01T17:34:45.537035+00:00"
+}

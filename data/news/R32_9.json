@@ -1,0 +1,20 @@
+{
+  "fixture_id": "R32_9",
+  "home": "Belgium",
+  "away": "Senegal",
+  "home_multiplier": 0.97,
+  "away_multiplier": 0.88,
+  "notes": "Belgium are near full strength with only defender Zeno Debast a late doubt (leg injury, returned to training Sunday); no outfield suspensions or absences confirmed for Rudi Garcia's side. Senegal are without first-choice goalkeeper Edouard Mendy (knee sprain sustained vs Norway, left camp for further assessment), their only confirmed absentee, with Kalidou Koulibaly also a potential rotation casualty after an uncertain performance against Norway.",
+  "home_scorers": [
+    "Leandro Trossard (tournament top scorer for Belgium with 2 goals, nailed starter",
+    "Kevin De Bruyne (creative hub and set-piece threat, central to all Belgium attac",
+    "Charles De Ketelaere (projected starter as lone striker/No.10, scorer vs New Zea"
+  ],
+  "away_scorers": [
+    "Ismaila Sarr (standout performer of group stage, expected to lead Senegal attack",
+    "Sadio Mane (talisman and all-time leading Senegal scorer, experienced goal threa",
+    "Nicolas Jackson (starting striker, direct and pacey, key part of Senegal's front"
+  ],
+  "source": "anthropic_web_search",
+  "fetched_at": "2026-07-01T17:35:10.330738+00:00"
+}
