@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-02T06:10:52.533984Z",
+  "generated_at": "2026-07-02T06:20:57.486239Z",
   "date": "2026-07-02",
   "model_version": "1.1.0",
   "blend_weights": {
@@ -21790,19 +21790,277 @@
     {
       "id": "R16_4",
       "stage": "round_of_16",
-      "home": null,
-      "away": null,
+      "group": null,
+      "matchday": null,
+      "home": "Mexico",
+      "away": "England",
       "date": "2026-07-06",
+      "kickoff_utc": "00:00",
       "venue": "TBC",
-      "status": "tbd",
-      "win_prob": null,
-      "draw_prob": null,
-      "loss_prob": null,
-      "xg_home": null,
-      "xg_away": null,
-      "top_scorelines": [],
-      "score_matrix": [],
-      "source": "tbd"
+      "city": null,
+      "status": "scheduled",
+      "result": null,
+      "xg_home": 1.288,
+      "xg_away": 1.954,
+      "win_prob": 0.2382,
+      "draw_prob": 0.2453,
+      "loss_prob": 0.5165,
+      "model_win": 0.2382,
+      "model_draw": 0.2453,
+      "model_loss": 0.5165,
+      "market_win": null,
+      "market_draw": null,
+      "market_loss": null,
+      "best_odds_home": null,
+      "best_odds_draw": null,
+      "best_odds_away": null,
+      "top_scorelines": [
+        {
+          "home": 1,
+          "away": 1,
+          "prob": 0.1112
+        },
+        {
+          "home": 1,
+          "away": 2,
+          "prob": 0.0961
+        },
+        {
+          "home": 0,
+          "away": 2,
+          "prob": 0.0746
+        },
+        {
+          "home": 0,
+          "away": 1,
+          "prob": 0.0636
+        },
+        {
+          "home": 2,
+          "away": 1,
+          "prob": 0.0633
+        },
+        {
+          "home": 1,
+          "away": 3,
+          "prob": 0.0626
+        }
+      ],
+      "top_score_conditional": {
+        "home": 1,
+        "away": 2,
+        "prob": 0.0961,
+        "result": "L"
+      },
+      "score_matrix": [
+        [
+          0.05187,
+          0.0636,
+          0.07464,
+          0.04863,
+          0.02376,
+          0.00929,
+          0.00302,
+          0.00084,
+          0.00021
+        ],
+        [
+          0.03755,
+          0.11116,
+          0.09613,
+          0.06262,
+          0.0306,
+          0.01196,
+          0.0039,
+          0.00109,
+          0.00027
+        ],
+        [
+          0.03241,
+          0.06335,
+          0.0619,
+          0.04033,
+          0.0197,
+          0.0077,
+          0.00251,
+          0.0007,
+          0.00017
+        ],
+        [
+          0.01391,
+          0.02719,
+          0.02657,
+          0.01731,
+          0.00846,
+          0.00331,
+          0.00108,
+          0.0003,
+          7e-05
+        ],
+        [
+          0.00448,
+          0.00876,
+          0.00856,
+          0.00557,
+          0.00272,
+          0.00106,
+          0.00035,
+          0.0001,
+          2e-05
+        ],
+        [
+          0.00115,
+          0.00226,
+          0.0022,
+          0.00144,
+          0.0007,
+          0.00027,
+          9e-05,
+          2e-05,
+          1e-05
+        ],
+        [
+          0.00025,
+          0.00048,
+          0.00047,
+          0.00031,
+          0.00015,
+          6e-05,
+          2e-05,
+          1e-05,
+          0.0
+        ],
+        [
+          5e-05,
+          9e-05,
+          9e-05,
+          6e-05,
+          3e-05,
+          1e-05,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          1e-05,
+          1e-05,
+          1e-05,
+          1e-05,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      ],
+      "ah_lines": [
+        {
+          "h": 0,
+          "key": "0",
+          "p_home": 0.3156,
+          "p_away": 0.6844,
+          "fair_home": 3.169,
+          "fair_away": 1.461
+        },
+        {
+          "h": -0.25,
+          "key": "-0.25",
+          "p_home": 0.2715,
+          "p_away": 0.7285,
+          "fair_home": 3.683,
+          "fair_away": 1.373
+        },
+        {
+          "h": -0.5,
+          "key": "-0.5",
+          "p_home": 0.2382,
+          "p_away": 0.7618,
+          "fair_home": 4.198,
+          "fair_away": 1.313
+        },
+        {
+          "h": -0.75,
+          "key": "-0.75",
+          "p_home": 0.1836,
+          "p_away": 0.8164,
+          "fair_home": 5.447,
+          "fair_away": 1.225
+        },
+        {
+          "h": -1.5,
+          "key": "-1.5",
+          "p_home": 0.1044,
+          "p_away": 0.8956,
+          "fair_home": 9.579,
+          "fair_away": 1.117
+        },
+        {
+          "h": -2.5,
+          "key": "-2.5",
+          "p_home": 0.0346,
+          "p_away": 0.9654,
+          "fair_home": 28.875,
+          "fair_away": 1.036
+        },
+        {
+          "h": -3.5,
+          "key": "-3.5",
+          "p_home": 0.0094,
+          "p_away": 0.9906,
+          "fair_home": 106.141,
+          "fair_away": 1.01
+        },
+        {
+          "h": 0.25,
+          "key": "0.25",
+          "p_home": 0.4113,
+          "p_away": 0.5887,
+          "fair_home": 2.432,
+          "fair_away": 1.699
+        },
+        {
+          "h": 0.5,
+          "key": "0.5",
+          "p_home": 0.4835,
+          "p_away": 0.5165,
+          "fair_home": 2.068,
+          "fair_away": 1.936
+        },
+        {
+          "h": 0.75,
+          "key": "0.75",
+          "p_home": 0.5401,
+          "p_away": 0.4599,
+          "fair_home": 1.852,
+          "fair_away": 2.174
+        },
+        {
+          "h": 1.5,
+          "key": "1.5",
+          "p_home": 0.6931,
+          "p_away": 0.3069,
+          "fair_home": 1.443,
+          "fair_away": 3.259
+        },
+        {
+          "h": 2.5,
+          "key": "2.5",
+          "p_home": 0.8538,
+          "p_away": 0.1462,
+          "fair_home": 1.171,
+          "fair_away": 6.839
+        },
+        {
+          "h": 3.5,
+          "key": "3.5",
+          "p_home": 0.9419,
+          "p_away": 0.0581,
+          "fair_home": 1.062,
+          "fair_away": 17.209
+        }
+      ],
+      "source": "model_only",
+      "blend_weights": null
     },
     {
       "id": "R16_5",
@@ -21824,19 +22082,277 @@
     {
       "id": "R16_6",
       "stage": "round_of_16",
-      "home": null,
-      "away": null,
+      "group": null,
+      "matchday": null,
+      "home": "USA",
+      "away": "Belgium",
       "date": "2026-07-07",
+      "kickoff_utc": "00:00",
       "venue": "TBC",
-      "status": "tbd",
-      "win_prob": null,
-      "draw_prob": null,
-      "loss_prob": null,
-      "xg_home": null,
-      "xg_away": null,
-      "top_scorelines": [],
-      "score_matrix": [],
-      "source": "tbd"
+      "city": null,
+      "status": "scheduled",
+      "result": null,
+      "xg_home": 1.441,
+      "xg_away": 1.821,
+      "win_prob": 0.2931,
+      "draw_prob": 0.2537,
+      "loss_prob": 0.4532,
+      "model_win": 0.2931,
+      "model_draw": 0.2537,
+      "model_loss": 0.4532,
+      "market_win": null,
+      "market_draw": null,
+      "market_loss": null,
+      "best_odds_home": null,
+      "best_odds_draw": null,
+      "best_odds_away": null,
+      "top_scorelines": [
+        {
+          "home": 1,
+          "away": 1,
+          "prob": 0.1136
+        },
+        {
+          "home": 1,
+          "away": 2,
+          "prob": 0.0915
+        },
+        {
+          "home": 2,
+          "away": 1,
+          "prob": 0.0724
+        },
+        {
+          "home": 2,
+          "away": 2,
+          "prob": 0.066
+        },
+        {
+          "home": 0,
+          "away": 2,
+          "prob": 0.0635
+        },
+        {
+          "home": 0,
+          "away": 1,
+          "prob": 0.0567
+        }
+      ],
+      "top_score_conditional": {
+        "home": 1,
+        "away": 2,
+        "prob": 0.0915,
+        "result": "L"
+      },
+      "score_matrix": [
+        [
+          0.05137,
+          0.0567,
+          0.06353,
+          0.03857,
+          0.01756,
+          0.0064,
+          0.00194,
+          0.00051,
+          0.00012
+        ],
+        [
+          0.04213,
+          0.1136,
+          0.09155,
+          0.05558,
+          0.02531,
+          0.00922,
+          0.0028,
+          0.00073,
+          0.00017
+        ],
+        [
+          0.03977,
+          0.07244,
+          0.06596,
+          0.04005,
+          0.01823,
+          0.00664,
+          0.00202,
+          0.00052,
+          0.00012
+        ],
+        [
+          0.0191,
+          0.03479,
+          0.03168,
+          0.01924,
+          0.00876,
+          0.00319,
+          0.00097,
+          0.00025,
+          6e-05
+        ],
+        [
+          0.00688,
+          0.01253,
+          0.01141,
+          0.00693,
+          0.00316,
+          0.00115,
+          0.00035,
+          9e-05,
+          2e-05
+        ],
+        [
+          0.00198,
+          0.00361,
+          0.00329,
+          0.002,
+          0.00091,
+          0.00033,
+          0.0001,
+          3e-05,
+          1e-05
+        ],
+        [
+          0.00048,
+          0.00087,
+          0.00079,
+          0.00048,
+          0.00022,
+          8e-05,
+          2e-05,
+          1e-05,
+          0.0
+        ],
+        [
+          0.0001,
+          0.00018,
+          0.00016,
+          0.0001,
+          4e-05,
+          2e-05,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          2e-05,
+          3e-05,
+          3e-05,
+          2e-05,
+          1e-05,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      ],
+      "ah_lines": [
+        {
+          "h": 0,
+          "key": "0",
+          "p_home": 0.3927,
+          "p_away": 0.6073,
+          "fair_home": 2.546,
+          "fair_away": 1.647
+        },
+        {
+          "h": -0.25,
+          "key": "-0.25",
+          "p_home": 0.3357,
+          "p_away": 0.6643,
+          "fair_home": 2.979,
+          "fair_away": 1.505
+        },
+        {
+          "h": -0.5,
+          "key": "-0.5",
+          "p_home": 0.2931,
+          "p_away": 0.7069,
+          "fair_home": 3.412,
+          "fair_away": 1.415
+        },
+        {
+          "h": -0.75,
+          "key": "-0.75",
+          "p_home": 0.2341,
+          "p_away": 0.7659,
+          "fair_home": 4.272,
+          "fair_away": 1.306
+        },
+        {
+          "h": -1.5,
+          "key": "-1.5",
+          "p_home": 0.1389,
+          "p_away": 0.8611,
+          "fair_home": 7.198,
+          "fair_away": 1.161
+        },
+        {
+          "h": -2.5,
+          "key": "-2.5",
+          "p_home": 0.0507,
+          "p_away": 0.9493,
+          "fair_home": 19.719,
+          "fair_away": 1.053
+        },
+        {
+          "h": -3.5,
+          "key": "-3.5",
+          "p_home": 0.0153,
+          "p_away": 0.9847,
+          "fair_home": 65.548,
+          "fair_away": 1.015
+        },
+        {
+          "h": 0.25,
+          "key": "0.25",
+          "p_home": 0.4809,
+          "p_away": 0.5191,
+          "fair_home": 2.079,
+          "fair_away": 1.927
+        },
+        {
+          "h": 0.5,
+          "key": "0.5",
+          "p_home": 0.5468,
+          "p_away": 0.4532,
+          "fair_home": 1.829,
+          "fair_away": 2.206
+        },
+        {
+          "h": 0.75,
+          "key": "0.75",
+          "p_home": 0.607,
+          "p_away": 0.393,
+          "fair_home": 1.648,
+          "fair_away": 2.544
+        },
+        {
+          "h": 1.5,
+          "key": "1.5",
+          "p_home": 0.7451,
+          "p_away": 0.2549,
+          "fair_home": 1.342,
+          "fair_away": 3.923
+        },
+        {
+          "h": 2.5,
+          "key": "2.5",
+          "p_home": 0.886,
+          "p_away": 0.114,
+          "fair_home": 1.129,
+          "fair_away": 8.772
+        },
+        {
+          "h": 3.5,
+          "key": "3.5",
+          "p_home": 0.9576,
+          "p_away": 0.0424,
+          "fair_home": 1.044,
+          "fair_away": 23.574
+        }
+      ],
+      "source": "model_only",
+      "blend_weights": null
     },
     {
       "id": "R16_7",
