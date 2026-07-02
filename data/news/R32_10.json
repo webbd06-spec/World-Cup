@@ -1,0 +1,20 @@
+{
+  "fixture_id": "R32_10",
+  "home": "USA",
+  "away": "Bosnia-Herzegovina",
+  "home_multiplier": 0.97,
+  "away_multiplier": 1.0,
+  "notes": "For USA, Christian Pulisic was a late fitness doubt with a calf injury but was expected to start, while third-choice GK Cristian Roldan was doubtful with a muscle injury; Pochettino rotated heavily in the dead-rubber loss to Turkey. Bosnia had no confirmed injuries or suspensions heading in, with centre-back Tarek Muharemovic returning from a red-card ban to bolster a leaky defence.",
+  "home_scorers": [
+    "Folarin Balogun (leading scorer with 2 WC goals, main striker)",
+    "Christian Pulisic (captain and creative hub, key attacker)",
+    "Malik Tillman (dynamic midfielder, direct runner with eye for goal)"
+  ],
+  "away_scorers": [
+    "Ermedin Demirovic (physical lead striker, primary goal threat)",
+    "Edin Dzeko (veteran captain, record scorer, aerial presence)",
+    "Esmir Bajraktarevic (pacy winger, direct runner, set-piece involvement)"
+  ],
+  "source": "anthropic_web_search",
+  "fetched_at": "2026-07-02T17:14:23.560469+00:00"
+}

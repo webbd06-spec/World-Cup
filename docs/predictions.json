@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-02T17:10:55.863663Z",
+  "generated_at": "2026-07-02T17:14:48.478201Z",
   "date": "2026-07-02",
   "model_version": "1.1.0",
   "blend_weights": {
@@ -25068,14 +25068,14 @@
         "home": 2,
         "away": 0
       },
-      "xg_home": 1.796,
+      "xg_home": 1.742,
       "xg_away": 1.23,
-      "win_prob": 0.4927,
-      "draw_prob": 0.2595,
-      "loss_prob": 0.2478,
-      "model_win": 0.4927,
-      "model_draw": 0.2595,
-      "model_loss": 0.2478,
+      "win_prob": 0.4798,
+      "draw_prob": 0.2642,
+      "loss_prob": 0.256,
+      "model_win": 0.4798,
+      "model_draw": 0.2642,
+      "model_loss": 0.256,
       "market_win": null,
       "market_draw": null,
       "market_loss": null,
@@ -25086,32 +25086,32 @@
         {
           "home": 1,
           "away": 1,
-          "prob": 0.1211
+          "prob": 0.124
         },
         {
           "home": 2,
           "away": 1,
-          "prob": 0.0962
+          "prob": 0.0956
         },
         {
           "home": 2,
           "away": 0,
-          "prob": 0.0783
+          "prob": 0.0777
         },
         {
           "home": 1,
           "away": 0,
-          "prob": 0.0732
+          "prob": 0.0749
         },
         {
           "home": 1,
           "away": 2,
-          "prob": 0.0659
+          "prob": 0.0675
         },
         {
           "home": 0,
           "away": 0,
-          "prob": 0.0625
+          "prob": 0.0655
         }
       ],
       "top_score_conditional": {
@@ -25122,98 +25122,98 @@
       },
       "score_matrix": [
         [
-          0.06248,
-          0.04576,
-          0.0367,
-          0.01504,
-          0.00462,
-          0.00114,
-          0.00023,
+          0.06546,
+          0.04871,
+          0.03873,
+          0.01588,
+          0.00488,
+          0.0012,
+          0.00025,
           4e-05,
           1e-05
         ],
         [
-          0.07324,
-          0.12113,
-          0.0659,
-          0.02701,
-          0.0083,
-          0.00204,
-          0.00042,
+          0.07493,
+          0.12397,
+          0.06747,
+          0.02766,
+          0.00851,
+          0.00209,
+          0.00043,
+          8e-05,
+          1e-05
+        ],
+        [
+          0.07769,
+          0.09556,
+          0.05877,
+          0.0241,
+          0.00741,
+          0.00182,
+          0.00037,
           7e-05,
           1e-05
         ],
         [
-          0.07827,
-          0.09624,
-          0.05917,
-          0.02425,
-          0.00746,
-          0.00183,
-          0.00038,
-          7e-05,
-          1e-05
-        ],
-        [
-          0.04685,
-          0.05761,
-          0.03542,
-          0.01452,
-          0.00446,
-          0.0011,
+          0.04512,
+          0.05549,
+          0.03413,
+          0.01399,
+          0.0043,
+          0.00106,
           0.00022,
           4e-05,
           1e-05
         ],
         [
-          0.02103,
-          0.02586,
-          0.0159,
-          0.00652,
-          0.002,
-          0.00049,
-          0.0001,
+          0.01965,
+          0.02417,
+          0.01486,
+          0.00609,
+          0.00187,
+          0.00046,
+          9e-05,
           2e-05,
           0.0
         ],
         [
-          0.00755,
-          0.00929,
-          0.00571,
-          0.00234,
-          0.00072,
-          0.00018,
-          4e-05,
+          0.00685,
+          0.00842,
+          0.00518,
+          0.00212,
+          0.00065,
+          0.00016,
+          3e-05,
           1e-05,
           0.0
         ],
         [
-          0.00226,
-          0.00278,
-          0.00171,
-          0.0007,
-          0.00022,
+          0.00199,
+          0.00245,
+          0.0015,
+          0.00062,
+          0.00019,
           5e-05,
           1e-05,
           0.0,
           0.0
         ],
         [
-          0.00058,
-          0.00071,
-          0.00044,
-          0.00018,
-          6e-05,
+          0.00049,
+          0.00061,
+          0.00037,
+          0.00015,
+          5e-05,
           1e-05,
           0.0,
           0.0,
           0.0
         ],
         [
+          0.00011,
           0.00013,
-          0.00016,
-          0.0001,
-          4e-05,
+          8e-05,
+          3e-05,
           1e-05,
           0.0,
           0.0,
@@ -25328,7 +25328,26 @@
         }
       ],
       "source": "model_only",
-      "blend_weights": null
+      "blend_weights": null,
+      "team_news": {
+        "notes": "For USA, Christian Pulisic was a late fitness doubt with a calf injury but was expected to start, while third-choice GK Cristian Roldan was doubtful with a muscle injury; Pochettino rotated heavily in the dead-rubber loss to Turkey. Bosnia had no confirmed injuries or suspensions heading in, with centre-back Tarek Muharemovic returning from a red-card ban to bolster a leaky defence.",
+        "home_scorers": [
+          "Folarin Balogun (leading scorer with 2 WC goals, main striker)",
+          "Christian Pulisic (captain and creative hub, key attacker)",
+          "Malik Tillman (dynamic midfielder, direct runner with eye for goal)"
+        ],
+        "away_scorers": [
+          "Ermedin Demirovic (physical lead striker, primary goal threat)",
+          "Edin Dzeko (veteran captain, record scorer, aerial presence)",
+          "Esmir Bajraktarevic (pacy winger, direct runner, set-piece involvement)"
+        ],
+        "fetched_at": "2026-07-02T17:14:23.560469+00:00"
+      },
+      "news_adjustment": {
+        "home": 0.97,
+        "away": 1.0,
+        "notes": "For USA, Christian Pulisic was a late fitness doubt with a calf injury but was expected to start, while third-choice GK Cristian Roldan was doubtful with a muscle injury; Pochettino rotated heavily in the dead-rubber loss to Turkey. Bosnia had no confirmed injuries or suspensions heading in, with centre-back Tarek Muharemovic returning from a red-card ban to bolster a leaky defence."
+      }
     },
     {
       "id": "R32_11",
@@ -25343,14 +25362,14 @@
       "city": null,
       "status": "scheduled",
       "result": null,
-      "xg_home": 1.921,
-      "xg_away": 1.203,
-      "win_prob": 0.6672,
-      "draw_prob": 0.1989,
-      "loss_prob": 0.1339,
-      "model_win": 0.5277,
-      "model_draw": 0.2483,
-      "model_loss": 0.224,
+      "xg_home": 1.69,
+      "xg_away": 1.167,
+      "win_prob": 0.6487,
+      "draw_prob": 0.2076,
+      "loss_prob": 0.1438,
+      "model_win": 0.4814,
+      "model_draw": 0.2699,
+      "model_loss": 0.2487,
       "market_win": 0.7602,
       "market_draw": 0.166,
       "market_loss": 0.0738,
@@ -25361,32 +25380,32 @@
         {
           "home": 1,
           "away": 1,
-          "prob": 0.1149
+          "prob": 0.128
         },
         {
           "home": 2,
           "away": 1,
-          "prob": 0.0976
-        },
-        {
-          "home": 2,
-          "away": 0,
-          "prob": 0.0811
+          "prob": 0.0957
         },
         {
           "home": 1,
           "away": 0,
-          "prob": 0.0712
+          "prob": 0.0823
         },
         {
-          "home": 3,
-          "away": 1,
-          "prob": 0.0625
+          "home": 2,
+          "away": 0,
+          "prob": 0.082
+        },
+        {
+          "home": 0,
+          "away": 0,
+          "prob": 0.0721
         },
         {
           "home": 1,
           "away": 2,
-          "prob": 0.0612
+          "prob": 0.0661
         }
       ],
       "top_score_conditional": {
@@ -25397,99 +25416,99 @@
       },
       "score_matrix": [
         [
-          0.05719,
-          0.0397,
-          0.03184,
-          0.01277,
-          0.00384,
-          0.00093,
-          0.00019,
+          0.07215,
+          0.05228,
+          0.0391,
+          0.01521,
+          0.00444,
+          0.00104,
+          0.0002,
           3e-05,
           0.0
         ],
         [
-          0.07125,
-          0.11487,
-          0.06117,
-          0.02454,
-          0.00738,
-          0.00178,
-          0.00036,
-          6e-05,
-          1e-05
-        ],
-        [
-          0.08112,
-          0.09763,
-          0.05875,
-          0.02357,
-          0.00709,
-          0.00171,
+          0.08235,
+          0.128,
+          0.06609,
+          0.02571,
+          0.0075,
+          0.00175,
           0.00034,
           6e-05,
           1e-05
         ],
         [
-          0.05194,
-          0.06251,
-          0.03762,
-          0.01509,
-          0.00454,
-          0.00109,
-          0.00022,
-          4e-05,
+          0.08205,
+          0.09574,
+          0.05586,
+          0.02173,
+          0.00634,
+          0.00148,
+          0.00029,
+          5e-05,
           1e-05
         ],
         [
-          0.02495,
-          0.03002,
-          0.01807,
-          0.00725,
-          0.00218,
-          0.00052,
-          0.00011,
-          2e-05,
+          0.04623,
+          0.05395,
+          0.03148,
+          0.01224,
+          0.00357,
+          0.00083,
+          0.00016,
+          3e-05,
           0.0
         ],
         [
-          0.00958,
-          0.01153,
-          0.00694,
-          0.00278,
-          0.00084,
-          0.0002,
-          4e-05,
-          1e-05,
-          0.0
-        ],
-        [
-          0.00307,
-          0.00369,
-          0.00222,
-          0.00089,
-          0.00027,
-          6e-05,
-          1e-05,
-          0.0,
-          0.0
-        ],
-        [
-          0.00084,
-          0.00101,
-          0.00061,
-          0.00024,
+          0.01954,
+          0.0228,
+          0.0133,
+          0.00517,
+          0.00151,
+          0.00035,
           7e-05,
+          1e-05,
+          0.0
+        ],
+        [
+          0.00661,
+          0.00771,
+          0.0045,
+          0.00175,
+          0.00051,
+          0.00012,
           2e-05,
+          0.0,
+          0.0
+        ],
+        [
+          0.00186,
+          0.00217,
+          0.00127,
+          0.00049,
+          0.00014,
+          3e-05,
+          1e-05,
+          0.0,
+          0.0
+        ],
+        [
+          0.00045,
+          0.00052,
+          0.00031,
+          0.00012,
+          3e-05,
+          1e-05,
           0.0,
           0.0,
           0.0
         ],
         [
-          0.0002,
-          0.00024,
-          0.00015,
+          9e-05,
+          0.00011,
           6e-05,
-          2e-05,
+          3e-05,
+          1e-05,
           0.0,
           0.0,
           0.0,
@@ -25606,6 +25625,25 @@
       "blend_weights": {
         "market": 0.6,
         "model": 0.4
+      },
+      "team_news": {
+        "notes": "Spain are without confirmed absentees Yeremy Pino (collarbone/shoulder) and Nico Williams (adductor/hamstring), with Victor Munoz also doubtful (muscle), significantly thinning their attacking width; De la Fuente faces a midfield rotation dilemma between Merino, Fabian Ruiz, Dani Olmo, and Gavi. Austria are largely full-strength — Christoph Baumgartner is out with a thigh injury, while David Alaba and Marko Arnautovic are being monitored for minor knee discomfort picked up against Algeria but…",
+        "home_scorers": [
+          "Lamine Yamal (starting winger, Spain's primary attacking threat returning to ful",
+          "Mikel Oyarzabal (leading striker, consistent starter and finisher in Spain's 4-3",
+          "Alex Baena (in-form winger, scored winner vs Uruguay, set to start with Williams"
+        ],
+        "away_scorers": [
+          "Marko Arnautovic (target man/lone striker, Austria's focal point up front)",
+          "Marcel Sabitzer (attacking midfielder, set-piece threat and key creative outlet)",
+          "Sasa Kalajdzic (impact substitute/striker, scored dramatic 96th-minute equaliser"
+        ],
+        "fetched_at": "2026-07-02T17:14:36.403008+00:00"
+      },
+      "news_adjustment": {
+        "home": 0.88,
+        "away": 0.97,
+        "notes": "Spain are without confirmed absentees Yeremy Pino (collarbone/shoulder) and Nico Williams (adductor/hamstring), with Victor Munoz also doubtful (muscle), significantly thinning their attacking width; De la Fuente faces a midfield rotation dilemma between Merino, Fabian Ruiz, Dani Olmo, and Gavi. Austria are largely full-strength — Christoph Baumgartner is out with a thigh injury, while David Alaba and Marko Arnautovic are being monitored for minor knee discomfort picked up against Algeria but…"
       }
     },
     {
@@ -25621,14 +25659,14 @@
       "city": null,
       "status": "scheduled",
       "result": null,
-      "xg_home": 1.773,
-      "xg_away": 1.445,
-      "win_prob": 0.5162,
-      "draw_prob": 0.2581,
-      "loss_prob": 0.2257,
-      "model_win": 0.441,
-      "model_draw": 0.257,
-      "model_loss": 0.302,
+      "xg_home": 1.862,
+      "xg_away": 1.517,
+      "win_prob": 0.5185,
+      "draw_prob": 0.2549,
+      "loss_prob": 0.2266,
+      "model_win": 0.4469,
+      "model_draw": 0.249,
+      "model_loss": 0.3041,
       "market_win": 0.5663,
       "market_draw": 0.2589,
       "market_loss": 0.1749,
@@ -25639,32 +25677,32 @@
         {
           "home": 1,
           "away": 1,
-          "prob": 0.1159
+          "prob": 0.1088
         },
         {
           "home": 2,
           "away": 1,
-          "prob": 0.0909
+          "prob": 0.0896
         },
         {
           "home": 1,
           "away": 2,
-          "prob": 0.0741
+          "prob": 0.073
         },
         {
           "home": 2,
           "away": 2,
-          "prob": 0.0657
+          "prob": 0.068
         },
         {
           "home": 2,
           "away": 0,
-          "prob": 0.0629
+          "prob": 0.0591
         },
         {
-          "home": 1,
-          "away": 0,
-          "prob": 0.0576
+          "home": 3,
+          "away": 1,
+          "prob": 0.0556
         }
       ],
       "top_score_conditional": {
@@ -25675,99 +25713,99 @@
       },
       "score_matrix": [
         [
-          0.05336,
-          0.04452,
-          0.04181,
-          0.02014,
-          0.00728,
-          0.0021,
-          0.00051,
-          0.0001,
+          0.04661,
+          0.03921,
+          0.03924,
+          0.01985,
+          0.00753,
+          0.00228,
+          0.00058,
+          0.00013,
           2e-05
         ],
         [
-          0.05763,
-          0.11591,
-          0.07412,
-          0.03571,
-          0.0129,
-          0.00373,
-          0.0009,
-          0.00019,
+          0.05095,
+          0.10881,
+          0.07305,
+          0.03694,
+          0.01401,
+          0.00425,
+          0.00108,
+          0.00023,
+          4e-05
+        ],
+        [
+          0.05907,
+          0.08963,
+          0.068,
+          0.03439,
+          0.01304,
+          0.00396,
+          0.001,
+          0.00022,
+          4e-05
+        ],
+        [
+          0.03666,
+          0.05562,
+          0.0422,
+          0.02134,
+          0.00809,
+          0.00246,
+          0.00062,
+          0.00013,
           3e-05
         ],
         [
-          0.06291,
-          0.09093,
-          0.06571,
-          0.03166,
-          0.01144,
-          0.00331,
-          0.0008,
-          0.00016,
-          3e-05
-        ],
-        [
-          0.03718,
-          0.05374,
-          0.03884,
-          0.01871,
-          0.00676,
-          0.00195,
-          0.00047,
-          0.0001,
-          2e-05
-        ],
-        [
-          0.01648,
-          0.02382,
-          0.01721,
-          0.00829,
-          0.003,
-          0.00087,
-          0.00021,
-          4e-05,
+          0.01706,
+          0.02589,
+          0.01964,
+          0.00993,
+          0.00377,
+          0.00114,
+          0.00029,
+          6e-05,
           1e-05
         ],
         [
-          0.00584,
-          0.00845,
-          0.0061,
-          0.00294,
-          0.00106,
-          0.00031,
-          7e-05,
+          0.00635,
+          0.00964,
+          0.00731,
+          0.0037,
+          0.0014,
+          0.00043,
+          0.00011,
           2e-05,
           0.0
         ],
         [
-          0.00173,
-          0.0025,
-          0.0018,
-          0.00087,
-          0.00031,
-          9e-05,
-          2e-05,
-          0.0,
-          0.0
-        ],
-        [
+          0.00197,
+          0.00299,
+          0.00227,
+          0.00115,
           0.00044,
-          0.00063,
-          0.00046,
-          0.00022,
-          8e-05,
-          2e-05,
+          0.00013,
+          3e-05,
+          1e-05,
+          0.0
+        ],
+        [
+          0.00052,
+          0.0008,
+          0.0006,
+          0.00031,
+          0.00012,
+          4e-05,
           1e-05,
           0.0,
           0.0
         ],
         [
-          0.0001,
+          0.00012,
+          0.00019,
           0.00014,
-          0.0001,
-          5e-05,
-          2e-05,
+          7e-05,
+          3e-05,
           1e-05,
           0.0,
           0.0,
@@ -25884,6 +25922,25 @@
       "blend_weights": {
         "market": 0.6,
         "model": 0.4
+      },
+      "team_news": {
+        "notes": "Both Portugal and Croatia enter the World Cup 2026 Round of 32 with fully fit squads — no injuries or suspensions on either side, giving Roberto Martínez and Zlatko Dalić complete freedom in selection. Croatia receive an additional boost with Joško Gvardiol returning after being rested for the final group game, while Portugal's settled XI features Ronaldo, Bruno Fernandes, and Bernardo Silva at full strength.",
+        "home_scorers": [
+          "Cristiano Ronaldo (captain/leading striker, scored 2 vs Uzbekistan, on penalties",
+          "Bruno Fernandes (attacking midfielder, creative hub, set-piece threat)",
+          "João Félix (advanced attacker, expected starter, dynamic in final third)"
+        ],
+        "away_scorers": [
+          "Andrej Budimir (centre-forward, predicted starter, focal point of attack)",
+          "Ivan Perišić (advanced left wing role, experienced goal threat in knockouts)",
+          "Martin Baturina (attacking midfielder, likely starter ahead of Vlašić, direct ru"
+        ],
+        "fetched_at": "2026-07-02T17:14:48.338028+00:00"
+      },
+      "news_adjustment": {
+        "home": 1.05,
+        "away": 1.05,
+        "notes": "Both Portugal and Croatia enter the World Cup 2026 Round of 32 with fully fit squads — no injuries or suspensions on either side, giving Roberto Martínez and Zlatko Dalić complete freedom in selection. Croatia receive an additional boost with Joško Gvardiol returning after being rested for the final group game, while Portugal's settled XI features Ronaldo, Bruno Fernandes, and Bernardo Silva at full strength."
       }
     },
     {

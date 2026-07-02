@@ -1,0 +1,20 @@
+{
+  "fixture_id": "R32_11",
+  "home": "Spain",
+  "away": "Austria",
+  "home_multiplier": 0.88,
+  "away_multiplier": 0.97,
+  "notes": "Spain are without confirmed absentees Yeremy Pino (collarbone/shoulder) and Nico Williams (adductor/hamstring), with Victor Munoz also doubtful (muscle), significantly thinning their attacking width; De la Fuente faces a midfield rotation dilemma between Merino, Fabian Ruiz, Dani Olmo, and Gavi. Austria are largely full-strength — Christoph Baumgartner is out with a thigh injury, while David Alaba and Marko Arnautovic are being monitored for minor knee discomfort picked up against Algeria but…",
+  "home_scorers": [
+    "Lamine Yamal (starting winger, Spain's primary attacking threat returning to ful",
+    "Mikel Oyarzabal (leading striker, consistent starter and finisher in Spain's 4-3",
+    "Alex Baena (in-form winger, scored winner vs Uruguay, set to start with Williams"
+  ],
+  "away_scorers": [
+    "Marko Arnautovic (target man/lone striker, Austria's focal point up front)",
+    "Marcel Sabitzer (attacking midfielder, set-piece threat and key creative outlet)",
+    "Sasa Kalajdzic (impact substitute/striker, scored dramatic 96th-minute equaliser"
+  ],
+  "source": "anthropic_web_search",
+  "fetched_at": "2026-07-02T17:14:36.403008+00:00"
+}
