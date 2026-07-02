@@ -2,8 +2,8 @@
   "fixture_id": "R32_12",
   "home": "Portugal",
   "away": "Croatia",
-  "home_multiplier": 1.05,
-  "away_multiplier": 1.05,
+  "home_multiplier": 1.0,
+  "away_multiplier": 1.0,
   "notes": "Both Portugal and Croatia enter the World Cup 2026 Round of 32 with fully fit squads — no injuries or suspensions on either side, giving Roberto Martínez and Zlatko Dalić complete freedom in selection. Croatia receive an additional boost with Joško Gvardiol returning after being rested for the final group game, while Portugal's settled XI features Ronaldo, Bruno Fernandes, and Bernardo Silva at full strength.",
   "home_scorers": [
     "Cristiano Ronaldo (captain/leading striker, scored 2 vs Uzbekistan, on penalties",
@@ -15,6 +15,8 @@
     "Ivan Perišić (advanced left wing role, experienced goal threat in knockouts)",
     "Martin Baturina (attacking midfielder, likely starter ahead of Vlašić, direct ru"
   ],
-  "source": "anthropic_web_search",
-  "fetched_at": "2026-07-02T17:14:48.338028+00:00"
+  "source": "lineup_fetch",
+  "fetched_at": "2026-07-02T22:49:28.464570+00:00",
+  "lineup_home_absent": 0,
+  "lineup_away_absent": 0
 }
