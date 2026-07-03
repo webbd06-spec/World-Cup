@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-03T04:10:55.713570Z",
+  "generated_at": "2026-07-03T04:20:52.105989Z",
   "date": "2026-07-03",
   "model_version": "1.1.0",
   "blend_weights": {
@@ -25944,9 +25944,9 @@
       "kickoff_utc": "03:00",
       "venue": "TBC",
       "city": null,
-      "status": "live",
+      "status": "in_play",
       "result": {
-        "home": 1,
+        "home": 2,
         "away": 0
       },
       "xg_home": 1.68,
