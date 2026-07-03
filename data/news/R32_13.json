@@ -1,0 +1,20 @@
+{
+  "fixture_id": "R32_13",
+  "home": "Switzerland",
+  "away": "Algeria",
+  "home_multiplier": 1.02,
+  "away_multiplier": 0.88,
+  "notes": "Switzerland's only concern was right-back Silvan Widmer managing a thigh injury, while Yakin rotated Djibril Sow to the bench in favour of Dan Ndoye. Algeria were confirmed without Wolfsburg forward Mohamed Amoura (hamstring), their most direct attacking threat, with no other major absences beyond that enforced change.",
+  "home_scorers": [
+    "Johan Manzambi (tournament's top young scorer, 3 goals in group stage, key start",
+    "Breel Embolo (experienced lead striker, focal point of Swiss attack)",
+    "Ruben Vargas (in-form winger, scored vs Canada, set-piece and open-play threat)"
+  ],
+  "away_scorers": [
+    "Riyad Mahrez (captain and creative fulcrum, sole reliable goal threat with Amour",
+    "Amine Gouiri (starting centre-forward, primary penalty-box presence)",
+    "Fares Chaibi (attacking midfielder, direct runner, secondary scoring option)"
+  ],
+  "source": "anthropic_web_search",
+  "fetched_at": "2026-07-03T16:16:29.866457+00:00"
+}

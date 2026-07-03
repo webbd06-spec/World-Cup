@@ -1,0 +1,20 @@
+{
+  "fixture_id": "R32_14",
+  "home": "Australia",
+  "away": "Egypt",
+  "home_multiplier": 0.92,
+  "away_multiplier": 0.8,
+  "notes": "Australia are without confirmed tournament-ending injuries to Mathew Leckie (hamstring) and Jacob Italiano (groin/adductor), but Popovic has no further fitness concerns and has rotated freely all tournament. Egypt face a significant injury crisis: Ahmed Fattouh is almost certainly out (hamstring tear), Mohamed Salah is a major doubt (hamstring strain, missing training sessions), and Mohamed Abdelmonem (ankle), Hamdy Fathy (groin), and Hossam Abdelmaguid (head) are all listed as doubtful.",
+  "home_scorers": [
+    "Nestory Irankunda (pacy winger, Australia's main attacking threat and group-stag",
+    "Connor Metcalfe (goal threat from midfield, group-stage scorer vs Turkey)",
+    "Marco Tilio / Garang Kuol (impact sub options if Popovic rotates forward line)"
+  ],
+  "away_scorers": [
+    "Omar Marmoush (leading striker / focal point if Salah is absent or managed, Manc",
+    "Mohamed Salah (captain and talisman, set-piece threat and chance creator — fitne",
+    "Mostafa Mohamed / Ibrahim Adel (rotational forward options if Salah is ruled out"
+  ],
+  "source": "anthropic_web_search",
+  "fetched_at": "2026-07-03T16:16:42.334595+00:00"
+}

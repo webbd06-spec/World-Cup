@@ -1,0 +1,20 @@
+{
+  "fixture_id": "R32_15",
+  "home": "Argentina",
+  "away": "Cape Verde",
+  "home_multiplier": 1.05,
+  "away_multiplier": 0.92,
+  "notes": "Argentina report no injuries or suspensions and are expected to revert to their strongest XI after rotation in the group stage; Cape Verde are without midfielder Telmo Arcanjo (hamstring), though Sidny Lopes Cabral returns from suspension and Steven Moreira and Jovane Cabral are also expected back.",
+  "home_scorers": [
+    "Lionel Messi (tournament's top scorer with 6 goals, on penalties, supreme form)",
+    "Lautaro Martinez (leading striker, relentless presser, clinical finisher)",
+    "Julian Alvarez (dynamic forward, pressing threat, rotation option off bench)"
+  ],
+  "away_scorers": [
+    "Dailon Livramento (main attacking threat, Cape Verde's key striker)",
+    "Ryan Mendes (98-cap veteran, experienced forward, set-piece presence)",
+    "Jovane Cabral (returning from suspension, wide attacking threat)"
+  ],
+  "source": "anthropic_web_search",
+  "fetched_at": "2026-07-03T16:16:53.010136+00:00"
+}
