@@ -1,0 +1,20 @@
+{
+  "fixture_id": "R16_2",
+  "home": "Paraguay",
+  "away": "France",
+  "home_multiplier": 0.88,
+  "away_multiplier": 0.97,
+  "notes": "Paraguay are without centre-back Omar Alderete (knee injury) and are monitoring Gabriel Avalos fitness at striker, while Diego Gomez returns from suspension; France present a near-clean bill of health with only Marcus Thuram doubtful (calf problem), and Deschamps is expected to name an unchanged settled XI featuring Mbappe, Olise, Dembele, and Barcola.",
+  "home_scorers": [
+    "Gabriel Avalos (central striker, leads the line)",
+    "Julio Enciso (goal threat from wide, scored vs Germany)",
+    "Miguel Almiron (counter-attack wide threat, set-piece presence)"
+  ],
+  "away_scorers": [
+    "Kylian Mbappe (captain, tournament top scorer, leading striker)",
+    "Michael Olise (No.10, 5 tournament assists, cutting edge creator)",
+    "Ousmane Dembele (wide forward, direct goal threat in electric front line)"
+  ],
+  "source": "anthropic_web_search",
+  "fetched_at": "2026-07-04T14:54:35.366482+00:00"
+}

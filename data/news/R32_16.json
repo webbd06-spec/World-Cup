@@ -1,0 +1,20 @@
+{
+  "fixture_id": "R32_16",
+  "home": "Colombia",
+  "away": "Ghana",
+  "home_multiplier": 1.0,
+  "away_multiplier": 0.82,
+  "notes": "Colombia enter at near full strength — Jhon Córdoba suffered a suspected hamstring/groin strain in the 6th minute vs Ghana and was replaced by Suárez, but no pre-match absences or suspensions were reported and Lorenzo fielded his strongest XI. Ghana were significantly weakened even before kick-off: key playmaker Mohammed Kudus (quad/hamstring) and centre-back Mohammed Salisu (ACL) were ruled out of the entire tournament, goalkeeper Lawrence Ati-Zigi carried a knock forcing Benjamin Asare to…",
+  "home_scorers": [
+    "Luis Díaz (first-choice left winger, top scorer in qualifying with 7 goals)",
+    "Jhon Arias (dynamic attacking midfielder, scored the winner vs Ghana in R32)",
+    "James Rodríguez (captain and creative hub, set-piece threat and assists leader)"
+  ],
+  "away_scorers": [
+    "Antoine Semenyo (lead attacker post-Kudus absence, pace and directness on the wi",
+    "Jordan Ayew (captain, experienced striker with 34 international goals, leads the",
+    "Iñaki Williams (physical forward, returned from injury, secondary attacking outl"
+  ],
+  "source": "anthropic_web_search",
+  "fetched_at": "2026-07-04T14:54:48.480364+00:00"
+}

@@ -1,0 +1,20 @@
+{
+  "fixture_id": "R16_1",
+  "home": "Canada",
+  "away": "Morocco",
+  "home_multiplier": 0.92,
+  "away_multiplier": 0.97,
+  "notes": "Canada are without confirmed absentee Ismael Kone (broken leg, tournament-ending) and Alphonso Davies is a major doubt/rotation question after only returning off the bench vs South Africa — Marsch has not confirmed a starting role for him. Morocco are close to full strength with defender Chadi Riad a minor fitness concern, though Ouahbi is expected to have a fully-fit squad; pre-tournament losses of Nayef Aguerd (groin surgery) and Abde Ezzalzouli (knee) were already absorbed in earlier rounds.",
+  "home_scorers": [
+    "Jonathan David (leading striker, hat-trick vs Qatar, Canada's all-time top score",
+    "Stephen Eustaquio (dynamic midfielder, scored winner vs South Africa, set-piece ",
+    "Tani Oluwaseyi (rotation striker, in contention to start alongside David)"
+  ],
+  "away_scorers": [
+    "Ismael Saibari (in-form attacker, scored decisive penalty vs Netherlands, key cr",
+    "Hakim Ziyech / Soufiane Rahimi via El Khannouss (attacking midfielder, primary c",
+    "Achraf Hakimi (marauding right-back, set-piece and crossing threat, goal threat "
+  ],
+  "source": "anthropic_web_search",
+  "fetched_at": "2026-07-04T14:54:23.374316+00:00"
+}
