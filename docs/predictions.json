@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-04T07:02:35.725307Z",
+  "generated_at": "2026-07-04T07:10:58.367544Z",
   "date": "2026-07-04",
   "model_version": "1.1.0",
   "blend_weights": {
@@ -20968,18 +20968,18 @@
       "result": null,
       "xg_home": 1.393,
       "xg_away": 1.575,
-      "win_prob": 0.2489,
-      "draw_prob": 0.2848,
-      "loss_prob": 0.4663,
+      "win_prob": 0.2342,
+      "draw_prob": 0.2797,
+      "loss_prob": 0.4861,
       "model_win": 0.3235,
       "model_draw": 0.2727,
       "model_loss": 0.4038,
-      "market_win": 0.1991,
-      "market_draw": 0.2929,
-      "market_loss": 0.508,
-      "best_odds_home": 5.0,
-      "best_odds_draw": 3.4,
-      "best_odds_away": 1.96,
+      "market_win": 0.1746,
+      "market_draw": 0.2844,
+      "market_loss": 0.541,
+      "best_odds_home": 5.7,
+      "best_odds_draw": 3.5,
+      "best_odds_away": 1.84,
       "top_scorelines": [
         {
           "home": 1,
@@ -21246,17 +21246,17 @@
       "result": null,
       "xg_home": 1.0,
       "xg_away": 2.396,
-      "win_prob": 0.0761,
-      "draw_prob": 0.1577,
+      "win_prob": 0.0781,
+      "draw_prob": 0.1557,
       "loss_prob": 0.7662,
       "model_win": 0.1304,
       "model_draw": 0.1979,
       "model_loss": 0.6717,
-      "market_win": 0.0398,
-      "market_draw": 0.1309,
-      "market_loss": 0.8293,
-      "best_odds_home": 25.0,
-      "best_odds_draw": 7.6,
+      "market_win": 0.0433,
+      "market_draw": 0.1276,
+      "market_loss": 0.8292,
+      "best_odds_home": 23.0,
+      "best_odds_draw": 7.8,
       "best_odds_away": 1.2,
       "top_scorelines": [
         {
@@ -21524,16 +21524,16 @@
       "result": null,
       "xg_home": 1.963,
       "xg_away": 1.276,
-      "win_prob": 0.5295,
-      "draw_prob": 0.2549,
-      "loss_prob": 0.2156,
+      "win_prob": 0.5303,
+      "draw_prob": 0.2545,
+      "loss_prob": 0.2152,
       "model_win": 0.5212,
       "model_draw": 0.2445,
       "model_loss": 0.2342,
-      "market_win": 0.535,
-      "market_draw": 0.2619,
-      "market_loss": 0.2031,
-      "best_odds_home": 1.86,
+      "market_win": 0.5364,
+      "market_draw": 0.2611,
+      "market_loss": 0.2025,
+      "best_odds_home": 1.85,
       "best_odds_draw": 3.8,
       "best_odds_away": 4.9,
       "top_scorelines": [
@@ -21802,18 +21802,18 @@
       "result": null,
       "xg_home": 1.288,
       "xg_away": 1.954,
-      "win_prob": 0.2785,
-      "draw_prob": 0.2786,
-      "loss_prob": 0.4429,
+      "win_prob": 0.2811,
+      "draw_prob": 0.2783,
+      "loss_prob": 0.4407,
       "model_win": 0.2382,
       "model_draw": 0.2453,
       "model_loss": 0.5165,
-      "market_win": 0.3054,
-      "market_draw": 0.3008,
-      "market_loss": 0.3939,
-      "best_odds_home": 3.25,
+      "market_win": 0.3096,
+      "market_draw": 0.3003,
+      "market_loss": 0.3901,
+      "best_odds_home": 3.2,
       "best_odds_draw": 3.3,
-      "best_odds_away": 2.52,
+      "best_odds_away": 2.54,
       "top_scorelines": [
         {
           "home": 1,
@@ -22080,18 +22080,18 @@
       "result": null,
       "xg_home": 1.579,
       "xg_away": 1.727,
-      "win_prob": 0.3412,
-      "draw_prob": 0.2554,
-      "loss_prob": 0.4033,
+      "win_prob": 0.2747,
+      "draw_prob": 0.2607,
+      "loss_prob": 0.4646,
       "model_win": 0.3412,
       "model_draw": 0.2554,
       "model_loss": 0.4033,
-      "market_win": null,
-      "market_draw": null,
-      "market_loss": null,
-      "best_odds_home": null,
-      "best_odds_draw": null,
-      "best_odds_away": null,
+      "market_win": 0.2304,
+      "market_draw": 0.2642,
+      "market_loss": 0.5054,
+      "best_odds_home": 4.3,
+      "best_odds_draw": 3.75,
+      "best_odds_away": 1.96,
       "top_scorelines": [
         {
           "home": 1,
@@ -22337,8 +22337,11 @@
           "fair_away": 30.59
         }
       ],
-      "source": "model_only",
-      "blend_weights": null
+      "source": "blend",
+      "blend_weights": {
+        "market": 0.6,
+        "model": 0.4
+      }
     },
     {
       "id": "R16_6",
@@ -22355,18 +22358,18 @@
       "result": null,
       "xg_home": 1.441,
       "xg_away": 1.821,
-      "win_prob": 0.3249,
-      "draw_prob": 0.2723,
-      "loss_prob": 0.4028,
+      "win_prob": 0.3224,
+      "draw_prob": 0.2727,
+      "loss_prob": 0.4049,
       "model_win": 0.2931,
       "model_draw": 0.2537,
       "model_loss": 0.4532,
-      "market_win": 0.3461,
-      "market_draw": 0.2848,
-      "market_loss": 0.3691,
-      "best_odds_home": 2.88,
+      "market_win": 0.342,
+      "market_draw": 0.2853,
+      "market_loss": 0.3726,
+      "best_odds_home": 2.92,
       "best_odds_draw": 3.5,
-      "best_odds_away": 2.7,
+      "best_odds_away": 2.68,
       "top_scorelines": [
         {
           "home": 1,
@@ -22633,18 +22636,18 @@
       "result": null,
       "xg_home": 2.274,
       "xg_away": 1.061,
-      "win_prob": 0.635,
-      "draw_prob": 0.212,
-      "loss_prob": 0.153,
+      "win_prob": 0.6795,
+      "draw_prob": 0.2055,
+      "loss_prob": 0.115,
       "model_win": 0.635,
       "model_draw": 0.212,
       "model_loss": 0.153,
-      "market_win": null,
-      "market_draw": null,
-      "market_loss": null,
-      "best_odds_home": null,
-      "best_odds_draw": null,
-      "best_odds_away": null,
+      "market_win": 0.7092,
+      "market_draw": 0.2012,
+      "market_loss": 0.0896,
+      "best_odds_home": 1.39,
+      "best_odds_draw": 4.9,
+      "best_odds_away": 11.0,
       "top_scorelines": [
         {
           "home": 2,
@@ -22890,8 +22893,11 @@
           "fair_away": 270.061
         }
       ],
-      "source": "model_only",
-      "blend_weights": null
+      "source": "blend",
+      "blend_weights": {
+        "market": 0.6,
+        "model": 0.4
+      }
     },
     {
       "id": "R16_8",
@@ -22908,18 +22914,18 @@
       "result": null,
       "xg_home": 1.559,
       "xg_away": 1.473,
-      "win_prob": 0.3837,
-      "draw_prob": 0.2701,
-      "loss_prob": 0.3462,
+      "win_prob": 0.3159,
+      "draw_prob": 0.2877,
+      "loss_prob": 0.3963,
       "model_win": 0.3837,
       "model_draw": 0.2701,
       "model_loss": 0.3462,
-      "market_win": null,
-      "market_draw": null,
-      "market_loss": null,
-      "best_odds_home": null,
-      "best_odds_draw": null,
-      "best_odds_away": null,
+      "market_win": 0.2708,
+      "market_draw": 0.2995,
+      "market_loss": 0.4297,
+      "best_odds_home": 3.65,
+      "best_odds_draw": 3.3,
+      "best_odds_away": 2.3,
       "top_scorelines": [
         {
           "home": 1,
@@ -22953,10 +22959,10 @@
         }
       ],
       "top_score_conditional": {
-        "home": 2,
-        "away": 1,
-        "prob": 0.0863,
-        "result": "W"
+        "home": 1,
+        "away": 2,
+        "prob": 0.0816,
+        "result": "L"
       },
       "score_matrix": [
         [
@@ -23165,8 +23171,11 @@
           "fair_away": 50.158
         }
       ],
-      "source": "model_only",
-      "blend_weights": null
+      "source": "blend",
+      "blend_weights": {
+        "market": 0.6,
+        "model": 0.4
+      }
     },
     {
       "id": "R32_1",
@@ -27616,18 +27625,18 @@
       },
       "xg_home": 1.848,
       "xg_away": 1.19,
-      "win_prob": 0.7245,
-      "draw_prob": 0.1722,
-      "loss_prob": 0.1033,
+      "win_prob": 0.5138,
+      "draw_prob": 0.255,
+      "loss_prob": 0.2311,
       "model_win": 0.5138,
       "model_draw": 0.255,
       "model_loss": 0.2311,
-      "market_win": 0.8649,
-      "market_draw": 0.117,
-      "market_loss": 0.0181,
-      "best_odds_home": 1.15,
-      "best_odds_draw": 8.5,
-      "best_odds_away": 55.0,
+      "market_win": null,
+      "market_draw": null,
+      "market_loss": null,
+      "best_odds_home": 1.46,
+      "best_odds_draw": 4.5,
+      "best_odds_away": 9.8,
       "top_scorelines": [
         {
           "home": 1,
@@ -27873,11 +27882,8 @@
           "fair_away": 128.189
         }
       ],
-      "source": "blend",
-      "blend_weights": {
-        "market": 0.6,
-        "model": 0.4
-      }
+      "source": "model_only",
+      "blend_weights": null
     },
     {
       "id": "QF_1",
