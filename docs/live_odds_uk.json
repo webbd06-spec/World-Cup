@@ -1,10 +1,10 @@
 {
-  "_fetched": "2026-07-04T14:54:08.571083+00:00",
+  "_fetched": "2026-07-04T15:02:16.965893+00:00",
   "matches": {
     "R16_1": {
       "h2h": {
         "betfred_uk": {
-          "home_win": 5.0,
+          "home_win": 5.5,
           "draw": 3.5,
           "away_win": 1.73
         },
@@ -34,8 +34,8 @@
           "away_win": 1.79
         },
         "betvictor": {
-          "home_win": 5.0,
-          "draw": 3.6,
+          "home_win": 5.5,
+          "draw": 3.4,
           "away_win": 1.7
         },
         "williamhill": {
@@ -359,7 +359,7 @@
           "away_win": 2.5
         },
         "betfair_ex_uk": {
-          "home_win": 2.92,
+          "home_win": 2.9,
           "draw": 3.45,
           "away_win": 2.68
         },
