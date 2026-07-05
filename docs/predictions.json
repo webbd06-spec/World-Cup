@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-05T06:02:06.385478Z",
+  "generated_at": "2026-07-05T06:11:01.618147Z",
   "date": "2026-07-05",
   "model_version": "1.1.0",
   "blend_weights": {
@@ -21261,7 +21261,7 @@
       "kickoff_utc": "21:00",
       "venue": "TBC",
       "city": null,
-      "status": "2026-07-04 21:00:00z",
+      "status": "finished",
       "result": {
         "home": 0,
         "away": 1
@@ -21553,7 +21553,7 @@
       "kickoff_utc": "20:00",
       "venue": "TBC",
       "city": null,
-      "status": "2026-07-06 20:00:00z",
+      "status": "scheduled",
       "result": null,
       "xg_home": 1.963,
       "xg_away": 1.276,
@@ -27940,19 +27940,277 @@
     {
       "id": "QF_1",
       "stage": "quarterfinal",
-      "home": null,
-      "away": null,
+      "group": null,
+      "matchday": null,
+      "home": "France",
+      "away": "Morocco",
       "date": "2026-07-09",
+      "kickoff_utc": "20:00",
       "venue": "TBC",
-      "status": "tbd",
-      "win_prob": null,
-      "draw_prob": null,
-      "loss_prob": null,
-      "xg_home": null,
-      "xg_away": null,
-      "top_scorelines": [],
-      "score_matrix": [],
-      "source": "tbd"
+      "city": null,
+      "status": "scheduled",
+      "result": null,
+      "xg_home": 2.035,
+      "xg_away": 1.181,
+      "win_prob": 0.5583,
+      "draw_prob": 0.2376,
+      "loss_prob": 0.204,
+      "model_win": 0.5583,
+      "model_draw": 0.2376,
+      "model_loss": 0.204,
+      "market_win": null,
+      "market_draw": null,
+      "market_loss": null,
+      "best_odds_home": null,
+      "best_odds_draw": null,
+      "best_odds_away": null,
+      "top_scorelines": [
+        {
+          "home": 1,
+          "away": 1,
+          "prob": 0.109
+        },
+        {
+          "home": 2,
+          "away": 1,
+          "prob": 0.0981
+        },
+        {
+          "home": 2,
+          "away": 0,
+          "prob": 0.0831
+        },
+        {
+          "home": 1,
+          "away": 0,
+          "prob": 0.0692
+        },
+        {
+          "home": 3,
+          "away": 1,
+          "prob": 0.0666
+        },
+        {
+          "home": 2,
+          "away": 2,
+          "prob": 0.0579
+        }
+      ],
+      "top_score_conditional": {
+        "home": 2,
+        "away": 1,
+        "prob": 0.0981,
+        "result": "W"
+      },
+      "score_matrix": [
+        [
+          0.05269,
+          0.03486,
+          0.02798,
+          0.01101,
+          0.00325,
+          0.00077,
+          0.00015,
+          3e-05,
+          0.0
+        ],
+        [
+          0.06916,
+          0.10899,
+          0.05693,
+          0.0224,
+          0.00661,
+          0.00156,
+          0.00031,
+          5e-05,
+          1e-05
+        ],
+        [
+          0.08312,
+          0.09813,
+          0.05793,
+          0.0228,
+          0.00673,
+          0.00159,
+          0.00031,
+          5e-05,
+          1e-05
+        ],
+        [
+          0.05638,
+          0.06656,
+          0.03929,
+          0.01546,
+          0.00456,
+          0.00108,
+          0.00021,
+          4e-05,
+          1e-05
+        ],
+        [
+          0.02868,
+          0.03386,
+          0.01999,
+          0.00787,
+          0.00232,
+          0.00055,
+          0.00011,
+          2e-05,
+          0.0
+        ],
+        [
+          0.01167,
+          0.01378,
+          0.00813,
+          0.0032,
+          0.00094,
+          0.00022,
+          4e-05,
+          1e-05,
+          0.0
+        ],
+        [
+          0.00396,
+          0.00467,
+          0.00276,
+          0.00109,
+          0.00032,
+          8e-05,
+          1e-05,
+          0.0,
+          0.0
+        ],
+        [
+          0.00115,
+          0.00136,
+          0.0008,
+          0.00032,
+          9e-05,
+          2e-05,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.00029,
+          0.00035,
+          0.0002,
+          8e-05,
+          2e-05,
+          1e-05,
+          0.0,
+          0.0,
+          0.0
+        ]
+      ],
+      "ah_lines": [
+        {
+          "h": 0,
+          "key": "0",
+          "p_home": 0.7324,
+          "p_away": 0.2676,
+          "fair_home": 1.365,
+          "fair_away": 3.737
+        },
+        {
+          "h": -0.25,
+          "key": "-0.25",
+          "p_home": 0.6336,
+          "p_away": 0.3664,
+          "fair_home": 1.578,
+          "fair_away": 2.729
+        },
+        {
+          "h": -0.5,
+          "key": "-0.5",
+          "p_home": 0.5583,
+          "p_away": 0.4417,
+          "fair_home": 1.791,
+          "fair_away": 2.264
+        },
+        {
+          "h": -0.75,
+          "key": "-0.75",
+          "p_home": 0.505,
+          "p_away": 0.495,
+          "fair_home": 1.98,
+          "fair_away": 2.02
+        },
+        {
+          "h": -1.5,
+          "key": "-1.5",
+          "p_home": 0.3429,
+          "p_away": 0.6571,
+          "fair_home": 2.917,
+          "fair_away": 1.522
+        },
+        {
+          "h": -2.5,
+          "key": "-2.5",
+          "p_home": 0.1697,
+          "p_away": 0.8303,
+          "fair_home": 5.894,
+          "fair_away": 1.204
+        },
+        {
+          "h": -3.5,
+          "key": "-3.5",
+          "p_home": 0.0701,
+          "p_away": 0.9299,
+          "fair_home": 14.265,
+          "fair_away": 1.075
+        },
+        {
+          "h": 0.25,
+          "key": "0.25",
+          "p_home": 0.7685,
+          "p_away": 0.2315,
+          "fair_home": 1.301,
+          "fair_away": 4.319
+        },
+        {
+          "h": 0.5,
+          "key": "0.5",
+          "p_home": 0.796,
+          "p_away": 0.204,
+          "fair_home": 1.256,
+          "fair_away": 4.901
+        },
+        {
+          "h": 0.75,
+          "key": "0.75",
+          "p_home": 0.8467,
+          "p_away": 0.1533,
+          "fair_home": 1.181,
+          "fair_away": 6.521
+        },
+        {
+          "h": 1.5,
+          "key": "1.5",
+          "p_home": 0.9157,
+          "p_away": 0.0843,
+          "fair_home": 1.092,
+          "fair_away": 11.864
+        },
+        {
+          "h": 2.5,
+          "key": "2.5",
+          "p_home": 0.974,
+          "p_away": 0.026,
+          "fair_home": 1.027,
+          "fair_away": 38.485
+        },
+        {
+          "h": 3.5,
+          "key": "3.5",
+          "p_home": 0.9935,
+          "p_away": 0.0065,
+          "fair_home": 1.007,
+          "fair_away": 152.863
+        }
+      ],
+      "source": "model_only",
+      "blend_weights": null
     },
     {
       "id": "QF_2",
