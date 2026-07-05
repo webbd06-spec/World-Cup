@@ -1,0 +1,20 @@
+{
+  "fixture_id": "R16_3",
+  "home": "Brazil",
+  "away": "Norway",
+  "home_multiplier": 0.82,
+  "away_multiplier": 1.02,
+  "notes": "Brazil are significantly hampered: Raphinha (hamstring) is officially ruled out until at least the quarter-finals, Lucas Paquetá (thigh) is highly unlikely to feature and may be done for the tournament, Rodrygo and Estêvão were already absent pre-tournament, and Casemiro is a major doubt after being subbed against Japan with adductor discomfort — leaving Vinicius Jr. carrying an enormous creative burden. Norway arrive in comparatively excellent health with no new injuries or suspensions…",
+  "home_scorers": [
+    "Vinicius Junior (lead attacker/only fit elite wide threat, 4 goals & 1 assist in",
+    "Matheus Cunha (starting striker, sole recognised No.9 despite indifferent Japan ",
+    "Casemiro (set-piece & long-range threat, scored vs Japan — if passed fit to star"
+  ],
+  "away_scorers": [
+    "Erling Haaland (leading striker, 5 tournament goals, Golden Boot contender, late",
+    "Martin Ødegaard (playmaker/captain, set-piece delivery, penalty taker if require",
+    "Antonio Nusa (pace wide threat, scored vs Ivory Coast, key counter-attacking wea"
+  ],
+  "source": "anthropic_web_search",
+  "fetched_at": "2026-07-05T15:45:39.979810+00:00"
+}
