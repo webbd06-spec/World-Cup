@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-07-05T15:45:40.117573Z",
-  "date": "2026-07-05",
+  "generated_at": "2026-07-06T18:25:53.625807Z",
+  "date": "2026-07-06",
   "model_version": "1.1.0",
   "blend_weights": {
     "market": 0.6,
@@ -21553,19 +21553,22 @@
       "kickoff_utc": "20:00",
       "venue": "TBC",
       "city": null,
-      "status": "scheduled",
-      "result": null,
+      "status": "finished",
+      "result": {
+        "home": 1,
+        "away": 2
+      },
       "xg_home": 1.61,
       "xg_away": 1.302,
-      "win_prob": 0.4966,
-      "draw_prob": 0.2663,
-      "loss_prob": 0.2371,
+      "win_prob": 0.4316,
+      "draw_prob": 0.2736,
+      "loss_prob": 0.2948,
       "model_win": 0.4316,
       "model_draw": 0.2736,
       "model_loss": 0.2948,
-      "market_win": 0.5399,
-      "market_draw": 0.2614,
-      "market_loss": 0.1987,
+      "market_win": null,
+      "market_draw": null,
+      "market_loss": null,
       "best_odds_home": 1.84,
       "best_odds_draw": 3.8,
       "best_odds_away": 5.0,
@@ -21814,11 +21817,8 @@
           "fair_away": 110.437
         }
       ],
-      "source": "blend",
-      "blend_weights": {
-        "market": 0.6,
-        "model": 0.4
-      },
+      "source": "model_only",
+      "blend_weights": null,
       "team_news": {
         "notes": "Brazil are significantly hampered: Raphinha (hamstring) is officially ruled out until at least the quarter-finals, Lucas Paquetá (thigh) is highly unlikely to feature and may be done for the tournament, Rodrygo and Estêvão were already absent pre-tournament, and Casemiro is a major doubt after being subbed against Japan with adductor discomfort — leaving Vinicius Jr. carrying an enormous creative burden. Norway arrive in comparatively excellent health with no new injuries or suspensions…",
         "home_scorers": [
@@ -21847,22 +21847,25 @@
       "home": "Mexico",
       "away": "England",
       "date": "2026-07-06",
-      "kickoff_utc": "00:00",
+      "kickoff_utc": "01:00",
       "venue": "TBC",
       "city": null,
-      "status": "scheduled",
-      "result": null,
-      "xg_home": 1.288,
-      "xg_away": 1.954,
-      "win_prob": 0.2791,
-      "draw_prob": 0.2791,
-      "loss_prob": 0.4418,
-      "model_win": 0.2382,
-      "model_draw": 0.2453,
-      "model_loss": 0.5165,
-      "market_win": 0.3063,
-      "market_draw": 0.3017,
-      "market_loss": 0.392,
+      "status": "finished",
+      "result": {
+        "home": 2,
+        "away": 3
+      },
+      "xg_home": 1.352,
+      "xg_away": 1.602,
+      "win_prob": 0.3086,
+      "draw_prob": 0.2724,
+      "loss_prob": 0.419,
+      "model_win": 0.3086,
+      "model_draw": 0.2724,
+      "model_loss": 0.419,
+      "market_win": null,
+      "market_draw": null,
+      "market_loss": null,
       "best_odds_home": 3.25,
       "best_odds_draw": 3.3,
       "best_odds_away": 2.54,
@@ -21870,32 +21873,32 @@
         {
           "home": 1,
           "away": 1,
-          "prob": 0.1112
+          "prob": 0.1276
         },
         {
           "home": 1,
           "away": 2,
-          "prob": 0.0961
-        },
-        {
-          "home": 0,
-          "away": 2,
-          "prob": 0.0746
-        },
-        {
-          "home": 0,
-          "away": 1,
-          "prob": 0.0636
+          "prob": 0.0904
         },
         {
           "home": 2,
           "away": 1,
-          "prob": 0.0633
+          "prob": 0.0763
         },
         {
-          "home": 1,
-          "away": 3,
-          "prob": 0.0626
+          "home": 0,
+          "away": 1,
+          "prob": 0.0688
+        },
+        {
+          "home": 0,
+          "away": 2,
+          "prob": 0.0669
+        },
+        {
+          "home": 0,
+          "away": 0,
+          "prob": 0.0668
         }
       ],
       "top_score_conditional": {
@@ -21906,97 +21909,97 @@
       },
       "score_matrix": [
         [
-          0.05187,
-          0.0636,
-          0.07464,
-          0.04863,
-          0.02376,
-          0.00929,
-          0.00302,
-          0.00084,
-          0.00021
+          0.06677,
+          0.0688,
+          0.06688,
+          0.03572,
+          0.01431,
+          0.00458,
+          0.00122,
+          0.00028,
+          6e-05
         ],
         [
-          0.03755,
-          0.11116,
-          0.09613,
-          0.06262,
-          0.0306,
-          0.01196,
-          0.0039,
-          0.00109,
-          0.00027
+          0.05578,
+          0.12757,
+          0.09044,
+          0.04831,
+          0.01935,
+          0.0062,
+          0.00166,
+          0.00038,
+          8e-05
         ],
         [
-          0.03241,
-          0.06335,
-          0.0619,
-          0.04033,
-          0.0197,
-          0.0077,
-          0.00251,
-          0.0007,
-          0.00017
+          0.04764,
+          0.07634,
+          0.06116,
+          0.03266,
+          0.01308,
+          0.00419,
+          0.00112,
+          0.00026,
+          5e-05
         ],
         [
-          0.01391,
-          0.02719,
-          0.02657,
-          0.01731,
-          0.00846,
-          0.00331,
-          0.00108,
-          0.0003,
-          7e-05
-        ],
-        [
-          0.00448,
-          0.00876,
-          0.00856,
-          0.00557,
-          0.00272,
-          0.00106,
-          0.00035,
-          0.0001,
+          0.02148,
+          0.03441,
+          0.02757,
+          0.01472,
+          0.0059,
+          0.00189,
+          0.0005,
+          0.00012,
           2e-05
         ],
         [
-          0.00115,
-          0.00226,
-          0.0022,
-          0.00144,
-          0.0007,
-          0.00027,
-          9e-05,
-          2e-05,
+          0.00726,
+          0.01164,
+          0.00932,
+          0.00498,
+          0.00199,
+          0.00064,
+          0.00017,
+          4e-05,
           1e-05
         ],
         [
-          0.00025,
-          0.00048,
-          0.00047,
-          0.00031,
-          0.00015,
+          0.00196,
+          0.00315,
+          0.00252,
+          0.00135,
+          0.00054,
+          0.00017,
+          5e-05,
+          1e-05,
+          0.0
+        ],
+        [
+          0.00044,
+          0.00071,
+          0.00057,
+          0.0003,
+          0.00012,
+          4e-05,
+          1e-05,
+          0.0,
+          0.0
+        ],
+        [
+          9e-05,
+          0.00014,
+          0.00011,
           6e-05,
           2e-05,
           1e-05,
-          0.0
-        ],
-        [
-          5e-05,
-          9e-05,
-          9e-05,
-          6e-05,
-          3e-05,
-          1e-05,
           0.0,
           0.0,
           0.0
         ],
         [
           1e-05,
-          1e-05,
-          1e-05,
+          2e-05,
+          2e-05,
           1e-05,
           0.0,
           0.0,
@@ -22111,10 +22114,26 @@
           "fair_away": 17.209
         }
       ],
-      "source": "blend",
-      "blend_weights": {
-        "market": 0.6,
-        "model": 0.4
+      "source": "model_only",
+      "blend_weights": null,
+      "team_news": {
+        "notes": "Mexico entered the last-16 clash with no injury concerns whatsoever after their 2-0 win over Ecuador, with all players fit including teenage playmaker Gilberto Mora. England were severely depleted at right-back: Reece James (hamstring) was ruled out for the last two matches, Jarell Quansah (ankle) returned but was a late fitness doubt, and Djed Spence picked up a new training injury the day before the game, forcing Tuchel into a makeshift solution; Declan Rice also managed nerve back pain…",
+        "home_scorers": [
+          "Raul Jimenez (leading striker, set-piece and penalty threat)",
+          "Julian Quinones (tournament top scorer, electric wide forward)",
+          "Roberto Alvarado (creative winger, set-piece delivery)"
+        ],
+        "away_scorers": [
+          "Harry Kane (captain, penalty taker, tournament top scorer)",
+          "Jude Bellingham (creative talisman, goals and assists)",
+          "Bukayo Saka (starting winger, direct goal threat)"
+        ],
+        "fetched_at": "2026-07-06T18:25:36.417202+00:00"
+      },
+      "news_adjustment": {
+        "home": 1.05,
+        "away": 0.82,
+        "notes": "Mexico entered the last-16 clash with no injury concerns whatsoever after their 2-0 win over Ecuador, with all players fit including teenage playmaker Gilberto Mora. England were severely depleted at right-back: Reece James (hamstring) was ruled out for the last two matches, Jarell Quansah (ankle) returned but was a late fitness doubt, and Djed Spence picked up a new training injury the day before the game, forcing Tuchel into a makeshift solution; Declan Rice also managed nerve back pain…"
       }
     },
     {
@@ -22130,50 +22149,50 @@
       "city": null,
       "status": "scheduled",
       "result": null,
-      "xg_home": 1.579,
-      "xg_away": 1.727,
-      "win_prob": 0.2751,
-      "draw_prob": 0.2611,
-      "loss_prob": 0.4638,
-      "model_win": 0.3412,
-      "model_draw": 0.2554,
-      "model_loss": 0.4033,
-      "market_win": 0.231,
-      "market_draw": 0.2649,
-      "market_loss": 0.5042,
-      "best_odds_home": 4.3,
-      "best_odds_draw": 3.75,
+      "xg_home": 1.532,
+      "xg_away": 1.52,
+      "win_prob": 0.28,
+      "draw_prob": 0.2715,
+      "loss_prob": 0.4485,
+      "model_win": 0.3679,
+      "model_draw": 0.2693,
+      "model_loss": 0.3628,
+      "market_win": 0.2214,
+      "market_draw": 0.2729,
+      "market_loss": 0.5057,
+      "best_odds_home": 4.5,
+      "best_odds_draw": 3.65,
       "best_odds_away": 1.97,
       "top_scorelines": [
         {
           "home": 1,
           "away": 1,
-          "prob": 0.113
+          "prob": 0.1244
+        },
+        {
+          "home": 2,
+          "away": 1,
+          "prob": 0.0843
         },
         {
           "home": 1,
           "away": 2,
-          "prob": 0.0863
-        },
-        {
-          "home": 2,
-          "away": 1,
-          "prob": 0.0789
+          "prob": 0.0837
         },
         {
           "home": 2,
           "away": 2,
-          "prob": 0.0682
+          "prob": 0.0641
         },
         {
           "home": 0,
-          "away": 2,
-          "prob": 0.0547
+          "away": 0,
+          "prob": 0.0616
         },
         {
-          "home": 0,
-          "away": 1,
-          "prob": 0.0503
+          "home": 1,
+          "away": 0,
+          "prob": 0.0581
         }
       ],
       "top_score_conditional": {
@@ -22184,98 +22203,98 @@
       },
       "score_matrix": [
         [
-          0.04966,
-          0.05031,
-          0.05467,
-          0.03147,
-          0.01359,
-          0.00469,
-          0.00135,
-          0.00033,
-          7e-05
+          0.06161,
+          0.05757,
+          0.05462,
+          0.02767,
+          0.01051,
+          0.0032,
+          0.00081,
+          0.00018,
+          3e-05
         ],
         [
-          0.0449,
-          0.11298,
-          0.08633,
-          0.0497,
-          0.02146,
-          0.00741,
-          0.00213,
-          0.00053,
-          0.00011
-        ],
-        [
-          0.04572,
-          0.07895,
-          0.06817,
-          0.03924,
-          0.01694,
-          0.00585,
-          0.00168,
-          0.00042,
-          9e-05
-        ],
-        [
-          0.02407,
-          0.04156,
-          0.03588,
-          0.02066,
-          0.00892,
-          0.00308,
-          0.00089,
-          0.00022,
+          0.05813,
+          0.1244,
+          0.08366,
+          0.04238,
+          0.0161,
+          0.00489,
+          0.00124,
+          0.00027,
           5e-05
         ],
         [
-          0.0095,
-          0.01641,
-          0.01417,
-          0.00816,
-          0.00352,
-          0.00122,
-          0.00035,
-          9e-05,
+          0.05548,
+          0.08431,
+          0.06407,
+          0.03245,
+          0.01233,
+          0.00375,
+          0.00095,
+          0.00021,
+          4e-05
+        ],
+        [
+          0.02832,
+          0.04304,
+          0.03271,
+          0.01657,
+          0.0063,
+          0.00191,
+          0.00048,
+          0.00011,
           2e-05
         ],
         [
-          0.003,
-          0.00518,
-          0.00447,
-          0.00258,
-          0.00111,
-          0.00038,
-          0.00011,
-          3e-05,
+          0.01085,
+          0.01648,
+          0.01252,
+          0.00634,
+          0.00241,
+          0.00073,
+          0.00019,
+          4e-05,
           1e-05
         ],
         [
-          0.00079,
-          0.00136,
-          0.00118,
-          0.00068,
-          0.00029,
-          0.0001,
-          3e-05,
+          0.00332,
+          0.00505,
+          0.00384,
+          0.00194,
+          0.00074,
+          0.00022,
+          6e-05,
           1e-05,
           0.0
         ],
         [
-          0.00018,
-          0.00031,
-          0.00027,
-          0.00015,
-          7e-05,
-          2e-05,
+          0.00085,
+          0.00129,
+          0.00098,
+          0.0005,
+          0.00019,
+          6e-05,
           1e-05,
           0.0,
           0.0
         ],
         [
+          0.00019,
+          0.00028,
+          0.00021,
+          0.00011,
           4e-05,
-          6e-05,
+          1e-05,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          4e-05,
           5e-05,
-          3e-05,
+          4e-05,
+          2e-05,
           1e-05,
           0.0,
           0.0,
@@ -22393,6 +22412,25 @@
       "blend_weights": {
         "market": 0.6,
         "model": 0.4
+      },
+      "team_news": {
+        "notes": "Portugal have no confirmed injuries or suspensions and Martinez is expected to start Ronaldo despite Goncalo Ramos' heroic impact sub role, with right-wing a rotation question between Neto, Conceicao and Bernardo Silva; confirmed starting XI shows Joao Felix and Neto ahead of Leao (bench). Spain are dealing with a double winger injury concern — Nico Williams (adductor) and Yeremy Pino (acromioclavicular sprain) — both missed the Austria win and are unlikely to feature vs Portugal, while Fermin…",
+        "home_scorers": [
+          "Cristiano Ronaldo (starting striker, penalties, big-game pedigree)",
+          "Bruno Fernandes (attacking midfielder, primary creative engine, set-piece threat",
+          "Goncalo Ramos (impact substitute, goal every 37 mins at this World Cup)"
+        ],
+        "away_scorers": [
+          "Mikel Oyarzabal (starting striker, brace vs Austria, proven big-match scorer)",
+          "Lamine Yamal (starting winger, tournament's standout attacker, direct threat)",
+          "Dani Olmo (attacking mid/winger, consistent contributor, covers injured Williams"
+        ],
+        "fetched_at": "2026-07-06T18:25:53.488222+00:00"
+      },
+      "news_adjustment": {
+        "home": 0.97,
+        "away": 0.88,
+        "notes": "Portugal have no confirmed injuries or suspensions and Martinez is expected to start Ronaldo despite Goncalo Ramos' heroic impact sub role, with right-wing a rotation question between Neto, Conceicao and Bernardo Silva; confirmed starting XI shows Joao Felix and Neto ahead of Leao (bench). Spain are dealing with a double winger injury concern — Nico Williams (adductor) and Yeremy Pino (acromioclavicular sprain) — both missed the Austria win and are unlikely to feature vs Portugal, while Fermin…"
       }
     },
     {
@@ -22410,18 +22448,18 @@
       "result": null,
       "xg_home": 1.441,
       "xg_away": 1.821,
-      "win_prob": 0.3304,
-      "draw_prob": 0.272,
-      "loss_prob": 0.3976,
+      "win_prob": 0.3492,
+      "draw_prob": 0.27,
+      "loss_prob": 0.3808,
       "model_win": 0.2931,
       "model_draw": 0.2537,
       "model_loss": 0.4532,
-      "market_win": 0.3553,
-      "market_draw": 0.2842,
-      "market_loss": 0.3605,
-      "best_odds_home": 2.8,
-      "best_odds_draw": 3.5,
-      "best_odds_away": 2.76,
+      "market_win": 0.3866,
+      "market_draw": 0.281,
+      "market_loss": 0.3325,
+      "best_odds_home": 2.58,
+      "best_odds_draw": 3.55,
+      "best_odds_away": 3.0,
       "top_scorelines": [
         {
           "home": 1,
@@ -22966,18 +23004,18 @@
       "result": null,
       "xg_home": 1.559,
       "xg_away": 1.473,
-      "win_prob": 0.3124,
-      "draw_prob": 0.2943,
-      "loss_prob": 0.3932,
+      "win_prob": 0.3133,
+      "draw_prob": 0.2953,
+      "loss_prob": 0.3914,
       "model_win": 0.3837,
       "model_draw": 0.2701,
       "model_loss": 0.3462,
-      "market_win": 0.2649,
-      "market_draw": 0.3105,
-      "market_loss": 0.4246,
+      "market_win": 0.2664,
+      "market_draw": 0.3122,
+      "market_loss": 0.4215,
       "best_odds_home": 3.75,
       "best_odds_draw": 3.2,
-      "best_odds_away": 2.34,
+      "best_odds_away": 2.37,
       "top_scorelines": [
         {
           "home": 1,
@@ -28254,19 +28292,280 @@
     {
       "id": "QF_3",
       "stage": "quarterfinal",
-      "home": null,
-      "away": null,
+      "group": null,
+      "matchday": null,
+      "home": "Norway",
+      "away": "England",
       "date": "2026-07-11",
+      "kickoff_utc": "21:00",
       "venue": "TBC",
-      "status": "tbd",
-      "win_prob": null,
-      "draw_prob": null,
-      "loss_prob": null,
-      "xg_home": null,
-      "xg_away": null,
-      "top_scorelines": [],
-      "score_matrix": [],
-      "source": "tbd"
+      "city": null,
+      "status": "scheduled",
+      "result": null,
+      "xg_home": 1.317,
+      "xg_away": 1.909,
+      "win_prob": 0.2389,
+      "draw_prob": 0.2561,
+      "loss_prob": 0.505,
+      "model_win": 0.2512,
+      "model_draw": 0.2489,
+      "model_loss": 0.4998,
+      "market_win": 0.2306,
+      "market_draw": 0.2609,
+      "market_loss": 0.5085,
+      "best_odds_home": 4.3,
+      "best_odds_draw": 3.8,
+      "best_odds_away": 1.95,
+      "top_scorelines": [
+        {
+          "home": 1,
+          "away": 1,
+          "prob": 0.1129
+        },
+        {
+          "home": 1,
+          "away": 2,
+          "prob": 0.0953
+        },
+        {
+          "home": 0,
+          "away": 2,
+          "prob": 0.0724
+        },
+        {
+          "home": 2,
+          "away": 1,
+          "prob": 0.0658
+        },
+        {
+          "home": 0,
+          "away": 1,
+          "prob": 0.0628
+        },
+        {
+          "home": 2,
+          "away": 2,
+          "prob": 0.0628
+        }
+      ],
+      "top_score_conditional": {
+        "home": 1,
+        "away": 2,
+        "prob": 0.0953,
+        "result": "L"
+      },
+      "score_matrix": [
+        [
+          0.0527,
+          0.06284,
+          0.07237,
+          0.04605,
+          0.02198,
+          0.00839,
+          0.00267,
+          0.00073,
+          0.00017
+        ],
+        [
+          0.03933,
+          0.11285,
+          0.09532,
+          0.06066,
+          0.02895,
+          0.01105,
+          0.00352,
+          0.00096,
+          0.00023
+        ],
+        [
+          0.03445,
+          0.06577,
+          0.06278,
+          0.03994,
+          0.01906,
+          0.00728,
+          0.00232,
+          0.00063,
+          0.00015
+        ],
+        [
+          0.01513,
+          0.02887,
+          0.02756,
+          0.01754,
+          0.00837,
+          0.0032,
+          0.00102,
+          0.00028,
+          7e-05
+        ],
+        [
+          0.00498,
+          0.00951,
+          0.00907,
+          0.00577,
+          0.00276,
+          0.00105,
+          0.00033,
+          9e-05,
+          2e-05
+        ],
+        [
+          0.00131,
+          0.0025,
+          0.00239,
+          0.00152,
+          0.00073,
+          0.00028,
+          9e-05,
+          2e-05,
+          1e-05
+        ],
+        [
+          0.00029,
+          0.00055,
+          0.00052,
+          0.00033,
+          0.00016,
+          6e-05,
+          2e-05,
+          1e-05,
+          0.0
+        ],
+        [
+          5e-05,
+          0.0001,
+          0.0001,
+          6e-05,
+          3e-05,
+          1e-05,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          1e-05,
+          2e-05,
+          2e-05,
+          1e-05,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      ],
+      "ah_lines": [
+        {
+          "h": 0,
+          "key": "0",
+          "p_home": 0.3345,
+          "p_away": 0.6655,
+          "fair_home": 2.989,
+          "fair_away": 1.503
+        },
+        {
+          "h": -0.25,
+          "key": "-0.25",
+          "p_home": 0.287,
+          "p_away": 0.713,
+          "fair_home": 3.485,
+          "fair_away": 1.402
+        },
+        {
+          "h": -0.5,
+          "key": "-0.5",
+          "p_home": 0.2512,
+          "p_away": 0.7488,
+          "fair_home": 3.98,
+          "fair_away": 1.336
+        },
+        {
+          "h": -0.75,
+          "key": "-0.75",
+          "p_home": 0.1952,
+          "p_away": 0.8048,
+          "fair_home": 5.122,
+          "fair_away": 1.243
+        },
+        {
+          "h": -1.5,
+          "key": "-1.5",
+          "p_home": 0.112,
+          "p_away": 0.888,
+          "fair_home": 8.927,
+          "fair_away": 1.126
+        },
+        {
+          "h": -2.5,
+          "key": "-2.5",
+          "p_home": 0.0379,
+          "p_away": 0.9621,
+          "fair_home": 26.367,
+          "fair_away": 1.039
+        },
+        {
+          "h": -3.5,
+          "key": "-3.5",
+          "p_home": 0.0105,
+          "p_away": 0.9895,
+          "fair_home": 94.911,
+          "fair_away": 1.011
+        },
+        {
+          "h": 0.25,
+          "key": "0.25",
+          "p_home": 0.4291,
+          "p_away": 0.5709,
+          "fair_home": 2.33,
+          "fair_away": 1.752
+        },
+        {
+          "h": 0.5,
+          "key": "0.5",
+          "p_home": 0.5002,
+          "p_away": 0.4998,
+          "fair_home": 1.999,
+          "fair_away": 2.001
+        },
+        {
+          "h": 0.75,
+          "key": "0.75",
+          "p_home": 0.5581,
+          "p_away": 0.4419,
+          "fair_home": 1.792,
+          "fair_away": 2.263
+        },
+        {
+          "h": 1.5,
+          "key": "1.5",
+          "p_home": 0.7078,
+          "p_away": 0.2922,
+          "fair_home": 1.413,
+          "fair_away": 3.422
+        },
+        {
+          "h": 2.5,
+          "key": "2.5",
+          "p_home": 0.8634,
+          "p_away": 0.1366,
+          "fair_home": 1.158,
+          "fair_away": 7.323
+        },
+        {
+          "h": 3.5,
+          "key": "3.5",
+          "p_home": 0.9468,
+          "p_away": 0.0532,
+          "fair_home": 1.056,
+          "fair_away": 18.811
+        }
+      ],
+      "source": "blend",
+      "blend_weights": {
+        "market": 0.6,
+        "model": 0.4
+      }
     },
     {
       "id": "QF_4",

@@ -1,0 +1,20 @@
+{
+  "fixture_id": "R16_4",
+  "home": "Mexico",
+  "away": "England",
+  "home_multiplier": 1.05,
+  "away_multiplier": 0.82,
+  "notes": "Mexico entered the last-16 clash with no injury concerns whatsoever after their 2-0 win over Ecuador, with all players fit including teenage playmaker Gilberto Mora. England were severely depleted at right-back: Reece James (hamstring) was ruled out for the last two matches, Jarell Quansah (ankle) returned but was a late fitness doubt, and Djed Spence picked up a new training injury the day before the game, forcing Tuchel into a makeshift solution; Declan Rice also managed nerve back pain…",
+  "home_scorers": [
+    "Raul Jimenez (leading striker, set-piece and penalty threat)",
+    "Julian Quinones (tournament top scorer, electric wide forward)",
+    "Roberto Alvarado (creative winger, set-piece delivery)"
+  ],
+  "away_scorers": [
+    "Harry Kane (captain, penalty taker, tournament top scorer)",
+    "Jude Bellingham (creative talisman, goals and assists)",
+    "Bukayo Saka (starting winger, direct goal threat)"
+  ],
+  "source": "anthropic_web_search",
+  "fetched_at": "2026-07-06T18:25:36.417202+00:00"
+}

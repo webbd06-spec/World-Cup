@@ -1,0 +1,20 @@
+{
+  "fixture_id": "R16_5",
+  "home": "Portugal",
+  "away": "Spain",
+  "home_multiplier": 0.97,
+  "away_multiplier": 0.88,
+  "notes": "Portugal have no confirmed injuries or suspensions and Martinez is expected to start Ronaldo despite Goncalo Ramos' heroic impact sub role, with right-wing a rotation question between Neto, Conceicao and Bernardo Silva; confirmed starting XI shows Joao Felix and Neto ahead of Leao (bench). Spain are dealing with a double winger injury concern — Nico Williams (adductor) and Yeremy Pino (acromioclavicular sprain) — both missed the Austria win and are unlikely to feature vs Portugal, while Fermin…",
+  "home_scorers": [
+    "Cristiano Ronaldo (starting striker, penalties, big-game pedigree)",
+    "Bruno Fernandes (attacking midfielder, primary creative engine, set-piece threat",
+    "Goncalo Ramos (impact substitute, goal every 37 mins at this World Cup)"
+  ],
+  "away_scorers": [
+    "Mikel Oyarzabal (starting striker, brace vs Austria, proven big-match scorer)",
+    "Lamine Yamal (starting winger, tournament's standout attacker, direct threat)",
+    "Dani Olmo (attacking mid/winger, consistent contributor, covers injured Williams"
+  ],
+  "source": "anthropic_web_search",
+  "fetched_at": "2026-07-06T18:25:53.488222+00:00"
+}
