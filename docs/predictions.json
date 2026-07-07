@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-07T17:21:11.246796Z",
+  "generated_at": "2026-07-07T17:31:22.036081Z",
   "date": "2026-07-07",
   "model_version": "1.1.0",
   "blend_weights": {
@@ -22725,7 +22725,7 @@
       "status": "in_play",
       "result": {
         "home": 0,
-        "away": 1
+        "away": 2
       },
       "xg_home": 2.274,
       "xg_away": 1.061,
