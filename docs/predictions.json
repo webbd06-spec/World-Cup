@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-08T06:11:09.856811Z",
+  "generated_at": "2026-07-08T06:21:13.703132Z",
   "date": "2026-07-08",
   "model_version": "1.1.0",
   "blend_weights": {
@@ -28831,19 +28831,277 @@
     {
       "id": "QF_4",
       "stage": "quarterfinal",
-      "home": null,
-      "away": null,
+      "group": null,
+      "matchday": null,
+      "home": "Argentina",
+      "away": "Switzerland",
       "date": "2026-07-12",
+      "kickoff_utc": "01:00",
       "venue": "TBC",
-      "status": "tbd",
-      "win_prob": null,
-      "draw_prob": null,
-      "loss_prob": null,
-      "xg_home": null,
-      "xg_away": null,
-      "top_scorelines": [],
-      "score_matrix": [],
-      "source": "tbd"
+      "city": null,
+      "status": "scheduled",
+      "result": null,
+      "xg_home": 1.994,
+      "xg_away": 1.257,
+      "win_prob": 0.5322,
+      "draw_prob": 0.2419,
+      "loss_prob": 0.226,
+      "model_win": 0.5322,
+      "model_draw": 0.2419,
+      "model_loss": 0.226,
+      "market_win": null,
+      "market_draw": null,
+      "market_loss": null,
+      "best_odds_home": null,
+      "best_odds_draw": null,
+      "best_odds_away": null,
+      "top_scorelines": [
+        {
+          "home": 1,
+          "away": 1,
+          "prob": 0.1098
+        },
+        {
+          "home": 2,
+          "away": 1,
+          "prob": 0.0968
+        },
+        {
+          "home": 2,
+          "away": 0,
+          "prob": 0.077
+        },
+        {
+          "home": 1,
+          "away": 0,
+          "prob": 0.0646
+        },
+        {
+          "home": 3,
+          "away": 1,
+          "prob": 0.0643
+        },
+        {
+          "home": 1,
+          "away": 2,
+          "prob": 0.061
+        }
+      ],
+      "top_score_conditional": {
+        "home": 2,
+        "away": 1,
+        "prob": 0.0968,
+        "result": "W"
+      },
+      "score_matrix": [
+        [
+          0.05138,
+          0.03609,
+          0.03062,
+          0.01283,
+          0.00403,
+          0.00101,
+          0.00021,
+          4e-05,
+          1e-05
+        ],
+        [
+          0.06464,
+          0.10975,
+          0.06104,
+          0.02558,
+          0.00804,
+          0.00202,
+          0.00042,
+          8e-05,
+          1e-05
+        ],
+        [
+          0.07703,
+          0.09682,
+          0.06085,
+          0.0255,
+          0.00801,
+          0.00201,
+          0.00042,
+          8e-05,
+          1e-05
+        ],
+        [
+          0.05119,
+          0.06434,
+          0.04044,
+          0.01694,
+          0.00532,
+          0.00134,
+          0.00028,
+          5e-05,
+          1e-05
+        ],
+        [
+          0.02551,
+          0.03207,
+          0.02016,
+          0.00845,
+          0.00265,
+          0.00067,
+          0.00014,
+          3e-05,
+          0.0
+        ],
+        [
+          0.01017,
+          0.01279,
+          0.00804,
+          0.00337,
+          0.00106,
+          0.00027,
+          6e-05,
+          1e-05,
+          0.0
+        ],
+        [
+          0.00338,
+          0.00425,
+          0.00267,
+          0.00112,
+          0.00035,
+          9e-05,
+          2e-05,
+          0.0,
+          0.0
+        ],
+        [
+          0.00096,
+          0.00121,
+          0.00076,
+          0.00032,
+          0.0001,
+          3e-05,
+          1e-05,
+          0.0,
+          0.0
+        ],
+        [
+          0.00024,
+          0.0003,
+          0.00019,
+          8e-05,
+          2e-05,
+          1e-05,
+          0.0,
+          0.0,
+          0.0
+        ]
+      ],
+      "ah_lines": [
+        {
+          "h": 0,
+          "key": "0",
+          "p_home": 0.7019,
+          "p_away": 0.2981,
+          "fair_home": 1.425,
+          "fair_away": 3.355
+        },
+        {
+          "h": -0.25,
+          "key": "-0.25",
+          "p_home": 0.6054,
+          "p_away": 0.3946,
+          "fair_home": 1.652,
+          "fair_away": 2.534
+        },
+        {
+          "h": -0.5,
+          "key": "-0.5",
+          "p_home": 0.5322,
+          "p_away": 0.4678,
+          "fair_home": 1.879,
+          "fair_away": 2.137
+        },
+        {
+          "h": -0.75,
+          "key": "-0.75",
+          "p_home": 0.4768,
+          "p_away": 0.5232,
+          "fair_home": 2.097,
+          "fair_away": 1.911
+        },
+        {
+          "h": -1.5,
+          "key": "-1.5",
+          "p_home": 0.3206,
+          "p_away": 0.6794,
+          "fair_home": 3.119,
+          "fair_away": 1.472
+        },
+        {
+          "h": -2.5,
+          "key": "-2.5",
+          "p_home": 0.1554,
+          "p_away": 0.8446,
+          "fair_home": 6.436,
+          "fair_away": 1.184
+        },
+        {
+          "h": -3.5,
+          "key": "-3.5",
+          "p_home": 0.0629,
+          "p_away": 0.9371,
+          "fair_home": 15.908,
+          "fair_away": 1.067
+        },
+        {
+          "h": 0.25,
+          "key": "0.25",
+          "p_home": 0.7429,
+          "p_away": 0.2571,
+          "fair_home": 1.346,
+          "fair_away": 3.89
+        },
+        {
+          "h": 0.5,
+          "key": "0.5",
+          "p_home": 0.774,
+          "p_away": 0.226,
+          "fair_home": 1.292,
+          "fair_away": 4.425
+        },
+        {
+          "h": 0.75,
+          "key": "0.75",
+          "p_home": 0.8273,
+          "p_away": 0.1727,
+          "fair_home": 1.209,
+          "fair_away": 5.789
+        },
+        {
+          "h": 1.5,
+          "key": "1.5",
+          "p_home": 0.9027,
+          "p_away": 0.0973,
+          "fair_home": 1.108,
+          "fair_away": 10.278
+        },
+        {
+          "h": 2.5,
+          "key": "2.5",
+          "p_home": 0.9684,
+          "p_away": 0.0316,
+          "fair_home": 1.033,
+          "fair_away": 31.652
+        },
+        {
+          "h": 3.5,
+          "key": "3.5",
+          "p_home": 0.9916,
+          "p_away": 0.0084,
+          "fair_home": 1.008,
+          "fair_away": 118.971
+        }
+      ],
+      "source": "model_only",
+      "blend_weights": null
     },
     {
       "id": "SF_1",
