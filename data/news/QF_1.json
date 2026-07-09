@@ -1,0 +1,20 @@
+{
+  "fixture_id": "QF_1",
+  "home": "France",
+  "away": "Morocco",
+  "home_multiplier": 0.88,
+  "away_multiplier": 0.82,
+  "notes": "France are without key pivot Aurélien Tchouaméni (thigh/adductor, missed Paraguay R16, effectively ruled out vs Morocco per multiple reports), while Michael Olise carries a yellow card tightrope after FIFA rejected France's appeal, risking a semi-final ban. Morocco are without their standout tournament striker Ismael Saibari (hamstring, off at 22 mins vs Canada), confirmed absent by coach Ouahbi; Soufiane Rahimi steps up as the replacement centre-forward.",
+  "home_scorers": [
+    "Kylian Mbappé (leading scorer with 7 WC26 goals, penalty taker, lethal in transi",
+    "Michael Olise (tournament assist leader, set-piece and chance creator, disciplin",
+    "Bradley Barcola (left-channel threat, direct runner, booked vs Paraguay so also "
+  ],
+  "away_scorers": [
+    "Soufiane Rahimi (Saibari replacement at centre-forward, scored vs Canada, listed",
+    "Azzedine Ounahi (double goalscorer vs Canada, creative link between lines, prima",
+    "Brahim Díaz (listed penalty taker, 4 WC26 assists, free-roaming No.10, Real Madr"
+  ],
+  "source": "anthropic_web_search",
+  "fetched_at": "2026-07-09T18:12:42.504193+00:00"
+}
