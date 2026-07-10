@@ -1,5 +1,5 @@
 {
-  "_fetched": "2026-07-09T23:02:17.201267+00:00",
+  "_fetched": "2026-07-10T03:02:19.621806+00:00",
   "matches": {
     "QF_2": {
       "h2h": {
@@ -9,19 +9,19 @@
           "away_win": 5.25
         },
         "coral": {
-          "home_win": 1.61,
-          "draw": 3.9,
+          "home_win": 1.65,
+          "draw": 4.0,
           "away_win": 5.25
         },
         "ladbrokes_uk": {
-          "home_win": 1.61,
+          "home_win": 1.65,
           "draw": 3.9,
-          "away_win": 5.25
+          "away_win": 5.0
         },
         "betway": {
-          "home_win": 1.61,
+          "home_win": 1.65,
           "draw": 3.8,
-          "away_win": 5.25
+          "away_win": 5.0
         },
         "betvictor": {
           "home_win": 1.61,
@@ -36,7 +36,7 @@
         "skybet": {
           "home_win": 1.62,
           "draw": 3.8,
-          "away_win": 5.0
+          "away_win": 5.5
         },
         "paddypower": {
           "home_win": 1.62,
@@ -70,14 +70,14 @@
     "QF_3": {
       "h2h": {
         "coral": {
-          "home_win": 4.2,
-          "draw": 3.7,
-          "away_win": 1.83
+          "home_win": 4.0,
+          "draw": 3.6,
+          "away_win": 1.85
         },
         "ladbrokes_uk": {
           "home_win": 4.0,
-          "draw": 3.7,
-          "away_win": 1.83
+          "draw": 3.6,
+          "away_win": 1.85
         },
         "betway": {
           "home_win": 4.0,
@@ -110,9 +110,9 @@
           "away_win": 1.83
         },
         "betfair_ex_uk": {
-          "home_win": 4.5,
+          "home_win": 4.4,
           "draw": 3.8,
-          "away_win": 1.92
+          "away_win": 1.93
         },
         "williamhill": {
           "home_win": 4.0,
@@ -137,7 +137,7 @@
       "h2h": {
         "coral": {
           "home_win": 1.7,
-          "draw": 3.6,
+          "draw": 3.5,
           "away_win": 5.25
         },
         "unibet_uk": {
@@ -176,7 +176,7 @@
           "away_win": 6.2
         },
         "betvictor": {
-          "home_win": 1.67,
+          "home_win": 1.65,
           "draw": 3.6,
           "away_win": 5.5
         },
