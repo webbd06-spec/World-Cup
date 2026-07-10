@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-10T06:01:30.447130Z",
+  "generated_at": "2026-07-10T06:11:06.713473Z",
   "date": "2026-07-10",
   "model_version": "1.1.0",
   "blend_weights": {
@@ -29123,7 +29123,7 @@
     {
       "id": "SF_1",
       "stage": "semifinal",
-      "home": null,
+      "home": "France",
       "away": null,
       "date": "2026-07-14",
       "venue": "TBC",
