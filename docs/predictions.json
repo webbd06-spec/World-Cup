@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-10T17:21:02.751497Z",
+  "generated_at": "2026-07-10T17:28:47.200178Z",
   "date": "2026-07-10",
   "model_version": "1.1.0",
   "blend_weights": {
@@ -28299,14 +28299,14 @@
       "city": null,
       "status": "scheduled",
       "result": null,
-      "xg_home": 1.825,
-      "xg_away": 1.501,
-      "win_prob": 0.5392,
-      "draw_prob": 0.2423,
-      "loss_prob": 0.2185,
-      "model_win": 0.4417,
-      "model_draw": 0.2519,
-      "model_loss": 0.3064,
+      "xg_home": 1.88,
+      "xg_away": 1.321,
+      "win_prob": 0.5595,
+      "draw_prob": 0.2421,
+      "loss_prob": 0.1985,
+      "model_win": 0.4923,
+      "model_draw": 0.2513,
+      "model_loss": 0.2564,
       "market_win": 0.6042,
       "market_draw": 0.2359,
       "market_loss": 0.1598,
@@ -28317,32 +28317,32 @@
         {
           "home": 1,
           "away": 1,
-          "prob": 0.1113
+          "prob": 0.1143
         },
         {
           "home": 2,
           "away": 1,
-          "prob": 0.0898
-        },
-        {
-          "home": 1,
-          "away": 2,
-          "prob": 0.0739
-        },
-        {
-          "home": 2,
-          "away": 2,
-          "prob": 0.0674
+          "prob": 0.0951
         },
         {
           "home": 2,
           "away": 0,
-          "prob": 0.0599
+          "prob": 0.072
         },
         {
-          "home": 3,
-          "away": 1,
-          "prob": 0.0546
+          "home": 1,
+          "away": 2,
+          "prob": 0.0668
+        },
+        {
+          "home": 1,
+          "away": 0,
+          "prob": 0.0634
+        },
+        {
+          "home": 2,
+          "away": 2,
+          "prob": 0.0628
         }
       ],
       "top_score_conditional": {
@@ -28353,97 +28353,97 @@
       },
       "score_matrix": [
         [
-          0.04877,
-          0.04117,
-          0.04051,
-          0.02026,
-          0.0076,
-          0.00228,
-          0.00057,
-          0.00012,
-          2e-05
-        ],
-        [
-          0.05282,
-          0.11129,
-          0.0739,
-          0.03697,
-          0.01387,
-          0.00416,
-          0.00104,
-          0.00022,
-          4e-05
-        ],
-        [
-          0.05986,
-          0.08984,
-          0.06742,
-          0.03373,
-          0.01266,
-          0.0038,
-          0.00095,
-          0.0002,
-          4e-05
-        ],
-        [
-          0.03641,
-          0.05464,
-          0.041,
-          0.02051,
-          0.0077,
-          0.00231,
-          0.00058,
-          0.00012,
-          2e-05
-        ],
-        [
-          0.01661,
-          0.02492,
-          0.0187,
-          0.00936,
-          0.00351,
-          0.00105,
-          0.00026,
+          0.05389,
+          0.04067,
+          0.03554,
+          0.01565,
+          0.00517,
+          0.00137,
+          0.0003,
           6e-05,
           1e-05
         ],
         [
-          0.00606,
-          0.00909,
-          0.00682,
-          0.00341,
-          0.00128,
-          0.00038,
+          0.06344,
+          0.11431,
+          0.06681,
+          0.02942,
+          0.00971,
+          0.00257,
+          0.00056,
+          0.00011,
+          2e-05
+        ],
+        [
+          0.07198,
+          0.09508,
+          0.06279,
+          0.02765,
+          0.00913,
+          0.00241,
+          0.00053,
           0.0001,
-          2e-05,
-          0.0
+          2e-05
         ],
         [
-          0.00184,
-          0.00277,
-          0.00208,
-          0.00104,
-          0.00039,
-          0.00012,
+          0.0451,
+          0.05958,
+          0.03935,
+          0.01732,
+          0.00572,
+          0.00151,
+          0.00033,
+          6e-05,
+          1e-05
+        ],
+        [
+          0.0212,
+          0.028,
+          0.01849,
+          0.00814,
+          0.00269,
+          0.00071,
+          0.00016,
           3e-05,
-          1e-05,
           0.0
         ],
         [
-          0.00048,
-          0.00072,
-          0.00054,
+          0.00797,
+          0.01053,
+          0.00695,
+          0.00306,
+          0.00101,
           0.00027,
-          0.0001,
-          3e-05,
+          6e-05,
           1e-05,
+          0.0
+        ],
+        [
+          0.0025,
+          0.0033,
+          0.00218,
+          0.00096,
+          0.00032,
+          8e-05,
+          2e-05,
           0.0,
           0.0
         ],
         [
-          0.00011,
+          0.00067,
+          0.00089,
+          0.00058,
+          0.00026,
+          9e-05,
+          2e-05,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
           0.00016,
-          0.00012,
+          0.00021,
+          0.00014,
           6e-05,
           2e-05,
           1e-05,
@@ -28562,6 +28562,25 @@
       "blend_weights": {
         "market": 0.6,
         "model": 0.4
+      },
+      "team_news": {
+        "notes": "Spain are near full strength with only Nico Williams (adductor) a minor doubt, though he is expected to be fit; De la Fuente hints at an unchanged XI. Belgium are without the injured Amadou Onana (confirmed ACL, tournament over) and Zeno Debast (leg injury, late fitness test), forcing a midfield reshuffle with De Bruyne's starting role still uncertain.",
+        "home_scorers": [
+          "Mikel Oyarzabal (leading striker, tournament top scorer with 4 goals)",
+          "Lamine Yamal (right-wing creative threat, set-piece and chance creator)",
+          "Dani Olmo (attacking midfielder, high involvement in final third)"
+        ],
+        "away_scorers": [
+          "Charles De Ketelaere (false nine starter, 2 goals vs USA, in-form)",
+          "Kevin De Bruyne (playmaker, on penalties, possible starter vs Spain)",
+          "Leandro Trossard (left-wing attacker, consistent in tournament)"
+        ],
+        "fetched_at": "2026-07-10T17:28:47.040343+00:00"
+      },
+      "news_adjustment": {
+        "home": 1.03,
+        "away": 0.88,
+        "notes": "Spain are near full strength with only Nico Williams (adductor) a minor doubt, though he is expected to be fit; De la Fuente hints at an unchanged XI. Belgium are without the injured Amadou Onana (confirmed ACL, tournament over) and Zeno Debast (leg injury, late fitness test), forcing a midfield reshuffle with De Bruyne's starting role still uncertain."
       }
     },
     {

@@ -1,0 +1,20 @@
+{
+  "fixture_id": "QF_2",
+  "home": "Spain",
+  "away": "Belgium",
+  "home_multiplier": 1.03,
+  "away_multiplier": 0.88,
+  "notes": "Spain are near full strength with only Nico Williams (adductor) a minor doubt, though he is expected to be fit; De la Fuente hints at an unchanged XI. Belgium are without the injured Amadou Onana (confirmed ACL, tournament over) and Zeno Debast (leg injury, late fitness test), forcing a midfield reshuffle with De Bruyne's starting role still uncertain.",
+  "home_scorers": [
+    "Mikel Oyarzabal (leading striker, tournament top scorer with 4 goals)",
+    "Lamine Yamal (right-wing creative threat, set-piece and chance creator)",
+    "Dani Olmo (attacking midfielder, high involvement in final third)"
+  ],
+  "away_scorers": [
+    "Charles De Ketelaere (false nine starter, 2 goals vs USA, in-form)",
+    "Kevin De Bruyne (playmaker, on penalties, possible starter vs Spain)",
+    "Leandro Trossard (left-wing attacker, consistent in tournament)"
+  ],
+  "source": "anthropic_web_search",
+  "fetched_at": "2026-07-10T17:28:47.040343+00:00"
+}
