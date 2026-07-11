@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-11T21:41:04.712625Z",
+  "generated_at": "2026-07-11T21:51:04.014857Z",
   "date": "2026-07-11",
   "model_version": "1.1.0",
   "blend_weights": {
@@ -28591,7 +28591,7 @@
       "city": null,
       "status": "in_play",
       "result": {
-        "home": 0,
+        "home": 1,
         "away": 0
       },
       "xg_home": 1.317,
