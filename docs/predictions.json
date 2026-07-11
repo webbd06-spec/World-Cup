@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-11T07:02:25.569965Z",
+  "generated_at": "2026-07-11T07:11:05.089116Z",
   "date": "2026-07-11",
   "model_version": "1.1.0",
   "blend_weights": {
@@ -28593,18 +28593,18 @@
       "result": null,
       "xg_home": 1.317,
       "xg_away": 1.909,
-      "win_prob": 0.2426,
-      "draw_prob": 0.2546,
-      "loss_prob": 0.5028,
+      "win_prob": 0.2459,
+      "draw_prob": 0.2545,
+      "loss_prob": 0.4996,
       "model_win": 0.2512,
       "model_draw": 0.2489,
       "model_loss": 0.4998,
-      "market_win": 0.2368,
-      "market_draw": 0.2583,
-      "market_loss": 0.5049,
-      "best_odds_home": 4.2,
+      "market_win": 0.2424,
+      "market_draw": 0.2582,
+      "market_loss": 0.4994,
+      "best_odds_home": 4.1,
       "best_odds_draw": 3.85,
-      "best_odds_away": 1.97,
+      "best_odds_away": 1.99,
       "top_scorelines": [
         {
           "home": 1,
@@ -28871,18 +28871,18 @@
       "result": null,
       "xg_home": 1.994,
       "xg_away": 1.257,
-      "win_prob": 0.5555,
-      "draw_prob": 0.2579,
-      "loss_prob": 0.1866,
+      "win_prob": 0.5606,
+      "draw_prob": 0.255,
+      "loss_prob": 0.1844,
       "model_win": 0.5322,
       "model_draw": 0.2419,
       "model_loss": 0.226,
-      "market_win": 0.5711,
-      "market_draw": 0.2686,
-      "market_loss": 0.1603,
-      "best_odds_home": 1.74,
-      "best_odds_draw": 3.7,
-      "best_odds_away": 6.2,
+      "market_win": 0.5795,
+      "market_draw": 0.2638,
+      "market_loss": 0.1567,
+      "best_odds_home": 1.73,
+      "best_odds_draw": 3.8,
+      "best_odds_away": 6.4,
       "top_scorelines": [
         {
           "home": 1,
@@ -29149,18 +29149,18 @@
       "result": null,
       "xg_home": 1.751,
       "xg_away": 1.64,
-      "win_prob": 0.3972,
-      "draw_prob": 0.2516,
-      "loss_prob": 0.3512,
+      "win_prob": 0.4042,
+      "draw_prob": 0.2767,
+      "loss_prob": 0.3192,
       "model_win": 0.3972,
       "model_draw": 0.2516,
       "model_loss": 0.3512,
-      "market_win": null,
-      "market_draw": null,
-      "market_loss": null,
-      "best_odds_home": null,
-      "best_odds_draw": null,
-      "best_odds_away": null,
+      "market_win": 0.4088,
+      "market_draw": 0.2934,
+      "market_loss": 0.2978,
+      "best_odds_home": 2.44,
+      "best_odds_draw": 3.4,
+      "best_odds_away": 3.35,
       "top_scorelines": [
         {
           "home": 1,
@@ -29406,8 +29406,11 @@
           "fair_away": 40.692
         }
       ],
-      "source": "model_only",
-      "blend_weights": null
+      "source": "blend",
+      "blend_weights": {
+        "market": 0.6,
+        "model": 0.4
+      }
     },
     {
       "id": "SF_2",
