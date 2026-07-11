@@ -1,0 +1,20 @@
+{
+  "fixture_id": "QF_3",
+  "home": "Norway",
+  "away": "England",
+  "home_multiplier": 0.88,
+  "away_multiplier": 0.85,
+  "notes": "Norway carry a squad-wide sickness bug and fatigue from heavy travel, though key players including Haaland and Odegaard are confirmed fit; England are without Jordan Henderson (wrist surgery, tournament over) and Jarell Quansah (two-game suspension), with Marc Guehi (hamstring) and Declan Rice (illness) rated as serious doubts, and Reece James also a hamstring concern.",
+  "home_scorers": [
+    "Erling Haaland (leading striker, 7 tournament goals, Golden Boot contender)",
+    "Martin Odegaard (playmaker/set-piece taker, creative hub of attack)",
+    "Antonio Nusa (left-wing starter, scored in four of five Norway matches)"
+  ],
+  "away_scorers": [
+    "Harry Kane (leading striker, 6 tournament goals, penalty taker)",
+    "Jude Bellingham (No.10, brace vs Mexico, elite tournament form)",
+    "Bukayo Saka (wide attacker/set-piece threat, top England creator)"
+  ],
+  "source": "anthropic_web_search",
+  "fetched_at": "2026-07-11T14:38:32.776840+00:00"
+}
