@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-12T03:02:20.264960Z",
+  "generated_at": "2026-07-12T03:11:06.032001Z",
   "date": "2026-07-12",
   "model_version": "1.1.0",
   "blend_weights": {
@@ -28596,18 +28596,18 @@
       },
       "xg_home": 1.317,
       "xg_away": 1.909,
-      "win_prob": 0.1138,
-      "draw_prob": 0.6554,
-      "loss_prob": 0.2308,
+      "win_prob": 0.2512,
+      "draw_prob": 0.2489,
+      "loss_prob": 0.4998,
       "model_win": 0.2512,
       "model_draw": 0.2489,
       "model_loss": 0.4998,
-      "market_win": 0.0222,
-      "market_draw": 0.9265,
-      "market_loss": 0.0514,
-      "best_odds_home": 51.0,
-      "best_odds_draw": 1.22,
-      "best_odds_away": 22.0,
+      "market_win": null,
+      "market_draw": null,
+      "market_loss": null,
+      "best_odds_home": 4.0,
+      "best_odds_draw": 3.85,
+      "best_odds_away": 2.0,
       "top_scorelines": [
         {
           "home": 1,
@@ -28642,9 +28642,9 @@
       ],
       "top_score_conditional": {
         "home": 1,
-        "away": 1,
-        "prob": 0.1129,
-        "result": "D"
+        "away": 2,
+        "prob": 0.0953,
+        "result": "L"
       },
       "score_matrix": [
         [
@@ -28853,11 +28853,8 @@
           "fair_away": 18.811
         }
       ],
-      "source": "blend",
-      "blend_weights": {
-        "market": 0.6,
-        "model": 0.4
-      },
+      "source": "model_only",
+      "blend_weights": null,
       "team_news": {
         "notes": "Norway carry a squad-wide sickness bug and fatigue from heavy travel, though key players including Haaland and Odegaard are confirmed fit; England are without Jordan Henderson (wrist surgery, tournament over) and Jarell Quansah (two-game suspension), with Marc Guehi (hamstring) and Declan Rice (illness) rated as serious doubts, and Reece James also a hamstring concern.",
         "home_scorers": [
@@ -28891,18 +28888,18 @@
       },
       "xg_home": 1.994,
       "xg_away": 1.257,
-      "win_prob": 0.5539,
-      "draw_prob": 0.2625,
-      "loss_prob": 0.1836,
+      "win_prob": 0.2726,
+      "draw_prob": 0.6276,
+      "loss_prob": 0.0999,
       "model_win": 0.5322,
       "model_draw": 0.2419,
       "model_loss": 0.226,
-      "market_win": 0.5683,
-      "market_draw": 0.2763,
-      "market_loss": 0.1554,
-      "best_odds_home": 1.75,
-      "best_odds_draw": 3.6,
-      "best_odds_away": 6.4,
+      "market_win": 0.0995,
+      "market_draw": 0.8847,
+      "market_loss": 0.0158,
+      "best_odds_home": 20.0,
+      "best_odds_draw": 2.25,
+      "best_odds_away": 126.0,
       "top_scorelines": [
         {
           "home": 1,
@@ -28936,10 +28933,10 @@
         }
       ],
       "top_score_conditional": {
-        "home": 2,
+        "home": 1,
         "away": 1,
-        "prob": 0.0968,
-        "result": "W"
+        "prob": 0.1098,
+        "result": "D"
       },
       "score_matrix": [
         [
@@ -29175,18 +29172,18 @@
       "result": null,
       "xg_home": 1.751,
       "xg_away": 1.64,
-      "win_prob": 0.4064,
-      "draw_prob": 0.2769,
-      "loss_prob": 0.3167,
+      "win_prob": 0.4053,
+      "draw_prob": 0.2814,
+      "loss_prob": 0.3133,
       "model_win": 0.3972,
       "model_draw": 0.2516,
       "model_loss": 0.3512,
-      "market_win": 0.4126,
-      "market_draw": 0.2937,
-      "market_loss": 0.2937,
+      "market_win": 0.4107,
+      "market_draw": 0.3012,
+      "market_loss": 0.2881,
       "best_odds_home": 2.42,
-      "best_odds_draw": 3.4,
-      "best_odds_away": 3.4,
+      "best_odds_draw": 3.3,
+      "best_odds_away": 3.45,
       "top_scorelines": [
         {
           "home": 1,
