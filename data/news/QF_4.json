@@ -2,10 +2,19 @@
   "fixture_id": "QF_4",
   "home": "Argentina",
   "away": "Switzerland",
-  "home_multiplier": 1.0,
-  "away_multiplier": 1.0,
-  "lineup_home_absent": 0,
-  "lineup_away_absent": 0,
-  "source": "lineup_fetch",
-  "fetched_at": "2026-07-12T00:09:13.412904+00:00"
+  "home_multiplier": 1.04,
+  "away_multiplier": 0.82,
+  "notes": "Argentina are at full strength with Scaloni making no changes to his confirmed 4-4-2 XI — Messi starts having played every minute of the tournament and is fit with no concerns. Switzerland suffer a major blow as top scorer and creative hub Johan Manzambi (3 goals, 2 assists, knee injury) is confirmed out for the quarterfinal, with Michel Aebischer and Luca Jaquez also carrying muscle injury doubts.",
+  "home_scorers": [
+    "Lionel Messi (tournament top scorer with 8 goals, on penalties, creator-in-chief",
+    "Julian Alvarez (co-striker in 4-4-2, physical focal point, strong in transition)",
+    "Enzo Fernandez (attacking midfielder, scored the 90th-minute winner vs Egypt, se"
+  ],
+  "away_scorers": [
+    "Breel Embolo (lone striker / starting centre-forward with Manzambi absent)",
+    "Dan Ndoye (wide attacker, key outlet in transition, set-piece danger)",
+    "Granit Xhaka (deep-lying playmaker, long-range shooting threat, set-piece taker)"
+  ],
+  "source": "anthropic_web_search",
+  "fetched_at": "2026-07-12T11:50:47.227527+00:00"
 }

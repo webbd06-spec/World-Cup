@@ -1,5 +1,5 @@
 {
-  "_fetched": "2026-07-12T11:02:20.753590+00:00",
+  "_fetched": "2026-07-12T11:50:32.186979+00:00",
   "matches": {
     "SF_1": {
       "h2h": {
@@ -70,14 +70,14 @@
     "SF_2": {
       "h2h": {
         "coral": {
-          "home_win": 2.5,
+          "home_win": 2.6,
           "draw": 3.1,
-          "away_win": 3.0
+          "away_win": 2.9
         },
         "ladbrokes_uk": {
           "home_win": 2.5,
-          "draw": 3.0,
-          "away_win": 2.9
+          "draw": 3.1,
+          "away_win": 2.87
         },
         "unibet_uk": {
           "home_win": 2.6,
@@ -92,7 +92,7 @@
         "betfred_uk": {
           "home_win": 2.6,
           "draw": 3.1,
-          "away_win": 3.0
+          "away_win": 2.88
         },
         "betway": {
           "home_win": 2.5,
@@ -110,9 +110,9 @@
           "away_win": 3.0
         },
         "betfair_ex_uk": {
-          "home_win": 2.7,
+          "home_win": 2.68,
           "draw": 3.05,
-          "away_win": 3.2
+          "away_win": 3.25
         },
         "betvictor": {
           "home_win": 2.45,
