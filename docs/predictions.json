@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-14T23:02:23.284423Z",
+  "generated_at": "2026-07-14T23:11:16.007644Z",
   "date": "2026-07-14",
   "model_version": "1.1.0",
   "blend_weights": {
@@ -29185,18 +29185,18 @@
       },
       "xg_home": 1.751,
       "xg_away": 1.64,
-      "win_prob": 0.3799,
-      "draw_prob": 0.2946,
-      "loss_prob": 0.3255,
+      "win_prob": 0.3972,
+      "draw_prob": 0.2516,
+      "loss_prob": 0.3512,
       "model_win": 0.3972,
       "model_draw": 0.2516,
       "model_loss": 0.3512,
-      "market_win": 0.3684,
-      "market_draw": 0.3233,
-      "market_loss": 0.3083,
-      "best_odds_home": 2.72,
-      "best_odds_draw": 3.1,
-      "best_odds_away": 3.25,
+      "market_win": null,
+      "market_draw": null,
+      "market_loss": null,
+      "best_odds_home": 2.48,
+      "best_odds_draw": 3.3,
+      "best_odds_away": 3.35,
       "top_scorelines": [
         {
           "home": 1,
@@ -29442,11 +29442,8 @@
           "fair_away": 40.692
         }
       ],
-      "source": "blend",
-      "blend_weights": {
-        "market": 0.6,
-        "model": 0.4
-      },
+      "source": "model_only",
+      "blend_weights": null,
       "team_news": {
         "notes": "France are close to full strength: Mbappe's minor ankle knock is not considered serious, Tchouameni returns from a two-game muscle absence with Deschamps expected to start him, while Kone (knee/fatigue), Saliba (back rest), and Upamecano (foot) are all expected to be passed fit. Spain's main doubts centre on Nico Williams (groin/adductor), who is available but unlikely to start, and Yeremy Pino (acromioclavicular sprain), who is fit but has missed three matches; De la Fuente otherwise has a…",
         "home_scorers": [
@@ -29477,16 +29474,16 @@
       "result": null,
       "xg_home": 1.522,
       "xg_away": 1.842,
-      "win_prob": 0.333,
-      "draw_prob": 0.3,
-      "loss_prob": 0.367,
+      "win_prob": 0.334,
+      "draw_prob": 0.2995,
+      "loss_prob": 0.3665,
       "model_win": 0.3084,
       "model_draw": 0.2501,
       "model_loss": 0.4415,
-      "market_win": 0.3495,
-      "market_draw": 0.3332,
-      "market_loss": 0.3173,
-      "best_odds_home": 2.86,
+      "market_win": 0.3511,
+      "market_draw": 0.3324,
+      "market_loss": 0.3165,
+      "best_odds_home": 2.84,
       "best_odds_draw": 3.0,
       "best_odds_away": 3.15,
       "top_scorelines": [
