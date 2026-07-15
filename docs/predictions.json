@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-15T23:02:26.564593Z",
+  "generated_at": "2026-07-15T23:11:06.801661Z",
   "date": "2026-07-15",
   "model_version": "1.1.0",
   "blend_weights": {
@@ -29477,18 +29477,18 @@
       },
       "xg_home": 1.522,
       "xg_away": 1.842,
-      "win_prob": 0.3353,
-      "draw_prob": 0.2974,
-      "loss_prob": 0.3673,
+      "win_prob": 0.3084,
+      "draw_prob": 0.2501,
+      "loss_prob": 0.4415,
       "model_win": 0.3084,
       "model_draw": 0.2501,
       "model_loss": 0.4415,
-      "market_win": 0.3532,
-      "market_draw": 0.3289,
-      "market_loss": 0.3179,
-      "best_odds_home": 2.7,
-      "best_odds_draw": 2.9,
-      "best_odds_away": 3.0,
+      "market_win": null,
+      "market_draw": null,
+      "market_loss": null,
+      "best_odds_home": 2.84,
+      "best_odds_draw": 3.0,
+      "best_odds_away": 3.15,
       "top_scorelines": [
         {
           "home": 1,
@@ -29734,11 +29734,8 @@
           "fair_away": 24.059
         }
       ],
-      "source": "blend",
-      "blend_weights": {
-        "market": 0.6,
-        "model": 0.4
-      },
+      "source": "model_only",
+      "blend_weights": null,
       "team_news": {
         "notes": "England are without suspended Jarell Quansah (2-match ban, red card vs Mexico) and Jordan Henderson (broken wrist, out for tournament), while Declan Rice has now been cleared of his sickness bug and is expected to start. Argentina are close to full strength — Messi (minor eye cut) and Romero/Paredes (fatigue from extra time vs Switzerland) have all been passed fit, though squad tiredness from three consecutive extra-time knockout matches is a concern for Scaloni.",
         "home_scorers": [
