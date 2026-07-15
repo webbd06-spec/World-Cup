@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-15T06:11:07.204724Z",
+  "generated_at": "2026-07-15T06:21:17.404264Z",
   "date": "2026-07-15",
   "model_version": "1.1.0",
   "blend_weights": {
@@ -10,7 +10,7 @@
     {
       "id": "F_1",
       "stage": "final",
-      "home": null,
+      "home": "Spain",
       "away": null,
       "date": "2026-07-19",
       "venue": "TBC",
@@ -29740,7 +29740,7 @@
     {
       "id": "TP_1",
       "stage": "third_place",
-      "home": null,
+      "home": "France",
       "away": null,
       "date": "2026-07-18",
       "venue": "TBC",
