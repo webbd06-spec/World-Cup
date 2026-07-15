@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-15T19:02:21.974377Z",
+  "generated_at": "2026-07-15T19:11:10.225819Z",
   "date": "2026-07-15",
   "model_version": "1.1.0",
   "blend_weights": {
@@ -29470,22 +29470,25 @@
       "kickoff_utc": "19:00",
       "venue": "TBC",
       "city": null,
-      "status": "scheduled",
-      "result": null,
+      "status": "in_play",
+      "result": {
+        "home": 0,
+        "away": 0
+      },
       "xg_home": 1.522,
       "xg_away": 1.842,
-      "win_prob": 0.337,
-      "draw_prob": 0.2995,
-      "loss_prob": 0.3635,
+      "win_prob": 0.3353,
+      "draw_prob": 0.2974,
+      "loss_prob": 0.3673,
       "model_win": 0.3084,
       "model_draw": 0.2501,
       "model_loss": 0.4415,
-      "market_win": 0.3561,
-      "market_draw": 0.3323,
-      "market_loss": 0.3116,
-      "best_odds_home": 2.8,
-      "best_odds_draw": 3.0,
-      "best_odds_away": 3.2,
+      "market_win": 0.3532,
+      "market_draw": 0.3289,
+      "market_loss": 0.3179,
+      "best_odds_home": 2.7,
+      "best_odds_draw": 2.9,
+      "best_odds_away": 3.0,
       "top_scorelines": [
         {
           "home": 1,
