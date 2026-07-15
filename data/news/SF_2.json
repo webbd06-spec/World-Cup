@@ -1,0 +1,20 @@
+{
+  "fixture_id": "SF_2",
+  "home": "England",
+  "away": "Argentina",
+  "home_multiplier": 0.92,
+  "away_multiplier": 0.97,
+  "notes": "England are without suspended Jarell Quansah (2-match ban, red card vs Mexico) and Jordan Henderson (broken wrist, out for tournament), while Declan Rice has now been cleared of his sickness bug and is expected to start. Argentina are close to full strength — Messi (minor eye cut) and Romero/Paredes (fatigue from extra time vs Switzerland) have all been passed fit, though squad tiredness from three consecutive extra-time knockout matches is a concern for Scaloni.",
+  "home_scorers": [
+    "Harry Kane (leading striker, 6 goals in tournament, set-piece threat)",
+    "Jude Bellingham (attacking midfielder, 6 goals in tournament, back-to-back brace",
+    "Bukayo Saka (wide forward, creative threat, on penalties if needed)"
+  ],
+  "away_scorers": [
+    "Lionel Messi (captain/playmaker, 8 goals in tournament, Golden Boot leader)",
+    "Julian Alvarez (striker, clutch scorer vs Switzerland in extra time)",
+    "Lautaro Martinez (striker, scored in QF, backup starter behind Alvarez/Messi)"
+  ],
+  "source": "anthropic_web_search",
+  "fetched_at": "2026-07-15T12:09:34.152379+00:00"
+}
