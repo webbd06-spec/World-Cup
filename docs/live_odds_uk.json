@@ -1,5 +1,5 @@
 {
-  "_fetched": "2026-07-14T23:02:23.190172+00:00",
+  "_fetched": "2026-07-15T03:02:19.891350+00:00",
   "matches": {
     "SF_2": {
       "h2h": {
@@ -10,17 +10,17 @@
         },
         "ladbrokes_uk": {
           "home_win": 2.62,
-          "draw": 2.8,
+          "draw": 2.87,
           "away_win": 3.0
         },
         "unibet_uk": {
           "home_win": 2.75,
-          "draw": 2.9,
+          "draw": 2.88,
           "away_win": 3.0
         },
         "williamhill": {
-          "home_win": 2.5,
-          "draw": 2.9,
+          "home_win": 2.62,
+          "draw": 2.88,
           "away_win": 2.9
         },
         "betfred_uk": {
@@ -30,7 +30,7 @@
         },
         "betway": {
           "home_win": 2.62,
-          "draw": 2.8,
+          "draw": 2.88,
           "away_win": 3.0
         },
         "paddypower": {
@@ -39,18 +39,18 @@
           "away_win": 3.0
         },
         "skybet": {
-          "home_win": 2.63,
+          "home_win": 2.7,
           "draw": 2.88,
-          "away_win": 3.0
+          "away_win": 2.9
         },
         "betfair_ex_uk": {
           "home_win": 2.84,
-          "draw": 2.96,
+          "draw": 2.98,
           "away_win": 3.15
         },
         "betvictor": {
-          "home_win": 2.62,
-          "draw": 2.88,
+          "home_win": 2.7,
+          "draw": 2.8,
           "away_win": 3.0
         },
         "boylesports": {
