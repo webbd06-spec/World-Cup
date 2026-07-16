@@ -1,5 +1,5 @@
 {
-  "_fetched": "2026-07-16T11:02:14.497586+00:00",
+  "_fetched": "2026-07-16T12:13:07.339426+00:00",
   "matches": {
     "TP_1": {
       "h2h": {
@@ -49,7 +49,7 @@
           "away_win": 3.75
         },
         "betvictor": {
-          "home_win": 1.85,
+          "home_win": 1.87,
           "draw": 4.0,
           "away_win": 3.6
         },
@@ -85,9 +85,9 @@
           "away_win": 3.6
         },
         "betfred_uk": {
-          "home_win": 2.38,
-          "draw": 3.1,
-          "away_win": 3.25
+          "home_win": 2.3,
+          "draw": 3.2,
+          "away_win": 3.3
         },
         "ladbrokes_uk": {
           "home_win": 2.25,
@@ -106,7 +106,7 @@
         },
         "betway": {
           "home_win": 2.2,
-          "draw": 2.9,
+          "draw": 3.0,
           "away_win": 3.5
         },
         "unibet_uk": {
