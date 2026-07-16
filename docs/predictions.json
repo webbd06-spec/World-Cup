@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-16T12:13:08.274172Z",
+  "generated_at": "2026-07-16T12:21:08.655036Z",
   "date": "2026-07-16",
   "model_version": "1.1.0",
   "blend_weights": {
@@ -22,17 +22,17 @@
       "result": null,
       "xg_home": 1.604,
       "xg_away": 1.828,
-      "win_prob": 0.3824,
-      "draw_prob": 0.2918,
-      "loss_prob": 0.3258,
+      "win_prob": 0.3849,
+      "draw_prob": 0.2877,
+      "loss_prob": 0.3274,
       "model_win": 0.3294,
       "model_draw": 0.2485,
       "model_loss": 0.4221,
-      "market_win": 0.4177,
-      "market_draw": 0.3207,
-      "market_loss": 0.2616,
+      "market_win": 0.4219,
+      "market_draw": 0.3138,
+      "market_loss": 0.2643,
       "best_odds_home": 2.38,
-      "best_odds_draw": 3.1,
+      "best_odds_draw": 3.2,
       "best_odds_away": 3.8,
       "top_scorelines": [
         {
