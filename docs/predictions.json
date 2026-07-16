@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-16T06:01:27.424341Z",
+  "generated_at": "2026-07-16T06:11:10.157327Z",
   "date": "2026-07-16",
   "model_version": "1.1.0",
   "blend_weights": {
@@ -10,19 +10,277 @@
     {
       "id": "F_1",
       "stage": "final",
+      "group": null,
+      "matchday": null,
       "home": "Spain",
-      "away": null,
+      "away": "Argentina",
       "date": "2026-07-19",
+      "kickoff_utc": "19:00",
       "venue": "TBC",
-      "status": "tbd",
-      "win_prob": null,
-      "draw_prob": null,
-      "loss_prob": null,
-      "xg_home": null,
-      "xg_away": null,
-      "top_scorelines": [],
-      "score_matrix": [],
-      "source": "tbd"
+      "city": null,
+      "status": "scheduled",
+      "result": null,
+      "xg_home": 1.604,
+      "xg_away": 1.828,
+      "win_prob": 0.3294,
+      "draw_prob": 0.2485,
+      "loss_prob": 0.4221,
+      "model_win": 0.3294,
+      "model_draw": 0.2485,
+      "model_loss": 0.4221,
+      "market_win": null,
+      "market_draw": null,
+      "market_loss": null,
+      "best_odds_home": null,
+      "best_odds_draw": null,
+      "best_odds_away": null,
+      "top_scorelines": [
+        {
+          "home": 1,
+          "away": 1,
+          "prob": 0.1071
+        },
+        {
+          "home": 1,
+          "away": 2,
+          "prob": 0.0866
+        },
+        {
+          "home": 2,
+          "away": 1,
+          "prob": 0.076
+        },
+        {
+          "home": 2,
+          "away": 2,
+          "prob": 0.0695
+        },
+        {
+          "home": 0,
+          "away": 2,
+          "prob": 0.054
+        },
+        {
+          "home": 1,
+          "away": 3,
+          "prob": 0.0528
+        }
+      ],
+      "top_score_conditional": {
+        "home": 1,
+        "away": 2,
+        "prob": 0.0866,
+        "result": "L"
+      },
+      "score_matrix": [
+        [
+          0.04465,
+          0.04678,
+          0.05403,
+          0.03293,
+          0.01505,
+          0.0055,
+          0.00168,
+          0.00044,
+          0.0001
+        ],
+        [
+          0.03952,
+          0.1071,
+          0.08665,
+          0.05281,
+          0.02414,
+          0.00883,
+          0.00269,
+          0.0007,
+          0.00016
+        ],
+        [
+          0.04157,
+          0.07601,
+          0.06948,
+          0.04234,
+          0.01936,
+          0.00708,
+          0.00216,
+          0.00056,
+          0.00013
+        ],
+        [
+          0.02222,
+          0.04063,
+          0.03714,
+          0.02264,
+          0.01035,
+          0.00378,
+          0.00115,
+          0.0003,
+          7e-05
+        ],
+        [
+          0.00891,
+          0.01629,
+          0.01489,
+          0.00908,
+          0.00415,
+          0.00152,
+          0.00046,
+          0.00012,
+          3e-05
+        ],
+        [
+          0.00286,
+          0.00523,
+          0.00478,
+          0.00291,
+          0.00133,
+          0.00049,
+          0.00015,
+          4e-05,
+          1e-05
+        ],
+        [
+          0.00076,
+          0.0014,
+          0.00128,
+          0.00078,
+          0.00036,
+          0.00013,
+          4e-05,
+          1e-05,
+          0.0
+        ],
+        [
+          0.00018,
+          0.00032,
+          0.00029,
+          0.00018,
+          8e-05,
+          3e-05,
+          1e-05,
+          0.0,
+          0.0
+        ],
+        [
+          4e-05,
+          6e-05,
+          6e-05,
+          4e-05,
+          2e-05,
+          1e-05,
+          0.0,
+          0.0,
+          0.0
+        ]
+      ],
+      "ah_lines": [
+        {
+          "h": 0,
+          "key": "0",
+          "p_home": 0.4383,
+          "p_away": 0.5617,
+          "fair_home": 2.281,
+          "fair_away": 1.78
+        },
+        {
+          "h": -0.25,
+          "key": "-0.25",
+          "p_home": 0.3761,
+          "p_away": 0.6239,
+          "fair_home": 2.659,
+          "fair_away": 1.603
+        },
+        {
+          "h": -0.5,
+          "key": "-0.5",
+          "p_home": 0.3294,
+          "p_away": 0.6706,
+          "fair_home": 3.036,
+          "fair_away": 1.491
+        },
+        {
+          "h": -0.75,
+          "key": "-0.75",
+          "p_home": 0.2698,
+          "p_away": 0.7302,
+          "fair_home": 3.707,
+          "fair_away": 1.369
+        },
+        {
+          "h": -1.5,
+          "key": "-1.5",
+          "p_home": 0.1662,
+          "p_away": 0.8338,
+          "fair_home": 6.018,
+          "fair_away": 1.199
+        },
+        {
+          "h": -2.5,
+          "key": "-2.5",
+          "p_home": 0.0658,
+          "p_away": 0.9342,
+          "fair_home": 15.205,
+          "fair_away": 1.07
+        },
+        {
+          "h": -3.5,
+          "key": "-3.5",
+          "p_home": 0.0216,
+          "p_away": 0.9784,
+          "fair_home": 46.279,
+          "fair_away": 1.022
+        },
+        {
+          "h": 0.25,
+          "key": "0.25",
+          "p_home": 0.518,
+          "p_away": 0.482,
+          "fair_home": 1.93,
+          "fair_away": 2.075
+        },
+        {
+          "h": 0.5,
+          "key": "0.5",
+          "p_home": 0.5779,
+          "p_away": 0.4221,
+          "fair_home": 1.73,
+          "fair_away": 2.369
+        },
+        {
+          "h": 0.75,
+          "key": "0.75",
+          "p_home": 0.6378,
+          "p_away": 0.3622,
+          "fair_home": 1.568,
+          "fair_away": 2.761
+        },
+        {
+          "h": 1.5,
+          "key": "1.5",
+          "p_home": 0.7657,
+          "p_away": 0.2343,
+          "fair_home": 1.306,
+          "fair_away": 4.268
+        },
+        {
+          "h": 2.5,
+          "key": "2.5",
+          "p_home": 0.8962,
+          "p_away": 0.1038,
+          "fair_home": 1.116,
+          "fair_away": 9.633
+        },
+        {
+          "h": 3.5,
+          "key": "3.5",
+          "p_home": 0.9616,
+          "p_away": 0.0384,
+          "fair_home": 1.04,
+          "fair_away": 26.047
+        }
+      ],
+      "source": "model_only",
+      "blend_weights": null
     },
     {
       "id": "GS_A1",
@@ -29754,19 +30012,277 @@
     {
       "id": "TP_1",
       "stage": "third_place",
+      "group": null,
+      "matchday": null,
       "home": "France",
-      "away": null,
+      "away": "England",
       "date": "2026-07-18",
+      "kickoff_utc": "21:00",
       "venue": "TBC",
-      "status": "tbd",
-      "win_prob": null,
-      "draw_prob": null,
-      "loss_prob": null,
-      "xg_home": null,
-      "xg_away": null,
-      "top_scorelines": [],
-      "score_matrix": [],
-      "source": "tbd"
+      "city": null,
+      "status": "scheduled",
+      "result": null,
+      "xg_home": 1.714,
+      "xg_away": 1.512,
+      "win_prob": 0.4134,
+      "draw_prob": 0.2588,
+      "loss_prob": 0.3278,
+      "model_win": 0.4134,
+      "model_draw": 0.2588,
+      "model_loss": 0.3278,
+      "market_win": null,
+      "market_draw": null,
+      "market_loss": null,
+      "best_odds_home": null,
+      "best_odds_draw": null,
+      "best_odds_away": null,
+      "top_scorelines": [
+        {
+          "home": 1,
+          "away": 1,
+          "prob": 0.1163
+        },
+        {
+          "home": 2,
+          "away": 1,
+          "prob": 0.0882
+        },
+        {
+          "home": 1,
+          "away": 2,
+          "prob": 0.0778
+        },
+        {
+          "home": 2,
+          "away": 2,
+          "prob": 0.0667
+        },
+        {
+          "home": 2,
+          "away": 0,
+          "prob": 0.0583
+        },
+        {
+          "home": 1,
+          "away": 0,
+          "prob": 0.0547
+        }
+      ],
+      "top_score_conditional": {
+        "home": 2,
+        "away": 1,
+        "prob": 0.0882,
+        "result": "W"
+      },
+      "score_matrix": [
+        [
+          0.05311,
+          0.04669,
+          0.04542,
+          0.02289,
+          0.00866,
+          0.00262,
+          0.00066,
+          0.00014,
+          3e-05
+        ],
+        [
+          0.0547,
+          0.11633,
+          0.07784,
+          0.03923,
+          0.01483,
+          0.00449,
+          0.00113,
+          0.00024,
+          5e-05
+        ],
+        [
+          0.05833,
+          0.08821,
+          0.06669,
+          0.03362,
+          0.01271,
+          0.00384,
+          0.00097,
+          0.00021,
+          4e-05
+        ],
+        [
+          0.03332,
+          0.05039,
+          0.0381,
+          0.0192,
+          0.00726,
+          0.0022,
+          0.00055,
+          0.00012,
+          2e-05
+        ],
+        [
+          0.01427,
+          0.02159,
+          0.01632,
+          0.00823,
+          0.00311,
+          0.00094,
+          0.00024,
+          5e-05,
+          1e-05
+        ],
+        [
+          0.00489,
+          0.0074,
+          0.00559,
+          0.00282,
+          0.00107,
+          0.00032,
+          8e-05,
+          2e-05,
+          0.0
+        ],
+        [
+          0.0014,
+          0.00211,
+          0.0016,
+          0.00081,
+          0.0003,
+          9e-05,
+          2e-05,
+          1e-05,
+          0.0
+        ],
+        [
+          0.00034,
+          0.00052,
+          0.00039,
+          0.0002,
+          7e-05,
+          2e-05,
+          1e-05,
+          0.0,
+          0.0
+        ],
+        [
+          7e-05,
+          0.00011,
+          8e-05,
+          4e-05,
+          2e-05,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      ],
+      "ah_lines": [
+        {
+          "h": 0,
+          "key": "0",
+          "p_home": 0.5577,
+          "p_away": 0.4423,
+          "fair_home": 1.793,
+          "fair_away": 2.261
+        },
+        {
+          "h": -0.25,
+          "key": "-0.25",
+          "p_home": 0.4748,
+          "p_away": 0.5252,
+          "fair_home": 2.106,
+          "fair_away": 1.904
+        },
+        {
+          "h": -0.5,
+          "key": "-0.5",
+          "p_home": 0.4134,
+          "p_away": 0.5866,
+          "fair_home": 2.419,
+          "fair_away": 1.705
+        },
+        {
+          "h": -0.75,
+          "key": "-0.75",
+          "p_home": 0.3517,
+          "p_away": 0.6483,
+          "fair_home": 2.843,
+          "fair_away": 1.542
+        },
+        {
+          "h": -1.5,
+          "key": "-1.5",
+          "p_home": 0.223,
+          "p_away": 0.777,
+          "fair_home": 4.484,
+          "fair_away": 1.287
+        },
+        {
+          "h": -2.5,
+          "key": "-2.5",
+          "p_home": 0.0948,
+          "p_away": 0.9052,
+          "fair_home": 10.545,
+          "fair_away": 1.105
+        },
+        {
+          "h": -3.5,
+          "key": "-3.5",
+          "p_home": 0.0334,
+          "p_away": 0.9666,
+          "fair_home": 29.898,
+          "fair_away": 1.035
+        },
+        {
+          "h": 0.25,
+          "key": "0.25",
+          "p_home": 0.6235,
+          "p_away": 0.3765,
+          "fair_home": 1.604,
+          "fair_away": 2.656
+        },
+        {
+          "h": 0.5,
+          "key": "0.5",
+          "p_home": 0.6722,
+          "p_away": 0.3278,
+          "fair_home": 1.488,
+          "fair_away": 3.051
+        },
+        {
+          "h": 0.75,
+          "key": "0.75",
+          "p_home": 0.7332,
+          "p_away": 0.2668,
+          "fair_home": 1.364,
+          "fair_away": 3.748
+        },
+        {
+          "h": 1.5,
+          "key": "1.5",
+          "p_home": 0.8386,
+          "p_away": 0.1614,
+          "fair_home": 1.192,
+          "fair_away": 6.197
+        },
+        {
+          "h": 2.5,
+          "key": "2.5",
+          "p_home": 0.9384,
+          "p_away": 0.0616,
+          "fair_home": 1.066,
+          "fair_away": 16.245
+        },
+        {
+          "h": 3.5,
+          "key": "3.5",
+          "p_home": 0.9806,
+          "p_away": 0.0194,
+          "fair_home": 1.02,
+          "fair_away": 51.605
+        }
+      ],
+      "source": "model_only",
+      "blend_weights": null
     }
   ]
 }
