@@ -1,5 +1,5 @@
 {
-  "_fetched": "2026-07-16T23:02:34.915798+00:00",
+  "_fetched": "2026-07-17T03:02:28.976268+00:00",
   "matches": {
     "TP_1": {
       "h2h": {
@@ -14,9 +14,9 @@
           "away_win": 3.6
         },
         "williamhill": {
-          "home_win": 1.91,
-          "draw": 4.0,
-          "away_win": 3.4
+          "home_win": 1.85,
+          "draw": 3.75,
+          "away_win": 3.75
         },
         "boylesports": {
           "home_win": 1.83,
@@ -50,7 +50,7 @@
         },
         "betvictor": {
           "home_win": 1.85,
-          "draw": 4.0,
+          "draw": 4.1,
           "away_win": 3.6
         },
         "betfair_ex_uk": {
@@ -101,8 +101,8 @@
         },
         "williamhill": {
           "home_win": 2.25,
-          "draw": 3.0,
-          "away_win": 3.3
+          "draw": 3.1,
+          "away_win": 3.25
         },
         "betway": {
           "home_win": 2.2,
