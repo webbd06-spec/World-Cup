@@ -1,5 +1,5 @@
 {
-  "_fetched": "2026-07-17T03:02:28.976268+00:00",
+  "_fetched": "2026-07-17T07:02:15.660759+00:00",
   "matches": {
     "TP_1": {
       "h2h": {
@@ -34,7 +34,7 @@
           "away_win": 3.75
         },
         "betway": {
-          "home_win": 1.85,
+          "home_win": 1.88,
           "draw": 3.8,
           "away_win": 3.6
         },
@@ -44,7 +44,7 @@
           "away_win": 3.75
         },
         "paddypower": {
-          "home_win": 1.9,
+          "home_win": 1.87,
           "draw": 3.75,
           "away_win": 3.75
         },
@@ -101,7 +101,7 @@
         },
         "williamhill": {
           "home_win": 2.25,
-          "draw": 3.1,
+          "draw": 3.0,
           "away_win": 3.25
         },
         "betway": {
@@ -115,9 +115,9 @@
           "away_win": 3.5
         },
         "betvictor": {
-          "home_win": 2.25,
+          "home_win": 2.2,
           "draw": 3.1,
-          "away_win": 3.4
+          "away_win": 3.5
         },
         "boylesports": {
           "home_win": 2.2,
