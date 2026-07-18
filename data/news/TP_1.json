@@ -1,0 +1,12 @@
+{
+  "fixture_id": "TP_1",
+  "home": "France",
+  "away": "England",
+  "home_multiplier": 1.0,
+  "away_multiplier": 1.0,
+  "notes": "",
+  "home_scorers": [],
+  "away_scorers": [],
+  "source": "api_error",
+  "fetched_at": "2026-07-18T11:42:16.630873+00:00"
+}
