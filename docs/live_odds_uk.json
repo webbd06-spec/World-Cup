@@ -1,5 +1,5 @@
 {
-  "_fetched": "2026-07-19T03:02:10.129150+00:00",
+  "_fetched": "2026-07-19T07:02:11.945212+00:00",
   "matches": {
     "F_1": {
       "h2h": {
@@ -16,7 +16,7 @@
         "paddypower": {
           "home_win": 2.25,
           "draw": 2.9,
-          "away_win": 3.6
+          "away_win": 3.5
         },
         "betfred_uk": {
           "home_win": 2.25,
@@ -25,13 +25,13 @@
         },
         "ladbrokes_uk": {
           "home_win": 2.25,
-          "draw": 2.9,
-          "away_win": 3.6
+          "draw": 3.0,
+          "away_win": 3.5
         },
         "coral": {
           "home_win": 2.25,
           "draw": 3.0,
-          "away_win": 3.6
+          "away_win": 3.5
         },
         "williamhill": {
           "home_win": 2.3,
