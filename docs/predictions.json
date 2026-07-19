@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-19T11:40:43.950022Z",
+  "generated_at": "2026-07-19T11:47:35.814805Z",
   "date": "2026-07-19",
   "model_version": "1.1.0",
   "blend_weights": {
@@ -283,6 +283,12 @@
       "blend_weights": {
         "market": 0.6,
         "model": 0.4
+      },
+      "team_news": {
+        "notes": "",
+        "home_scorers": [],
+        "away_scorers": [],
+        "fetched_at": "2026-07-19T11:47:35.647551+00:00"
       }
     },
     {
