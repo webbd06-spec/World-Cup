@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-19T23:02:41.480895Z",
+  "generated_at": "2026-07-19T23:10:43.270461Z",
   "date": "2026-07-19",
   "model_version": "1.1.0",
   "blend_weights": {
@@ -25,18 +25,18 @@
       },
       "xg_home": 1.604,
       "xg_away": 1.828,
-      "win_prob": 0.3874,
-      "draw_prob": 0.2924,
-      "loss_prob": 0.3203,
+      "win_prob": 0.3294,
+      "draw_prob": 0.2485,
+      "loss_prob": 0.4221,
       "model_win": 0.3294,
       "model_draw": 0.2485,
       "model_loss": 0.4221,
-      "market_win": 0.426,
-      "market_draw": 0.3216,
-      "market_loss": 0.2524,
-      "best_odds_home": 2.34,
+      "market_win": null,
+      "market_draw": null,
+      "market_loss": null,
+      "best_odds_home": 2.38,
       "best_odds_draw": 3.1,
-      "best_odds_away": 3.95,
+      "best_odds_away": 3.8,
       "top_scorelines": [
         {
           "home": 1,
@@ -70,10 +70,10 @@
         }
       ],
       "top_score_conditional": {
-        "home": 2,
-        "away": 1,
-        "prob": 0.076,
-        "result": "W"
+        "home": 1,
+        "away": 2,
+        "prob": 0.0866,
+        "result": "L"
       },
       "score_matrix": [
         [
@@ -282,11 +282,8 @@
           "fair_away": 26.047
         }
       ],
-      "source": "blend",
-      "blend_weights": {
-        "market": 0.6,
-        "model": 0.4
-      },
+      "source": "model_only",
+      "blend_weights": null,
       "team_news": {
         "notes": "",
         "home_scorers": [],
